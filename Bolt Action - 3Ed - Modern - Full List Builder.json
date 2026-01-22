@@ -1,0 +1,434 @@
+{
+  "config": 
+	{
+		"trackHighestDivision": false
+	},
+"disallowMultipleFactions": true,
+"appVersion": 2,
+"credit": [
+	"Phy; phyrexian.queen@gmail.com for any questions, thoughts, concerns, or comments!"
+],
+"game": "Bolt Action",
+"stats": [
+	{
+		"name": "Strength",
+		"abbreviation": "S"
+    }
+],
+"toggles": [
+	{
+		"property": "community",
+		"label": "Include Community Rules",
+		"default": false
+    },
+    {
+		"property": "special",
+		"label": "Include Special Rules",
+		"default": false
+    }
+],
+"limits": [],
+"counts": [],
+"calculations": [
+	{
+		"label": "Order Dice",
+		"properties": ["order"]
+	}
+],
+"additionalPrint": [],
+"elements": [
+	{
+		"propertyName": "factions",
+		"label": "Factions",
+		"type": "faction",
+		"dataSource": "factions",
+		"children": [
+			{
+				"propertyName": "keywords",
+				"label": "Keywords",
+				"type": "static",
+				"dataSource": "keywords"
+			},
+			{
+				"propertyName": "additionalRules",
+				"label": "Additional Rules",
+				"type": "static",
+				"bullet": true
+			},
+			{
+				"propertyName": "equipment",
+				"label": "Equipment",
+				"type": "static",
+				"dataSource": "equipment",
+				"children": [
+					{
+						"propertyName": "specialRules",
+						"label": "Special Rules",
+						"type": "static",
+						"dataSource": "keywords"
+					}
+				]
+			},
+			{
+				"propertyName": "platoons",
+				"label": "Platoon",
+				"type": "main",
+				"dataSource": "platoons",
+				"children": [
+					{
+						"propertyName": "units",
+						"dataSource": "units",
+						"label": "Units",
+						"type": "list",
+						"children": [
+							{
+								"propertyName": "equipment",
+								"label": "Equipment",
+								"type": "static",
+								"dataSource": "equipment",
+								"children": [
+									{
+										"propertyName": "specialRules",
+										"label": "Special Rules",
+										"type": "static",
+										"dataSource": "keywords"
+									}
+								]
+							},
+							{
+								"propertyName": "keywords",
+								"label": "Keywords",
+								"type": "static",
+								"dataSource": "keywords"
+							},
+							{
+								"propertyName": "options",
+								"selectedProperty": "chosenOptions",
+								"type": "checkbox",
+								"dataSource": "equipment",
+								"children": [
+									{
+										"label": "Special Rules",
+										"propertyName": "specialRules",
+										"type": "static",
+										"dataSource": "keywords"
+									}
+								]
+							},
+							{
+								"propertyName": "specialRules",
+								"label": "Special Rules",
+								"type": "static",
+								"dataSource": "keywords",
+								"children": [
+									{
+										"label": "Special Rules",
+										"propertyName": "specialRules",
+										"type": "static",
+										"dataSource": "keywords"
+									}
+								]
+							}
+						]
+					}
+				]
+			}
+		]
+	}
+],
+"data": 
+	{
+		"factions": [
+			{
+				"name": "France",
+				"additionalRules": [
+					"Culture of Expeditionary Warfare: All HQ and Platoon Leaders must be taken as Veterans, including Vehicles being given the Command Rule or having the Command Rule when taken as your Armored Platoon Commander.","French Foreign Legion: Any unit in this army can be fielded as French Foreign Legion, gaining the 'Marche ou Crève' Special Rule.", "Honneur et Patrie: French Army Infantry Units get a +1 to their Morale Rating when taking a Morale Test if any other French Army Infantry Unit is is within 8in."
+				]
+			}
+		],
+		"equipment": [],
+		"keywords": [],
+		"platoons": [
+			{
+				"name": "HQ Platoon",
+				"unlimited": false,
+				"specialText": "Company Commander: 0 - 1\n Chaplain: 0 - 1\n Company Commander Transport: 0 - 1",
+				"decreaseModelCount": 1,
+				"factions": [
+					{
+						"name": "France"
+					}
+				],
+				"points": 0,
+				"models": 0
+			},
+			{
+				"name": "Rifle Platoon",
+				"specialText": "Platoon Commander: 1\n Infantry Squads (Not-Eng): 2\n Infantry Squads (Not-Eng): 0-2\n Medic: 0-1\n FAO (Arty or Air): 0-1\n Sniper: 0-1\n AT Team: 0-1\n Light Mortar: 0-1\n Transport: Per Unit in the Platoon\n",
+				"decreaseModelCount": 1,
+				"unlimited": true,
+				"factions": [
+					{
+						"name": "France"
+					}
+				],
+				"points": 0,
+				"models": 0
+			},
+			{
+				"name": "Recce Platoon",
+				"unlimited": true,
+				"specialText": "Platoon Commander: 1\n Infantry Squads (Not-Eng): 1\n Infantry Squads (Not-Eng): 0-3\n FAO (Arty or Air): 0-1\n AT Team: 0-1\n Transport: Enough so that every soldier in the platoon may ride. Transports have Recce.\n",
+				"decreaseModelCount": 1,
+				"factions": [
+					{
+						"name": "France"
+					}
+				],
+				"quantityLimitedBy": [
+					{
+						"unit": "Rifle Platoon",
+						"ratio": 1
+					}
+				],
+				"points": 0,
+				"models": 0
+			},
+			{
+				"name": "Engineer Platoon",
+				"unlimited": true,
+				"specialText": "Platoon Commander: 1\n Engineer Squads: 2\n Engineer Squads: 0-2\n Flame Thrower Teams: 0-3\n Transport: Per Unit in the Platoon\n",
+				"decreaseModelCount": 1,
+				"factions": [
+					{
+						"name": "France"
+					}
+				],
+				"quantityLimitedBy": [
+					{
+						"unit": "Rifle Platoon",
+						"ratio": 1
+					}
+				],
+				"points": 0,
+				"models": 0
+			},
+			{
+				"name": "Heavy Weapons Platoon",
+				"unlimited": true,
+				"specialText": "Platoon Commander: 1\n MG or Mortar Team (Any Mix): 2\n Mortar Teams: 0-3\n MG Teams: 0-3\n AT Teams: 0-3\n Transport: Per Unit in the Platoon\n",
+				"decreaseModelCount": 1,
+				"factions": [
+					{
+						"name": "France"
+					}
+				],
+				"quantityLimitedBy": [
+					{
+						"unit": "Rifle Platoon",
+						"ratio": 1
+					}
+				],
+				"points": 0,
+				"models": 0
+			},
+			{
+				"name": "Artillery Platoon",
+				"unlimited": true,
+				"specialText": "Platoon Commander: 1\n Field Artillery/AA Gun/AT Gun: 1\n Field Artillery/AA Gun/AT Gun (Any Mix): 0-3\n Transport: Per Unit in the Platoon\n",
+				"decreaseModelCount": 1,
+				"factions": [
+					{
+						"name": "France"
+					}
+				],
+				"quantityLimitedBy": [
+					{
+						"unit": "Rifle Platoon",
+						"ratio": 1
+					}
+				],
+				"points": 0,
+				"models": 0
+			},
+			{
+				"name": "Armored Platoon",
+				"unlimited": true,
+				"specialText": "Platoon Command Vehicle: 1\n Vehicle: 1\n Vehicles: 0-3",
+				"decreaseModelCount": 1,
+				"factions": [
+					{
+						"name": "France"
+					}
+				],
+				"quantityLimitedBy": [
+					{
+						"unit": "Rifle Platoon",
+						"ratio": 1
+					}
+				],
+				"points": 0,
+				"models": 0
+			},
+			{
+				"name": "Fortifications and Defenses",
+				"unlimited": false,
+				"specialText": "These are optional rules under the Fortifications Section of the Bolt Action 3rd Edition Rulebook on Pg.296; Not for Events unless stated in the packet or by the TO.",
+				"decreaseModelCount": 1,
+				"factions": [
+					{
+						"name": "France"
+					}
+				],
+				"points": 0,
+				"models": 0
+			},
+			{
+				"name": "Air Support",
+				"unlimited": false,
+				"specialText": "These are optional experimental rules from the Bolt Action Community website. Not for Events unless stated in the packet or by the TO.\n Aircraft: 1",
+				"experimental": true,
+				"decreaseModelCount": 1,
+				"factions": [
+					{
+						"name": "France"
+					}
+				],
+				"points": 0,
+				"models": 0
+			}
+		],
+		"units": [
+			{
+				"name": "Company Commander",
+				"factions": [],
+				"order": 1,
+				"availableIn":[
+					{
+						"all": [{ "in": "HQ Platoon" }, { "in": "France" }]			
+					}
+				],
+				"points": 0,
+				"models": 1,
+				"sortPriority": 1,
+				"limits": [
+					{
+						"key": "Commander",
+						"limit": 1,
+						"perParent": true
+					}
+				],
+				"options": [
+					{
+						"name": "Veteran",
+						"points": 78		
+					},
+					{
+						"name": "Additional Men",
+						"points": 13,
+						"increment": true,
+						"max": 4,
+						"addsModels": 1,
+						"unlockedByLocal": "Veteran"
+					},
+					{
+						"name": "French Foreign Legion",
+						"points": 1,
+						"perModel": true,
+						"unlockedByLocal": "Veteran"
+					},
+					{
+						"name": "Intelligence",
+						"limit": 1,
+						"points": 50,
+						"unlockedByLocal": "Veteran"
+					},
+					{
+						"name": "Desert Operations",
+						"points": 1,
+						"chooseOneKey": "operation",
+						"unlockedByLocal": "Veteran"
+					},
+					{
+						"name": "Expeditionary Operations",
+						"points": 25,
+						"chooseOneKey": "operation",
+						"unlockedByLocal": "Veteran"
+					},
+					{
+						"name": "Jungle Operations",
+						"points": 15,
+						"chooseOneKey": "operation",
+						"unlockedByLocal": "Veteran"
+					},
+					{
+						"name": "Urban Operations",
+						"points": 0,
+						"chooseOneKey": "operation",
+						"unlockedByLocal": "Veteran"
+					},
+					{
+						"name": "Desert Operations",
+						"points": 1,
+						"chooseOneKey": "operation",
+						"unlockedByLocal": "Veteran"
+					},
+					{
+						"name": "NCO SMG",
+						"points": 0,
+						"increment": true,
+						"max": "parentModels",
+						"maxKey": "gun",
+						"localLimit": 1,
+						"unlockedByLocal": "Veteran"
+					},
+					{
+						"name": "SMGs",
+						"points": 0,
+						"increment": true,
+						"max": "parentModels",
+						"maxKey": "gun",
+						"unlockedByLocal": "Veteran"
+					},
+					{
+						"name": "NCO Assault Rifle",
+						"points": 0,
+						"increment": true,
+						"max": "parentModels",
+						"maxKey": "gun",
+						"localLimit": 1,
+						"unlockedByLocal": "Veteran"
+					},
+					{
+						"name": "Assault Rifles",
+						"points": 0,
+						"increment": true,
+						"max": "parentModels",
+						"maxKey": "gun",
+						"unlockedByLocal": "Veteran"
+					},
+					{
+						"name": "NCO Pistol",
+						"points": -1,
+						"increment": true,
+						"max": "parentModels",
+						"maxKey": "gun",
+						"localLimit": 1,
+						"unlockedByLocal": "Veteran"
+					},
+					{
+						"name": "Pistols",
+						"points": -1,
+						"increment": true,
+						"max": "parentModels",
+						"maxKey": "gun",
+						"unlockedByLocal": "Veteran"
+					}
+				],
+				"keywords": ["Body Armor","First Aid","MOPP"],
+				"specialText": "1 Officer",
+				"equipment": []
+			}
+		]
+	}
+}

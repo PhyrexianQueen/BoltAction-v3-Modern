@@ -144,6 +144,12 @@
 				"additionalRules": [
 					"Culture of Expeditionary Warfare: All HQ and Platoon Leaders must be taken as Veterans, including Vehicles being given the Command Rule or having the Command Rule when taken as your Armored Platoon Commander.","French Foreign Legion: Any unit in this army can be fielded as French Foreign Legion, gaining the 'Marche ou Crève' Special Rule.", "Honneur et Patrie: French Army Infantry Units get a +1 to their Morale Rating when taking a Morale Test if any other French Army Infantry Unit is is within 8in."
 				]
+			},
+			{
+				"name": "United States of America",
+				"additionalRules": [
+					"Sphere of Infulence: US Assets all around the world allow for quick response to combat breaking out. Air Observers can call in a strike twice per game.","Joint Command: US Military is versed in working together to accomplish the mission, branches frequently imbedded with each other. Unitzs can apply USMC, US Army, US Navy, or US Air Force Rules to select squads."
+				]
 			}
 		],
 		"equipment": [],
@@ -157,6 +163,9 @@
 				"factions": [
 					{
 						"name": "France"
+					},
+					{
+						"name": "United States of America"
 					}
 				],
 				"points": 0,
@@ -170,6 +179,9 @@
 				"factions": [
 					{
 						"name": "France"
+					},
+					{
+						"name": "United States of America"
 					}
 				],
 				"points": 0,
@@ -183,6 +195,9 @@
 				"factions": [
 					{
 						"name": "France"
+					},
+					{
+						"name": "United States of America"
 					}
 				],
 				"quantityLimitedBy": [
@@ -202,6 +217,9 @@
 				"factions": [
 					{
 						"name": "France"
+					},
+					{
+						"name": "United States of America"
 					}
 				],
 				"quantityLimitedBy": [
@@ -221,6 +239,9 @@
 				"factions": [
 					{
 						"name": "France"
+					},
+					{
+						"name": "United States of America"
 					}
 				],
 				"quantityLimitedBy": [
@@ -240,6 +261,9 @@
 				"factions": [
 					{
 						"name": "France"
+					},
+					{
+						"name": "United States of America"
 					}
 				],
 				"quantityLimitedBy": [
@@ -259,6 +283,9 @@
 				"factions": [
 					{
 						"name": "France"
+					},
+					{
+						"name": "United States of America"
 					}
 				],
 				"quantityLimitedBy": [
@@ -278,6 +305,9 @@
 				"factions": [
 					{
 						"name": "France"
+					},
+					{
+						"name": "United States of America"
 					}
 				],
 				"points": 0,
@@ -292,6 +322,9 @@
 				"factions": [
 					{
 						"name": "France"
+					},
+					{
+						"name": "United States of America"
 					}
 				],
 				"points": 0,
@@ -306,6 +339,9 @@
 				"availableIn":[
 					{
 						"all": [{ "in": "HQ Platoon" }, { "in": "France" }]			
+					},
+					{
+						"all": [{ "in": "HQ Platoon" }, { "in": "United States of America" }]			
 					}
 				],
 				"points": 0,
@@ -320,10 +356,43 @@
 				],
 				"options": [
 					{
+						"name": "Inexperienced",
+						"points": 42,
+						"availableIn": ["United States of America"],
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Regular",
+						"points": 60,
+						"availableIn": ["United States of America"],
+						"requireChooseOneKey": "morale"
+					},
+					{
 						"name": "Veteran",
 						"points": 78,
-						"availableIn": ["France"],
+						"availableIn": [
+							"France",
+							"United States of America"
+						],
 						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Additional Men",
+						"points": 7,
+						"increment": true,
+						"max": 4,
+						"addsModels": 1,
+						"unlockedByLocal": "Inexperienced",
+						"availableIn": ["United States of America"]
+					},
+					{
+						"name": "Additional Men",
+						"points": 10,
+						"increment": true,
+						"max": 4,
+						"addsModels": 1,
+						"unlockedByLocal": "Regular",
+						"availableIn": ["United States of America"]
 					},
 					{
 						"name": "Additional Men",
@@ -332,7 +401,110 @@
 						"max": 4,
 						"addsModels": 1,
 						"unlockedByLocal": "Veteran",
-						"availableIn": ["France"]
+						"availableIn": [
+							"France",
+							"United States of America"
+						]
+					},
+					{
+						"name": "NCO SMG",
+						"points": 0,
+						"increment": true,
+						"max": "parentModels",
+						"maxKey": "gun",
+						"localLimit": 1,
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
+						"availableIn": [
+							"France",
+							"United States of America"
+						]
+					},
+					{
+						"name": "SMGs",
+						"points": 0,
+						"increment": true,
+						"max": "parentModels",
+						"maxKey": "gun",
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
+						"availableIn": [
+							"France",
+							"United States of America"
+						]
+					},
+					{
+						"name": "NCO Pistol",
+						"points": -1,
+						"increment": true,
+						"max": "parentModels",
+						"maxKey": "gun",
+						"localLimit": 1,
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
+						"availableIn": [
+							"France",
+							"United States of America"
+						]
+					},
+					{
+						"name": "Pistols",
+						"points": -1,
+						"increment": true,
+						"max": "parentModels",
+						"maxKey": "gun",
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
+						"availableIn": [
+							"France",
+							"United States of America"
+						]
+					},
+					{
+						"name": "Intelligence",
+						"limit": 1,
+						"points": 50,
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
+						"availableIn": [
+							"France",
+							"United States of America"
+						]
+					},
+					{
+						"name": "Desert Operations",
+						"points": 1,
+						"chooseOneKey": "operation",
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
+						"availableIn": [
+							"France",
+							"United States of America"
+						]
+					},
+					{
+						"name": "Expeditionary Operations",
+						"points": 25,
+						"chooseOneKey": "operation",
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
+						"availableIn": [
+							"France",
+							"United States of America"
+						]
+					},
+					{
+						"name": "Jungle Operations",
+						"points": 15,
+						"chooseOneKey": "operation",
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
+						"availableIn": [
+							"France",
+							"United States of America"
+						]
+					},
+					{
+						"name": "Urban Operations",
+						"points": 0,
+						"chooseOneKey": "operation",
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
+						"availableIn": [
+							"France",
+							"United States of America"
+						]
 					},
 					{
 						"name": "French Foreign Legion",
@@ -342,101 +514,25 @@
 						"availableIn": ["France"]
 					},
 					{
-						"name": "Intelligence",
-						"limit": 1,
-						"points": 50,
-						"unlockedByLocal": "Veteran",
-						"availableIn": ["France"]
+						"name": "US Army",
+						"points": 0,
+						"perModel": true,
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
+						"availableIn": ["United States of America"],
+						"requireChooseOneKey": "branchUS"
 					},
 					{
-						"name": "Desert Operations",
+						"name": "USMC",
 						"points": 1,
-						"chooseOneKey": "operation",
-						"unlockedByLocal": "Veteran",
-						"availableIn": ["France"]
-					},
-					{
-						"name": "Expeditionary Operations",
-						"points": 25,
-						"chooseOneKey": "operation",
-						"unlockedByLocal": "Veteran",
-						"availableIn": ["France"]
-					},
-					{
-						"name": "Jungle Operations",
-						"points": 15,
-						"chooseOneKey": "operation",
-						"unlockedByLocal": "Veteran",
-						"availableIn": ["France"]
-					},
-					{
-						"name": "Urban Operations",
-						"points": 0,
-						"chooseOneKey": "operation",
-						"unlockedByLocal": "Veteran",
-						"availableIn": ["France"]
-					},
-					{
-						"name": "NCO SMG",
-						"points": 0,
-						"increment": true,
-						"max": "parentModels",
-						"maxKey": "gun",
-						"localLimit": 1,
-						"unlockedByLocal": "Veteran",
-						"availableIn": ["France"]
-					},
-					{
-						"name": "SMGs",
-						"points": 0,
-						"increment": true,
-						"max": "parentModels",
-						"maxKey": "gun",
-						"unlockedByLocal": "Veteran",
-						"availableIn": ["France"]
-					},
-					{
-						"name": "NCO Assault Rifle",
-						"points": 0,
-						"increment": true,
-						"max": "parentModels",
-						"maxKey": "gun",
-						"localLimit": 1,
-						"unlockedByLocal": "Veteran",
-						"availableIn": ["France"]
-					},
-					{
-						"name": "Assault Rifles",
-						"points": 0,
-						"increment": true,
-						"max": "parentModels",
-						"maxKey": "gun",
-						"unlockedByLocal": "Veteran",
-						"availableIn": ["France"]
-					},
-					{
-						"name": "NCO Pistol",
-						"points": -1,
-						"increment": true,
-						"max": "parentModels",
-						"maxKey": "gun",
-						"localLimit": 1,
-						"unlockedByLocal": "Veteran",
-						"availableIn": ["France"]
-					},
-					{
-						"name": "Pistols",
-						"points": -1,
-						"increment": true,
-						"max": "parentModels",
-						"maxKey": "gun",
-						"unlockedByLocal": "Veteran",
-						"availableIn": ["France"]
+						"perModel": true,
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
+						"availableIn": ["United States of America"],
+						"requireChooseOneKey": "branchUS"
 					}
 				],
-				"keywords": ["Body Armor","First Aid","MOPP"],
+				"keywords": ["First Aid"],
 				"specialText": "1 Officer",
-				"equipment": []
+				"equipment": ["Assault Rifles","Body Armor","MOPP"]
 			},
 			{
 				"name": "Platoon Commander",
@@ -457,6 +553,21 @@
 					},
 					{
 						"all": [{ "in": "Heavy Weapons Platoon" }, { "in": "France" }]			
+					},
+					{
+						"all": [{ "in": "Rifle Platoon" }, { "in": "United States of America" }]			
+					},
+					{
+						"all": [{ "in": "Recce Platoon" }, { "in": "United States of America" }]			
+					},
+					{
+						"all": [{ "in": "Engineer Platoon" }, { "in": "United States of America" }]			
+					},
+					{
+						"all": [{ "in": "Artillery Platoon" }, { "in": "United States of America" }]			
+					},
+					{
+						"all": [{ "in": "Heavy Weapons Platoon" }, { "in": "United States of America" }]			
 					}
 				],
 				"points": 0,
@@ -471,9 +582,24 @@
 				],
 				"options": [
 					{
+						"name": "Inexperienced",
+						"points": 21,
+						"availableIn": ["United States of America"],
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Regular",
+						"points": 30,
+						"availableIn": ["United States of America"],
+						"requireChooseOneKey": "morale"
+					},
+					{
 						"name": "Veteran",
 						"points": 39,
-						"availableIn": ["France"],
+						"availableIn": [
+							"France",
+							"United States of America"
+						],
 						"requireChooseOneKey": "morale"
 					},
 					{
@@ -486,38 +612,17 @@
 						"availableIn": ["France"]
 					},
 					{
-						"name": "French Foreign Legion",
-						"points": 1,
-						"perModel": true,
-						"unlockedByLocal": "Veteran",
-						"availableIn": ["France"]
-					},
-					{
-						"name": "Intelligence",
-						"limit": 1,
-						"points": 50,
-						"unlockedByLocal": "Veteran",
-						"availableIn": ["France"]
-					},
-					{
 						"name": "NCO SMG",
 						"points": 0,
 						"increment": true,
 						"max": "parentModels",
 						"maxKey": "gun",
 						"localLimit": 1,
-						"unlockedByLocal": "Veteran",
-						"availableIn": ["France"]
-					},
-					{
-						"name": "NCO Assault Rifle",
-						"points": 0,
-						"increment": true,
-						"max": "parentModels",
-						"maxKey": "gun",
-						"localLimit": 1,
-						"unlockedByLocal": "Veteran",
-						"availableIn": ["France"]
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
+						"availableIn": [
+							"France",
+							"United States of America"
+						]
 					},
 					{
 						"name": "NCO Pistol",
@@ -526,13 +631,49 @@
 						"max": "parentModels",
 						"maxKey": "gun",
 						"localLimit": 1,
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
+						"availableIn": [
+							"France",
+							"United States of America"
+						]
+					},
+					{
+						"name": "Intelligence",
+						"limit": 1,
+						"points": 50,
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
+						"availableIn": [
+							"France",
+							"United States of America"
+						]
+					},
+					{
+						"name": "French Foreign Legion",
+						"points": 1,
+						"perModel": true,
 						"unlockedByLocal": "Veteran",
 						"availableIn": ["France"]
+					},
+					{
+						"name": "US Army",
+						"points": 0,
+						"perModel": true,
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
+						"availableIn": ["United States of America"],
+						"requireChooseOneKey": "branchUS"
+					},
+					{
+						"name": "USMC",
+						"points": 1,
+						"perModel": true,
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
+						"availableIn": ["United States of America"],
+						"requireChooseOneKey": "branchUS"
 					}
 				],
-				"keywords": ["Body Armor","First Aid","MOPP"],
+				"keywords": ["First Aid"],
 				"specialText": "1 Officer",
-				"equipment": []
+				"equipment": ["Assault Rifles","Body Armor","MOPP"]
 			},
 			{
 				"name": "Medic",
@@ -541,6 +682,9 @@
 				"availableIn":[
 					{
 						"all": [{ "in": "Rifle Platoon" }, { "in": "France" }]			
+					},
+					{
+						"all": [{ "in": "Rifle Platoon" }, { "in": "United States of America" }]			
 					}
 				],
 				"points": 0,
@@ -561,13 +705,6 @@
 						"requireChooseOneKey": "morale"
 					},
 					{
-						"name": "French Foreign Legion",
-						"points": 1,
-						"perModel": true,
-						"unlockedByLocal": "Regular",
-						"availableIn": ["France"]
-					},
-					{
 						"name": "Veteran",
 						"points": 30,
 						"availableIn": ["France"],
@@ -577,12 +714,102 @@
 						"name": "French Foreign Legion",
 						"points": 1,
 						"perModel": true,
-						"unlockedByLocal": "Veteran",
+						"unlockedByLocal": ["Regular","Veteran"],
 						"availableIn": ["France"]
+					},
+					{
+						"name": "US Army",
+						"points": 0,
+						"perModel": true,
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
+						"availableIn": ["United States of America"],
+						"requireChooseOneKey": "branchUS"
+					},
+					{
+						"name": "US Navy",
+						"points": 1,
+						"perModel": true,
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
+						"availableIn": ["United States of America"],
+						"requireChooseOneKey": "branchUS"
 					}
 				],
-				"keywords": ["Medic","Body Armor","MOPP"],
+				"keywords": ["Medic"],
 				"specialText": "1 Medic",
+				"equipment": ["Body Armor","MOPP"]
+			},
+			{
+				"name": "Medic, Renault VAB San Ambulance",
+				"factions": [],
+				"order": 1,
+				"availableIn":[
+					{
+						"all": [{ "in": "Rifle Platoon" }, { "in": "France" }]			
+					}
+				],
+				"points": 0,
+				"models": 1,
+				"sortPriority": 2,
+				"limits": [
+					{
+						"key": "Medic",
+						"limit": 1,
+						"perParent": true
+					}
+				],
+				"options": [
+					{
+						"name": "Regular",
+						"points": 105,
+						"availableIn": ["France"],
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Veteran",
+						"points": 122,
+						"availableIn": ["France"],
+						"requireChooseOneKey": "morale"
+					}
+				],
+				"keywords": ["Medical Vehicle","Ambulance"],
+				"specialText": "Armored Car/Carrier - 7+\n Wheeled Vehicle",
+				"equipment": []
+			},
+			{
+				"name": "Medic, GIAT AMX-10P Sanitaire Ambulance",
+				"factions": [],
+				"order": 1,
+				"availableIn":[
+					{
+						"all": [{ "in": "Rifle Platoon" }, { "in": "France" }]			
+					}
+				],
+				"points": 0,
+				"models": 1,
+				"sortPriority": 2,
+				"limits": [
+					{
+						"key": "Medic",
+						"limit": 1,
+						"perParent": true
+					}
+				],
+				"options": [
+					{
+						"name": "Regular",
+						"points": 126,
+						"availableIn": ["France"],
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Veteran",
+						"points": 138,
+						"availableIn": ["France"],
+						"requireChooseOneKey": "morale"
+					}
+				],
+				"keywords": ["Medical Vehicle","Ambulance","Amphibious"],
+				"specialText": "Light Tank - 8+\n Tracked Vehicle",
 				"equipment": []
 			},
 			{
@@ -595,6 +822,12 @@
 					},
 					{
 						"all": [{ "in": "Recce Platoon" }, { "in": "France" }]			
+					},
+					{
+						"all": [{ "in": "Rifle Platoon" }, { "in": "United States of America" }]			
+					},
+					{
+						"all": [{ "in": "Recce Platoon" }, { "in": "United States of America" }]			
 					}
 				],
 				"points": 0,
@@ -611,15 +844,20 @@
 					{
 						"name": "Regular",
 						"points": 75,
-						"availableIn": ["France"],
+						"availableIn": [
+							"France",
+							"United States of America"
+						],
 						"requireChooseOneKey": "morale"
 					},
 					{
-						"name": "French Foreign Legion",
-						"points": 1,
-						"perModel": true,
-						"unlockedByLocal": "Regular",
-						"availableIn": ["France"]
+						"name": "Veteran",
+						"points": 90,
+						"availableIn": [
+							"France",
+							"United States of America"
+						],
+						"requireChooseOneKey": "morale"
 					},
 					{
 						"name": "Additional Men",
@@ -628,77 +866,10 @@
 						"max": 2,
 						"addsModels": 1,
 						"unlockedByLocal": "Regular",
-						"availableIn": ["France"]
-					},
-					{
-						"name": "NCO SMG",
-						"points": 0,
-						"increment": true,
-						"max": "parentModels",
-						"maxKey": "gun",
-						"localLimit": 1,
-						"unlockedByLocal": "Regular",
-						"availableIn": ["France"]
-					},
-					{
-						"name": "SMGs",
-						"points": 0,
-						"increment": true,
-						"max": "parentModels",
-						"maxKey": "gun",
-						"unlockedByLocal": "Regular",
-						"availableIn": ["France"]
-					},
-					{
-						"name": "NCO Assault Rifle",
-						"points": 0,
-						"increment": true,
-						"max": "parentModels",
-						"maxKey": "gun",
-						"localLimit": 1,
-						"unlockedByLocal": "Regular",
-						"availableIn": ["France"]
-					},
-					{
-						"name": "Assault Rifles",
-						"points": 0,
-						"increment": true,
-						"max": "parentModels",
-						"maxKey": "gun",
-						"unlockedByLocal": "Regular",
-						"availableIn": ["France"]
-					},
-					{
-						"name": "NCO Pistol",
-						"points": 0,
-						"increment": true,
-						"max": "parentModels",
-						"maxKey": "gun",
-						"localLimit": 1,
-						"unlockedByLocal": "Regular",
-						"availableIn": ["France"]
-					},
-					{
-						"name": "Pistols",
-						"points": 0,
-						"increment": true,
-						"max": "parentModels",
-						"maxKey": "gun",
-						"unlockedByLocal": "Regular",
-						"availableIn": ["France"]
-					},
-					{
-						"name": "Veteran",
-						"points": 90,
-						"availableIn": ["France"],
-						"requireChooseOneKey": "morale"
-					},
-					{
-						"name": "French Foreign Legion",
-						"points": 1,
-						"perModel": true,
-						"unlockedByLocal": "Veteran",
-						"availableIn": ["France"]
+						"availableIn": [
+							"France",
+							"United States of America"
+						]
 					},
 					{
 						"name": "Additional Men",
@@ -707,7 +878,10 @@
 						"max": 2,
 						"addsModels": 1,
 						"unlockedByLocal": "Veteran",
-						"availableIn": ["France"]
+						"availableIn": [
+							"France",
+							"United States of America"
+						]
 					},
 					{
 						"name": "NCO SMG",
@@ -716,8 +890,11 @@
 						"max": "parentModels",
 						"maxKey": "gun",
 						"localLimit": 1,
-						"unlockedByLocal": "Veteran",
-						"availableIn": ["France"]
+						"unlockedByLocal": ["Regular","Veteran"],
+						"availableIn": [
+							"France",
+							"United States of America"
+						]
 					},
 					{
 						"name": "SMGs",
@@ -725,27 +902,11 @@
 						"increment": true,
 						"max": "parentModels",
 						"maxKey": "gun",
-						"unlockedByLocal": "Veteran",
-						"availableIn": ["France"]
-					},
-					{
-						"name": "NCO Assault Rifle",
-						"points": 0,
-						"increment": true,
-						"max": "parentModels",
-						"maxKey": "gun",
-						"localLimit": 1,
-						"unlockedByLocal": "Veteran",
-						"availableIn": ["France"]
-					},
-					{
-						"name": "Assault Rifles",
-						"points": 0,
-						"increment": true,
-						"max": "parentModels",
-						"maxKey": "gun",
-						"unlockedByLocal": "Veteran",
-						"availableIn": ["France"]
+						"unlockedByLocal": ["Regular","Veteran"],
+						"availableIn": [
+							"France",
+							"United States of America"
+						]
 					},
 					{
 						"name": "NCO Pistol",
@@ -754,8 +915,11 @@
 						"max": "parentModels",
 						"maxKey": "gun",
 						"localLimit": 1,
-						"unlockedByLocal": "Veteran",
-						"availableIn": ["France"]
+						"unlockedByLocal": ["Regular","Veteran"],
+						"availableIn": [
+							"France",
+							"United States of America"
+						]
 					},
 					{
 						"name": "Pistols",
@@ -763,13 +927,39 @@
 						"increment": true,
 						"max": "parentModels",
 						"maxKey": "gun",
-						"unlockedByLocal": "Veteran",
+						"unlockedByLocal": ["Regular","Veteran"],
+						"availableIn": [
+							"France",
+							"United States of America"
+						]
+					},
+					{
+						"name": "French Foreign Legion",
+						"points": 1,
+						"perModel": true,
+						"unlockedByLocal": ["Regular","Veteran"],
 						"availableIn": ["France"]
+					},
+					{
+						"name": "US Army",
+						"points": 0,
+						"perModel": true,
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
+						"availableIn": ["United States of America"],
+						"requireChooseOneKey": "branchUS"
+					},
+					{
+						"name": "US Navy",
+						"points": 0,
+						"perModel": true,
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
+						"availableIn": ["United States of America"],
+						"requireChooseOneKey": "branchUS"
 					}
 				],
-				"keywords": ["Infiltrator","Body Armor","First Aid","MOPP"],
+				"keywords": ["Infiltrator","First Aid"],
 				"specialText": "1 Forward Air Observer",
-				"equipment": []
+				"equipment": ["Body Armor","MOPP"]
 			},
 			{
 				"name": "Forward Artillery Observer",
@@ -781,6 +971,12 @@
 					},
 					{
 						"all": [{ "in": "Recce Platoon" }, { "in": "France" }]			
+					},
+					{
+						"all": [{ "in": "Rifle Platoon" }, { "in": "United States of America" }]			
+					},
+					{
+						"all": [{ "in": "Recce Platoon" }, { "in": "United States of America" }]			
 					}
 				],
 				"points": 0,
@@ -797,15 +993,20 @@
 					{
 						"name": "Regular",
 						"points": 75,
-						"availableIn": ["France"],
+						"availableIn": [
+							"France",
+							"United States of America"
+						],
 						"requireChooseOneKey": "morale"
 					},
 					{
-						"name": "French Foreign Legion",
-						"points": 1,
-						"perModel": true,
-						"unlockedByLocal": "Regular",
-						"availableIn": ["France"]
+						"name": "Veteran",
+						"points": 90,
+						"availableIn": [
+							"France",
+							"United States of America"
+						],
+						"requireChooseOneKey": "morale"
 					},
 					{
 						"name": "Additional Men",
@@ -814,77 +1015,10 @@
 						"max": 2,
 						"addsModels": 1,
 						"unlockedByLocal": "Regular",
-						"availableIn": ["France"]
-					},
-					{
-						"name": "NCO SMG",
-						"points": 0,
-						"increment": true,
-						"max": "parentModels",
-						"maxKey": "gun",
-						"localLimit": 1,
-						"unlockedByLocal": "Regular",
-						"availableIn": ["France"]
-					},
-					{
-						"name": "SMGs",
-						"points": 0,
-						"increment": true,
-						"max": "parentModels",
-						"maxKey": "gun",
-						"unlockedByLocal": "Regular",
-						"availableIn": ["France"]
-					},
-					{
-						"name": "NCO Assault Rifle",
-						"points": 0,
-						"increment": true,
-						"max": "parentModels",
-						"maxKey": "gun",
-						"localLimit": 1,
-						"unlockedByLocal": "Regular",
-						"availableIn": ["France"]
-					},
-					{
-						"name": "Assault Rifles",
-						"points": 0,
-						"increment": true,
-						"max": "parentModels",
-						"maxKey": "gun",
-						"unlockedByLocal": "Regular",
-						"availableIn": ["France"]
-					},
-					{
-						"name": "NCO Pistol",
-						"points": 0,
-						"increment": true,
-						"max": "parentModels",
-						"maxKey": "gun",
-						"localLimit": 1,
-						"unlockedByLocal": "Regular",
-						"availableIn": ["France"]
-					},
-					{
-						"name": "Pistols",
-						"points": 0,
-						"increment": true,
-						"max": "parentModels",
-						"maxKey": "gun",
-						"unlockedByLocal": "Regular",
-						"availableIn": ["France"]
-					},
-					{
-						"name": "Veteran",
-						"points": 90,
-						"availableIn": ["France"],
-						"requireChooseOneKey": "morale"
-					},
-					{
-						"name": "French Foreign Legion",
-						"points": 1,
-						"perModel": true,
-						"unlockedByLocal": "Veteran",
-						"availableIn": ["France"]
+						"availableIn": [
+							"France",
+							"United States of America"
+						]
 					},
 					{
 						"name": "Additional Men",
@@ -893,7 +1027,10 @@
 						"max": 2,
 						"addsModels": 1,
 						"unlockedByLocal": "Veteran",
-						"availableIn": ["France"]
+						"availableIn": [
+							"France",
+							"United States of America"
+						]
 					},
 					{
 						"name": "NCO SMG",
@@ -902,8 +1039,11 @@
 						"max": "parentModels",
 						"maxKey": "gun",
 						"localLimit": 1,
-						"unlockedByLocal": "Veteran",
-						"availableIn": ["France"]
+						"unlockedByLocal": ["Regular","Veteran"],
+						"availableIn": [
+							"France",
+							"United States of America"
+						]
 					},
 					{
 						"name": "SMGs",
@@ -911,27 +1051,11 @@
 						"increment": true,
 						"max": "parentModels",
 						"maxKey": "gun",
-						"unlockedByLocal": "Veteran",
-						"availableIn": ["France"]
-					},
-					{
-						"name": "NCO Assault Rifle",
-						"points": 0,
-						"increment": true,
-						"max": "parentModels",
-						"maxKey": "gun",
-						"localLimit": 1,
-						"unlockedByLocal": "Veteran",
-						"availableIn": ["France"]
-					},
-					{
-						"name": "Assault Rifles",
-						"points": 0,
-						"increment": true,
-						"max": "parentModels",
-						"maxKey": "gun",
-						"unlockedByLocal": "Veteran",
-						"availableIn": ["France"]
+						"unlockedByLocal": ["Regular","Veteran"],
+						"availableIn": [
+							"France",
+							"United States of America"
+						]
 					},
 					{
 						"name": "NCO Pistol",
@@ -940,8 +1064,11 @@
 						"max": "parentModels",
 						"maxKey": "gun",
 						"localLimit": 1,
-						"unlockedByLocal": "Veteran",
-						"availableIn": ["France"]
+						"unlockedByLocal": ["Regular","Veteran"],
+						"availableIn": [
+							"France",
+							"United States of America"
+						]
 					},
 					{
 						"name": "Pistols",
@@ -949,13 +1076,39 @@
 						"increment": true,
 						"max": "parentModels",
 						"maxKey": "gun",
-						"unlockedByLocal": "Veteran",
+						"unlockedByLocal": ["Regular","Veteran"],
+						"availableIn": [
+							"France",
+							"United States of America"
+						]
+					},
+					{
+						"name": "French Foreign Legion",
+						"points": 1,
+						"perModel": true,
+						"unlockedByLocal": ["Regular","Veteran"],
 						"availableIn": ["France"]
+					},
+					{
+						"name": "US Army",
+						"points": 0,
+						"perModel": true,
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
+						"availableIn": ["United States of America"],
+						"requireChooseOneKey": "branchUS"
+					},
+					{
+						"name": "US Navy",
+						"points": 0,
+						"perModel": true,
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
+						"availableIn": ["United States of America"],
+						"requireChooseOneKey": "branchUS"
 					}
 				],
-				"keywords": ["Infiltrator","Body Armor","First Aid","MOPP"],
+				"keywords": ["Infiltrator","First Aid"],
 				"specialText": "1 Forward Artillery Observer",
-				"equipment": []
+				"equipment": ["Body Armor","MOPP"]
 			},
 			{
 				"name": "Sniper Team",
@@ -967,14 +1120,20 @@
 					},
 					{
 						"all": [{ "in": "Recce Platoon" }, { "in": "France" }]			
+					},
+					{
+						"all": [{ "in": "Rifle Platoon" }, { "in": "United States of America" }]			
+					},
+					{
+						"all": [{ "in": "Recce Platoon" }, { "in": "United States of America" }]			
 					}
 				],
 				"points": 0,
-				"models": 2,
+				"models": 1,
 				"sortPriority": 2,
 				"limits": [
 					{
-						"key": "Sniper",
+						"key": "FAO",
 						"limit": 1,
 						"perParent": true
 					}
@@ -982,148 +1141,123 @@
 				"options": [
 					{
 						"name": "Regular",
-						"points": 52,
-						"availableIn": ["France"],
+						"points": 75,
+						"availableIn": [
+							"France",
+							"United States of America"
+						],
 						"requireChooseOneKey": "morale"
-					},
-					{
-						"name": "French Foreign Legion",
-						"points": 1,
-						"perModel": true,
-						"unlockedByLocal": "Regular",
-						"availableIn": ["France"]
-					},
-					{
-						"name": "NCO SMG",
-						"points": 3,
-						"increment": true,
-						"max": "parentModels",
-						"maxKey": "gun",
-						"localLimit": 1,
-						"unlockedByLocal": "Regular",
-						"availableIn": ["France"]
-					},
-					{
-						"name": "SMGs",
-						"points": 3,
-						"increment": true,
-						"max": "parentModels",
-						"maxKey": "gun",
-						"unlockedByLocal": "Regular",
-						"availableIn": ["France"]
-					},
-					{
-						"name": "NCO Assault Rifle",
-						"points": 0,
-						"increment": true,
-						"max": "parentModels",
-						"maxKey": "gun",
-						"localLimit": 1,
-						"unlockedByLocal": "Regular",
-						"availableIn": ["France"]
-					},
-					{
-						"name": "Assault Rifles",
-						"points": 0,
-						"increment": true,
-						"max": "parentModels",
-						"maxKey": "gun",
-						"unlockedByLocal": "Regular",
-						"availableIn": ["France"]
-					},
-					{
-						"name": "NCO Pistol",
-						"points": -1,
-						"increment": true,
-						"max": "parentModels",
-						"maxKey": "gun",
-						"localLimit": 1,
-						"unlockedByLocal": "Regular",
-						"availableIn": ["France"]
-					},
-					{
-						"name": "Pistols",
-						"points": -1,
-						"increment": true,
-						"max": "parentModels",
-						"maxKey": "gun",
-						"unlockedByLocal": "Regular",
-						"availableIn": ["France"]
 					},
 					{
 						"name": "Veteran",
-						"points": 67,
-						"availableIn": ["France"],
+						"points": 90,
+						"availableIn": [
+							"France",
+							"United States of America"
+						],
 						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Additional Men",
+						"points": 10,
+						"increment": true,
+						"max": 2,
+						"addsModels": 1,
+						"unlockedByLocal": "Regular",
+						"availableIn": [
+							"France",
+							"United States of America"
+						]
+					},
+					{
+						"name": "Additional Men",
+						"points": 13,
+						"increment": true,
+						"max": 2,
+						"addsModels": 1,
+						"unlockedByLocal": "Veteran",
+						"availableIn": [
+							"France",
+							"United States of America"
+						]
+					},
+					{
+						"name": "NCO SMG",
+						"points": 0,
+						"increment": true,
+						"max": "parentModels",
+						"maxKey": "gun",
+						"localLimit": 1,
+						"unlockedByLocal": ["Regular","Veteran"],
+						"availableIn": [
+							"France",
+							"United States of America"
+						]
+					},
+					{
+						"name": "SMGs",
+						"points": 0,
+						"increment": true,
+						"max": "parentModels",
+						"maxKey": "gun",
+						"unlockedByLocal": ["Regular","Veteran"],
+						"availableIn": [
+							"France",
+							"United States of America"
+						]
+					},
+					{
+						"name": "NCO Pistol",
+						"points": 0,
+						"increment": true,
+						"max": "parentModels",
+						"maxKey": "gun",
+						"localLimit": 1,
+						"unlockedByLocal": ["Regular","Veteran"],
+						"availableIn": [
+							"France",
+							"United States of America"
+						]
+					},
+					{
+						"name": "Pistols",
+						"points": 0,
+						"increment": true,
+						"max": "parentModels",
+						"maxKey": "gun",
+						"unlockedByLocal": ["Regular","Veteran"],
+						"availableIn": [
+							"France",
+							"United States of America"
+						]
 					},
 					{
 						"name": "French Foreign Legion",
 						"points": 1,
 						"perModel": true,
-						"unlockedByLocal": "Veteran",
+						"unlockedByLocal": ["Regular","Veteran"],
 						"availableIn": ["France"]
 					},
 					{
-						"name": "NCO SMG",
-						"points": 3,
-						"increment": true,
-						"max": "parentModels",
-						"maxKey": "gun",
-						"localLimit": 1,
-						"unlockedByLocal": "Veteran",
-						"availableIn": ["France"]
-					},
-					{
-						"name": "SMGs",
-						"points": 3,
-						"increment": true,
-						"max": "parentModels",
-						"maxKey": "gun",
-						"unlockedByLocal": "Veteran",
-						"availableIn": ["France"]
-					},
-					{
-						"name": "NCO Assault Rifle",
+						"name": "US Army",
 						"points": 0,
-						"increment": true,
-						"max": "parentModels",
-						"maxKey": "gun",
-						"localLimit": 1,
-						"unlockedByLocal": "Veteran",
-						"availableIn": ["France"]
+						"perModel": true,
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
+						"availableIn": ["United States of America"],
+						"requireChooseOneKey": "branchUS"
 					},
 					{
-						"name": "Assault Rifles",
+						"name": "US Navy",
 						"points": 0,
-						"increment": true,
-						"max": "parentModels",
-						"maxKey": "gun",
-						"unlockedByLocal": "Veteran",
-						"availableIn": ["France"]
-					},
-					{
-						"name": "NCO Pistol",
-						"points": -1,
-						"increment": true,
-						"max": "parentModels",
-						"maxKey": "gun",
-						"localLimit": 1,
-						"unlockedByLocal": "Veteran",
-						"availableIn": ["France"]
-					},
-					{
-						"name": "Pistols",
-						"points": -1,
-						"increment": true,
-						"max": "parentModels",
-						"maxKey": "gun",
-						"unlockedByLocal": "Veteran",
-						"availableIn": ["France"]
+						"perModel": true,
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
+						"availableIn": ["United States of America"],
+						"requireChooseOneKey": "branchUS"
 					}
 				],
-				"keywords": ["Infiltrator","First Aid","MOPP","Sniper","Team Weapon"],
-				"specialText": "1 Sniper\n 1 Spotter",
-				"equipment": []
+				"keywords": ["Infiltrator","First Aid"],
+				"specialText": "1 Forward Artillery Observer",
+				"equipment": ["Body Armor","MOPP"]
 			},
 			{
 				"name": "Carl Gustav / Eryx AT Team",
@@ -1155,24 +1289,10 @@
 						"requireChooseOneKey": "morale"
 					},
 					{
-						"name": "French Foreign Legion",
-						"points": 1,
-						"perModel": true,
-						"unlockedByLocal": "Inexperienced",
-						"availableIn": ["France"]
-					},
-					{
 						"name": "Regular",
 						"points": 60,
 						"availableIn": ["France"],
 						"requireChooseOneKey": "morale"
-					},
-					{
-						"name": "French Foreign Legion",
-						"points": 1,
-						"perModel": true,
-						"unlockedByLocal": "Regular",
-						"availableIn": ["France"]
 					},
 					{
 						"name": "Veteran",
@@ -1184,13 +1304,13 @@
 						"name": "French Foreign Legion",
 						"points": 1,
 						"perModel": true,
-						"unlockedByLocal": "Veteran",
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
 						"availableIn": ["France"]
 					}
 				],
-				"keywords": ["MOPP"],
+				"keywords": [],
 				"specialText": "1 Weapon Operator\n 1 Weapon Assistant",
-				"equipment": ["Infantry ATGM/TOW"]
+				"equipment": ["Infantry ATGM/TOW","MOPP"]
 			},
 			{
 				"name": "Carl Gustav / Eryx AT Team",
@@ -1219,24 +1339,10 @@
 						"requireChooseOneKey": "morale"
 					},
 					{
-						"name": "French Foreign Legion",
-						"points": 1,
-						"perModel": true,
-						"unlockedByLocal": "Inexperienced",
-						"availableIn": ["France"]
-					},
-					{
 						"name": "Regular",
 						"points": 60,
 						"availableIn": ["France"],
 						"requireChooseOneKey": "morale"
-					},
-					{
-						"name": "French Foreign Legion",
-						"points": 1,
-						"perModel": true,
-						"unlockedByLocal": "Regular",
-						"availableIn": ["France"]
 					},
 					{
 						"name": "Veteran",
@@ -1248,13 +1354,13 @@
 						"name": "French Foreign Legion",
 						"points": 1,
 						"perModel": true,
-						"unlockedByLocal": "Veteran",
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
 						"availableIn": ["France"]
 					}
 				],
-				"keywords": ["MOPP"],
+				"keywords": [],
 				"specialText": "1 Weapon Operator\n 1 Weapon Assistant",
-				"equipment": ["Infantry ATGM/TOW"]
+				"equipment": ["Infantry ATGM/TOW","MOPP"]
 			},
 			{
 				"name": "Mistral AA Team",
@@ -1286,24 +1392,10 @@
 						"requireChooseOneKey": "morale"
 					},
 					{
-						"name": "French Foreign Legion",
-						"points": 1,
-						"perModel": true,
-						"unlockedByLocal": "Inexperienced",
-						"availableIn": ["France"]
-					},
-					{
 						"name": "Regular",
 						"points": 35,
 						"availableIn": ["France"],
 						"requireChooseOneKey": "morale"
-					},
-					{
-						"name": "French Foreign Legion",
-						"points": 1,
-						"perModel": true,
-						"unlockedByLocal": "Regular",
-						"availableIn": ["France"]
 					},
 					{
 						"name": "Veteran",
@@ -1315,13 +1407,13 @@
 						"name": "French Foreign Legion",
 						"points": 1,
 						"perModel": true,
-						"unlockedByLocal": "Veteran",
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
 						"availableIn": ["France"]
 					}
 				],
-				"keywords": ["MOPP"],
+				"keywords": [],
 				"specialText": "1 Weapon Operator\n 1 Weapon Assistant",
-				"equipment": ["Infantry SAM"]
+				"equipment": ["Infantry SAM","MOPP"]
 			},
 			{
 				"name": "Mistral AA Team",
@@ -1343,35 +1435,21 @@
 					}
 				],
 				"options": [
-					{
+						{
 						"name": "Inexperienced",
-						"points": 42,
+						"points": 25,
 						"availableIn": ["France"],
 						"requireChooseOneKey": "morale"
-					},
-					{
-						"name": "French Foreign Legion",
-						"points": 1,
-						"perModel": true,
-						"unlockedByLocal": "Inexperienced",
-						"availableIn": ["France"]
 					},
 					{
 						"name": "Regular",
-						"points": 60,
+						"points": 35,
 						"availableIn": ["France"],
 						"requireChooseOneKey": "morale"
-					},
-					{
-						"name": "French Foreign Legion",
-						"points": 1,
-						"perModel": true,
-						"unlockedByLocal": "Regular",
-						"availableIn": ["France"]
 					},
 					{
 						"name": "Veteran",
-						"points": 78,
+						"points": 45,
 						"availableIn": ["France"],
 						"requireChooseOneKey": "morale"
 					},
@@ -1379,13 +1457,13 @@
 						"name": "French Foreign Legion",
 						"points": 1,
 						"perModel": true,
-						"unlockedByLocal": "Veteran",
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
 						"availableIn": ["France"]
 					}
 				],
-				"keywords": ["MOPP"],
+				"keywords": [],
 				"specialText": "1 Weapon Operator\n 1 Weapon Assistant",
-				"equipment": ["Infantry ATGM/TOW"]
+				"equipment": ["Infantry ATGM/TOW","MOPP"]
 			},
 			{
 				"name": "Light Mortar Team",
@@ -1419,24 +1497,10 @@
 						"requireChooseOneKey": "morale"
 					},
 					{
-						"name": "French Foreign Legion",
-						"points": 1,
-						"perModel": true,
-						"unlockedByLocal": "Inexperienced",
-						"availableIn": ["France"]
-					},
-					{
 						"name": "Regular",
 						"points": 35,
 						"availableIn": ["France"],
 						"requireChooseOneKey": "morale"
-					},
-					{
-						"name": "French Foreign Legion",
-						"points": 1,
-						"perModel": true,
-						"unlockedByLocal": "Regular",
-						"availableIn": ["France"]
 					},
 					{
 						"name": "Veteran",
@@ -1448,13 +1512,13 @@
 						"name": "French Foreign Legion",
 						"points": 1,
 						"perModel": true,
-						"unlockedByLocal": "Veteran",
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
 						"availableIn": ["France"]
 					}
 				],
-				"keywords": ["MOPP"],
+				"keywords": [],
 				"specialText": "1 Weapon Operator\n 1 Weapon Assistant",
-				"equipment": ["Light Mortar Team"]
+				"equipment": ["Light Mortar Team","MOPP"]
 			},
 			{
 				"name": "Medium Mortar Team",
@@ -1488,63 +1552,36 @@
 						"requireChooseOneKey": "morale"
 					},
 					{
-						"name": "Spotter",
-						"points": 10,
-						"availableIn": ["France"],
-						"unlockedByLocal": "Inexperienced",
-						"requireChooseOneKey": "morale"
-					},
-					{
-						"name": "French Foreign Legion",
-						"points": 1,
-						"perModel": true,
-						"unlockedByLocal": "Inexperienced",
-						"availableIn": ["France"]
-					},
-					{
 						"name": "Regular",
 						"points": 45,
 						"availableIn": ["France"],
 						"requireChooseOneKey": "morale"
 					},
 					{
-						"name": "Spotter",
-						"points": 10,
-						"availableIn": ["France"],
-						"unlockedByLocal": "Regular",
-						"requireChooseOneKey": "morale"
-					},
-					{
-						"name": "French Foreign Legion",
-						"points": 1,
-						"perModel": true,
-						"unlockedByLocal": "Regular",
-						"availableIn": ["France"]
-					},
-					{
 						"name": "Veteran",
-						"points": 58,
+						"points": 52,
 						"availableIn": ["France"],
 						"requireChooseOneKey": "morale"
 					},
 					{
 						"name": "Spotter",
 						"points": 10,
+						"addsModels": 1,
 						"availableIn": ["France"],
-						"unlockedByLocal": "Veteran",
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
 						"requireChooseOneKey": "morale"
 					},
 					{
 						"name": "French Foreign Legion",
 						"points": 1,
 						"perModel": true,
-						"unlockedByLocal": "Veteran",
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
 						"availableIn": ["France"]
 					}
 				],
-				"keywords": ["MOPP"],
+				"keywords": [],
 				"specialText": "1 Weapon Operator\n 2 Weapon Assistants",
-				"equipment": ["Medium Mortar Team"]
+				"equipment": ["Medium Mortar Team","MOPP"]
 			},
 			{
 				"name": "Heavy Mortar Team",
@@ -1578,63 +1615,36 @@
 						"requireChooseOneKey": "morale"
 					},
 					{
-						"name": "Spotter",
-						"points": 10,
-						"availableIn": ["France"],
-						"unlockedByLocal": "Inexperienced",
-						"requireChooseOneKey": "morale"
-					},
-					{
-						"name": "French Foreign Legion",
-						"points": 1,
-						"perModel": true,
-						"unlockedByLocal": "Inexperienced",
-						"availableIn": ["France"]
-					},
-					{
 						"name": "Regular",
 						"points": 60,
 						"availableIn": ["France"],
 						"requireChooseOneKey": "morale"
 					},
 					{
-						"name": "Spotter",
-						"points": 10,
-						"availableIn": ["France"],
-						"unlockedByLocal": "Regular",
-						"requireChooseOneKey": "morale"
-					},
-					{
-						"name": "French Foreign Legion",
-						"points": 1,
-						"perModel": true,
-						"unlockedByLocal": "Regular",
-						"availableIn": ["France"]
-					},
-					{
 						"name": "Veteran",
-						"points": 78,
+						"points": 68,
 						"availableIn": ["France"],
 						"requireChooseOneKey": "morale"
 					},
 					{
 						"name": "Spotter",
 						"points": 10,
+						"addsModels": 1,
 						"availableIn": ["France"],
-						"unlockedByLocal": "Veteran",
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
 						"requireChooseOneKey": "morale"
 					},
 					{
 						"name": "French Foreign Legion",
 						"points": 1,
 						"perModel": true,
-						"unlockedByLocal": "Veteran",
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
 						"availableIn": ["France"]
 					}
 				],
-				"keywords": ["MOPP"],
+				"keywords": [],
 				"specialText": "1 Weapon Operator\n 3 Weapon Assistants",
-				"equipment": ["Heavy Mortar Team"]
+				"equipment": ["Heavy Mortar Team","MOPP"]
 			},
 			{
 				"name": "Medium Machine Gun Team",
@@ -1668,24 +1678,10 @@
 						"requireChooseOneKey": "morale"
 					},
 					{
-						"name": "French Foreign Legion",
-						"points": 1,
-						"perModel": true,
-						"unlockedByLocal": "Inexperienced",
-						"availableIn": ["France"]
-					},
-					{
 						"name": "Regular",
 						"points": 50,
 						"availableIn": ["France"],
 						"requireChooseOneKey": "morale"
-					},
-					{
-						"name": "French Foreign Legion",
-						"points": 1,
-						"perModel": true,
-						"unlockedByLocal": "Regular",
-						"availableIn": ["France"]
 					},
 					{
 						"name": "Veteran",
@@ -1694,16 +1690,24 @@
 						"requireChooseOneKey": "morale"
 					},
 					{
+						"name": "Spotter",
+						"points": 10,
+						"addsModels": 1,
+						"availableIn": ["France"],
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
+						"requireChooseOneKey": "morale"
+					},
+					{
 						"name": "French Foreign Legion",
 						"points": 1,
 						"perModel": true,
-						"unlockedByLocal": "Veteran",
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
 						"availableIn": ["France"]
 					}
 				],
-				"keywords": ["MOPP"],
+				"keywords": [],
 				"specialText": "1 Weapon Operator\n 2 Weapon Assistants",
-				"equipment": ["MMG Team"]
+				"equipment": ["MMG Team","MOPP"]
 			},
 			{
 				"name": "Heavy Machine Gun Team",
@@ -1737,24 +1741,10 @@
 						"requireChooseOneKey": "morale"
 					},
 					{
-						"name": "French Foreign Legion",
-						"points": 1,
-						"perModel": true,
-						"unlockedByLocal": "Inexperienced",
-						"availableIn": ["France"]
-					},
-					{
 						"name": "Regular",
 						"points": 70,
 						"availableIn": ["France"],
 						"requireChooseOneKey": "morale"
-					},
-					{
-						"name": "French Foreign Legion",
-						"points": 1,
-						"perModel": true,
-						"unlockedByLocal": "Regular",
-						"availableIn": ["France"]
 					},
 					{
 						"name": "Veteran",
@@ -1763,16 +1753,24 @@
 						"requireChooseOneKey": "morale"
 					},
 					{
+						"name": "Spotter",
+						"points": 10,
+						"addsModels": 1,
+						"availableIn": ["France"],
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
+						"requireChooseOneKey": "morale"
+					},
+					{
 						"name": "French Foreign Legion",
 						"points": 1,
 						"perModel": true,
-						"unlockedByLocal": "Veteran",
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
 						"availableIn": ["France"]
 					}
 				],
-				"keywords": ["MOPP"],
+				"keywords": [],
 				"specialText": "1 Weapon Operator\n 3 Weapon Assistants",
-				"equipment": ["HMG Team"]
+				"equipment": ["HMG Team","MOPP"]
 			},
 			{
 				"name": "Infantry Team (300)",
@@ -1801,6 +1799,18 @@
 						"requireChooseOneKey": "morale"
 					},
 					{
+						"name": "Regular",
+						"points": 60,
+						"availableIn": ["France"],
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Veteran",
+						"points": 78,
+						"availableIn": ["France"],
+						"requireChooseOneKey": "morale"
+					},
+					{
 						"name": "Additional Men",
 						"points": 7,
 						"increment": true,
@@ -1810,95 +1820,6 @@
 						"availableIn": ["France"]
 					},
 					{
-						"name": "French Foreign Legion",
-						"points": 1,
-						"perModel": true,
-						"unlockedByLocal": "Inexperienced",
-						"availableIn": ["France"]
-					},
-					{
-						"name": "NCO SMG",
-						"points": 3,
-						"increment": true,
-						"max": "parentModels",
-						"maxKey": "gun",
-						"localLimit": 1,
-						"unlockedByLocal": "Inexperienced",
-						"availableIn": ["France"]
-					},
-					{
-						"name": "SMGs",
-						"points": 4,
-						"increment": true,
-						"max": "parentModels",
-						"maxKey": "gun",
-						"unlockedByLocal": "Inexperienced",
-						"availableIn": ["France"]
-					},
-					{
-						"name": "NCO Assault Rifle",
-						"points": 0,
-						"increment": true,
-						"max": "parentModels",
-						"maxKey": "gun",
-						"localLimit": 1,
-						"unlockedByLocal": "Inexperienced",
-						"availableIn": ["France"]
-					},
-					{
-						"name": "Assault Rifles",
-						"points": 0,
-						"increment": true,
-						"max": "parentModels",
-						"maxKey": "gun",
-						"unlockedByLocal": "Inexperienced",
-						"availableIn": ["France"]
-					},
-					{
-						"name": "NCO Pistol",
-						"points": -1,
-						"increment": true,
-						"max": "parentModels",
-						"maxKey": "gun",
-						"localLimit": 1,
-						"unlockedByLocal": "Inexperienced",
-						"availableIn": ["France"]
-					},
-					{
-						"name": "NCO Shotgun",
-						"points": 4,
-						"increment": true,
-						"max": "parentModels",
-						"maxKey": "gun",
-						"localLimit": 1,
-						"unlockedByLocal": "Inexperienced",
-						"availableIn": ["France"]
-					},
-					{
-						"name": "Shotgun",
-						"points": 4,
-						"increment": true,
-						"max": "parentModels",
-						"maxKey": "gun",
-						"unlockedByLocal": "Inexperienced",
-						"availableIn": ["France"]
-					},
-					{
-						"name": "Carl Gustav",
-						"points": 4,
-						"increment": true,
-						"max": 1,
-						"maxKey": "gun",
-						"unlockedByLocal": "Inexperienced",
-						"availableIn": ["France"]
-					},
-					{
-						"name": "Regular",
-						"points": 60,
-						"availableIn": ["France"],
-						"requireChooseOneKey": "morale"
-					},
-					{
 						"name": "Additional Men",
 						"points": 10,
 						"increment": true,
@@ -1906,95 +1827,6 @@
 						"addsModels": 1,
 						"unlockedByLocal": "Regular",
 						"availableIn": ["France"]
-					},
-					{
-						"name": "French Foreign Legion",
-						"points": 1,
-						"perModel": true,
-						"unlockedByLocal": "Regular",
-						"availableIn": ["France"]
-					},
-					{
-						"name": "NCO SMG",
-						"points": 3,
-						"increment": true,
-						"max": "parentModels",
-						"maxKey": "gun",
-						"localLimit": 1,
-						"unlockedByLocal": "Regular",
-						"availableIn": ["France"]
-					},
-					{
-						"name": "SMGs",
-						"points": 4,
-						"increment": true,
-						"max": "parentModels",
-						"maxKey": "gun",
-						"unlockedByLocal": "Regular",
-						"availableIn": ["France"]
-					},
-					{
-						"name": "NCO Assault Rifle",
-						"points": 0,
-						"increment": true,
-						"max": "parentModels",
-						"maxKey": "gun",
-						"localLimit": 1,
-						"unlockedByLocal": "Regular",
-						"availableIn": ["France"]
-					},
-					{
-						"name": "Assault Rifles",
-						"points": 0,
-						"increment": true,
-						"max": "parentModels",
-						"maxKey": "gun",
-						"unlockedByLocal": "Regular",
-						"availableIn": ["France"]
-					},
-					{
-						"name": "NCO Pistol",
-						"points": -1,
-						"increment": true,
-						"max": "parentModels",
-						"maxKey": "gun",
-						"localLimit": 1,
-						"unlockedByLocal": "Regular",
-						"availableIn": ["France"]
-					},
-					{
-						"name": "NCO Shotgun",
-						"points": 4,
-						"increment": true,
-						"max": "parentModels",
-						"maxKey": "gun",
-						"localLimit": 1,
-						"unlockedByLocal": "Regular",
-						"availableIn": ["France"]
-					},
-					{
-						"name": "Shotgun",
-						"points": 4,
-						"increment": true,
-						"max": "parentModels",
-						"maxKey": "gun",
-						"unlockedByLocal": "Regular",
-						"availableIn": ["France"]
-					},
-					{
-						"name": "Carl Gustav",
-						"points": 4,
-						"increment": true,
-						"max": 1,
-						"maxKey": "gun",
-						"unlockedByLocal": "Regular",
-						"availableIn": ["France"]
-					},
-					{
-						"name": "Veteran",
-						"points": 78,
-						"availableIn": ["France"],
-						"requireChooseOneKey": "morale"
 					},
 					{
 						"name": "Additional Men",
@@ -2009,7 +1841,7 @@
 						"name": "French Foreign Legion",
 						"points": 1,
 						"perModel": true,
-						"unlockedByLocal": "Veteran",
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
 						"availableIn": ["France"]
 					},
 					{
@@ -2019,7 +1851,7 @@
 						"max": "parentModels",
 						"maxKey": "gun",
 						"localLimit": 1,
-						"unlockedByLocal": "Veteran",
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
 						"availableIn": ["France"]
 					},
 					{
@@ -2028,26 +1860,7 @@
 						"increment": true,
 						"max": "parentModels",
 						"maxKey": "gun",
-						"unlockedByLocal": "Veteran",
-						"availableIn": ["France"]
-					},
-					{
-						"name": "NCO Assault Rifle",
-						"points": 0,
-						"increment": true,
-						"max": "parentModels",
-						"maxKey": "gun",
-						"localLimit": 1,
-						"unlockedByLocal": "Veteran",
-						"availableIn": ["France"]
-					},
-					{
-						"name": "Assault Rifles",
-						"points": 0,
-						"increment": true,
-						"max": "parentModels",
-						"maxKey": "gun",
-						"unlockedByLocal": "Veteran",
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
 						"availableIn": ["France"]
 					},
 					{
@@ -2057,7 +1870,7 @@
 						"max": "parentModels",
 						"maxKey": "gun",
 						"localLimit": 1,
-						"unlockedByLocal": "Veteran",
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
 						"availableIn": ["France"]
 					},
 					{
@@ -2067,7 +1880,7 @@
 						"max": "parentModels",
 						"maxKey": "gun",
 						"localLimit": 1,
-						"unlockedByLocal": "Veteran",
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
 						"availableIn": ["France"]
 					},
 					{
@@ -2076,7 +1889,7 @@
 						"increment": true,
 						"max": "parentModels",
 						"maxKey": "gun",
-						"unlockedByLocal": "Veteran",
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
 						"availableIn": ["France"]
 					},
 					{
@@ -2085,13 +1898,13 @@
 						"increment": true,
 						"max": 1,
 						"maxKey": "gun",
-						"unlockedByLocal": "Veteran",
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
 						"availableIn": ["France"]
 					}
 				],
-				"keywords": ["Body Armor","First Aid","Grenades","MOPP"],
+				"keywords": ["First Aid"],
 				"specialText": "1 NCO\n 2 Soldiers",
-				"equipment": []
+				"equipment": ["Body Armor","Assault Rifles","Grenades","MOPP"]
 			},
 			{
 				"name": "Infantry Team (300)",
@@ -2120,6 +1933,18 @@
 						"requireChooseOneKey": "morale"
 					},
 					{
+						"name": "Regular",
+						"points": 60,
+						"availableIn": ["France"],
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Veteran",
+						"points": 78,
+						"availableIn": ["France"],
+						"requireChooseOneKey": "morale"
+					},
+					{
 						"name": "Additional Men",
 						"points": 7,
 						"increment": true,
@@ -2129,95 +1954,6 @@
 						"availableIn": ["France"]
 					},
 					{
-						"name": "French Foreign Legion",
-						"points": 1,
-						"perModel": true,
-						"unlockedByLocal": "Inexperienced",
-						"availableIn": ["France"]
-					},
-					{
-						"name": "NCO SMG",
-						"points": 3,
-						"increment": true,
-						"max": "parentModels",
-						"maxKey": "gun",
-						"localLimit": 1,
-						"unlockedByLocal": "Inexperienced",
-						"availableIn": ["France"]
-					},
-					{
-						"name": "SMGs",
-						"points": 4,
-						"increment": true,
-						"max": "parentModels",
-						"maxKey": "gun",
-						"unlockedByLocal": "Inexperienced",
-						"availableIn": ["France"]
-					},
-					{
-						"name": "NCO Assault Rifle",
-						"points": 0,
-						"increment": true,
-						"max": "parentModels",
-						"maxKey": "gun",
-						"localLimit": 1,
-						"unlockedByLocal": "Inexperienced",
-						"availableIn": ["France"]
-					},
-					{
-						"name": "Assault Rifles",
-						"points": 0,
-						"increment": true,
-						"max": "parentModels",
-						"maxKey": "gun",
-						"unlockedByLocal": "Inexperienced",
-						"availableIn": ["France"]
-					},
-					{
-						"name": "NCO Pistol",
-						"points": -1,
-						"increment": true,
-						"max": "parentModels",
-						"maxKey": "gun",
-						"localLimit": 1,
-						"unlockedByLocal": "Inexperienced",
-						"availableIn": ["France"]
-					},
-					{
-						"name": "NCO Shotgun",
-						"points": 4,
-						"increment": true,
-						"max": "parentModels",
-						"maxKey": "gun",
-						"localLimit": 1,
-						"unlockedByLocal": "Inexperienced",
-						"availableIn": ["France"]
-					},
-					{
-						"name": "Shotgun",
-						"points": 4,
-						"increment": true,
-						"max": "parentModels",
-						"maxKey": "gun",
-						"unlockedByLocal": "Inexperienced",
-						"availableIn": ["France"]
-					},
-					{
-						"name": "Carl Gustav",
-						"points": 4,
-						"increment": true,
-						"max": 1,
-						"maxKey": "gun",
-						"unlockedByLocal": "Inexperienced",
-						"availableIn": ["France"]
-					},
-					{
-						"name": "Regular",
-						"points": 60,
-						"availableIn": ["France"],
-						"requireChooseOneKey": "morale"
-					},
-					{
 						"name": "Additional Men",
 						"points": 10,
 						"increment": true,
@@ -2225,95 +1961,6 @@
 						"addsModels": 1,
 						"unlockedByLocal": "Regular",
 						"availableIn": ["France"]
-					},
-					{
-						"name": "French Foreign Legion",
-						"points": 1,
-						"perModel": true,
-						"unlockedByLocal": "Regular",
-						"availableIn": ["France"]
-					},
-					{
-						"name": "NCO SMG",
-						"points": 3,
-						"increment": true,
-						"max": "parentModels",
-						"maxKey": "gun",
-						"localLimit": 1,
-						"unlockedByLocal": "Regular",
-						"availableIn": ["France"]
-					},
-					{
-						"name": "SMGs",
-						"points": 4,
-						"increment": true,
-						"max": "parentModels",
-						"maxKey": "gun",
-						"unlockedByLocal": "Regular",
-						"availableIn": ["France"]
-					},
-					{
-						"name": "NCO Assault Rifle",
-						"points": 0,
-						"increment": true,
-						"max": "parentModels",
-						"maxKey": "gun",
-						"localLimit": 1,
-						"unlockedByLocal": "Regular",
-						"availableIn": ["France"]
-					},
-					{
-						"name": "Assault Rifles",
-						"points": 0,
-						"increment": true,
-						"max": "parentModels",
-						"maxKey": "gun",
-						"unlockedByLocal": "Regular",
-						"availableIn": ["France"]
-					},
-					{
-						"name": "NCO Pistol",
-						"points": -1,
-						"increment": true,
-						"max": "parentModels",
-						"maxKey": "gun",
-						"localLimit": 1,
-						"unlockedByLocal": "Regular",
-						"availableIn": ["France"]
-					},
-					{
-						"name": "NCO Shotgun",
-						"points": 4,
-						"increment": true,
-						"max": "parentModels",
-						"maxKey": "gun",
-						"localLimit": 1,
-						"unlockedByLocal": "Regular",
-						"availableIn": ["France"]
-					},
-					{
-						"name": "Shotgun",
-						"points": 4,
-						"increment": true,
-						"max": "parentModels",
-						"maxKey": "gun",
-						"unlockedByLocal": "Regular",
-						"availableIn": ["France"]
-					},
-					{
-						"name": "Carl Gustav",
-						"points": 4,
-						"increment": true,
-						"max": 1,
-						"maxKey": "gun",
-						"unlockedByLocal": "Regular",
-						"availableIn": ["France"]
-					},
-					{
-						"name": "Veteran",
-						"points": 78,
-						"availableIn": ["France"],
-						"requireChooseOneKey": "morale"
 					},
 					{
 						"name": "Additional Men",
@@ -2328,7 +1975,7 @@
 						"name": "French Foreign Legion",
 						"points": 1,
 						"perModel": true,
-						"unlockedByLocal": "Veteran",
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
 						"availableIn": ["France"]
 					},
 					{
@@ -2338,7 +1985,7 @@
 						"max": "parentModels",
 						"maxKey": "gun",
 						"localLimit": 1,
-						"unlockedByLocal": "Veteran",
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
 						"availableIn": ["France"]
 					},
 					{
@@ -2347,26 +1994,7 @@
 						"increment": true,
 						"max": "parentModels",
 						"maxKey": "gun",
-						"unlockedByLocal": "Veteran",
-						"availableIn": ["France"]
-					},
-					{
-						"name": "NCO Assault Rifle",
-						"points": 0,
-						"increment": true,
-						"max": "parentModels",
-						"maxKey": "gun",
-						"localLimit": 1,
-						"unlockedByLocal": "Veteran",
-						"availableIn": ["France"]
-					},
-					{
-						"name": "Assault Rifles",
-						"points": 0,
-						"increment": true,
-						"max": "parentModels",
-						"maxKey": "gun",
-						"unlockedByLocal": "Veteran",
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
 						"availableIn": ["France"]
 					},
 					{
@@ -2376,7 +2004,7 @@
 						"max": "parentModels",
 						"maxKey": "gun",
 						"localLimit": 1,
-						"unlockedByLocal": "Veteran",
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
 						"availableIn": ["France"]
 					},
 					{
@@ -2386,7 +2014,7 @@
 						"max": "parentModels",
 						"maxKey": "gun",
 						"localLimit": 1,
-						"unlockedByLocal": "Veteran",
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
 						"availableIn": ["France"]
 					},
 					{
@@ -2395,7 +2023,7 @@
 						"increment": true,
 						"max": "parentModels",
 						"maxKey": "gun",
-						"unlockedByLocal": "Veteran",
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
 						"availableIn": ["France"]
 					},
 					{
@@ -2404,13 +2032,13 @@
 						"increment": true,
 						"max": 1,
 						"maxKey": "gun",
-						"unlockedByLocal": "Veteran",
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
 						"availableIn": ["France"]
 					}
 				],
-				"keywords": ["Body Armor","First Aid","Grenades","MOPP"],
+				"keywords": ["First Aid"],
 				"specialText": "1 NCO\n 2 Soldiers",
-				"equipment": []
+				"equipment": ["Body Armor","Grenades","MOPP","Assault Rifles"]
 			},
 			{
 				"name": "Infantry Team (600)",
@@ -2439,6 +2067,18 @@
 						"requireChooseOneKey": "morale"
 					},
 					{
+						"name": "Regular",
+						"points": 63,
+						"availableIn": ["France"],
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Veteran",
+						"points": 81,
+						"availableIn": ["France"],
+						"requireChooseOneKey": "morale"
+					},
+					{
 						"name": "Additional Men",
 						"points": 7,
 						"increment": true,
@@ -2448,103 +2088,6 @@
 						"availableIn": ["France"]
 					},
 					{
-						"name": "French Foreign Legion",
-						"points": 1,
-						"perModel": true,
-						"unlockedByLocal": "Inexperienced",
-						"availableIn": ["France"]
-					},
-					{
-						"name": "NCO SMG",
-						"points": 3,
-						"increment": true,
-						"max": "parentModels",
-						"maxKey": "gun",
-						"localLimit": 1,
-						"unlockedByLocal": "Inexperienced",
-						"availableIn": ["France"]
-					},
-					{
-						"name": "SMGs",
-						"points": 4,
-						"increment": true,
-						"max": "parentModels",
-						"maxKey": "gun",
-						"unlockedByLocal": "Inexperienced",
-						"availableIn": ["France"]
-					},
-					{
-						"name": "NCO Assault Rifle",
-						"points": 0,
-						"increment": true,
-						"max": "parentModels",
-						"maxKey": "gun",
-						"localLimit": 1,
-						"unlockedByLocal": "Inexperienced",
-						"availableIn": ["France"]
-					},
-					{
-						"name": "Assault Rifles",
-						"points": 0,
-						"increment": true,
-						"max": "parentModels",
-						"maxKey": "gun",
-						"unlockedByLocal": "Inexperienced",
-						"availableIn": ["France"]
-					},
-					{
-						"name": "NCO Pistol",
-						"points": -1,
-						"increment": true,
-						"max": "parentModels",
-						"maxKey": "gun",
-						"localLimit": 1,
-						"unlockedByLocal": "Inexperienced",
-						"availableIn": ["France"]
-					},
-					{
-						"name": "NCO Shotgun",
-						"points": 4,
-						"increment": true,
-						"max": "parentModels",
-						"maxKey": "gun",
-						"localLimit": 1,
-						"unlockedByLocal": "Inexperienced",
-						"availableIn": ["France"]
-					},
-					{
-						"name": "Shotgun",
-						"points": 4,
-						"increment": true,
-						"max": "parentModels",
-						"maxKey": "gun",
-						"unlockedByLocal": "Inexperienced",
-						"availableIn": ["France"]
-					},
-					{
-						"name": "LMG / Squad Weapon",
-						"points": 4,
-						"increment": true,
-						"max": 1,
-						"maxKey": "gun",
-						"unlockedByLocal": "Inexperienced",
-						"availableIn": ["France"]
-					},
-					{
-						"name": "Grenade Launcher",
-						"points": 4,
-						"increment": true,
-						"max": 1,
-						"unlockedByLocal": "Inexperienced",
-						"availableIn": ["France"]
-					},
-					{
-						"name": "Regular",
-						"points": 63,
-						"availableIn": ["France"],
-						"requireChooseOneKey": "morale"
-					},
-					{
 						"name": "Additional Men",
 						"points": 10,
 						"increment": true,
@@ -2552,103 +2095,6 @@
 						"addsModels": 1,
 						"unlockedByLocal": "Regular",
 						"availableIn": ["France"]
-					},
-					{
-						"name": "French Foreign Legion",
-						"points": 1,
-						"perModel": true,
-						"unlockedByLocal": "Regular",
-						"availableIn": ["France"]
-					},
-					{
-						"name": "NCO SMG",
-						"points": 3,
-						"increment": true,
-						"max": "parentModels",
-						"maxKey": "gun",
-						"localLimit": 1,
-						"unlockedByLocal": "Regular",
-						"availableIn": ["France"]
-					},
-					{
-						"name": "SMGs",
-						"points": 4,
-						"increment": true,
-						"max": "parentModels",
-						"maxKey": "gun",
-						"unlockedByLocal": "Regular",
-						"availableIn": ["France"]
-					},
-					{
-						"name": "NCO Assault Rifle",
-						"points": 0,
-						"increment": true,
-						"max": "parentModels",
-						"maxKey": "gun",
-						"localLimit": 1,
-						"unlockedByLocal": "Regular",
-						"availableIn": ["France"]
-					},
-					{
-						"name": "Assault Rifles",
-						"points": 0,
-						"increment": true,
-						"max": "parentModels",
-						"maxKey": "gun",
-						"unlockedByLocal": "Regular",
-						"availableIn": ["France"]
-					},
-					{
-						"name": "NCO Pistol",
-						"points": -1,
-						"increment": true,
-						"max": "parentModels",
-						"maxKey": "gun",
-						"localLimit": 1,
-						"unlockedByLocal": "Regular",
-						"availableIn": ["France"]
-					},
-					{
-						"name": "NCO Shotgun",
-						"points": 4,
-						"increment": true,
-						"max": "parentModels",
-						"maxKey": "gun",
-						"localLimit": 1,
-						"unlockedByLocal": "Regular",
-						"availableIn": ["France"]
-					},
-					{
-						"name": "Shotgun",
-						"points": 4,
-						"increment": true,
-						"max": "parentModels",
-						"maxKey": "gun",
-						"unlockedByLocal": "Regular",
-						"availableIn": ["France"]
-					},
-					{
-						"name": "LMG / Squad Weapon",
-						"points": 4,
-						"increment": true,
-						"max": 1,
-						"maxKey": "gun",
-						"unlockedByLocal": "Regular",
-						"availableIn": ["France"]
-					},
-					{
-						"name": "Grenade Launcher",
-						"points": 4,
-						"increment": true,
-						"max": 1,
-						"unlockedByLocal": "Regular",
-						"availableIn": ["France"]
-					},
-					{
-						"name": "Veteran",
-						"points": 81,
-						"availableIn": ["France"],
-						"requireChooseOneKey": "morale"
 					},
 					{
 						"name": "Additional Men",
@@ -2663,7 +2109,7 @@
 						"name": "French Foreign Legion",
 						"points": 1,
 						"perModel": true,
-						"unlockedByLocal": "Veteran",
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
 						"availableIn": ["France"]
 					},
 					{
@@ -2673,7 +2119,7 @@
 						"max": "parentModels",
 						"maxKey": "gun",
 						"localLimit": 1,
-						"unlockedByLocal": "Veteran",
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
 						"availableIn": ["France"]
 					},
 					{
@@ -2682,26 +2128,7 @@
 						"increment": true,
 						"max": "parentModels",
 						"maxKey": "gun",
-						"unlockedByLocal": "Veteran",
-						"availableIn": ["France"]
-					},
-					{
-						"name": "NCO Assault Rifle",
-						"points": 0,
-						"increment": true,
-						"max": "parentModels",
-						"maxKey": "gun",
-						"localLimit": 1,
-						"unlockedByLocal": "Veteran",
-						"availableIn": ["France"]
-					},
-					{
-						"name": "Assault Rifles",
-						"points": 0,
-						"increment": true,
-						"max": "parentModels",
-						"maxKey": "gun",
-						"unlockedByLocal": "Veteran",
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
 						"availableIn": ["France"]
 					},
 					{
@@ -2711,7 +2138,7 @@
 						"max": "parentModels",
 						"maxKey": "gun",
 						"localLimit": 1,
-						"unlockedByLocal": "Veteran",
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
 						"availableIn": ["France"]
 					},
 					{
@@ -2721,7 +2148,7 @@
 						"max": "parentModels",
 						"maxKey": "gun",
 						"localLimit": 1,
-						"unlockedByLocal": "Veteran",
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
 						"availableIn": ["France"]
 					},
 					{
@@ -2730,7 +2157,7 @@
 						"increment": true,
 						"max": "parentModels",
 						"maxKey": "gun",
-						"unlockedByLocal": "Veteran",
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
 						"availableIn": ["France"]
 					},
 					{
@@ -2739,7 +2166,7 @@
 						"increment": true,
 						"max": 1,
 						"maxKey": "gun",
-						"unlockedByLocal": "Veteran",
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
 						"availableIn": ["France"]
 					},
 					{
@@ -2747,13 +2174,13 @@
 						"points": 4,
 						"increment": true,
 						"max": 1,
-						"unlockedByLocal": "Veteran",
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
 						"availableIn": ["France"]
 					}
 				],
-				"keywords": ["Body Armor","First Aid","Grenades","MOPP"],
+				"keywords": ["First Aid"],
 				"specialText": "1 NCO\n 2 Soldiers",
-				"equipment": []
+				"equipment": ["Body Armor","Assault Rifles","Grenades","MOPP"]
 			},
 			{
 				"name": "Infantry Team (600)",
@@ -2782,6 +2209,18 @@
 						"requireChooseOneKey": "morale"
 					},
 					{
+						"name": "Regular",
+						"points": 63,
+						"availableIn": ["France"],
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Veteran",
+						"points": 81,
+						"availableIn": ["France"],
+						"requireChooseOneKey": "morale"
+					},
+					{
 						"name": "Additional Men",
 						"points": 7,
 						"increment": true,
@@ -2791,103 +2230,6 @@
 						"availableIn": ["France"]
 					},
 					{
-						"name": "French Foreign Legion",
-						"points": 1,
-						"perModel": true,
-						"unlockedByLocal": "Inexperienced",
-						"availableIn": ["France"]
-					},
-					{
-						"name": "NCO SMG",
-						"points": 3,
-						"increment": true,
-						"max": "parentModels",
-						"maxKey": "gun",
-						"localLimit": 1,
-						"unlockedByLocal": "Inexperienced",
-						"availableIn": ["France"]
-					},
-					{
-						"name": "SMGs",
-						"points": 4,
-						"increment": true,
-						"max": "parentModels",
-						"maxKey": "gun",
-						"unlockedByLocal": "Inexperienced",
-						"availableIn": ["France"]
-					},
-					{
-						"name": "NCO Assault Rifle",
-						"points": 0,
-						"increment": true,
-						"max": "parentModels",
-						"maxKey": "gun",
-						"localLimit": 1,
-						"unlockedByLocal": "Inexperienced",
-						"availableIn": ["France"]
-					},
-					{
-						"name": "Assault Rifles",
-						"points": 0,
-						"increment": true,
-						"max": "parentModels",
-						"maxKey": "gun",
-						"unlockedByLocal": "Inexperienced",
-						"availableIn": ["France"]
-					},
-					{
-						"name": "NCO Pistol",
-						"points": -1,
-						"increment": true,
-						"max": "parentModels",
-						"maxKey": "gun",
-						"localLimit": 1,
-						"unlockedByLocal": "Inexperienced",
-						"availableIn": ["France"]
-					},
-					{
-						"name": "NCO Shotgun",
-						"points": 4,
-						"increment": true,
-						"max": "parentModels",
-						"maxKey": "gun",
-						"localLimit": 1,
-						"unlockedByLocal": "Inexperienced",
-						"availableIn": ["France"]
-					},
-					{
-						"name": "Shotgun",
-						"points": 4,
-						"increment": true,
-						"max": "parentModels",
-						"maxKey": "gun",
-						"unlockedByLocal": "Inexperienced",
-						"availableIn": ["France"]
-					},
-					{
-						"name": "LMG / Squad Weapon",
-						"points": 4,
-						"increment": true,
-						"max": 1,
-						"maxKey": "gun",
-						"unlockedByLocal": "Inexperienced",
-						"availableIn": ["France"]
-					},
-					{
-						"name": "Grenade Launcher",
-						"points": 4,
-						"increment": true,
-						"max": 1,
-						"unlockedByLocal": "Inexperienced",
-						"availableIn": ["France"]
-					},
-					{
-						"name": "Regular",
-						"points": 63,
-						"availableIn": ["France"],
-						"requireChooseOneKey": "morale"
-					},
-					{
 						"name": "Additional Men",
 						"points": 10,
 						"increment": true,
@@ -2895,103 +2237,6 @@
 						"addsModels": 1,
 						"unlockedByLocal": "Regular",
 						"availableIn": ["France"]
-					},
-					{
-						"name": "French Foreign Legion",
-						"points": 1,
-						"perModel": true,
-						"unlockedByLocal": "Regular",
-						"availableIn": ["France"]
-					},
-					{
-						"name": "NCO SMG",
-						"points": 3,
-						"increment": true,
-						"max": "parentModels",
-						"maxKey": "gun",
-						"localLimit": 1,
-						"unlockedByLocal": "Regular",
-						"availableIn": ["France"]
-					},
-					{
-						"name": "SMGs",
-						"points": 4,
-						"increment": true,
-						"max": "parentModels",
-						"maxKey": "gun",
-						"unlockedByLocal": "Regular",
-						"availableIn": ["France"]
-					},
-					{
-						"name": "NCO Assault Rifle",
-						"points": 0,
-						"increment": true,
-						"max": "parentModels",
-						"maxKey": "gun",
-						"localLimit": 1,
-						"unlockedByLocal": "Regular",
-						"availableIn": ["France"]
-					},
-					{
-						"name": "Assault Rifles",
-						"points": 0,
-						"increment": true,
-						"max": "parentModels",
-						"maxKey": "gun",
-						"unlockedByLocal": "Regular",
-						"availableIn": ["France"]
-					},
-					{
-						"name": "NCO Pistol",
-						"points": -1,
-						"increment": true,
-						"max": "parentModels",
-						"maxKey": "gun",
-						"localLimit": 1,
-						"unlockedByLocal": "Regular",
-						"availableIn": ["France"]
-					},
-					{
-						"name": "NCO Shotgun",
-						"points": 4,
-						"increment": true,
-						"max": "parentModels",
-						"maxKey": "gun",
-						"localLimit": 1,
-						"unlockedByLocal": "Regular",
-						"availableIn": ["France"]
-					},
-					{
-						"name": "Shotgun",
-						"points": 4,
-						"increment": true,
-						"max": "parentModels",
-						"maxKey": "gun",
-						"unlockedByLocal": "Regular",
-						"availableIn": ["France"]
-					},
-					{
-						"name": "LMG / Squad Weapon",
-						"points": 4,
-						"increment": true,
-						"max": 1,
-						"maxKey": "gun",
-						"unlockedByLocal": "Regular",
-						"availableIn": ["France"]
-					},
-					{
-						"name": "Grenade Launcher",
-						"points": 4,
-						"increment": true,
-						"max": 1,
-						"unlockedByLocal": "Regular",
-						"availableIn": ["France"]
-					},
-					{
-						"name": "Veteran",
-						"points": 81,
-						"availableIn": ["France"],
-						"requireChooseOneKey": "morale"
 					},
 					{
 						"name": "Additional Men",
@@ -3006,7 +2251,7 @@
 						"name": "French Foreign Legion",
 						"points": 1,
 						"perModel": true,
-						"unlockedByLocal": "Veteran",
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
 						"availableIn": ["France"]
 					},
 					{
@@ -3016,7 +2261,7 @@
 						"max": "parentModels",
 						"maxKey": "gun",
 						"localLimit": 1,
-						"unlockedByLocal": "Veteran",
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
 						"availableIn": ["France"]
 					},
 					{
@@ -3025,26 +2270,7 @@
 						"increment": true,
 						"max": "parentModels",
 						"maxKey": "gun",
-						"unlockedByLocal": "Veteran",
-						"availableIn": ["France"]
-					},
-					{
-						"name": "NCO Assault Rifle",
-						"points": 0,
-						"increment": true,
-						"max": "parentModels",
-						"maxKey": "gun",
-						"localLimit": 1,
-						"unlockedByLocal": "Veteran",
-						"availableIn": ["France"]
-					},
-					{
-						"name": "Assault Rifles",
-						"points": 0,
-						"increment": true,
-						"max": "parentModels",
-						"maxKey": "gun",
-						"unlockedByLocal": "Veteran",
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
 						"availableIn": ["France"]
 					},
 					{
@@ -3054,7 +2280,7 @@
 						"max": "parentModels",
 						"maxKey": "gun",
 						"localLimit": 1,
-						"unlockedByLocal": "Veteran",
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
 						"availableIn": ["France"]
 					},
 					{
@@ -3064,7 +2290,7 @@
 						"max": "parentModels",
 						"maxKey": "gun",
 						"localLimit": 1,
-						"unlockedByLocal": "Veteran",
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
 						"availableIn": ["France"]
 					},
 					{
@@ -3073,7 +2299,7 @@
 						"increment": true,
 						"max": "parentModels",
 						"maxKey": "gun",
-						"unlockedByLocal": "Veteran",
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
 						"availableIn": ["France"]
 					},
 					{
@@ -3082,7 +2308,7 @@
 						"increment": true,
 						"max": 1,
 						"maxKey": "gun",
-						"unlockedByLocal": "Veteran",
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
 						"availableIn": ["France"]
 					},
 					{
@@ -3090,13 +2316,13 @@
 						"points": 4,
 						"increment": true,
 						"max": 1,
-						"unlockedByLocal": "Veteran",
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
 						"availableIn": ["France"]
 					}
 				],
-				"keywords": ["Body Armor","First Aid","Grenades","MOPP"],
+				"keywords": ["First Aid"],
 				"specialText": "1 NCO\n 2 Soldiers",
-				"equipment": []
+				"equipment": ["Body Armor","Assault Rifles","Grenades","MOPP"]
 			},
 			{
 				"name": "Commandos Marine",
@@ -3160,25 +2386,6 @@
 						"availableIn": ["France"]
 					},
 					{
-						"name": "NCO Assault Rifle",
-						"points": 0,
-						"increment": true,
-						"max": "parentModels",
-						"maxKey": "gun",
-						"localLimit": 1,
-						"unlockedByLocal": "Veteran",
-						"availableIn": ["France"]
-					},
-					{
-						"name": "Assault Rifles",
-						"points": 0,
-						"increment": true,
-						"max": "parentModels",
-						"maxKey": "gun",
-						"unlockedByLocal": "Veteran",
-						"availableIn": ["France"]
-					},
-					{
 						"name": "NCO Pistol",
 						"points": -1,
 						"increment": true,
@@ -3208,9 +2415,9 @@
 						"availableIn": ["France"]
 					}
 				],
-				"keywords": ["Body Armor","First Aid","Grenades","Elite","Night Vision","Air Assault","Infiltrator"],
+				"keywords": ["First Aid","Elite","Air Assault","Infiltrator"],
 				"specialText": "1 NCO\n 3 Soldiers",
-				"equipment": []
+				"equipment": ["Body Armor","Assault Rifles","Grenades","Night Vision"]
 			},
 			{
 				"name": "Commandos Marine",
@@ -3274,25 +2481,6 @@
 						"availableIn": ["France"]
 					},
 					{
-						"name": "NCO Assault Rifle",
-						"points": 0,
-						"increment": true,
-						"max": "parentModels",
-						"maxKey": "gun",
-						"localLimit": 1,
-						"unlockedByLocal": "Veteran",
-						"availableIn": ["France"]
-					},
-					{
-						"name": "Assault Rifles",
-						"points": 0,
-						"increment": true,
-						"max": "parentModels",
-						"maxKey": "gun",
-						"unlockedByLocal": "Veteran",
-						"availableIn": ["France"]
-					},
-					{
 						"name": "NCO Pistol",
 						"points": -1,
 						"increment": true,
@@ -3322,9 +2510,9 @@
 						"availableIn": ["France"]
 					}
 				],
-				"keywords": ["Body Armor","First Aid","Grenades","Elite","Night Vision","Air Assault","Infiltrator"],
+				"keywords": ["First Aid","Elite","Air Assault","Infiltrator"],
 				"specialText": "1 NCO\n 3 Soldiers",
-				"equipment": []
+				"equipment": ["Body Armor","Assault Rifles","Grenades","Night Vision"]
 			},
 			{
 				"name": "TRF1 Heavy Howitzer",
@@ -3363,11 +2551,443 @@
 						"points": 178,
 						"availableIn": ["France"],
 						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Spotter",
+						"points": 10,
+						"addsModels": 1,
+						"availableIn": ["France"],
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
+						"requireChooseOneKey": "morale"
 					}
 				],
 				"keywords": ["MOPP"],
 				"specialText": "8 Crew Members",
 				"equipment": []
+			},
+			{
+				"name": "CAESAR SPG",
+				"factions": [],
+				"order": 1,
+				"availableIn":[
+					{
+						"all": [{ "in": "Artillery Platoon" }, { "in": "France" }]			
+					}
+				],
+				"points": 0,
+				"models": 1,
+				"sortPriority": 3,
+				"limits": [
+					{
+						"key": "Arty",
+						"limit": 4,
+						"perParent": true
+					}
+				],
+				"options": [
+					{
+						"name": "Inexperienced",
+						"points": 144,
+						"availableIn": ["France"],
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Regular",
+						"points": 180,
+						"availableIn": ["France"],
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Veteran",
+						"points": 216,
+						"availableIn": ["France"],
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Spotter",
+						"points": 10,
+						"addsModels": 1,
+						"availableIn": ["France"],
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
+						"requireChooseOneKey": "morale"
+					}
+				],
+				"keywords": [],
+				"specialText": "Armored Car/Carrier - 7+\n Wheeled Vehicle",
+				"equipment": ["Turret Mounted Heavy Howitzer"]
+			},
+			{
+				"name": "AMX-30 AuF1 SPG",
+				"factions": [],
+				"order": 1,
+				"availableIn":[
+					{
+						"all": [{ "in": "Artillery Platoon" }, { "in": "France" }]			
+					}
+				],
+				"points": 0,
+				"models": 1,
+				"sortPriority": 3,
+				"limits": [
+					{
+						"key": "Arty",
+						"limit": 4,
+						"perParent": true
+					}
+				],
+				"options": [
+					{
+						"name": "Inexperienced",
+						"points": 124,
+						"availableIn": ["France"],
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Regular",
+						"points": 160,
+						"availableIn": ["France"],
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Veteran",
+						"points": 190,
+						"availableIn": ["France"],
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Spotter",
+						"points": 10,
+						"addsModels": 1,
+						"availableIn": ["France"],
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
+						"requireChooseOneKey": "morale"
+					}
+				],
+				"keywords": [],
+				"specialText": "Light Tank - 8+\n Wheeled Vehicle",
+				"equipment": ["Turret Mounted Heavy Howitzer"]
+			},
+			{
+				"name": "Renault VAB",
+				"factions": [],
+				"order": 1,
+				"availableIn": [
+					{
+						"all": [{ "in": "HQ Platoon"	}, { "in": "France" }]			
+					},
+					{
+						"all": [{ "in": "Rifle Platoon"	}, { "in": "France" }]			
+					},
+					{
+						"all": [{ "in": "Engineer Platoon"	}, { "in": "France" }]			
+					},
+					{
+						"all": [{ "in": "Artillery Platoon"	}, { "in": "France" }]			
+					},
+					{
+						"all": [{ "in": "Heavy Weapons Platoon"	}, { "in": "France" }]			
+					}
+				],
+				"points": 0,
+				"models": 1,
+				"options": [
+					{
+						"name": "Inexperienced",
+						"points": 88,
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Regular",
+						"points": 105,
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Veteran",
+						"points": 122,
+						"requireChooseOneKey": "morale"
+					}
+				],
+				"keywords": ["Transport"],
+				"specialText": "Armored Car/Carrier - 7+\n Transport: 10",
+				"equipment": []
+			},
+			{
+				"name": "Renault VAB - Recce",
+				"factions": [],
+				"order": 1,
+				"availableIn": [
+					{
+						"all": [{ "in": "Recce Platoon"	}, { "in": "France" }]			
+					}
+				],
+				"points": 0,
+				"models": 1,
+				"options": [
+					{
+						"name": "Inexperienced",
+						"points": 88,
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Regular",
+						"points": 105,
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Veteran",
+						"points": 122,
+						"requireChooseOneKey": "morale"
+					}
+				],
+				"keywords": ["Transport"],
+				"specialText": "Armored Car/Carrier - 7+\n Transport: 10",
+				"equipment": []
+			},
+			{
+				"name": "GIAT AMX-10P IFV",
+				"factions": [],
+				"order": 1,
+				"availableIn": [
+					{
+						"all": [{ "in": "HQ Platoon"	}, { "in": "France" }]			
+					},
+					{
+						"all": [{ "in": "Rifle Platoon"	}, { "in": "France" }]			
+					},
+					{
+						"all": [{ "in": "Engineer Platoon"	}, { "in": "France" }]			
+					},
+					{
+						"all": [{ "in": "Artillery Platoon"	}, { "in": "France" }]			
+					},
+					{
+						"all": [{ "in": "Heavy Weapons Platoon"	}, { "in": "France" }]			
+					}
+				],
+				"points": 0,
+				"models": 1,
+				"options": [
+					{
+						"name": "Inexperienced",
+						"points": 125,
+						"availableIn": ["France"],
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Regular",
+						"points": 156,
+						"availableIn": ["France"],
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Veteran",
+						"points": 188,
+						"availableIn": ["France"],
+						"requireChooseOneKey": "morale"
+					}
+				],
+				"keywords": ["Amphibious","Transport"],
+				"specialText": "Armored Car/Carrier - 7+\n Transport: 8\n Tracked Vehicle",
+				"equipment": ["Smoke Dischargers","Turret Mounted Light Autocannon"]
+			},
+			{
+				"name": "GIAT AMX-10P IFV - Recce",
+				"factions": [],
+				"order": 1,
+				"availableIn": [
+					{
+						"all": [{ "in": "Recce Platoon"	}, { "in": "France" }]			
+					}
+				],
+				"points": 0,
+				"models": 1,
+				"options": [
+					{
+						"name": "Inexperienced",
+						"points": 125,
+						"availableIn": ["France"],
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Regular",
+						"points": 156,
+						"availableIn": ["France"],
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Veteran",
+						"points": 188,
+						"availableIn": ["France"],
+						"requireChooseOneKey": "morale"
+					}
+				],
+				"keywords": ["Amphibious","Transport"],
+				"specialText": "Armored Car/Carrier - 7+\n Transport: 8\n Tracked Vehicle",
+				"equipment": ["Smoke Dischargers","Turret Mounted Light Autocannon"]
+			},
+			{
+				"name": "VBMR Griffon/Serval",
+				"factions": [],
+				"order": 1,
+				"availableIn": [
+					{
+						"all": [{ "in": "HQ Platoon"	}, { "in": "France" }]			
+					},
+					{
+						"all": [{ "in": "Rifle Platoon"	}, { "in": "France" }]			
+					},
+					{
+						"all": [{ "in": "Engineer Platoon"	}, { "in": "France" }]			
+					},
+					{
+						"all": [{ "in": "Artillery Platoon"	}, { "in": "France" }]			
+					},
+					{
+						"all": [{ "in": "Heavy Weapons Platoon"	}, { "in": "France" }]			
+					}
+				],
+				"points": 0,
+				"models": 1,
+				"options": [
+					{
+						"name": "Inexperienced",
+						"points": 62,
+						"availableIn": ["France"],
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Regular",
+						"points": 77,
+						"availableIn": ["France"],
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Veteran",
+						"points": 92,
+						"availableIn": ["France"],
+						"requireChooseOneKey": "morale"
+					}
+				],
+				"keywords": ["Transport"],
+				"specialText": "Light Tank - 8+\n Transport: 8\n Wheeled Vehicle",
+				"equipment": ["Smoke Dischargers","Pintle Mounted MMG"]
+			},
+			{
+				"name": "VBMR Griffon/Serval - Recce",
+				"factions": [],
+				"order": 1,
+				"availableIn": [
+					{
+						"all": [{ "in": "Recce Platoon"	}, { "in": "France" }]			
+					}
+				],
+				"points": 0,
+				"models": 1,
+				"options": [
+					{
+						"name": "Inexperienced",
+						"points": 62,
+						"availableIn": ["France"],
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Regular",
+						"points": 77,
+						"availableIn": ["France"],
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Veteran",
+						"points": 92,
+						"availableIn": ["France"],
+						"requireChooseOneKey": "morale"
+					}
+				],
+				"keywords": ["Transport"],
+				"specialText": "Light Tank - 8+\n Transport: 8\n Wheeled Vehicle",
+				"equipment": ["Smoke Dischargers","Pintle Mounted MMG"]
+			},
+			{
+				"name": "Petit Véhicule Protégé (PVP)",
+				"factions": [],
+				"order": 1,
+				"availableIn": [
+					{
+						"all": [{ "in": "HQ Platoon"	}, { "in": "France" }]			
+					},
+					{
+						"all": [{ "in": "Rifle Platoon"	}, { "in": "France" }]			
+					},
+					{
+						"all": [{ "in": "Engineer Platoon"	}, { "in": "France" }]			
+					},
+					{
+						"all": [{ "in": "Artillery Platoon"	}, { "in": "France" }]			
+					},
+					{
+						"all": [{ "in": "Heavy Weapons Platoon"	}, { "in": "France" }]			
+					}
+				],
+				"points": 0,
+				"models": 1,
+				"options": [
+					{
+						"name": "Inexperienced",
+						"points": 22,
+						"availableIn": ["France"],
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Regular",
+						"points": 30,
+						"availableIn": ["France"],
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Veteran",
+						"points": 38,
+						"availableIn": ["France"],
+						"requireChooseOneKey": "morale"
+					}
+				],
+				"keywords": ["Transport"],
+				"specialText": "Armored Car/Carrier - 7+\n Transport: 3\n Wheeled Vehicle",
+				"equipment": ["Smoke Dischargers","Pintle Mounted MMG"]
+			},
+			{
+				"name": "Petit Véhicule Protégé (PVP) - Recce",
+				"factions": [],
+				"order": 1,
+				"availableIn": [
+					{
+						"all": [{ "in": "Recce Platoon"	}, { "in": "France" }]			
+					}
+				],
+				"points": 0,
+				"models": 1,
+				"options": [
+					{
+						"name": "Inexperienced",
+						"points": 22,
+						"availableIn": ["France"],
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Regular",
+						"points": 30,
+						"availableIn": ["France"],
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Veteran",
+						"points": 38,
+						"availableIn": ["France"],
+						"requireChooseOneKey": "morale"
+					}
+				],
+				"keywords": ["Transport"],
+				"specialText": "Armored Car/Carrier - 7+\n Transport: 3\n Wheeled Vehicle",
+				"equipment": ["Smoke Dischargers","Pintle Mounted MMG"]
 			},
 			{
 				"name": "Panhard VBL Light Armored Vehicle w/ HMG Turret",
@@ -3498,11 +3118,13 @@
 					{
 						"name": "Command Vehicle",
 						"points": 10,
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
 						"availableIn": ["France"]
 					},
 					{
 						"name": "Pintle Mounted HMG",
 						"points": 25,
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
 						"availableIn": ["France"]
 					}
 				],
@@ -3551,16 +3173,19 @@
 					{
 						"name": "Command Vehicle",
 						"points": 10,
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
 						"availableIn": ["France"]
 					},
 					{
 						"name": "Pintle Mounted HMG",
 						"points": 25,
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
 						"availableIn": ["France"]
 					},
 					{
 						"name": "SEPAR Upgrade",
 						"points": 5,
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
 						"availableIn": ["France"]
 					}
 				],
@@ -3609,6 +3234,7 @@
 					{
 						"name": "Command Vehicle",
 						"points": 10,
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
 						"availableIn": ["France"]
 					}
 				],
@@ -3657,6 +3283,7 @@
 					{
 						"name": "Command Vehicle",
 						"points": 10,
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
 						"availableIn": ["France"]
 					}
 				],
@@ -3701,16 +3328,661 @@
 						"points": 240,
 						"availableIn": ["France"],
 						"requireChooseOneKey": "morale"
-					},
-					{
-						"name": "Command Vehicle",
-						"points": 10,
-						"availableIn": ["France"]
 					}
 				],
 				"keywords": ["Amphibious","Advanced Ammunition (Main)", "Advanced Optics (Main)","Fire Control System","Command Vehicle"],
 				"specialText": "Light Tank - 8+\n Wheeled Vehicle",
 				"equipment": ["Turret Mounted Light Autocannon","Turret Mounted Coaxial MMG","Pintle Mounted MMG","Smoke Dischargers"]
+			},
+			{
+				"name": "EBRC Jaguar AFV",
+				"factions": [],
+				"order": 1,
+				"availableIn":[
+					{
+						"all": [{ "in": "Armored Platoon" }, { "in": "France" }]			
+					}
+				],
+				"points": 0,
+				"models": 1,
+				"sortPriority": 3,
+				"limits": [
+					{
+						"key": "Vehicles",
+						"limit": 5,
+						"perParent": true
+					}
+				],
+				"options": [
+					{
+						"name": "Inexperienced",
+						"points": 212,
+						"availableIn": ["France"],
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Regular",
+						"points": 265,
+						"availableIn": ["France"],
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Veteran",
+						"points": 318,
+						"availableIn": ["France"],
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Command Vehicle",
+						"points": 10,
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
+						"availableIn": ["France"]
+					}
+				],
+				"keywords": ["Amphibious","Advanced Ammunition (Main)", "Advanced Optics (Main)","Fire Control System"],
+				"specialText": "Armored Car/Carrier - 7+\n Wheeled Vehicle",
+				"equipment": ["Turret Mounted Heavy Autocannon","Pintle Mounted MMG","Turret Mounted Coaxial ATGM/TOW","Smoke Dischargers"]
+			},
+			{
+				"name": "AMX-30B2",
+				"factions": [],
+				"order": 1,
+				"availableIn":[
+					{
+						"all": [{ "in": "Armored Platoon" }, { "in": "France" }]			
+					}
+				],
+				"points": 0,
+				"models": 1,
+				"sortPriority": 3,
+				"limits": [
+					{
+						"key": "Vehicles",
+						"limit": 5,
+						"perParent": true
+					}
+				],
+				"options": [
+					{
+						"name": "Inexperienced",
+						"points": 308,
+						"availableIn": ["France"],
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Regular",
+						"points": 385,
+						"availableIn": ["France"],
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Veteran",
+						"points": 462,
+						"availableIn": ["France"],
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Command Vehicle",
+						"points": 10,
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
+						"availableIn": ["France"]
+					}
+				],
+				"keywords": ["Advanced Ammunition (Main)", "Advanced Optics (Main)","Fire Control System"],
+				"specialText": "Medium Tank - 9+\n Tracked Vehicle",
+				"equipment": ["Turret Mounted Heavy AT Gun","Pintle Mounted MMG","Turret Mounted Coaxial MMG","Smoke Dischargers"]
+			},
+			{
+				"name": "AMX-30B2 BRENUS",
+				"factions": [],
+				"order": 1,
+				"availableIn":[
+					{
+						"all": [{ "in": "Armored Platoon" }, { "in": "France" }]			
+					}
+				],
+				"points": 0,
+				"models": 1,
+				"sortPriority": 3,
+				"limits": [
+					{
+						"key": "Vehicles",
+						"limit": 5,
+						"perParent": true
+					}
+				],
+				"options": [
+					{
+						"name": "Inexperienced",
+						"points": 323,
+						"availableIn": ["France"],
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Regular",
+						"points": 400,
+						"availableIn": ["France"],
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Veteran",
+						"points": 477,
+						"availableIn": ["France"],
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Command Vehicle",
+						"points": 10,
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
+						"availableIn": ["France"]
+					}
+				],
+				"keywords": ["Advanced Ammunition (Main)", "Advanced Optics (Main)","Fire Control System"],
+				"specialText": "Medium Tank - 9+\n Tracked Vehicle",
+				"equipment": ["Turret Mounted Heavy AT Gun","Pintle Mounted MMG","Turret Mounted Coaxial MMG","Smoke Dischargers","Reactive Armor"]
+			},
+			{
+				"name": "KNDS Leclerc",
+				"factions": [],
+				"order": 1,
+				"availableIn":[
+					{
+						"all": [{ "in": "Armored Platoon" }, { "in": "France" }]			
+					}
+				],
+				"points": 0,
+				"models": 1,
+				"sortPriority": 3,
+				"limits": [
+					{
+						"key": "Vehicles",
+						"limit": 5,
+						"perParent": true
+					}
+				],
+				"options": [
+					{
+						"name": "Inexperienced",
+						"points": 308,
+						"availableIn": ["France"],
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Regular",
+						"points": 408,
+						"availableIn": ["France"],
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Veteran",
+						"points": 510,
+						"availableIn": ["France"],
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Command Vehicle",
+						"points": 10,
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
+						"availableIn": ["France"]
+					}
+				],
+				"keywords": ["Advanced Ammunition (Main)", "Advanced Optics (Main)","Fire Control System"],
+				"specialText": "Heavy Tank - 10+\n Tracked Vehicle",
+				"equipment": ["Turret Mounted Super Heavy AT Gun","Pintle Mounted HMG","Turret Mounted Coaxial MMG","Smoke Dischargers"]
+			},
+			{
+				"name": "Renault Mephisto HOT Anti-Tank Vehicle",
+				"factions": [],
+				"order": 1,
+				"availableIn":[
+					{
+						"all": [{ "in": "Armored Platoon" }, { "in": "France" }]			
+					}
+				],
+				"points": 0,
+				"models": 1,
+				"sortPriority": 3,
+				"limits": [
+					{
+						"key": "Vehicles",
+						"limit": 5,
+						"perParent": true
+					}
+				],
+				"options": [
+					{
+						"name": "Inexperienced",
+						"points": 156,
+						"availableIn": ["France"],
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Regular",
+						"points": 195,
+						"availableIn": ["France"],
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Veteran",
+						"points": 234,
+						"availableIn": ["France"],
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Command Vehicle",
+						"points": 10,
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
+						"availableIn": ["France"]
+					}
+				],
+				"keywords": ["Advanced Optics (Main)","Fire Control System"],
+				"specialText": "Armored Car/Carrier - 7+\n Wheeled Vehicle",
+				"equipment": ["Turret Mounted ATGM/TOW"]
+			},
+			{
+				"name": "Renault VAB PC Command Vehicle",
+				"factions": [],
+				"order": 1,
+				"availableIn":[
+					{
+						"all": [{ "in": "Armored Platoon" }, { "in": "France" }]			
+					}
+				],
+				"points": 0,
+				"models": 1,
+				"sortPriority": 3,
+				"limits": [
+					{
+						"key": "Vehicles",
+						"limit": 5,
+						"perParent": true
+					}
+				],
+				"options": [
+					{
+						"name": "Inexperienced",
+						"points": 68,
+						"availableIn": ["France"],
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Regular",
+						"points": 85,
+						"availableIn": ["France"],
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Veteran",
+						"points": 102,
+						"availableIn": ["France"],
+						"requireChooseOneKey": "morale"
+					}
+				],
+				"keywords": ["Command Vehicle"],
+				"specialText": "Armored Car/Carrier - 7+\n Wheeled Vehicle",
+				"equipment": ["Smoke Dischargers"]
+			},
+			{
+				"name": "Renault VAB RATAC Recce Vehicle",
+				"factions": [],
+				"order": 1,
+				"availableIn":[
+					{
+						"all": [{ "in": "Armored Platoon" }, { "in": "France" }]			
+					}
+				],
+				"points": 0,
+				"models": 1,
+				"sortPriority": 3,
+				"limits": [
+					{
+						"key": "Vehicles",
+						"limit": 5,
+						"perParent": true
+					}
+				],
+				"options": [
+					{
+						"name": "Inexperienced",
+						"points": 88,
+						"availableIn": ["France"],
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Regular",
+						"points": 105,
+						"availableIn": ["France"],
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Veteran",
+						"points": 122,
+						"availableIn": ["France"],
+						"requireChooseOneKey": "morale"
+					}
+				],
+				"keywords": ["Command Vehicle","Recce","Spotter"],
+				"specialText": "Armored Car/Carrier - 7+\n Wheeled Vehicle",
+				"equipment": ["Smoke Dischargers"]
+			},
+			{
+				"name": "Renault VAB Bromure/SGEA Electronic Warfare Vehicle",
+				"factions": [],
+				"order": 1,
+				"availableIn":[
+					{
+						"all": [{ "in": "Armored Platoon" }, { "in": "France" }]			
+					}
+				],
+				"points": 0,
+				"models": 1,
+				"sortPriority": 3,
+				"limits": [
+					{
+						"key": "Vehicles",
+						"limit": 5,
+						"perParent": true
+					}
+				],
+				"options": [
+					{
+						"name": "Inexperienced",
+						"points": 88,
+						"availableIn": ["France"],
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Regular",
+						"points": 105,
+						"availableIn": ["France"],
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Veteran",
+						"points": 122,
+						"availableIn": ["France"],
+						"requireChooseOneKey": "morale"
+					}
+				],
+				"keywords": ["Command Vehicle","Electronic Warfare"],
+				"specialText": "Armored Car/Carrier - 7+\n Wheeled Vehicle",
+				"equipment": ["Smoke Dischargers"]
+			},
+			{
+				"name": "Renault VIB IFV",
+				"factions": [],
+				"order": 1,
+				"availableIn":[
+					{
+						"all": [{ "in": "Armored Platoon" }, { "in": "France" }]			
+					}
+				],
+				"points": 0,
+				"models": 1,
+				"sortPriority": 3,
+				"limits": [
+					{
+						"key": "Vehicles",
+						"limit": 5,
+						"perParent": true
+					}
+				],
+				"options": [
+					{
+						"name": "Inexperienced",
+						"points": 103,
+						"availableIn": ["France"],
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Regular",
+						"points": 120,
+						"availableIn": ["France"],
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Veteran",
+						"points": 137,
+						"availableIn": ["France"],
+						"requireChooseOneKey": "morale"
+					}
+				],
+				"keywords": ["Command Vehicle"],
+				"specialText": "Armored Car/Carrier - 7+\n Wheeled Vehicle",
+				"equipment": ["Smoke Dischargers","Turret Mounted Light Autocannon","Turret Mounted Coaxial MMG"]
+			},
+			{
+				"name": "Renault VBC-90 Armored Car",
+				"factions": [],
+				"order": 1,
+				"availableIn":[
+					{
+						"all": [{ "in": "Armored Platoon" }, { "in": "France" }]			
+					}
+				],
+				"points": 0,
+				"models": 1,
+				"sortPriority": 3,
+				"limits": [
+					{
+						"key": "Vehicles",
+						"limit": 5,
+						"perParent": true
+					}
+				],
+				"options": [
+					{
+						"name": "Inexperienced",
+						"points": 138,
+						"availableIn": ["France"],
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Regular",
+						"points": 155,
+						"availableIn": ["France"],
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Veteran",
+						"points": 172,
+						"availableIn": ["France"],
+						"requireChooseOneKey": "morale"
+					}
+				],
+				"keywords": ["Command Vehicle"],
+				"specialText": "Armored Car/Carrier - 7+\n Wheeled Vehicle",
+				"equipment": ["Smoke Dischargers","Turret Mounted Medium AT Gun"]
+			},
+			{
+				"name": "Renault VAB 2R2M Mortar Carrier",
+				"factions": [],
+				"order": 1,
+				"availableIn":[
+					{
+						"all": [{ "in": "Armored Platoon" }, { "in": "France" }]			
+					}
+				],
+				"points": 0,
+				"models": 1,
+				"sortPriority": 3,
+				"limits": [
+					{
+						"key": "Vehicles",
+						"limit": 5,
+						"perParent": true
+					}
+				],
+				"options": [
+					{
+						"name": "Inexperienced",
+						"points": 118,
+						"availableIn": ["France"],
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Regular",
+						"points": 135,
+						"availableIn": ["France"],
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Veteran",
+						"points": 152,
+						"availableIn": ["France"],
+						"requireChooseOneKey": "morale"
+					}
+				],
+				"keywords": ["Command Vehicle","Stationary Firing Platform"],
+				"specialText": "Armored Car/Carrier - 7+\n Wheeled Vehicle",
+				"equipment": ["Smoke Dischargers","Hull Mounted Heavy Mortar"]
+			},
+			{
+				"name": "GIAT AMX-10P PAC90 IFV",
+				"factions": [],
+				"order": 1,
+				"availableIn":[
+					{
+						"all": [{ "in": "Armored Platoon" }, { "in": "France" }]			
+					}
+				],
+				"points": 0,
+				"models": 1,
+				"sortPriority": 3,
+				"limits": [
+					{
+						"key": "Vehicles",
+						"limit": 5,
+						"perParent": true
+					}
+				],
+				"options": [
+					{
+						"name": "Inexperienced",
+						"points": 165,
+						"availableIn": ["France"],
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Regular",
+						"points": 196,
+						"availableIn": ["France"],
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Veteran",
+						"points": 228,
+						"availableIn": ["France"],
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Command Vehicle",
+						"points": 10,
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
+						"availableIn": ["France"]
+					}
+				],
+				"keywords": ["Amphibious"],
+				"specialText": "Armored Car/Carrier - 7+\n Tracked Vehicle",
+				"equipment": ["Smoke Dischargers","Turret Mounted Medium AT Gun"]
+			},
+			{
+				"name": "AMX-30R Roland I SAM System",
+				"factions": [],
+				"order": 1,
+				"availableIn":[
+					{
+						"all": [{ "in": "Armored Platoon" }, { "in": "France" }]			
+					}
+				],
+				"points": 0,
+				"models": 1,
+				"sortPriority": 3,
+				"limits": [
+					{
+						"key": "Vehicles",
+						"limit": 5,
+						"perParent": true
+					}
+				],
+				"options": [
+					{
+						"name": "Inexperienced",
+						"points": 64,
+						"availableIn": ["France"],
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Regular",
+						"points": 74,
+						"availableIn": ["France"],
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Veteran",
+						"points": 84,
+						"availableIn": ["France"],
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Command Vehicle",
+						"points": 10,
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
+						"availableIn": ["France"]
+					}
+				],
+				"keywords": ["Stationary Firing Platform"],
+				"specialText": "Light Tank - 8+\n Tracked Vehicle",
+				"equipment": ["Pintle Mounted MMG","Turret Mounted SAM"]
+			},
+			{
+				"name": "AMX-30DCA Anti-Air Vehicle",
+				"factions": [],
+				"order": 1,
+				"availableIn":[
+					{
+						"all": [{ "in": "Armored Platoon" }, { "in": "France" }]			
+					}
+				],
+				"points": 0,
+				"models": 1,
+				"sortPriority": 3,
+				"limits": [
+					{
+						"key": "Vehicles",
+						"limit": 5,
+						"perParent": true
+					}
+				],
+				"options": [
+					{
+						"name": "Inexperienced",
+						"points": 188,
+						"availableIn": ["France"],
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Regular",
+						"points": 235,
+						"availableIn": ["France"],
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Veteran",
+						"points": 282,
+						"availableIn": ["France"],
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Command Vehicle",
+						"points": 10,
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
+						"availableIn": ["France"]
+					}
+				],
+				"keywords": ["Stationary Firing Platform"],
+				"specialText": "Light Tank - 8+\n Tracked Vehicle",
+				"equipment": ["Smoke Dischargers","Turret Mounted Twin Heavy Autocannons"]
 			},
 			{
 				"name": "Eurocopter EC665 Tiger",
@@ -3754,24 +4026,277 @@
 						"name": "Two Pylon Mounted Light Autocannons",
 						"points": 0,
 						"availableIn": ["France"],
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
 						"requireChooseOneKey": "priWeapon"
 					},
 					{
 						"name": "Two Pylon Mounted Unguided Rocket Pods",
 						"points": 30,
 						"availableIn": ["France"],
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
 						"requireChooseOneKey": "priWeapon"
 					},
 					{
 						"name": "Pylon Mounted ATGM",
 						"points": 45,
 						"availableIn": ["France"],
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
 						"requireChooseOneKey": "priWeapon"
 					}
 				],
 				"keywords": [],
-				"specialText": "Helicopter",
+				"specialText": "Light Helicopter - 7+\n Helicopter",
 				"equipment": ["Chin Mounted Heavy Autocannon"]
+			},
+			{
+				"name": "Eurocopter AS565 Panther",
+				"factions": [],
+				"order": 1,
+				"availableIn":[
+					{
+						"all": [{ "in": "Air Support" }, { "in": "France" }]			
+					}
+				],
+				"points": 0,
+				"models": 1,
+				"sortPriority": 3,
+				"limits": [
+					{
+						"key": "Gunship",
+						"limit": 2,
+						"perParent": true
+					}
+				],
+				"options": [
+					{
+						"name": "Inexperienced",
+						"points": 76,
+						"availableIn": ["France"],
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Regular",
+						"points": 95,
+						"availableIn": ["France"],
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Veteran",
+						"points": 114,
+						"availableIn": ["France"],
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Two Pylon Mounted Light Autocannons",
+						"points": 0,
+						"availableIn": ["France"],
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
+						"requireChooseOneKey": "priWeapon"
+					},
+					{
+						"name": "Two Pylon Mounted Unguided Rocket Pods",
+						"points": 30,
+						"availableIn": ["France"],
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
+						"requireChooseOneKey": "priWeapon"
+					}
+				],
+				"keywords": [],
+				"specialText": "Light Helicopter - 7+\n Helicopter",
+				"equipment": []
+			},
+			{
+				"name": "Aérospatiale SA341F2 Gazelle",
+				"factions": [],
+				"order": 1,
+				"availableIn":[
+					{
+						"all": [{ "in": "Air Support" }, { "in": "France" }]			
+					}
+				],
+				"points": 0,
+				"models": 1,
+				"sortPriority": 3,
+				"limits": [
+					{
+						"key": "Gunship",
+						"limit": 2,
+						"perParent": true
+					}
+				],
+				"options": [
+					{
+						"name": "Inexperienced",
+						"points": 44,
+						"availableIn": ["France"],
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Regular",
+						"points": 55,
+						"availableIn": ["France"],
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Veteran",
+						"points": 66,
+						"availableIn": ["France"],
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Two Pylon Mounted MMG",
+						"points": 0,
+						"availableIn": ["France"],
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
+						"requireChooseOneKey": "priWeapon"
+					},
+					{
+						"name": "Two Pylon Mounted Unguided Rocket Pods",
+						"points": 30,
+						"availableIn": ["France"],
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
+						"requireChooseOneKey": "priWeapon"
+					},
+					{
+						"name": "Pylon Mounted ATGM",
+						"points": 45,
+						"availableIn": ["France"],
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
+						"requireChooseOneKey": "priWeapon"
+					}
+				],
+				"keywords": [],
+				"specialText": "Light Helicopter - 7+\n Helicopter",
+				"equipment": []
+			},
+			{
+				"name": "Eurocopter AS332 Super Puma",
+				"factions": [],
+				"order": 1,
+				"availableIn":[
+					{
+						"all": [{ "in": "Air Support" }, { "in": "France" }]			
+					}
+				],
+				"points": 0,
+				"models": 1,
+				"sortPriority": 3,
+				"limits": [
+					{
+						"key": "transport",
+						"limit": 2,
+						"perParent": true
+					}
+				],
+				"options": [
+					{
+						"name": "Inexperienced",
+						"points": 75,
+						"availableIn": ["France"],
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Regular",
+						"points": 93,
+						"availableIn": ["France"],
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Veteran",
+						"points": 112,
+						"availableIn": ["France"],
+						"requireChooseOneKey": "morale"
+					}
+				],
+				"keywords": ["Transport","Airlift"],
+				"specialText": "Light Helicopter - 7+\n Helicopter\n Transport: 24\n Air Lift: M",
+				"equipment": []
+			},
+			{
+				"name": "Eurocopter EC725 Caracal",
+				"factions": [],
+				"order": 1,
+				"availableIn":[
+					{
+						"all": [{ "in": "Air Support" }, { "in": "France" }]			
+					}
+				],
+				"points": 0,
+				"models": 1,
+				"sortPriority": 3,
+				"limits": [
+					{
+						"key": "transport",
+						"limit": 2,
+						"perParent": true
+					}
+				],
+				"options": [
+					{
+						"name": "Inexperienced",
+						"points": 89,
+						"availableIn": ["France"],
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Regular",
+						"points": 111,
+						"availableIn": ["France"],
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Veteran",
+						"points": 134,
+						"availableIn": ["France"],
+						"requireChooseOneKey": "morale"
+					}
+				],
+				"keywords": ["Transport"],
+				"specialText": "Light Helicopter - 7+\n Helicopter\n Transport: 28",
+				"equipment": ["Port Side Door Mounted MMG","STBD Side Door Mounted MMG"]
+			},
+			{
+				"name": "NHIndustries NH90 Caïman",
+				"factions": [],
+				"order": 1,
+				"availableIn":[
+					{
+						"all": [{ "in": "Air Support" }, { "in": "France" }]			
+					}
+				],
+				"points": 0,
+				"models": 1,
+				"sortPriority": 3,
+				"limits": [
+					{
+						"key": "transport",
+						"limit": 2,
+						"perParent": true
+					}
+				],
+				"options": [
+					{
+						"name": "Inexperienced",
+						"points": 89,
+						"availableIn": ["France"],
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Regular",
+						"points": 111,
+						"availableIn": ["France"],
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Veteran",
+						"points": 134,
+						"availableIn": ["France"],
+						"requireChooseOneKey": "morale"
+					}
+				],
+				"keywords": ["Transport","Air Lift"],
+				"specialText": "Light Helicopter - 7+\n Helicopter\n Transport: 20",
+				"equipment": ["Port Side Door Mounted MMG","STBD Side Door Mounted MMG\n Air Lift: S"]
 			}
 		]
 	}

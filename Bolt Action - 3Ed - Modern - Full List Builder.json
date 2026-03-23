@@ -146,6 +146,12 @@
 				]
 			},
 			{
+				"name": "Russia",
+				"additionalRules": [
+					"In Defense of the Motherland: At the start of the turn, each Regular or Veteran Russian unit can remove 1 Pin if they roll a 4+ on a D6. If no pins remain, still take an order test.","Non-Linear Battle: russian units can be ordered on to the table with an Advance or Run starting on Turn 1. When Outflanking, they must be given a Down order on Turn 1. Outflanking units on turn 2 or 3 may enter on the your side of the table or on the declared side, up to your opponents deployment area.", "Stockpiled Artillery Ammunition: Artillery Units and Artillery Bombardments are +1 to Hit and -1 to their Pen Value.","VDV: Russian Veteran Infantry Units may be given Air Assault for +2 Point Per Model."
+				]
+			},
+			{
 				"name": "United States of America",
 				"additionalRules": [
 					"Sphere of Infulence: US Assets all around the world allow for quick response to combat breaking out. Air Observers can call in a strike twice per game.","Joint Command: US Military is versed in working together to accomplish the mission, branches frequently imbedded with each other. Unitzs can apply USMC, US Army, US Navy, or US Air Force Rules to select squads."
@@ -165,6 +171,9 @@
 						"name": "France"
 					},
 					{
+						"name": "Russia"
+					},
+					{
 						"name": "United States of America"
 					}
 				],
@@ -181,6 +190,9 @@
 						"name": "France"
 					},
 					{
+						"name": "Russia"
+					},
+					{
 						"name": "United States of America"
 					}
 				],
@@ -195,6 +207,9 @@
 				"factions": [
 					{
 						"name": "France"
+					},
+					{
+						"name": "Russia"
 					},
 					{
 						"name": "United States of America"
@@ -219,6 +234,9 @@
 						"name": "France"
 					},
 					{
+						"name": "Russia"
+					},
+					{
 						"name": "United States of America"
 					}
 				],
@@ -239,6 +257,9 @@
 				"factions": [
 					{
 						"name": "France"
+					},
+					{
+						"name": "Russia"
 					},
 					{
 						"name": "United States of America"
@@ -263,6 +284,9 @@
 						"name": "France"
 					},
 					{
+						"name": "Russia"
+					},
+					{
 						"name": "United States of America"
 					}
 				],
@@ -283,6 +307,9 @@
 				"factions": [
 					{
 						"name": "France"
+					},
+					{
+						"name": "Russia"
 					},
 					{
 						"name": "United States of America"
@@ -307,6 +334,9 @@
 						"name": "France"
 					},
 					{
+						"name": "Russia"
+					},
+					{
 						"name": "United States of America"
 					}
 				],
@@ -322,6 +352,9 @@
 				"factions": [
 					{
 						"name": "France"
+					},
+					{
+						"name": "Russia"
 					},
 					{
 						"name": "United States of America"
@@ -341,6 +374,9 @@
 						"all": [{ "in": "HQ Platoon" }, { "in": "France" }]			
 					},
 					{
+						"all": [{ "in": "HQ Platoon" }, { "in": "Russia" }]			
+					},
+					{
 						"all": [{ "in": "HQ Platoon" }, { "in": "United States of America" }]			
 					}
 				],
@@ -358,13 +394,19 @@
 					{
 						"name": "Inexperienced",
 						"points": 42,
-						"availableIn": ["United States of America"],
+						"availableIn": [
+							"Russia",
+							"United States of America"
+						],
 						"requireChooseOneKey": "morale"
 					},
 					{
 						"name": "Regular",
 						"points": 60,
-						"availableIn": ["United States of America"],
+						"availableIn": [
+							"Russia",
+							"United States of America"
+						],
 						"requireChooseOneKey": "morale"
 					},
 					{
@@ -372,6 +414,7 @@
 						"points": 78,
 						"availableIn": [
 							"France",
+							"Russia",
 							"United States of America"
 						],
 						"requireChooseOneKey": "morale"
@@ -383,7 +426,10 @@
 						"max": 4,
 						"addsModels": 1,
 						"unlockedByLocal": "Inexperienced",
-						"availableIn": ["United States of America"]
+						"availableIn": [
+							"Russia",
+							"United States of America"
+						]
 					},
 					{
 						"name": "Additional Men",
@@ -392,7 +438,10 @@
 						"max": 4,
 						"addsModels": 1,
 						"unlockedByLocal": "Regular",
-						"availableIn": ["United States of America"]
+						"availableIn": [
+							"Russia",
+							"United States of America"
+						]
 					},
 					{
 						"name": "Additional Men",
@@ -403,6 +452,7 @@
 						"unlockedByLocal": "Veteran",
 						"availableIn": [
 							"France",
+							"Russia",
 							"United States of America"
 						]
 					},
@@ -416,6 +466,7 @@
 						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
 						"availableIn": [
 							"France",
+							"Russia",
 							"United States of America"
 						]
 					},
@@ -428,6 +479,7 @@
 						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
 						"availableIn": [
 							"France",
+							"Russia",
 							"United States of America"
 						]
 					},
@@ -441,6 +493,7 @@
 						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
 						"availableIn": [
 							"France",
+							"Russia",
 							"United States of America"
 						]
 					},
@@ -453,6 +506,7 @@
 						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
 						"availableIn": [
 							"France",
+							"Russia",
 							"United States of America"
 						]
 					},
@@ -463,6 +517,7 @@
 						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
 						"availableIn": [
 							"France",
+							"Russia",
 							"United States of America"
 						]
 					},
@@ -473,6 +528,7 @@
 						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
 						"availableIn": [
 							"France",
+							"Russia",
 							"United States of America"
 						]
 					},
@@ -483,6 +539,7 @@
 						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
 						"availableIn": [
 							"France",
+							"Russia",
 							"United States of America"
 						]
 					},
@@ -493,6 +550,7 @@
 						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
 						"availableIn": [
 							"France",
+							"Russia",
 							"United States of America"
 						]
 					},
@@ -503,6 +561,7 @@
 						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
 						"availableIn": [
 							"France",
+							"Russia",
 							"United States of America"
 						]
 					},
@@ -512,6 +571,13 @@
 						"perModel": true,
 						"unlockedByLocal": "Veteran",
 						"availableIn": ["France"]
+					},
+					{
+						"name": "VDV",
+						"points": 2,
+						"perModel": true,
+						"unlockedByLocal": "Veteran",
+						"availableIn": ["Russia"]
 					},
 					{
 						"name": "US Army",
@@ -555,6 +621,21 @@
 						"all": [{ "in": "Heavy Weapons Platoon" }, { "in": "France" }]			
 					},
 					{
+						"all": [{ "in": "Rifle Platoon" }, { "in": "Russia" }]			
+					},
+					{
+						"all": [{ "in": "Recce Platoon" }, { "in": "Russia" }]			
+					},
+					{
+						"all": [{ "in": "Engineer Platoon" }, { "in": "Russia" }]			
+					},
+					{
+						"all": [{ "in": "Artillery Platoon" }, { "in": "Russia" }]			
+					},
+					{
+						"all": [{ "in": "Heavy Weapons Platoon" }, { "in": "Russia" }]			
+					},
+					{
 						"all": [{ "in": "Rifle Platoon" }, { "in": "United States of America" }]			
 					},
 					{
@@ -584,13 +665,19 @@
 					{
 						"name": "Inexperienced",
 						"points": 21,
-						"availableIn": ["United States of America"],
+						"availableIn": [
+							"Russia",
+							"United States of America"
+						],
 						"requireChooseOneKey": "morale"
 					},
 					{
 						"name": "Regular",
 						"points": 30,
-						"availableIn": ["United States of America"],
+						"availableIn": [
+							"Russia",
+							"United States of America"
+						],
 						"requireChooseOneKey": "morale"
 					},
 					{
@@ -598,6 +685,7 @@
 						"points": 39,
 						"availableIn": [
 							"France",
+							"Russia",
 							"United States of America"
 						],
 						"requireChooseOneKey": "morale"
@@ -608,8 +696,11 @@
 						"increment": true,
 						"max": 1,
 						"addsModels": 1,
-						"unlockedByLocal": "Veteran",
-						"availableIn": ["France"]
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
+						"availableIn": [
+							"France",
+							"Russia"
+						]
 					},
 					{
 						"name": "NCO SMG",
@@ -621,6 +712,7 @@
 						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
 						"availableIn": [
 							"France",
+							"Russia",
 							"United States of America"
 						]
 					},
@@ -634,6 +726,7 @@
 						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
 						"availableIn": [
 							"France",
+							"Russia",
 							"United States of America"
 						]
 					},
@@ -644,6 +737,7 @@
 						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
 						"availableIn": [
 							"France",
+							"Russia",
 							"United States of America"
 						]
 					},
@@ -653,6 +747,13 @@
 						"perModel": true,
 						"unlockedByLocal": "Veteran",
 						"availableIn": ["France"]
+					},
+					{
+						"name": "VDV",
+						"points": 2,
+						"perModel": true,
+						"unlockedByLocal": "Veteran",
+						"availableIn": ["Russia"]
 					},
 					{
 						"name": "US Army",
@@ -684,6 +785,9 @@
 						"all": [{ "in": "Rifle Platoon" }, { "in": "France" }]			
 					},
 					{
+						"all": [{ "in": "Rifle Platoon" }, { "in": "Russia" }]			
+					},
+					{
 						"all": [{ "in": "Rifle Platoon" }, { "in": "United States of America" }]			
 					}
 				],
@@ -701,13 +805,21 @@
 					{
 						"name": "Regular",
 						"points": 23,
-						"availableIn": ["France"],
+						"availableIn": [
+							"France",
+							"Russia",
+							"United States of America"
+						],
 						"requireChooseOneKey": "morale"
 					},
 					{
 						"name": "Veteran",
 						"points": 30,
-						"availableIn": ["France"],
+						"availableIn": [
+							"France",
+							"Russia",
+							"United States of America"
+						],
 						"requireChooseOneKey": "morale"
 					},
 					{
@@ -716,6 +828,13 @@
 						"perModel": true,
 						"unlockedByLocal": ["Regular","Veteran"],
 						"availableIn": ["France"]
+					},
+					{
+						"name": "VDV",
+						"points": 2,
+						"perModel": true,
+						"unlockedByLocal": "Veteran",
+						"availableIn": ["Russia"]
 					},
 					{
 						"name": "US Army",
@@ -975,6 +1094,12 @@
 						"all": [{ "in": "Recce Platoon" }, { "in": "France" }]			
 					},
 					{
+						"all": [{ "in": "Rifle Platoon" }, { "in": "Russia" }]			
+					},
+					{
+						"all": [{ "in": "Recce Platoon" }, { "in": "Russia" }]			
+					},
+					{
 						"all": [{ "in": "Rifle Platoon" }, { "in": "United States of America" }]			
 					},
 					{
@@ -997,6 +1122,7 @@
 						"points": 75,
 						"availableIn": [
 							"France",
+							"Russia",
 							"United States of America"
 						],
 						"requireChooseOneKey": "morale"
@@ -1006,6 +1132,7 @@
 						"points": 90,
 						"availableIn": [
 							"France",
+							"Russia",
 							"United States of America"
 						],
 						"requireChooseOneKey": "morale"
@@ -1019,6 +1146,7 @@
 						"unlockedByLocal": "Regular",
 						"availableIn": [
 							"France",
+							"Russia",
 							"United States of America"
 						]
 					},
@@ -1031,6 +1159,7 @@
 						"unlockedByLocal": "Veteran",
 						"availableIn": [
 							"France",
+							"Russia",
 							"United States of America"
 						]
 					},
@@ -1044,6 +1173,7 @@
 						"unlockedByLocal": ["Regular","Veteran"],
 						"availableIn": [
 							"France",
+							"Russia",
 							"United States of America"
 						]
 					},
@@ -1056,6 +1186,7 @@
 						"unlockedByLocal": ["Regular","Veteran"],
 						"availableIn": [
 							"France",
+							"Russia",
 							"United States of America"
 						]
 					},
@@ -1069,6 +1200,7 @@
 						"unlockedByLocal": ["Regular","Veteran"],
 						"availableIn": [
 							"France",
+							"Russia",
 							"United States of America"
 						]
 					},
@@ -1081,6 +1213,7 @@
 						"unlockedByLocal": ["Regular","Veteran"],
 						"availableIn": [
 							"France",
+							"Russia",
 							"United States of America"
 						]
 					},
@@ -1092,6 +1225,13 @@
 						"availableIn": ["France"]
 					},
 					{
+						"name": "VDV",
+						"points": 2,
+						"perModel": true,
+						"unlockedByLocal": "Veteran",
+						"availableIn": ["Russia"]
+					},
+					{
 						"name": "US Army",
 						"points": 0,
 						"perModel": true,
@@ -1100,7 +1240,7 @@
 						"requireChooseOneKey": "branchUS"
 					},
 					{
-						"name": "US Navy",
+						"name": "USMC",
 						"points": 0,
 						"perModel": true,
 						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
@@ -1124,6 +1264,12 @@
 						"all": [{ "in": "Recce Platoon" }, { "in": "France" }]			
 					},
 					{
+						"all": [{ "in": "Rifle Platoon" }, { "in": "Russia" }]			
+					},
+					{
+						"all": [{ "in": "Recce Platoon" }, { "in": "Russia" }]			
+					},
+					{
 						"all": [{ "in": "Rifle Platoon" }, { "in": "United States of America" }]			
 					},
 					{
@@ -1146,6 +1292,7 @@
 						"points": 75,
 						"availableIn": [
 							"France",
+							"Russia",
 							"United States of America"
 						],
 						"requireChooseOneKey": "morale"
@@ -1155,6 +1302,7 @@
 						"points": 90,
 						"availableIn": [
 							"France",
+							"Russia",
 							"United States of America"
 						],
 						"requireChooseOneKey": "morale"
@@ -1168,6 +1316,7 @@
 						"unlockedByLocal": "Regular",
 						"availableIn": [
 							"France",
+							"Russia",
 							"United States of America"
 						]
 					},
@@ -1180,6 +1329,7 @@
 						"unlockedByLocal": "Veteran",
 						"availableIn": [
 							"France",
+							"Russia",
 							"United States of America"
 						]
 					},
@@ -1193,6 +1343,7 @@
 						"unlockedByLocal": ["Regular","Veteran"],
 						"availableIn": [
 							"France",
+							"Russia",
 							"United States of America"
 						]
 					},
@@ -1205,6 +1356,7 @@
 						"unlockedByLocal": ["Regular","Veteran"],
 						"availableIn": [
 							"France",
+							"Russia",
 							"United States of America"
 						]
 					},
@@ -1218,6 +1370,7 @@
 						"unlockedByLocal": ["Regular","Veteran"],
 						"availableIn": [
 							"France",
+							"Russia",
 							"United States of America"
 						]
 					},
@@ -1230,6 +1383,7 @@
 						"unlockedByLocal": ["Regular","Veteran"],
 						"availableIn": [
 							"France",
+							"Russia",
 							"United States of America"
 						]
 					},
@@ -1241,6 +1395,13 @@
 						"availableIn": ["France"]
 					},
 					{
+						"name": "VDV",
+						"points": 2,
+						"perModel": true,
+						"unlockedByLocal": "Veteran",
+						"availableIn": ["Russia"]
+					},
+					{
 						"name": "US Army",
 						"points": 0,
 						"perModel": true,
@@ -1249,7 +1410,7 @@
 						"requireChooseOneKey": "branchUS"
 					},
 					{
-						"name": "US Navy",
+						"name": "USMC",
 						"points": 0,
 						"perModel": true,
 						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
@@ -1273,6 +1434,12 @@
 						"all": [{ "in": "Recce Platoon" }, { "in": "France" }]			
 					},
 					{
+						"all": [{ "in": "Rifle Platoon" }, { "in": "Russia" }]			
+					},
+					{
+						"all": [{ "in": "Recce Platoon" }, { "in": "Russia" }]			
+					},
+					{
 						"all": [{ "in": "Rifle Platoon" }, { "in": "United States of America" }]			
 					},
 					{
@@ -1284,7 +1451,7 @@
 				"sortPriority": 2,
 				"limits": [
 					{
-						"key": "FAO",
+						"key": "Sniper",
 						"limit": 1,
 						"perParent": true
 					}
@@ -1295,6 +1462,7 @@
 						"points": 75,
 						"availableIn": [
 							"France",
+							"Russia",
 							"United States of America"
 						],
 						"requireChooseOneKey": "morale"
@@ -1304,6 +1472,7 @@
 						"points": 90,
 						"availableIn": [
 							"France",
+							"Russia",
 							"United States of America"
 						],
 						"requireChooseOneKey": "morale"
@@ -1317,6 +1486,7 @@
 						"unlockedByLocal": "Regular",
 						"availableIn": [
 							"France",
+							"Russia",
 							"United States of America"
 						]
 					},
@@ -1329,6 +1499,7 @@
 						"unlockedByLocal": "Veteran",
 						"availableIn": [
 							"France",
+							"Russia",
 							"United States of America"
 						]
 					},
@@ -1342,6 +1513,7 @@
 						"unlockedByLocal": ["Regular","Veteran"],
 						"availableIn": [
 							"France",
+							"Russia",
 							"United States of America"
 						]
 					},
@@ -1354,6 +1526,7 @@
 						"unlockedByLocal": ["Regular","Veteran"],
 						"availableIn": [
 							"France",
+							"Russia",
 							"United States of America"
 						]
 					},
@@ -1367,6 +1540,7 @@
 						"unlockedByLocal": ["Regular","Veteran"],
 						"availableIn": [
 							"France",
+							"Russia",
 							"United States of America"
 						]
 					},
@@ -1379,6 +1553,7 @@
 						"unlockedByLocal": ["Regular","Veteran"],
 						"availableIn": [
 							"France",
+							"Russia",
 							"United States of America"
 						]
 					},
@@ -1388,6 +1563,13 @@
 						"perModel": true,
 						"unlockedByLocal": ["Regular","Veteran"],
 						"availableIn": ["France"]
+					},
+					{
+						"name": "VDV",
+						"points": 2,
+						"perModel": true,
+						"unlockedByLocal": "Veteran",
+						"availableIn": ["Russia"]
 					},
 					{
 						"name": "US Army",
@@ -1610,6 +1792,212 @@
 						"perModel": true,
 						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
 						"availableIn": ["France"]
+					}
+				],
+				"keywords": [],
+				"specialText": "1 Weapon Operator\n 1 Weapon Assistant",
+				"equipment": ["Infantry ATGM/TOW","MOPP"]
+			},
+			{
+				"name": "Kornet AT Team",
+				"factions": [],
+				"order": 1,
+				"availableIn":[
+					{
+						"all": [{ "in": "Rifle Platoon" }, { "in": "Russia" }]			
+					},
+					{
+						"all": [{ "in": "Recce Platoon" }, { "in": "Russia" }]			
+					}
+				],
+				"points": 0,
+				"models": 2,
+				"sortPriority": 2,
+				"limits": [
+					{
+						"key": "ATAA",
+						"limit": 1,
+						"perParent": true
+					}
+				],
+				"options": [
+					{
+						"name": "Inexperienced",
+						"points": 42,
+						"availableIn": ["Russia"],
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Regular",
+						"points": 60,
+						"availableIn": ["Russia"],
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Veteran",
+						"points": 78,
+						"availableIn": ["Russia"],
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "VDV",
+						"points": 2,
+						"perModel": true,
+						"unlockedByLocal": "Veteran",
+						"availableIn": ["Russia"]
+					}
+				],
+				"keywords": [],
+				"specialText": "1 Weapon Operator\n 1 Weapon Assistant",
+				"equipment": ["Infantry ATGM/TOW","MOPP"]
+			},
+			{
+				"name": "Kornet AT Team",
+				"factions": [],
+				"order": 1,
+				"availableIn":[
+					{
+						"all": [{ "in": "Heavy Weapons Platoon" }, { "in": "Russia" }]			
+					}
+				],
+				"points": 0,
+				"models": 2,
+				"sortPriority": 2,
+				"limits": [
+					{
+						"key": "ATAA",
+						"limit": 3,
+						"perParent": true
+					}
+				],
+				"options": [
+					{
+						"name": "Inexperienced",
+						"points": 42,
+						"availableIn": ["Russia"],
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Regular",
+						"points": 60,
+						"availableIn": ["Russia"],
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Veteran",
+						"points": 78,
+						"availableIn": ["Russia"],
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "VDV",
+						"points": 2,
+						"perModel": true,
+						"unlockedByLocal": "Veteran",
+						"availableIn": ["Russia"]
+					}
+				],
+				"keywords": [],
+				"specialText": "1 Weapon Operator\n 1 Weapon Assistant",
+				"equipment": ["Infantry ATGM/TOW","MOPP"]
+			},
+			{
+				"name": "Igla AA Team",
+				"factions": [],
+				"order": 1,
+				"availableIn":[
+					{
+						"all": [{ "in": "Rifle Platoon" }, { "in": "Russia" }]			
+					},
+					{
+						"all": [{ "in": "Recce Platoon" }, { "in": "Russia" }]			
+					}
+				],
+				"points": 0,
+				"models": 1,
+				"sortPriority": 2,
+				"limits": [
+					{
+						"key": "ATAA",
+						"limit": 1,
+						"perParent": true
+					}
+				],
+				"options": [
+					{
+						"name": "Inexperienced",
+						"points": 25,
+						"availableIn": ["Russia"],
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Regular",
+						"points": 35,
+						"availableIn": ["Russia"],
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Veteran",
+						"points": 45,
+						"availableIn": ["Russia"],
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "VDV",
+						"points": 2,
+						"perModel": true,
+						"unlockedByLocal": "Veteran",
+						"availableIn": ["Russia"]
+					}
+				],
+				"keywords": [],
+				"specialText": "1 Weapon Operator\n 1 Weapon Assistant",
+				"equipment": ["Infantry SAM","MOPP"]
+			},
+			{
+				"name": "Mistral AA Team",
+				"factions": [],
+				"order": 1,
+				"availableIn":[
+					{
+						"all": [{ "in": "Heavy Weapons Platoon" }, { "in": "Russia" }]			
+					}
+				],
+				"points": 0,
+				"models": 2,
+				"sortPriority": 2,
+				"limits": [
+					{
+						"key": "ATAA",
+						"limit": 3,
+						"perParent": true
+					}
+				],
+				"options": [
+					{
+						"name": "Inexperienced",
+						"points": 25,
+						"availableIn": ["Russia"],
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Regular",
+						"points": 35,
+						"availableIn": ["Russia"],
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Veteran",
+						"points": 45,
+						"availableIn": ["Russia"],
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "VDV",
+						"points": 2,
+						"perModel": true,
+						"unlockedByLocal": "Veteran",
+						"availableIn": ["Russia"]
 					}
 				],
 				"keywords": [],
@@ -1867,6 +2255,9 @@
 						"all": [{ "in": "Heavy Weapons Platoon" }, { "in": "France" }]			
 					},
 					{
+						"all": [{ "in": "Heavy Weapons Platoon" }, { "in": "Russia" }]			
+					},
+					{
 						"all": [{ "in": "Heavy Weapons Platoon" }, { "in": "United States of America" }]			
 					}
 				],
@@ -1874,11 +2265,6 @@
 				"models": 2,
 				"sortPriority": 2,
 				"limits": [
-					{
-						"key": "leadTeams",
-						"limit": 2,
-						"perParent": true
-					},
 					{
 						"key": "Mortar",
 						"limit": 5,
@@ -1891,6 +2277,7 @@
 						"points": 25,
 						"availableIn": [
 							"France",
+							"Russia",
 							"United States of America"
 						],
 						"requireChooseOneKey": "morale"
@@ -1900,6 +2287,7 @@
 						"points": 35,
 						"availableIn": [
 							"France",
+							"Russia",
 							"United States of America"
 						],
 						"requireChooseOneKey": "morale"
@@ -1909,6 +2297,7 @@
 						"points": 45,
 						"availableIn": [
 							"France",
+							"Russia",
 							"United States of America"
 						],
 						"requireChooseOneKey": "morale"
@@ -1919,6 +2308,13 @@
 						"perModel": true,
 						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
 						"availableIn": ["France"]
+					},
+					{
+						"name": "VDV",
+						"points": 2,
+						"perModel": true,
+						"unlockedByLocal": "Veteran",
+						"availableIn": ["Russia"]
 					},
 					{
 						"name": "US Army",
@@ -1950,6 +2346,9 @@
 						"all": [{ "in": "Heavy Weapons Platoon" }, { "in": "France" }]			
 					},
 					{
+						"all": [{ "in": "Heavy Weapons Platoon" }, { "in": "Russia" }]			
+					},
+					{
 						"all": [{ "in": "Heavy Weapons Platoon" }, { "in": "United States of America" }]			
 					}
 				],
@@ -1957,11 +2356,6 @@
 				"models": 3,
 				"sortPriority": 2,
 				"limits": [
-					{
-						"key": "leadTeams",
-						"limit": 2,
-						"perParent": true
-					},
 					{
 						"key": "Mortar",
 						"limit": 5,
@@ -1974,6 +2368,7 @@
 						"points": 32,
 						"availableIn": [
 							"France",
+							"Russia",
 							"United States of America"
 						],
 						"requireChooseOneKey": "morale"
@@ -1983,6 +2378,7 @@
 						"points": 45,
 						"availableIn": [
 							"France",
+							"Russia",
 							"United States of America"
 						],
 						"requireChooseOneKey": "morale"
@@ -1992,6 +2388,7 @@
 						"points": 52,
 						"availableIn": [
 							"France",
+							"Russia",
 							"United States of America"
 						],
 						"requireChooseOneKey": "morale"
@@ -2002,6 +2399,7 @@
 						"addsModels": 1,
 						"availableIn": [
 							"France",
+							"Russia",
 							"United States of America"
 						],
 						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
@@ -2044,6 +2442,9 @@
 						"all": [{ "in": "Heavy Weapons Platoon" }, { "in": "France" }]			
 					},
 					{
+						"all": [{ "in": "Heavy Weapons Platoon" }, { "in": "Russia" }]			
+					},
+					{
 						"all": [{ "in": "Heavy Weapons Platoon" }, { "in": "United States of America" }]			
 					}
 				],
@@ -2051,11 +2452,6 @@
 				"models": 4,
 				"sortPriority": 2,
 				"limits": [
-					{
-						"key": "leadTeams",
-						"limit": 2,
-						"perParent": true
-					},
 					{
 						"key": "Mortar",
 						"limit": 5,
@@ -2068,6 +2464,7 @@
 						"points": 42,
 						"availableIn": [
 							"France",
+							"Russia",
 							"United States of America"
 						],
 						"requireChooseOneKey": "morale"
@@ -2077,6 +2474,7 @@
 						"points": 60,
 						"availableIn": [
 							"France",
+							"Russia",
 							"United States of America"
 						],
 						"requireChooseOneKey": "morale"
@@ -2086,6 +2484,7 @@
 						"points": 68,
 						"availableIn": [
 							"France",
+							"Russia",
 							"United States of America"
 						],
 						"requireChooseOneKey": "morale"
@@ -2096,6 +2495,7 @@
 						"addsModels": 1,
 						"availableIn": [
 							"France",
+							"Russia",
 							"United States of America"
 						],
 						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
@@ -2138,6 +2538,9 @@
 						"all": [{ "in": "Heavy Weapons Platoon" }, { "in": "France" }]			
 					},
 					{
+						"all": [{ "in": "Heavy Weapons Platoon" }, { "in": "Russia" }]			
+					},
+					{
 						"all": [{ "in": "Heavy Weapons Platoon" }, { "in": "United States of America" }]			
 					}
 				],
@@ -2145,11 +2548,6 @@
 				"models": 3,
 				"sortPriority": 3,
 				"limits": [
-					{
-						"key": "leadTeams",
-						"limit": 2,
-						"perParent": true
-					},
 					{
 						"key": "MG",
 						"limit": 5,
@@ -2162,6 +2560,7 @@
 						"points": 35,
 						"availableIn": [
 							"France",
+							"Russia",
 							"United States of America"
 						],
 						"requireChooseOneKey": "morale"
@@ -2171,6 +2570,7 @@
 						"points": 50,
 						"availableIn": [
 							"France",
+							"Russia",
 							"United States of America"
 						],
 						"requireChooseOneKey": "morale"
@@ -2180,6 +2580,7 @@
 						"points": 65,
 						"availableIn": [
 							"France",
+							"Russia",
 							"United States of America"
 						],
 						"requireChooseOneKey": "morale"
@@ -2190,6 +2591,13 @@
 						"perModel": true,
 						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
 						"availableIn": ["France"]
+					},
+					{
+						"name": "VDV",
+						"points": 2,
+						"perModel": true,
+						"unlockedByLocal": "Veteran",
+						"availableIn": ["Russia"]
 					},
 					{
 						"name": "US Army",
@@ -2221,6 +2629,9 @@
 						"all": [{ "in": "Heavy Weapons Platoon" }, { "in": "France" }]			
 					},
 					{
+						"all": [{ "in": "Heavy Weapons Platoon" }, { "in": "Russia" }]			
+					},
+					{
 						"all": [{ "in": "Heavy Weapons Platoon" }, { "in": "United States of America" }]			
 					}
 				],
@@ -2228,11 +2639,6 @@
 				"models": 4,
 				"sortPriority": 3,
 				"limits": [
-					{
-						"key": "leadTeams",
-						"limit": 2,
-						"perParent": true
-					},
 					{
 						"key": "MG",
 						"limit": 5,
@@ -2245,6 +2651,7 @@
 						"points": 49,
 						"availableIn": [
 							"France",
+							"Russia",
 							"United States of America"
 						],
 						"requireChooseOneKey": "morale"
@@ -2254,6 +2661,7 @@
 						"points": 70,
 						"availableIn": [
 							"France",
+							"Russia",
 							"United States of America"
 						],
 						"requireChooseOneKey": "morale"
@@ -2263,6 +2671,7 @@
 						"points": 91,
 						"availableIn": [
 							"France",
+							"Russia",
 							"United States of America"
 						],
 						"requireChooseOneKey": "morale"
@@ -3038,6 +3447,898 @@
 				"equipment": ["Body Armor","Assault Rifles","Grenades","Night Vision"]
 			},
 			{
+				"name": "BMP Motor Rifle Squad",
+				"factions": [],
+				"order": 1,
+				"availableIn":[
+					{
+						"all": [{ "in": "Rifle Platoon" }, { "in": "Russia" }]			
+					}
+				],
+				"points": 0,
+				"models": 5,
+				"sortPriority": 3,
+				"limits": [
+					{
+						"key": "Rifle",
+						"limit": 5,
+						"perParent": true
+					}
+				],
+				"options": [
+					{
+						"name": "Inexperienced",
+						"points": 46,
+						"availableIn": ["Russia"],
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Regular",
+						"points": 64,
+						"availableIn": ["Russia"],
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Veteran",
+						"points": 82,
+						"availableIn": ["Russia"],
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Additional Men",
+						"points": 7,
+						"increment": true,
+						"max": 3,
+						"addsModels": 1,
+						"unlockedByLocal": "Inexperienced",
+						"availableIn": ["Russia"]
+					},
+					{
+						"name": "Additional Men",
+						"points": 10,
+						"increment": true,
+						"max": 3,
+						"addsModels": 1,
+						"unlockedByLocal": "Regular",
+						"availableIn": ["Russia"]
+					},
+					{
+						"name": "Additional Men",
+						"points": 13,
+						"increment": true,
+						"max": 3,
+						"addsModels": 1,
+						"unlockedByLocal": "Veteran",
+						"availableIn": ["Russia"]
+					},
+					{
+						"name": "Drone",
+						"points": 25,
+						"increment": true,
+						"max": 1,
+						"addsModels": 1,
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"]
+					},
+					{
+						"name": "NCO Pistol",
+						"points": -1,
+						"increment": true,
+						"max": "parentModels",
+						"maxKey": "gun",
+						"localLimit": 1,
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
+						"availableIn": ["Russia"]
+					},
+					{
+						"name": "NCO SMG",
+						"points": 4,
+						"increment": true,
+						"max": "parentModels",
+						"maxKey": "gun",
+						"localLimit": 1,
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
+						"availableIn": ["Russia"]
+					},
+					{
+						"name": "LMG",
+						"points": 15,
+						"increment": true,
+						"max": "parentModels",
+						"maxKey": "gun",
+						"localLimit": 1,
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
+						"availableIn": ["Russia"]
+					},
+					{
+						"name": "Grenade Launcher",
+						"points": 5,
+						"increment": true,
+						"max": 2,
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
+						"availableIn": ["Russia"]
+					},
+					{
+						"name": "RPG",
+						"points": 6,
+						"increment": true,
+						"max": 1,
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
+						"availableIn": ["Russia"]
+					}
+				],
+				"keywords": ["First Aid"],
+				"specialText": "1 NCO\n 4 Soldiers",
+				"equipment": ["Body Armor","Grenades","MOPP","Assault Rifles"]
+			},
+			{
+				"name": "BMP Motor Rifle Squad",
+				"factions": [],
+				"order": 1,
+				"availableIn":[
+					{
+						"all": [{ "in": "Recce Platoon" }, { "in": "Russia" }]			
+					}
+				],
+				"points": 0,
+				"models": 5,
+				"sortPriority": 3,
+				"limits": [
+					{
+						"key": "Rifle",
+						"limit": 4,
+						"perParent": true
+					}
+				],
+				"options": [
+					{
+						"name": "Inexperienced",
+						"points": 46,
+						"availableIn": ["Russia"],
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Regular",
+						"points": 64,
+						"availableIn": ["Russia"],
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Veteran",
+						"points": 82,
+						"availableIn": ["Russia"],
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Additional Men",
+						"points": 7,
+						"increment": true,
+						"max": 3,
+						"addsModels": 1,
+						"unlockedByLocal": "Inexperienced",
+						"availableIn": ["Russia"]
+					},
+					{
+						"name": "Additional Men",
+						"points": 10,
+						"increment": true,
+						"max": 3,
+						"addsModels": 1,
+						"unlockedByLocal": "Regular",
+						"availableIn": ["Russia"]
+					},
+					{
+						"name": "Additional Men",
+						"points": 13,
+						"increment": true,
+						"max": 3,
+						"addsModels": 1,
+						"unlockedByLocal": "Veteran",
+						"availableIn": ["Russia"]
+					},
+					{
+						"name": "Drone",
+						"points": 25,
+						"increment": true,
+						"max": 1,
+						"addsModels": 1,
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"]
+					},
+					{
+						"name": "NCO Pistol",
+						"points": -1,
+						"increment": true,
+						"max": "parentModels",
+						"maxKey": "gun",
+						"localLimit": 1,
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
+						"availableIn": ["Russia"]
+					},
+					{
+						"name": "NCO SMG",
+						"points": 4,
+						"increment": true,
+						"max": "parentModels",
+						"maxKey": "gun",
+						"localLimit": 1,
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
+						"availableIn": ["Russia"]
+					},
+					{
+						"name": "LMG",
+						"points": 15,
+						"increment": true,
+						"max": "parentModels",
+						"maxKey": "gun",
+						"localLimit": 1,
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
+						"availableIn": ["Russia"]
+					},
+					{
+						"name": "Grenade Launcher",
+						"points": 5,
+						"increment": true,
+						"max": 2,
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
+						"availableIn": ["Russia"]
+					},
+					{
+						"name": "RPG",
+						"points": 6,
+						"increment": true,
+						"max": 1,
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
+						"availableIn": ["Russia"]
+					}
+				],
+				"keywords": ["First Aid"],
+				"specialText": "1 NCO\n 4 Soldiers",
+				"equipment": ["Body Armor","Grenades","MOPP","Assault Rifles"]
+			},
+			{
+				"name": "VDV Airborne Squad",
+				"factions": [],
+				"order": 1,
+				"availableIn":[
+					{
+						"all": [{ "in": "Rifle Platoon" }, { "in": "Russia" }]			
+					}
+				],
+				"points": 0,
+				"models": 5,
+				"sortPriority": 3,
+				"limits": [
+					{
+						"key": "Rifle",
+						"limit": 5,
+						"perParent": true
+					}
+				],
+				"options": [
+					{
+						"name": "Inexperienced",
+						"points": 55,
+						"availableIn": ["Russia"],
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Regular",
+						"points": 75,
+						"availableIn": ["Russia"],
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Veteran",
+						"points": 97,
+						"availableIn": ["Russia"],
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Additional Men",
+						"points": 9,
+						"increment": true,
+						"max": 2,
+						"addsModels": 1,
+						"unlockedByLocal": "Inexperienced",
+						"availableIn": ["Russia"]
+					},
+					{
+						"name": "Additional Men",
+						"points": 12,
+						"increment": true,
+						"max": 2,
+						"addsModels": 1,
+						"unlockedByLocal": "Regular",
+						"availableIn": ["Russia"]
+					},
+					{
+						"name": "Additional Men",
+						"points": 15,
+						"increment": true,
+						"max": 2,
+						"addsModels": 1,
+						"unlockedByLocal": "Veteran",
+						"availableIn": ["Russia"]
+					},
+					{
+						"name": "Drone",
+						"points": 25,
+						"increment": true,
+						"max": 1,
+						"addsModels": 1,
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"]
+					},
+					{
+						"name": "NCO Pistol",
+						"points": -1,
+						"increment": true,
+						"max": "parentModels",
+						"maxKey": "gun",
+						"localLimit": 1,
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
+						"availableIn": ["Russia"]
+					},
+					{
+						"name": "NCO SMG",
+						"points": 4,
+						"increment": true,
+						"max": "parentModels",
+						"maxKey": "gun",
+						"localLimit": 1,
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
+						"availableIn": ["Russia"]
+					},
+					{
+						"name": "LMG",
+						"points": 15,
+						"increment": true,
+						"max": "parentModels",
+						"maxKey": "gun",
+						"localLimit": 1,
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
+						"availableIn": ["Russia"]
+					},
+					{
+						"name": "Grenade Launcher",
+						"points": 5,
+						"increment": true,
+						"max": 2,
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
+						"availableIn": ["Russia"]
+					},
+					{
+						"name": "RPG",
+						"points": 6,
+						"increment": true,
+						"max": 1,
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
+						"availableIn": ["Russia"]
+					},
+					{
+						"name": "Light AT Weapon",
+						"points": 5,
+						"increment": true,
+						"max": "parentModels",
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
+						"availableIn": ["Russia"]
+					}
+				],
+				"keywords": ["First Aid","Air Assault"],
+				"specialText": "1 NCO\n 4 Soldiers",
+				"equipment": ["Body Armor","Grenades","MOPP","Assault Rifles"]
+			},
+			{
+				"name": "VDV Airborne Squad",
+				"factions": [],
+				"order": 1,
+				"availableIn":[
+					{
+						"all": [{ "in": "Recce Platoon" }, { "in": "Russia" }]			
+					}
+				],
+				"points": 0,
+				"models": 5,
+				"sortPriority": 3,
+				"limits": [
+					{
+						"key": "Rifle",
+						"limit": 4,
+						"perParent": true
+					}
+				],
+				"options": [
+					{
+						"name": "Inexperienced",
+						"points": 55,
+						"availableIn": ["Russia"],
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Regular",
+						"points": 75,
+						"availableIn": ["Russia"],
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Veteran",
+						"points": 97,
+						"availableIn": ["Russia"],
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Additional Men",
+						"points": 9,
+						"increment": true,
+						"max": 2,
+						"addsModels": 1,
+						"unlockedByLocal": "Inexperienced",
+						"availableIn": ["Russia"]
+					},
+					{
+						"name": "Additional Men",
+						"points": 12,
+						"increment": true,
+						"max": 2,
+						"addsModels": 1,
+						"unlockedByLocal": "Regular",
+						"availableIn": ["Russia"]
+					},
+					{
+						"name": "Additional Men",
+						"points": 15,
+						"increment": true,
+						"max": 2,
+						"addsModels": 1,
+						"unlockedByLocal": "Veteran",
+						"availableIn": ["Russia"]
+					},
+					{
+						"name": "Drone",
+						"points": 25,
+						"increment": true,
+						"max": 1,
+						"addsModels": 1,
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"]
+					},
+					{
+						"name": "NCO Pistol",
+						"points": -1,
+						"increment": true,
+						"max": "parentModels",
+						"maxKey": "gun",
+						"localLimit": 1,
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
+						"availableIn": ["Russia"]
+					},
+					{
+						"name": "NCO SMG",
+						"points": 4,
+						"increment": true,
+						"max": "parentModels",
+						"maxKey": "gun",
+						"localLimit": 1,
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
+						"availableIn": ["Russia"]
+					},
+					{
+						"name": "LMG",
+						"points": 15,
+						"increment": true,
+						"max": "parentModels",
+						"maxKey": "gun",
+						"localLimit": 1,
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
+						"availableIn": ["Russia"]
+					},
+					{
+						"name": "Grenade Launcher",
+						"points": 5,
+						"increment": true,
+						"max": 2,
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
+						"availableIn": ["Russia"]
+					},
+					{
+						"name": "RPG",
+						"points": 6,
+						"increment": true,
+						"max": 1,
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
+						"availableIn": ["Russia"]
+					},
+					{
+						"name": "Light AT Weapon",
+						"points": 5,
+						"increment": true,
+						"max": "parentModels",
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
+						"availableIn": ["Russia"]
+					}
+				],
+				"keywords": ["First Aid","Air Assault"],
+				"specialText": "1 NCO\n 4 Soldiers",
+				"equipment": ["Body Armor","Grenades","MOPP","Assault Rifles"]
+			},
+			{
+				"name": "GRU Spetsnaz",
+				"factions": [],
+				"order": 1,
+				"availableIn":[
+					{
+						"all": [{ "in": "Rifle Platoon" }, { "in": "Russia" }]			
+					}
+				],
+				"points": 0,
+				"models": 4,
+				"sortPriority": 3,
+				"limits": [
+					{
+						"key": "Rifle",
+						"limit": 5,
+						"perParent": true
+					}
+				],
+				"options": [
+					{
+						"name": "Veteran",
+						"points": 85,
+						"availableIn": ["Russia"],
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Additional Men",
+						"points": 13,
+						"increment": true,
+						"max": 6,
+						"addsModels": 1,
+						"unlockedByLocal": "Veteran",
+						"availableIn": ["Russia"]
+					},
+					{
+						"name": "Drone",
+						"points": 25,
+						"increment": true,
+						"max": 1,
+						"addsModels": 1,
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"]
+					},
+					{
+						"name": "NCO Pistol",
+						"points": -1,
+						"increment": true,
+						"max": "parentModels",
+						"maxKey": "gun",
+						"localLimit": 1,
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
+						"availableIn": ["Russia"]
+					},
+					{
+						"name": "NCO SMG",
+						"points": 4,
+						"increment": true,
+						"max": "parentModels",
+						"maxKey": "gun",
+						"localLimit": 1,
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
+						"availableIn": ["Russia"]
+					},
+					{
+						"name": "SMGs",
+						"points": 4,
+						"increment": true,
+						"max": "parentModels",
+						"maxKey": "gun",
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
+						"availableIn": ["Russia"]
+					},
+					{
+						"name": "Shotguns",
+						"points": 4,
+						"increment": true,
+						"max": "parentModels",
+						"maxKey": "gun",
+						"localLimit": 5,
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
+						"availableIn": ["Russia"]
+					},
+					{
+						"name": "LMG",
+						"points": 15,
+						"increment": true,
+						"max": "parentModels",
+						"maxKey": "gun",
+						"localLimit": 1,
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
+						"availableIn": ["Russia"]
+					}
+				],
+				"keywords": ["First Aid","Air Assault","Elite","Variable Weapons"],
+				"specialText": "1 NCO\n 3 Soldiers",
+				"equipment": ["Body Armor","Grenades","MOPP","Assault Rifles","Night Vision"]
+			},
+			{
+				"name": "GRU Spetsnaz",
+				"factions": [],
+				"order": 1,
+				"availableIn":[
+					{
+						"all": [{ "in": "Recce Platoon" }, { "in": "Russia" }]			
+					}
+				],
+				"points": 0,
+				"models": 4,
+				"sortPriority": 3,
+				"limits": [
+					{
+						"key": "Rifle",
+						"limit": 4,
+						"perParent": true
+					}
+				],
+				"options": [
+					{
+						"name": "Veteran",
+						"points": 85,
+						"availableIn": ["Russia"],
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Additional Men",
+						"points": 13,
+						"increment": true,
+						"max": 6,
+						"addsModels": 1,
+						"unlockedByLocal": "Veteran",
+						"availableIn": ["Russia"]
+					},
+					{
+						"name": "Drone",
+						"points": 25,
+						"increment": true,
+						"max": 1,
+						"addsModels": 1,
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"]
+					},
+					{
+						"name": "NCO Pistol",
+						"points": -1,
+						"increment": true,
+						"max": "parentModels",
+						"maxKey": "gun",
+						"localLimit": 1,
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
+						"availableIn": ["Russia"]
+					},
+					{
+						"name": "NCO SMG",
+						"points": 4,
+						"increment": true,
+						"max": "parentModels",
+						"maxKey": "gun",
+						"localLimit": 1,
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
+						"availableIn": ["Russia"]
+					},
+					{
+						"name": "SMGs",
+						"points": 4,
+						"increment": true,
+						"max": "parentModels",
+						"maxKey": "gun",
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
+						"availableIn": ["Russia"]
+					},
+					{
+						"name": "Shotguns",
+						"points": 4,
+						"increment": true,
+						"max": "parentModels",
+						"maxKey": "gun",
+						"localLimit": 5,
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
+						"availableIn": ["Russia"]
+					},
+					{
+						"name": "LMG",
+						"points": 15,
+						"increment": true,
+						"max": "parentModels",
+						"maxKey": "gun",
+						"localLimit": 1,
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
+						"availableIn": ["Russia"]
+					}
+				],
+				"keywords": ["First Aid","Air Assault","Elite","Variable Weapons"],
+				"specialText": "1 NCO\n 3 Soldiers",
+				"equipment": ["Body Armor","Grenades","MOPP","Assault Rifles","Night Vision"]
+			},
+			{
+				"name": "Conscripted BMP Motor Rifle Squad",
+				"factions": [],
+				"order": 1,
+				"availableIn":[
+					{
+						"all": [{ "in": "Rifle Platoon" }, { "in": "Russia" }]			
+					}
+				],
+				"points": 0,
+				"models": 5,
+				"sortPriority": 3,
+				"limits": [
+					{
+						"key": "Rifle",
+						"limit": 5,
+						"perParent": true
+					}
+				],
+				"options": [
+					{
+						"name": "Inexperienced",
+						"points": 38,
+						"availableIn": ["Russia"],
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Regular",
+						"points": 45,
+						"availableIn": ["Russia"],
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Additional Men",
+						"points": 6,
+						"increment": true,
+						"max": 3,
+						"addsModels": 1,
+						"unlockedByLocal": "Inexperienced",
+						"availableIn": ["Russia"]
+					},
+					{
+						"name": "Additional Men",
+						"points": 9,
+						"increment": true,
+						"max": 3,
+						"addsModels": 1,
+						"unlockedByLocal": "Regular",
+						"availableIn": ["Russia"]
+					},
+					{
+						"name": "NCO Pistol",
+						"points": -1,
+						"increment": true,
+						"max": "parentModels",
+						"maxKey": "gun",
+						"localLimit": 1,
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
+						"availableIn": ["Russia"]
+					},
+					{
+						"name": "NCO SMG",
+						"points": 4,
+						"increment": true,
+						"max": "parentModels",
+						"maxKey": "gun",
+						"localLimit": 1,
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
+						"availableIn": ["Russia"]
+					},
+					{
+						"name": "LMG",
+						"points": 15,
+						"increment": true,
+						"max": "parentModels",
+						"maxKey": "gun",
+						"localLimit": 1,
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
+						"availableIn": ["Russia"]
+					},
+					{
+						"name": "RPG",
+						"points": 6,
+						"increment": true,
+						"max": 1,
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
+						"availableIn": ["Russia"]
+					}
+				],
+				"keywords": ["First Aid","Reluctant Fighters"],
+				"specialText": "1 NCO\n 4 Soldiers",
+				"equipment": ["Grenades","Assault Rifles"]
+			},
+			{
+				"name": "Conscripted BMP Motor Rifle Squad",
+				"factions": [],
+				"order": 1,
+				"availableIn":[
+					{
+						"all": [{ "in": "Recce Platoon" }, { "in": "Russia" }]			
+					}
+				],
+				"points": 0,
+				"models": 5,
+				"sortPriority": 3,
+				"limits": [
+					{
+						"key": "Rifle",
+						"limit": 4,
+						"perParent": true
+					}
+				],
+				"options": [
+					{
+						"name": "Inexperienced",
+						"points": 38,
+						"availableIn": ["Russia"],
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Regular",
+						"points": 45,
+						"availableIn": ["Russia"],
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Additional Men",
+						"points": 6,
+						"increment": true,
+						"max": 3,
+						"addsModels": 1,
+						"unlockedByLocal": "Inexperienced",
+						"availableIn": ["Russia"]
+					},
+					{
+						"name": "Additional Men",
+						"points": 9,
+						"increment": true,
+						"max": 3,
+						"addsModels": 1,
+						"unlockedByLocal": "Regular",
+						"availableIn": ["Russia"]
+					},
+					{
+						"name": "NCO Pistol",
+						"points": -1,
+						"increment": true,
+						"max": "parentModels",
+						"maxKey": "gun",
+						"localLimit": 1,
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
+						"availableIn": ["Russia"]
+					},
+					{
+						"name": "NCO SMG",
+						"points": 4,
+						"increment": true,
+						"max": "parentModels",
+						"maxKey": "gun",
+						"localLimit": 1,
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
+						"availableIn": ["Russia"]
+					},
+					{
+						"name": "LMG",
+						"points": 15,
+						"increment": true,
+						"max": "parentModels",
+						"maxKey": "gun",
+						"localLimit": 1,
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
+						"availableIn": ["Russia"]
+					},
+					{
+						"name": "RPG",
+						"points": 6,
+						"increment": true,
+						"max": 1,
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
+						"availableIn": ["Russia"]
+					}
+				],
+				"keywords": ["First Aid","Reluctant Fighters"],
+				"specialText": "1 NCO\n 4 Soldiers",
+				"equipment": ["Grenades","Assault Rifles"]
+			},
+			{
 				"name": "Marine Rifle Platoon",
 				"factions": [],
 				"order": 1,
@@ -3070,7 +4371,7 @@
 						"requireChooseOneKey": "morale"
 					},
 					{
-						"name": "Veteran",
+						"name": "Veteran/",
 						"points": 84,
 						"availableIn": ["United States of America"],
 						"requireChooseOneKey": "morale"
@@ -4044,7 +5345,7 @@
 				],
 				"keywords": ["MOPP"],
 				"specialText": "8 Crew Members",
-				"equipment": []
+				"equipment": ["Heavy Howitzer"]
 			},
 			{
 				"name": "CAESAR SPG",
@@ -4149,6 +5450,594 @@
 				"equipment": ["Turret Mounted Heavy Howitzer"]
 			},
 			{
+				"name": "2B9 Vasilek / 2B16 Nona-K Medium Howitzer",
+				"factions": [],
+				"order": 1,
+				"availableIn":[
+					{
+						"all": [{ "in": "Artillery Platoon" }, { "in": "Russia" }]			
+					}
+				],
+				"points": 0,
+				"models": 4,
+				"sortPriority": 3,
+				"limits": [
+					{
+						"key": "Arty",
+						"limit": 4,
+						"perParent": true
+					}
+				],
+				"options": [
+					{
+						"name": "Inexperienced",
+						"points": 60,
+						"availableIn": ["Russia"],
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Regular",
+						"points": 85,
+						"availableIn": ["Russia"],
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Veteran",
+						"points": 111,
+						"availableIn": ["Russia"],
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Spotter",
+						"points": 10,
+						"addsModels": 1,
+						"availableIn": ["Russia"],
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
+						"requireChooseOneKey": "morale"
+					}
+				],
+				"keywords": ["MOPP"],
+				"specialText": "4 Crew Members",
+				"equipment": ["Medium Howitzer"]
+			},
+			{
+				"name": "2A18 D-30 Heavy Howitzer",
+				"factions": [],
+				"order": 1,
+				"availableIn":[
+					{
+						"all": [{ "in": "Artillery Platoon" }, { "in": "Russia" }]			
+					}
+				],
+				"points": 0,
+				"models": 7,
+				"sortPriority": 3,
+				"limits": [
+					{
+						"key": "Arty",
+						"limit": 4,
+						"perParent": true
+					}
+				],
+				"options": [
+					{
+						"name": "Inexperienced",
+						"points": 95,
+						"availableIn": ["Russia"],
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Regular",
+						"points": 135,
+						"availableIn": ["Russia"],
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Veteran",
+						"points": 178,
+						"availableIn": ["Russia"],
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Spotter",
+						"points": 10,
+						"addsModels": 1,
+						"availableIn": ["Russia"],
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
+						"requireChooseOneKey": "morale"
+					}
+				],
+				"keywords": ["MOPP"],
+				"specialText": "7 Crew Members",
+				"equipment": ["Heavy Howitzer"]
+			},
+			{
+				"name": "2A29 MT-22 Rapira Super Heavy AT Gun",
+				"factions": [],
+				"order": 1,
+				"availableIn":[
+					{
+						"all": [{ "in": "Artillery Platoon" }, { "in": "Russia" }]			
+					}
+				],
+				"points": 0,
+				"models": 6,
+				"sortPriority": 3,
+				"limits": [
+					{
+						"key": "Arty",
+						"limit": 4,
+						"perParent": true
+					}
+				],
+				"options": [
+					{
+						"name": "Inexperienced",
+						"points": 95,
+						"availableIn": ["Russia"],
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Regular",
+						"points": 135,
+						"availableIn": ["Russia"],
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Veteran",
+						"points": 178,
+						"availableIn": ["Russia"],
+						"requireChooseOneKey": "morale"
+					}
+				],
+				"keywords": ["MOPP"],
+				"specialText": "6 Crew Members",
+				"equipment": ["Super Heavy AT Gun"]
+			},
+			{
+				"name": "ZU-23-2 AA Gun",
+				"factions": [],
+				"order": 1,
+				"availableIn":[
+					{
+						"all": [{ "in": "Artillery Platoon" }, { "in": "Russia" }]			
+					}
+				],
+				"points": 0,
+				"models": 3,
+				"sortPriority": 3,
+				"limits": [
+					{
+						"key": "Arty",
+						"limit": 4,
+						"perParent": true
+					}
+				],
+				"options": [
+					{
+						"name": "Inexperienced",
+						"points": 55,
+						"availableIn": ["Russia"],
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Regular",
+						"points": 65,
+						"availableIn": ["Russia"],
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Veteran",
+						"points": 76,
+						"availableIn": ["Russia"],
+						"requireChooseOneKey": "morale"
+					}
+				],
+				"keywords": ["MOPP"],
+				"specialText": "3 Crew Members",
+				"equipment": ["Twin Platform Mounted Light Autocannon"]
+			},
+			{
+				"name": "AZP S-60 AA Gun",
+				"factions": [],
+				"order": 1,
+				"availableIn":[
+					{
+						"all": [{ "in": "Artillery Platoon" }, { "in": "Russia" }]			
+					}
+				],
+				"points": 0,
+				"models": 4,
+				"sortPriority": 3,
+				"limits": [
+					{
+						"key": "Arty",
+						"limit": 4,
+						"perParent": true
+					}
+				],
+				"options": [
+					{
+						"name": "Inexperienced",
+						"points": 35,
+						"availableIn": ["Russia"],
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Regular",
+						"points": 50,
+						"availableIn": ["Russia"],
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Veteran",
+						"points": 65,
+						"availableIn": ["Russia"],
+						"requireChooseOneKey": "morale"
+					}
+				],
+				"keywords": ["MOPP"],
+				"specialText": "4 Crew Members",
+				"equipment": ["Platform Mounted Heavy Autocannon"]
+			},
+			{
+				"name": "2S23 Nona-SVK SPG",
+				"factions": [],
+				"order": 1,
+				"availableIn":[
+					{
+						"all": [{ "in": "Artillery Platoon" }, { "in": "Russia" }]			
+					}
+				],
+				"points": 0,
+				"models": 1,
+				"sortPriority": 3,
+				"limits": [
+					{
+						"key": "Arty",
+						"limit": 4,
+						"perParent": true
+					}
+				],
+				"options": [
+					{
+						"name": "Inexperienced",
+						"points": 120,
+						"availableIn": ["Russia"],
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Regular",
+						"points": 150,
+						"availableIn": ["Russia"],
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Veteran",
+						"points": 180,
+						"availableIn": ["Russia"],
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Spotter",
+						"points": 10,
+						"addsModels": 1,
+						"availableIn": ["Russia"],
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
+						"requireChooseOneKey": "morale"
+					}
+				],
+				"keywords": ["Ampihibious"],
+				"specialText": "Armored Car/Carrier - 7+\n Wheeled Vehicle",
+				"equipment": ["Turret Mounted Medium Howitzer"]
+			},
+			{
+				"name": "2S9 Nona SPG",
+				"factions": [],
+				"order": 1,
+				"availableIn":[
+					{
+						"all": [{ "in": "Artillery Platoon" }, { "in": "Russia" }]			
+					}
+				],
+				"points": 0,
+				"models": 1,
+				"sortPriority": 3,
+				"limits": [
+					{
+						"key": "Arty",
+						"limit": 4,
+						"perParent": true
+					}
+				],
+				"options": [
+					{
+						"name": "Inexperienced",
+						"points": 88,
+						"availableIn": ["Russia"],
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Regular",
+						"points": 110,
+						"availableIn": ["Russia"],
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Veteran",
+						"points": 132,
+						"availableIn": ["Russia"],
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Spotter",
+						"points": 10,
+						"addsModels": 1,
+						"availableIn": ["Russia"],
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
+						"requireChooseOneKey": "morale"
+					}
+				],
+				"keywords": ["Ampihibious"],
+				"specialText": "Armored Car/Carrier - 7+\n Tracked Vehicle",
+				"equipment": ["Turret Mounted Medium Howitzer"]
+			},
+			{
+				"name": "2S1 Gvozdika SPG",
+				"factions": [],
+				"order": 1,
+				"availableIn":[
+					{
+						"all": [{ "in": "Artillery Platoon" }, { "in": "Russia" }]			
+					}
+				],
+				"points": 0,
+				"models": 1,
+				"sortPriority": 3,
+				"limits": [
+					{
+						"key": "Arty",
+						"limit": 4,
+						"perParent": true
+					}
+				],
+				"options": [
+					{
+						"name": "Inexperienced",
+						"points": 88,
+						"availableIn": ["Russia"],
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Regular",
+						"points": 110,
+						"availableIn": ["Russia"],
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Veteran",
+						"points": 132,
+						"availableIn": ["Russia"],
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Spotter",
+						"points": 10,
+						"addsModels": 1,
+						"availableIn": ["Russia"],
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
+						"requireChooseOneKey": "morale"
+					}
+				],
+				"keywords": ["Ampihibious"],
+				"specialText": "Armored Car/Carrier - 7+\n Tracked Vehicle",
+				"equipment": ["Turret Mounted Medium Howitzer"]
+			},
+			{
+				"name": "2S40 Floks SPG",
+				"factions": [],
+				"order": 1,
+				"availableIn":[
+					{
+						"all": [{ "in": "Artillery Platoon" }, { "in": "Russia" }]			
+					}
+				],
+				"points": 0,
+				"models": 1,
+				"sortPriority": 3,
+				"limits": [
+					{
+						"key": "Arty",
+						"limit": 4,
+						"perParent": true
+					}
+				],
+				"options": [
+					{
+						"name": "Inexperienced",
+						"points": 88,
+						"availableIn": ["Russia"],
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Regular",
+						"points": 110,
+						"availableIn": ["Russia"],
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Veteran",
+						"points": 132,
+						"availableIn": ["Russia"],
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Spotter",
+						"points": 10,
+						"addsModels": 1,
+						"availableIn": ["Russia"],
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
+						"requireChooseOneKey": "morale"
+					}
+				],
+				"keywords": [],
+				"specialText": "Armored Car/Carrier - 7+\n Wheeled Vehicle",
+				"equipment": ["Turret Mounted Medium Howitzer"]
+			},
+			{
+				"name": "2S3 Akatsiya SPG",
+				"factions": [],
+				"order": 1,
+				"availableIn":[
+					{
+						"all": [{ "in": "Artillery Platoon" }, { "in": "Russia" }]			
+					}
+				],
+				"points": 0,
+				"models": 1,
+				"sortPriority": 3,
+				"limits": [
+					{
+						"key": "Arty",
+						"limit": 4,
+						"perParent": true
+					}
+				],
+				"options": [
+					{
+						"name": "Inexperienced",
+						"points": 116,
+						"availableIn": ["Russia"],
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Regular",
+						"points": 145,
+						"availableIn": ["Russia"],
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Veteran",
+						"points": 174,
+						"availableIn": ["Russia"],
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Spotter",
+						"points": 10,
+						"addsModels": 1,
+						"availableIn": ["Russia"],
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
+						"requireChooseOneKey": "morale"
+					}
+				],
+				"keywords": [],
+				"specialText": "Armored Car/Carrier - 7+\n Tracked Vehicle",
+				"equipment": ["Turret Mounted Heavy Howitzer"]
+			},
+			{
+				"name": "2S19 Msta /2S35 Koalitsiya-SV SPG",
+				"factions": [],
+				"order": 1,
+				"availableIn":[
+					{
+						"all": [{ "in": "Artillery Platoon" }, { "in": "Russia" }]			
+					}
+				],
+				"points": 0,
+				"models": 1,
+				"sortPriority": 3,
+				"limits": [
+					{
+						"key": "Arty",
+						"limit": 4,
+						"perParent": true
+					}
+				],
+				"options": [
+					{
+						"name": "Inexperienced",
+						"points": 116,
+						"availableIn": ["Russia"],
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Regular",
+						"points": 145,
+						"availableIn": ["Russia"],
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Veteran",
+						"points": 174,
+						"availableIn": ["Russia"],
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Spotter",
+						"points": 10,
+						"addsModels": 1,
+						"availableIn": ["Russia"],
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
+						"requireChooseOneKey": "morale"
+					}
+				],
+				"keywords": [],
+				"specialText": "Armored Car/Carrier - 7+\n Tracked Vehicle",
+				"equipment": ["Turret Mounted Heavy Howitzer"]
+			},
+			{
+				"name": "BM21 Grad / 9A53-G Tornado-G MLRs",
+				"factions": [],
+				"order": 1,
+				"availableIn":[
+					{
+						"all": [{ "in": "Artillery Platoon" }, { "in": "Russia" }]			
+					}
+				],
+				"points": 0,
+				"models": 1,
+				"sortPriority": 3,
+				"limits": [
+					{
+						"key": "Arty",
+						"limit": 4,
+						"perParent": true
+					}
+				],
+				"options": [
+					{
+						"name": "Inexperienced",
+						"points": 96,
+						"availableIn": ["Russia"],
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Regular",
+						"points": 120,
+						"availableIn": ["Russia"],
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Veteran",
+						"points": 144,
+						"availableIn": ["Russia"],
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Spotter",
+						"points": 10,
+						"addsModels": 1,
+						"availableIn": ["Russia"],
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
+						"requireChooseOneKey": "morale"
+					}
+				],
+				"keywords": [],
+				"specialText": "Armored Car/Carrier - 7+\n Wheeled Vehicle",
+				"equipment": ["Turret Mounted MLRS"]
+			},
+			{
 				"name": "M119 / M777 Heavy Howitzer",
 				"factions": [],
 				"order": 1,
@@ -4197,7 +6086,7 @@
 				],
 				"keywords": ["MOPP","US Army"],
 				"specialText": "8 Crew Members",
-				"equipment": []
+				"equipment": ["Heavy Howitzer"]
 			},
 			{
 				"name": "M109 SPG",

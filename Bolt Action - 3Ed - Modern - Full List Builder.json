@@ -8583,6 +8583,521 @@
 				"keywords": ["Transport","Air Lift"],
 				"specialText": "Light Helicopter - 7+\n Helicopter\n Transport: 20",
 				"equipment": ["Port Side Door Mounted MMG","STBD Side Door Mounted MMG\n Air Lift: S"]
+			},
+			{
+				"name": "Bell AH-1Z Viper Attack Helicopter",
+				"factions": [],
+				"order": 1,
+				"availableIn":[
+					{
+						"all": [{ "in": "Air Support" }, { "in": "United States of America" }]			
+					}
+				],
+				"points": 0,
+				"models": 1,
+				"sortPriority": 3,
+				"limits": [
+					{
+						"key": "gunship",
+						"limit": 2,
+						"perParent": true
+					}
+				],
+				"options": [
+					{
+						"name": "Inexperienced",
+						"points": 60,
+						"availableIn": ["United States of America"],
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Regular",
+						"points": 75,
+						"availableIn": ["United States of America"],
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Veteran",
+						"points": 90,
+						"availableIn": ["United States of America"],
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "US Army",
+						"points": 0,
+						"perModel": true,
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
+						"availableIn": ["United States of America"],
+						"requireChooseOneKey": "branchUS"
+					},
+					{
+						"name": "USMC",
+						"points": 1,
+						"perModel": true,
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
+						"availableIn": ["United States of America"],
+						"requireChooseOneKey": "branchUS"
+					},
+					{
+						"name": "Two Pylon Mounted Unguided Rocket Pods",
+						"points": 90,
+						"availableIn": ["United States of America"],
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
+						"chooseOneKey": "priWeapon"
+					},
+					{
+						"name": "Pylon Mounted ATGM",
+						"points": 100,
+						"availableIn": ["United States of America"],
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
+						"chooseOneKey": "priWeapon"
+					}
+				],
+				"keywords": [],
+				"specialText": "Light Helicopter - 7+\n Helicopter",
+				"equipment": ["Chin Mounted Light Autocannon"]
+			},
+			{
+				"name": "Boeing AH-64 Apache Attack Helicopter",
+				"factions": [],
+				"order": 1,
+				"availableIn":[
+					{
+						"all": [{ "in": "Air Support" }, { "in": "United States of America" }]			
+					}
+				],
+				"points": 0,
+				"models": 1,
+				"sortPriority": 3,
+				"limits": [
+					{
+						"key": "gunship",
+						"limit": 2,
+						"perParent": true
+					}
+				],
+				"options": [
+					{
+						"name": "Inexperienced",
+						"points": 92,
+						"availableIn": ["United States of America"],
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Regular",
+						"points": 115,
+						"availableIn": ["United States of America"],
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Veteran",
+						"points": 138,
+						"availableIn": ["United States of America"],
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Two Pylon Mounted Unguided Rocket Pods",
+						"points": 90,
+						"availableIn": ["United States of America"],
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"]
+					},
+					{
+						"name": "Pylon Mounted ATGM",
+						"points": 100,
+						"availableIn": ["United States of America"],
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"]
+					}
+				],
+				"keywords": ["US Army"],
+				"specialText": "Heavy Helicopter - 8+\n Helicopter",
+				"equipment": ["Chin Mounted Heavy Autocannon"]
+			},
+			{
+				"name": "Bell OH-58F Kiowa Attack Helicopter",
+				"factions": [],
+				"order": 1,
+				"availableIn":[
+					{
+						"all": [{ "in": "Air Support" }, { "in": "United States of America" }]			
+					}
+				],
+				"points": 0,
+				"models": 1,
+				"sortPriority": 3,
+				"limits": [
+					{
+						"key": "gunship",
+						"limit": 2,
+						"perParent": true
+					}
+				],
+				"options": [
+					{
+						"name": "Inexperienced",
+						"points": 36,
+						"availableIn": ["United States of America"],
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Regular",
+						"points": 45,
+						"availableIn": ["United States of America"],
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Veteran",
+						"points": 54,
+						"availableIn": ["United States of America"],
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "US Army",
+						"points": 0,
+						"perModel": true,
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
+						"availableIn": ["United States of America"],
+						"requireChooseOneKey": "branchUS"
+					},
+					{
+						"name": "USMC",
+						"points": 1,
+						"perModel": true,
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
+						"availableIn": ["United States of America"],
+						"requireChooseOneKey": "branchUS"
+					},
+					{
+						"name": "Two Pylon Mounted MMGs",
+						"points": 10,
+						"availableIn": ["United States of America"],
+						"chooseOneKey": "priWeapon",
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"]
+					},
+					{
+						"name": "Two Pylon Mounted Unguided Rocket Pods",
+						"points": 90,
+						"availableIn": ["United States of America"],
+						"chooseOneKey": "priWeapon",
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"]
+					},
+					{
+						"name": "Pylon Mounted ATGM",
+						"points": 100,
+						"availableIn": ["United States of America"],
+						"chooseOneKey": "priWeapon",
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"]
+					}
+				],
+				"keywords": ["Spotter"],
+				"specialText": "Light Helicopter - 7+\n Helicopter",
+				"equipment": []
+			},
+			{
+				"name": "Boeing CH-47 Chinook Cargo Helicopter",
+				"factions": [],
+				"order": 1,
+				"availableIn":[
+					{
+						"all": [{ "in": "Air Support" }, { "in": "United States of America" }]			
+					}
+				],
+				"points": 0,
+				"models": 1,
+				"sortPriority": 3,
+				"limits": [
+					{
+						"key": "transport",
+						"limit": 2,
+						"perParent": true
+					}
+				],
+				"options": [
+					{
+						"name": "Inexperienced",
+						"points": 132,
+						"availableIn": ["United States of America"],
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Regular",
+						"points": 165,
+						"availableIn": ["United States of America"],
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Veteran",
+						"points": 198,
+						"availableIn": ["United States of America"],
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "US Army",
+						"points": 0,
+						"perModel": true,
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
+						"availableIn": ["United States of America"],
+						"requireChooseOneKey": "branchUS"
+					},
+					{
+						"name": "USMC",
+						"points": 1,
+						"perModel": true,
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
+						"availableIn": ["United States of America"],
+						"requireChooseOneKey": "branchUS"
+					}
+				],
+				"keywords": ["Transport","Air Lift (L)"],
+				"specialText": "Heavy Helicopter - 8+\n Helicopter\n Transport: 40",
+				"equipment": ["Port Side Mounted MMG","STBD Side Mounted MMG","Rear Mounted MMG"]
+			},
+			{
+				"name": "Sikorsky CH-53 Sea Stallion Cargo Helicopter",
+				"factions": [],
+				"order": 1,
+				"availableIn":[
+					{
+						"all": [{ "in": "Air Support" }, { "in": "United States of America" }]			
+					}
+				],
+				"points": 0,
+				"models": 1,
+				"sortPriority": 3,
+				"limits": [
+					{
+						"key": "transport",
+						"limit": 2,
+						"perParent": true
+					}
+				],
+				"options": [
+					{
+						"name": "Inexperienced",
+						"points": 112,
+						"availableIn": ["United States of America"],
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Regular",
+						"points": 140,
+						"availableIn": ["United States of America"],
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Veteran",
+						"points": 168,
+						"availableIn": ["United States of America"],
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "US Army",
+						"points": 0,
+						"perModel": true,
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
+						"availableIn": ["United States of America"],
+						"requireChooseOneKey": "branchUS"
+					},
+					{
+						"name": "USMC",
+						"points": 1,
+						"perModel": true,
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
+						"availableIn": ["United States of America"],
+						"requireChooseOneKey": "branchUS"
+					}
+				],
+				"keywords": ["Transport","Air Lift (M)"],
+				"specialText": "Heavy Helicopter - 8+\n Helicopter\n Transport: 30",
+				"equipment": ["Port Side Mounted MMG","STBD Side Mounted MMG"]
+			},
+			{
+				"name": "Bell UH-1Y Venom Gunship Helicopter",
+				"factions": [],
+				"order": 1,
+				"availableIn":[
+					{
+						"all": [{ "in": "Air Support" }, { "in": "United States of America" }]			
+					}
+				],
+				"points": 0,
+				"models": 1,
+				"sortPriority": 3,
+				"limits": [
+					{
+						"key": "transport",
+						"limit": 2,
+						"perParent": true
+					}
+				],
+				"options": [
+					{
+						"name": "Inexperienced",
+						"points": 36,
+						"availableIn": ["United States of America"],
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Regular",
+						"points": 45,
+						"availableIn": ["United States of America"],
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Veteran",
+						"points": 54,
+						"availableIn": ["United States of America"],
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "US Army",
+						"points": 0,
+						"perModel": true,
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
+						"availableIn": ["United States of America"],
+						"requireChooseOneKey": "branchUS"
+					},
+					{
+						"name": "USMC",
+						"points": 1,
+						"perModel": true,
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
+						"availableIn": ["United States of America"],
+						"requireChooseOneKey": "branchUS"
+					}
+				],
+				"keywords": ["Transport"],
+				"specialText": "Unarmored Helicopter - 6+\n Helicopter\n Transport: 10",
+				"equipment": ["Port Side Mounted MMG","STBD Side Mounted MMG","Two Pylon Mounted Unguided Rocket Pods"]
+			},
+			{
+				"name": "Sikorsky HH-60 Pave Hawk Cargo Helicopter",
+				"factions": [],
+				"order": 1,
+				"availableIn":[
+					{
+						"all": [{ "in": "Air Support" }, { "in": "United States of America" }]			
+					}
+				],
+				"points": 0,
+				"models": 1,
+				"sortPriority": 3,
+				"limits": [
+					{
+						"key": "transport",
+						"limit": 2,
+						"perParent": true
+					}
+				],
+				"options": [
+					{
+						"name": "Inexperienced",
+						"points": 64,
+						"availableIn": ["United States of America"],
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Regular",
+						"points": 79,
+						"availableIn": ["United States of America"],
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Veteran",
+						"points": 95,
+						"availableIn": ["United States of America"],
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "US Army",
+						"points": 0,
+						"perModel": true,
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
+						"availableIn": ["United States of America"],
+						"requireChooseOneKey": "branchUS"
+					},
+					{
+						"name": "USMC",
+						"points": 1,
+						"perModel": true,
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
+						"availableIn": ["United States of America"],
+						"requireChooseOneKey": "branchUS"
+					},
+					{
+						"name": "Port and STBD MMGs",
+						"points": 0,
+						"availableIn": ["United States of America"],
+						"chooseOneKey": "priWeapon",
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"]
+					},
+					{
+						"name": "Port and STBD Gatling Guns",
+						"points": 20,
+						"availableIn": ["United States of America"],
+						"chooseOneKey": "priWeapon",
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"]
+					}
+				],
+				"keywords": ["Transport"],
+				"specialText": "Light Helicopter - 7+\n Helicopter\n Transport: 12",
+				"equipment": []
+			},
+			{
+				"name": "Boeing MH-6 Little Bird Light Attack Helicopter",
+				"factions": [],
+				"order": 1,
+				"availableIn":[
+					{
+						"all": [{ "in": "Air Support" }, { "in": "United States of America" }]			
+					}
+				],
+				"points": 0,
+				"models": 1,
+				"sortPriority": 3,
+				"limits": [
+					{
+						"key": "gunship",
+						"limit": 2,
+						"perParent": true
+					}
+				],
+				"options": [
+					{
+						"name": "Inexperienced",
+						"points": 44,
+						"availableIn": ["United States of America"],
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Regular",
+						"points": 55,
+						"availableIn": ["United States of America"],
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Veteran",
+						"points": 66,
+						"availableIn": ["United States of America"],
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Two Pylon Mounted Unguided Rocket Pods",
+						"points": 90,
+						"availableIn": ["United States of America"],
+						"chooseOneKey": "priWeapon",
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"]
+					},
+					{
+						"name": "Pylon Mounted ATGM",
+						"points": 100,
+						"availableIn": ["United States of America"],
+						"chooseOneKey": "priWeapon",
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"]
+					}
+				],
+				"keywords": ["US Army"],
+				"specialText": "Unarmored Helicopter - 6+\n Helicopter",
+				"equipment": ["Twin Pylon Mounted Gatling Guns"]
 			}
 		]
 	}

@@ -1447,7 +1447,7 @@
 					}
 				],
 				"points": 0,
-				"models": 1,
+				"models": 2,
 				"sortPriority": 2,
 				"limits": [
 					{
@@ -1476,32 +1476,6 @@
 							"United States of America"
 						],
 						"requireChooseOneKey": "morale"
-					},
-					{
-						"name": "Additional Men",
-						"points": 10,
-						"increment": true,
-						"max": 2,
-						"addsModels": 1,
-						"unlockedByLocal": "Regular",
-						"availableIn": [
-							"France",
-							"Russia",
-							"United States of America"
-						]
-					},
-					{
-						"name": "Additional Men",
-						"points": 13,
-						"increment": true,
-						"max": 2,
-						"addsModels": 1,
-						"unlockedByLocal": "Veteran",
-						"availableIn": [
-							"France",
-							"Russia",
-							"United States of America"
-						]
 					},
 					{
 						"name": "NCO SMG",
@@ -1586,11 +1560,19 @@
 						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
 						"availableIn": ["United States of America"],
 						"requireChooseOneKey": "branchUS"
+					},
+					{
+						"name": "USMC",
+						"points": 1,
+						"perModel": true,
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
+						"availableIn": ["United States of America"],
+						"requireChooseOneKey": "branchUS"
 					}
 				],
 				"keywords": ["Infiltrator","First Aid"],
-				"specialText": "1 Forward Artillery Observer",
-				"equipment": ["Body Armor","MOPP"]
+				"specialText": "1 Sniper \n 1 Observer",
+				"equipment": ["MOPP"]
 			},
 			{
 				"name": "Carl Gustav / Eryx AT Team",
@@ -8576,7 +8558,7 @@
 				"order": 1,
 				"availableIn":[
 					{
-						"all": [{ "in": "Armored Platoon" }, { "in": "France" }]			
+						"all": [{ "in": "Artillery Platoon" }, { "in": "France" }]			
 					}
 				],
 				"points": 0,
@@ -8584,8 +8566,8 @@
 				"sortPriority": 3,
 				"limits": [
 					{
-						"key": "Vehicles",
-						"limit": 5,
+						"key": "Arty",
+						"limit": 4,
 						"perParent": true
 					}
 				],
@@ -8668,7 +8650,7 @@
 				"order": 1,
 				"availableIn":[
 					{
-						"all": [{ "in": "Armored Platoon" }, { "in": "France" }]			
+						"all": [{ "in": "Artillery Platoon" }, { "in": "France" }]			
 					}
 				],
 				"points": 0,
@@ -8676,8 +8658,8 @@
 				"sortPriority": 3,
 				"limits": [
 					{
-						"key": "Vehicles",
-						"limit": 5,
+						"key": "Arty",
+						"limit": 4,
 						"perParent": true
 					}
 				],
@@ -8717,7 +8699,7 @@
 				"order": 1,
 				"availableIn":[
 					{
-						"all": [{ "in": "Armored Platoon" }, { "in": "France" }]			
+						"all": [{ "in": "Artillery Platoon" }, { "in": "France" }]			
 					}
 				],
 				"points": 0,
@@ -8725,8 +8707,8 @@
 				"sortPriority": 3,
 				"limits": [
 					{
-						"key": "Vehicles",
-						"limit": 5,
+						"key": "Arty",
+						"limit": 4,
 						"perParent": true
 					}
 				],
@@ -9743,7 +9725,7 @@
 					}
 				],
 				"keywords": ["Advanced Ammunition","Advanced Optics","Fire Control System","US Army"],
-				"specialText": "Armored Car/Carrier - 7+ or Light Tank - 8+ when Double V-hull Selected\n Transport: 9\n Wheeled Vehicle",
+				"specialText": "Armored Car/Carrier - 7+ or Light Tank - 8+ when Double V-hull Selected\n Wheeled Vehicle",
 				"equipment": ["Smoke Dischargers","Turret Mounted Heavy AT Gun","Turret Mounted Coaxial MMG"]
 			},
 			{
@@ -9752,7 +9734,7 @@
 				"order": 1,
 				"availableIn":[
 					{
-						"all": [{ "in": "Armored Platoon" }, { "in": "United States of America" }]			
+						"all": [{ "in": "Artillery Platoon" }, { "in": "United States of America" }]			
 					}
 				],
 				"points": 0,
@@ -9760,8 +9742,8 @@
 				"sortPriority": 3,
 				"limits": [
 					{
-						"key": "Vehicles",
-						"limit": 5,
+						"key": "Arty",
+						"limit": 4,
 						"perParent": true
 					}
 				],
@@ -9804,7 +9786,7 @@
 					}
 				],
 				"keywords": ["US Army"],
-				"specialText": "Armored Car/Carrier - 7+ or Light Tank - 8+ when Double V-hull Selected\n Transport: 9\n Wheeled Vehicle",
+				"specialText": "Armored Car/Carrier - 7+ or Light Tank - 8+ when Double V-hull Selected\n Wheeled Vehicle",
 				"equipment": ["Smoke Dischargers","Rear Facing Hull Mounted Heavy Mortar"]
 			},
 			{
@@ -9865,7 +9847,7 @@
 					}
 				],
 				"keywords": ["US Army"],
-				"specialText": "Armored Car/Carrier - 7+ or Light Tank - 8+ when Double V-hull Selected\n Transport: 9\n Wheeled Vehicle",
+				"specialText": "Armored Car/Carrier - 7+ or Light Tank - 8+ when Double V-hull Selected\n Wheeled Vehicle",
 				"equipment": ["Smoke Dischargers","Turret Mounted ATGM"]
 			},
 			{
@@ -10033,7 +10015,7 @@
 				"order": 1,
 				"availableIn":[
 					{
-						"all": [{ "in": "Armored Platoon" }, { "in": "United States of America" }]			
+						"all": [{ "in": "Artillery Platoon" }, { "in": "United States of America" }]			
 					}
 				],
 				"points": 0,
@@ -10041,8 +10023,8 @@
 				"sortPriority": 3,
 				"limits": [
 					{
-						"key": "Vehicles",
-						"limit": 5,
+						"key": "Arty",
+						"limit": 4,
 						"perParent": true
 					}
 				],

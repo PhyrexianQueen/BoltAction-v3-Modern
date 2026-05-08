@@ -932,6 +932,80 @@
 				"equipment": []
 			},
 			{
+				"name": "Medic, ATM-1 'Ingul' Ambulance",
+				"factions": [],
+				"order": 1,
+				"availableIn":[
+					{
+						"all": [{ "in": "Rifle Platoon" }, { "in": "Russia" }]			
+					}
+				],
+				"points": 0,
+				"models": 1,
+				"sortPriority": 2,
+				"limits": [
+					{
+						"key": "Medic",
+						"limit": 1,
+						"perParent": true
+					}
+				],
+				"options": [
+					{
+						"name": "Regular",
+						"points": 55,
+						"availableIn": ["Russia"],
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Veteran",
+						"points": 66,
+						"availableIn": ["Russia"],
+						"requireChooseOneKey": "morale"
+					}
+				],
+				"keywords": ["Medical Vehicle","Ambulance"],
+				"specialText": "Armored Carrier - 7+\n Wheeled Vehicle",
+				"equipment": []
+			},
+			{
+				"name": "Medic, Ural Typhoon Ambulance",
+				"factions": [],
+				"order": 1,
+				"availableIn":[
+					{
+						"all": [{ "in": "Rifle Platoon" }, { "in": "Russia" }]			
+					}
+				],
+				"points": 0,
+				"models": 1,
+				"sortPriority": 2,
+				"limits": [
+					{
+						"key": "Medic",
+						"limit": 1,
+						"perParent": true
+					}
+				],
+				"options": [
+					{
+						"name": "Regular",
+						"points": 55,
+						"availableIn": ["Russia"],
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Veteran",
+						"points": 66,
+						"availableIn": ["Russia"],
+						"requireChooseOneKey": "morale"
+					}
+				],
+				"keywords": ["Medical Vehicle","Ambulance","MRAPP"],
+				"specialText": "Armored Car/Carrier - 7+\n Wheeled Vehicle",
+				"equipment": []
+			},
+			{
 				"name": "Medic, Humvee",
 				"factions": [],
 				"order": 1,
@@ -954,13 +1028,13 @@
 					{
 						"name": "Regular",
 						"points": 28,
-						"availableIn": ["France"],
+						"availableIn": ["United States of America"],
 						"requireChooseOneKey": "morale"
 					},
 					{
 						"name": "Veteran",
 						"points": 32,
-						"availableIn": ["France"],
+						"availableIn": ["United States of America"],
 						"requireChooseOneKey": "morale"
 					},
 					{
@@ -8666,27 +8740,21 @@
 				"options": [
 					{
 						"name": "Inexperienced",
-						"points": 64,
+						"points": 60,
 						"availableIn": ["France"],
 						"requireChooseOneKey": "morale"
 					},
 					{
 						"name": "Regular",
-						"points": 74,
+						"points": 75,
 						"availableIn": ["France"],
 						"requireChooseOneKey": "morale"
 					},
 					{
 						"name": "Veteran",
-						"points": 84,
+						"points": 90,
 						"availableIn": ["France"],
 						"requireChooseOneKey": "morale"
-					},
-					{
-						"name": "Command Vehicle",
-						"points": 10,
-						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
-						"availableIn": ["France"]
 					}
 				],
 				"keywords": ["Stationary Firing Platform"],
@@ -8730,17 +8798,2134 @@
 						"points": 282,
 						"availableIn": ["France"],
 						"requireChooseOneKey": "morale"
-					},
-					{
-						"name": "Command Vehicle",
-						"points": 10,
-						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
-						"availableIn": ["France"]
 					}
 				],
 				"keywords": [],
 				"specialText": "Light Tank - 8+\n Tracked Vehicle",
 				"equipment": ["Turret Mounted Twin Heavy Autocannons"]
+			},
+			{
+				"name": "T-54 MBT",
+				"factions": [],
+				"order": 1,
+				"availableIn":[
+					{
+						"all": [{ "in": "Armored Platoon" }, { "in": "Russia" }]			
+					}
+				],
+				"points": 0,
+				"models": 1,
+				"sortPriority": 3,
+				"limits": [
+					{
+						"key": "Vehicles",
+						"limit": 5,
+						"perParent": true
+					}
+				],
+				"options": [
+					{
+						"name": "Inexperienced",
+						"points": 192,
+						"availableIn": ["Russia"],
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Regular",
+						"points": 240,
+						"availableIn": ["Russia"],
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Veteran",
+						"points": 288,
+						"availableIn": ["Russia"],
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Command Vehicle",
+						"points": 10,
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
+						"availableIn": ["Russia"]
+					},
+					{
+						"name": "Pintle HMG",
+						"points": 25,
+						"perModel": true,
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"]
+					}
+				],
+				"keywords": ["ESS","HEAT Rounds"],
+				"specialText": "Heavy Tank - 10+\n Tracked Vehicle",
+				"equipment": ["Turret Mounted Heavy AT Gun","Turret Mounted Coaxial MMG"]
+			},
+			{
+				"name": "T-54A/B MBT",
+				"factions": [],
+				"order": 1,
+				"availableIn":[
+					{
+						"all": [{ "in": "Armored Platoon" }, { "in": "Russia" }]			
+					}
+				],
+				"points": 0,
+				"models": 1,
+				"sortPriority": 3,
+				"limits": [
+					{
+						"key": "Vehicles",
+						"limit": 5,
+						"perParent": true
+					}
+				],
+				"options": [
+					{
+						"name": "Inexperienced",
+						"points": 200,
+						"availableIn": ["Russia"],
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Regular",
+						"points": 250,
+						"availableIn": ["Russia"],
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Veteran",
+						"points": 300,
+						"availableIn": ["Russia"],
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Command Vehicle",
+						"points": 10,
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
+						"availableIn": ["Russia"]
+					},
+					{
+						"name": "Pintle HMG",
+						"points": 25,
+						"perModel": true,
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"]
+					}
+				],
+				"keywords": ["ESS", "FCS", "Advanced Optics","HEAT Rounds"],
+				"specialText": "Heavy Tank - 10+\n Tracked Vehicle",
+				"equipment": ["Turret Mounted Heavy AT Gun","Turret Mounted Coaxial MMG"]
+			},
+			{
+				"name": "T-55 MBT",
+				"factions": [],
+				"order": 1,
+				"availableIn":[
+					{
+						"all": [{ "in": "Armored Platoon" }, { "in": "Russia" }]			
+					}
+				],
+				"points": 0,
+				"models": 1,
+				"sortPriority": 3,
+				"limits": [
+					{
+						"key": "Vehicles",
+						"limit": 5,
+						"perParent": true
+					}
+				],
+				"options": [
+					{
+						"name": "Inexperienced",
+						"points": 204,
+						"availableIn": ["Russia"],
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Regular",
+						"points": 255,
+						"availableIn": ["Russia"],
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Veteran",
+						"points": 306,
+						"availableIn": ["Russia"],
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Command Vehicle",
+						"points": 10,
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
+						"availableIn": ["Russia"]
+					},
+					{
+						"name": "Pintle HMG",
+						"points": 25,
+						"perModel": true,
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"]
+					}
+				],
+				"keywords": ["ESS", "FCS", "Advanced Optics","MOPP"],
+				"specialText": "Heavy Tank - 10+\n Tracked Vehicle",
+				"equipment": ["Turret Mounted Heavy AT Gun","Turret Mounted Coaxial MMG"]
+			},
+			{
+				"name": "T-62 MBT",
+				"factions": [],
+				"order": 1,
+				"availableIn":[
+					{
+						"all": [{ "in": "Armored Platoon" }, { "in": "Russia" }]			
+					}
+				],
+				"points": 0,
+				"models": 1,
+				"sortPriority": 3,
+				"limits": [
+					{
+						"key": "Vehicles",
+						"limit": 5,
+						"perParent": true
+					}
+				],
+				"options": [
+					{
+						"name": "Inexperienced",
+						"points": 264,
+						"availableIn": ["Russia"],
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Regular",
+						"points": 330,
+						"availableIn": ["Russia"],
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Veteran",
+						"points": 396,
+						"availableIn": ["Russia"],
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Command Vehicle",
+						"points": 10,
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
+						"availableIn": ["Russia"]
+					},
+					{
+						"name": "Pintle HMG",
+						"points": 25,
+						"perModel": true,
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"]
+					}
+				],
+				"keywords": ["ESS", "FCS", "Advanced Optics","MOPP"],
+				"specialText": "Heavy Tank - 10+\n Tracked Vehicle",
+				"equipment": ["Turret Mounted Super Heavy AT Gun","Turret Mounted Coaxial MMG"]
+			},
+			{
+				"name": "T-64A/B MBT",
+				"factions": [],
+				"order": 1,
+				"availableIn":[
+					{
+						"all": [{ "in": "Armored Platoon" }, { "in": "Russia" }]			
+					}
+				],
+				"points": 0,
+				"models": 1,
+				"sortPriority": 3,
+				"limits": [
+					{
+						"key": "Vehicles",
+						"limit": 5,
+						"perParent": true
+					}
+				],
+				"options": [
+					{
+						"name": "Inexperienced",
+						"points": 412,
+						"availableIn": ["Russia"],
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Regular",
+						"points": 515,
+						"availableIn": ["Russia"],
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Veteran",
+						"points": 618,
+						"availableIn": ["Russia"],
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Command Vehicle",
+						"points": 10,
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
+						"availableIn": ["Russia"]
+					},
+					{
+						"name": "ERA",
+						"points": 20,
+						"perModel": true,
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"]
+					}
+				],
+				"keywords": ["ESS", "FCS", "Advanced Optics","Advanced Ammunition"],
+				"specialText": "Super Heavy Tank - 11+\n Tracked Vehicle",
+				"equipment": ["Turret Mounted Super Heavy AT Gun","Turret Mounted Coaxial MMG","Pintle Mounted HMG","Smoke Dischargers"]
+			},
+			{
+				"name": "T-72 MBT",
+				"factions": [],
+				"order": 1,
+				"availableIn":[
+					{
+						"all": [{ "in": "Armored Platoon" }, { "in": "Russia" }]			
+					}
+				],
+				"points": 0,
+				"models": 1,
+				"sortPriority": 3,
+				"limits": [
+					{
+						"key": "Vehicles",
+						"limit": 5,
+						"perParent": true
+					}
+				],
+				"options": [
+					{
+						"name": "Inexperienced",
+						"points": 428,
+						"availableIn": ["Russia"],
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Regular",
+						"points": 535,
+						"availableIn": ["Russia"],
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Veteran",
+						"points": 642,
+						"availableIn": ["Russia"],
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Command Vehicle",
+						"points": 10,
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
+						"availableIn": ["Russia"]
+					}
+				],
+				"keywords": ["ESS", "FCS", "Advanced Optics","Advanced Ammunition","ERA"],
+				"specialText": "Super Heavy Tank - 11+\n Tracked Vehicle",
+				"equipment": ["Turret Mounted Super Heavy AT Gun","Turret Mounted Coaxial MMG","Pintle Mounted HMG","Smoke Dischargers"]
+			},
+			{
+				"name": "T-80 MBT",
+				"factions": [],
+				"order": 1,
+				"availableIn":[
+					{
+						"all": [{ "in": "Armored Platoon" }, { "in": "Russia" }]			
+					}
+				],
+				"points": 0,
+				"models": 1,
+				"sortPriority": 3,
+				"limits": [
+					{
+						"key": "Vehicles",
+						"limit": 5,
+						"perParent": true
+					}
+				],
+				"options": [
+					{
+						"name": "Inexperienced",
+						"points": 428,
+						"availableIn": ["Russia"],
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Regular",
+						"points": 535,
+						"availableIn": ["Russia"],
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Veteran",
+						"points": 642,
+						"availableIn": ["Russia"],
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Command Vehicle",
+						"points": 10,
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
+						"availableIn": ["Russia"]
+					}
+				],
+				"keywords": ["ESS", "FCS", "Advanced Optics","Advanced Ammunition","ERA"],
+				"specialText": "Super Heavy Tank - 11+\n Tracked Vehicle",
+				"equipment": ["Turret Mounted Super Heavy AT Gun","Turret Mounted Coaxial MMG","Pintle Mounted HMG","Smoke Dischargers"]
+			},
+			{
+				"name": "T-80BVM MBT",
+				"factions": [],
+				"order": 1,
+				"availableIn":[
+					{
+						"all": [{ "in": "Armored Platoon" }, { "in": "Russia" }]			
+					}
+				],
+				"points": 0,
+				"models": 1,
+				"sortPriority": 3,
+				"limits": [
+					{
+						"key": "Vehicles",
+						"limit": 5,
+						"perParent": true
+					}
+				],
+				"options": [
+					{
+						"name": "Inexperienced",
+						"points": 452,
+						"availableIn": ["Russia"],
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Regular",
+						"points": 565,
+						"availableIn": ["Russia"],
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Veteran",
+						"points": 678,
+						"availableIn": ["Russia"],
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Command Vehicle",
+						"points": 10,
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
+						"availableIn": ["Russia"]
+					}
+				],
+				"keywords": ["ESS", "FCS", "Advanced Optics","Advanced Ammunition","ERA","APS"],
+				"specialText": "Super Heavy Tank - 11+\n Tracked Vehicle",
+				"equipment": ["Turret Mounted Super Heavy AT Gun","Turret Mounted Coaxial MMG","Pintle Mounted HMG","Smoke Dischargers"]
+			},
+			{
+				"name": "T-90 MBT",
+				"factions": [],
+				"order": 1,
+				"availableIn":[
+					{
+						"all": [{ "in": "Armored Platoon" }, { "in": "Russia" }]			
+					}
+				],
+				"points": 0,
+				"models": 1,
+				"sortPriority": 3,
+				"limits": [
+					{
+						"key": "Vehicles",
+						"limit": 5,
+						"perParent": true
+					}
+				],
+				"options": [
+					{
+						"name": "Inexperienced",
+						"points": 428,
+						"availableIn": ["Russia"],
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Regular",
+						"points": 535,
+						"availableIn": ["Russia"],
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Veteran",
+						"points": 642,
+						"availableIn": ["Russia"],
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Command Vehicle",
+						"points": 10,
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
+						"availableIn": ["Russia"]
+					},
+					{
+						"name": "APS",
+						"points": 30,
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
+						"availableIn": ["Russia"]
+					}
+				],
+				"keywords": ["ESS", "FCS", "Advanced Optics","Advanced Ammunition","ERA"],
+				"specialText": "Super Heavy Tank - 11+\n Tracked Vehicle",
+				"equipment": ["Turret Mounted Super Heavy AT Gun","Turret Mounted Coaxial MMG","Pintle Mounted HMG","Smoke Dischargers"]
+			},
+			{
+				"name": "BMP-1 IFV",
+				"factions": [],
+				"order": 1,
+				"availableIn": [
+					{
+						"all": [{ "in": "HQ Platoon"	}, { "in": "Russia" }]			
+					},
+					{
+						"all": [{ "in": "Rifle Platoon"	}, { "in": "Russia" }]			
+					},
+					{
+						"all": [{ "in": "Engineer Platoon"	}, { "in": "Russia" }]			
+					},
+					{
+						"all": [{ "in": "Artillery Platoon"	}, { "in": "Russia" }]			
+					},
+					{
+						"all": [{ "in": "Heavy Weapons Platoon"	}, { "in": "Russia" }]			
+					}
+				],
+				"points": 0,
+				"models": 1,
+				"options": [
+					{
+						"name": "Inexperienced",
+						"points": 229,
+						"availableIn": ["Russia"],
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Regular",
+						"points": 286,
+						"availableIn": ["Russia"],
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Veteran",
+						"points": 344,
+						"availableIn": ["Russia"],
+						"requireChooseOneKey": "morale"
+					}
+				],
+				"keywords": ["Transport","Amphibious","ESS","MOPP"],
+				"specialText": "Light Tank - 8+\n Transport: 8\n Tracked Vehicle",
+				"equipment": ["Turret Mounted Medium AT Gun","Turret Mounted Coaxial MMG","Pintle Mounted ATGM"]
+			},
+			{
+				"name": "BMP-1 IFV - Recce",
+				"factions": [],
+				"order": 1,
+				"availableIn": [
+					{
+						"all": [{ "in": "Recce Platoon"	}, { "in": "Russia" }]			
+					}
+				],
+				"points": 0,
+				"models": 1,
+				"options": [
+					{
+						"name": "Recce",
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
+						"points": 10,
+						"requireChooseOneKey": "Recce"
+					},
+					{
+						"name": "Inexperienced",
+						"points": 229,
+						"availableIn": ["Russia"],
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Regular",
+						"points": 286,
+						"availableIn": ["Russia"],
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Veteran",
+						"points": 344,
+						"availableIn": ["Russia"],
+						"requireChooseOneKey": "morale"
+					}
+				],
+				"keywords": ["Transport","Amphibious","ESS","MOPP"],
+				"specialText": "Light Tank - 8+\n Transport: 8\n Tracked Vehicle",
+				"equipment": ["Turret Mounted Medium AT Gun","Turret Mounted Coaxial MMG","Pintle Mounted ATGM"]
+			},
+			{
+				"name": "BMP-2 IFV",
+				"factions": [],
+				"order": 1,
+				"availableIn": [
+					{
+						"all": [{ "in": "HQ Platoon"	}, { "in": "Russia" }]			
+					},
+					{
+						"all": [{ "in": "Rifle Platoon"	}, { "in": "Russia" }]			
+					},
+					{
+						"all": [{ "in": "Engineer Platoon"	}, { "in": "Russia" }]			
+					},
+					{
+						"all": [{ "in": "Artillery Platoon"	}, { "in": "Russia" }]			
+					},
+					{
+						"all": [{ "in": "Heavy Weapons Platoon"	}, { "in": "Russia" }]			
+					}
+				],
+				"points": 0,
+				"models": 1,
+				"options": [
+					{
+						"name": "Inexperienced",
+						"points": 236,
+						"availableIn": ["Russia"],
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Regular",
+						"points": 294,
+						"availableIn": ["Russia"],
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Veteran",
+						"points": 353,
+						"availableIn": ["Russia"],
+						"requireChooseOneKey": "morale"
+					}
+				],
+				"keywords": ["Transport","Amphibious","ESS","MOPP"],
+				"specialText": "Light Tank - 8+\n Transport: 7\n Tracked Vehicle",
+				"equipment": ["Turret Mounted Heavy Autocannon","Turret Mounted Coaxial MMG","Pintle Mounted ATGM","Smoke Dischargers"]
+			},
+			{
+				"name": "BMP-2 IFV - Recce",
+				"factions": [],
+				"order": 1,
+				"availableIn": [
+					{
+						"all": [{ "in": "Recce Platoon"	}, { "in": "Russia" }]			
+					}
+				],
+				"points": 0,
+				"models": 1,
+				"options": [
+					{
+						"name": "Recce",
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
+						"points": 10,
+						"requireChooseOneKey": "Recce"
+					},
+					{
+						"name": "Inexperienced",
+						"points": 236,
+						"availableIn": ["Russia"],
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Regular",
+						"points": 294,
+						"availableIn": ["Russia"],
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Veteran",
+						"points": 353,
+						"availableIn": ["Russia"],
+						"requireChooseOneKey": "morale"
+					}
+				],
+				"keywords": ["Transport","Amphibious","ESS","MOPP"],
+				"specialText": "Light Tank - 8+\n Transport: 7\n Tracked Vehicle",
+				"equipment": ["Turret Mounted Heavy Autocannon","Turret Mounted Coaxial MMG","Pintle Mounted ATGM","Smoke Dischargers"]
+			},
+			{
+				"name": "BMP-3 IFV",
+				"factions": [],
+				"order": 1,
+				"availableIn": [
+					{
+						"all": [{ "in": "HQ Platoon"	}, { "in": "Russia" }]			
+					},
+					{
+						"all": [{ "in": "Rifle Platoon"	}, { "in": "Russia" }]			
+					},
+					{
+						"all": [{ "in": "Engineer Platoon"	}, { "in": "Russia" }]			
+					},
+					{
+						"all": [{ "in": "Artillery Platoon"	}, { "in": "Russia" }]			
+					},
+					{
+						"all": [{ "in": "Heavy Weapons Platoon"	}, { "in": "Russia" }]			
+					}
+				],
+				"points": 0,
+				"models": 1,
+				"options": [
+					{
+						"name": "Inexperienced",
+						"points": 379,
+						"availableIn": ["Russia"],
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Regular",
+						"points": 473,
+						"availableIn": ["Russia"],
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Veteran",
+						"points": 568,
+						"availableIn": ["Russia"],
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "ERA",
+						"points": 20,
+						"availableIn": ["Russia"]
+					}
+				],
+				"keywords": ["Transport","Amphibious","ESS","MOPP"],
+				"specialText": "Medium Tank - 9+\n Transport: 9\n Tracked Vehicle",
+				"equipment": ["Turret Mounted Low Velocity Heavy AT Gun","Turret Mounted Coaxial Heavy Autocannon","Turret Mounted Coaxial MMG","Hull Mounted MMGs","x2","Pintle Mounted ATGM","Smoke Dischargers"]
+			},
+			{
+				"name": "BMP-3 IFV - Recce",
+				"factions": [],
+				"order": 1,
+				"availableIn": [
+					{
+						"all": [{ "in": "Recce Platoon"	}, { "in": "Russia" }]			
+					}
+				],
+				"points": 0,
+				"models": 1,
+				"options": [
+					{
+						"name": "Recce",
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
+						"points": 10,
+						"requireChooseOneKey": "Recce"
+					},
+					{
+						"name": "Inexperienced",
+						"points": 379,
+						"availableIn": ["Russia"],
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Regular",
+						"points": 473,
+						"availableIn": ["Russia"],
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Veteran",
+						"points": 568,
+						"availableIn": ["Russia"],
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "ERA",
+						"points": 20,
+						"availableIn": ["Russia"]
+					}
+				],
+				"keywords": ["Transport","Amphibious","ESS","MOPP"],
+				"specialText": "Medium Tank - 9+\n Transport: 9\n Tracked Vehicle",
+				"equipment": ["Turret Mounted Low Velocity Heavy AT Gun","Turret Mounted Coaxial Heavy Autocannon","Turret Mounted Coaxial MMG","Hull Mounted MMGs","x2","Pintle Mounted ATGM","Smoke Dischargers"]
+			},
+			{
+				"name": "BMPT 'Terminator' AFV",
+				"factions": [],
+				"order": 1,
+				"availableIn":[
+					{
+						"all": [{ "in": "Armored Platoon" }, { "in": "Russia" }]			
+					}
+				],
+				"points": 0,
+				"models": 1,
+				"sortPriority": 3,
+				"limits": [
+					{
+						"key": "Vehicles",
+						"limit": 5,
+						"perParent": true
+					}
+				],
+				"options": [
+					{
+						"name": "Inexperienced",
+						"points": 440,
+						"availableIn": ["Russia"],
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Regular",
+						"points": 550,
+						"availableIn": ["Russia"],
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Veteran",
+						"points": 660,
+						"availableIn": ["Russia"],
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Command Vehicle",
+						"points": 10,
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
+						"availableIn": ["Russia"]
+					}
+				],
+				"keywords": ["ESS", "FCS", "Advanced Optics","Advanced Ammunition","ERA"],
+				"specialText": "Super Heavy Tank - 11+\n Tracked Vehicle",
+				"equipment": ["Turret Mounted Twin Heavy Autocannon","Turret Mounted Coaxial MMG","Turret Mounted Coaxial ATGM","Hull Mounted Automatic Grenade Launcher","x2","Smoke Dischargers"]
+			},
+			{
+				"name": "BRDM-2 Reconnaissance Vehicle",
+				"factions": [],
+				"order": 1,
+				"availableIn":[
+					{
+						"all": [{ "in": "Armored Platoon" }, { "in": "Russia" }]			
+					}
+				],
+				"points": 0,
+				"models": 1,
+				"sortPriority": 3,
+				"limits": [
+					{
+						"key": "Vehicles",
+						"limit": 5,
+						"perParent": true
+					}
+				],
+				"options": [
+					{
+						"name": "Inexperienced",
+						"points": 72,
+						"availableIn": ["Russia"],
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Regular",
+						"points": 90,
+						"availableIn": ["Russia"],
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Veteran",
+						"points": 108,
+						"availableIn": ["Russia"],
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Command Vehicle",
+						"points": 10,
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
+						"availableIn": ["Russia"]
+					}
+				],
+				"keywords": ["Amphibious","Recce"],
+				"specialText": "Armored Carrier - 7+\n Wheeled Vehicle",
+				"equipment": ["Turret Mounted HMG","Turret Mounted Coaxial MMG"]
+			},
+			{
+				"name": "BRDM-3 ATGM Vehicle",
+				"factions": [],
+				"order": 1,
+				"availableIn":[
+					{
+						"all": [{ "in": "Armored Platoon" }, { "in": "Russia" }]			
+					}
+				],
+				"points": 0,
+				"models": 1,
+				"sortPriority": 3,
+				"limits": [
+					{
+						"key": "Vehicles",
+						"limit": 5,
+						"perParent": true
+					}
+				],
+				"options": [
+					{
+						"name": "Inexperienced",
+						"points": 132,
+						"availableIn": ["Russia"],
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Regular",
+						"points": 165,
+						"availableIn": ["Russia"],
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Veteran",
+						"points": 198,
+						"availableIn": ["Russia"],
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Command Vehicle",
+						"points": 10,
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
+						"availableIn": ["Russia"]
+					}
+				],
+				"keywords": ["Amphibious","Recce"],
+				"specialText": "Armored Carrier - 7+\n Wheeled Vehicle",
+				"equipment": ["Turret Mounted ATGM"]
+			},
+			{
+				"name": "BRDM-2 9P31 SAM Vehicle",
+				"factions": [],
+				"order": 1,
+				"availableIn":[
+					{
+						"all": [{ "in": "Artillery Platoon" }, { "in": "Russia" }]			
+					}
+				],
+				"points": 0,
+				"models": 1,
+				"sortPriority": 3,
+				"limits": [
+					{
+						"key": "Vehicles",
+						"limit": 5,
+						"perParent": true
+					}
+				],
+				"options": [
+					{
+						"name": "Inexperienced",
+						"points": 56,
+						"availableIn": ["Russia"],
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Regular",
+						"points": 70,
+						"availableIn": ["Russia"],
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Veteran",
+						"points": 84,
+						"availableIn": ["Russia"],
+						"requireChooseOneKey": "morale"
+					}
+				],
+				"keywords": ["Amphibious","Recce","Stationary Firing Platform"],
+				"specialText": "Armored Carrier - 7+\n Wheeled Vehicle",
+				"equipment": ["Turret Mounted SAM"]
+			},
+			
+			{
+				"name": " 9K35 Strela-10 SAM System",
+				"factions": [],
+				"order": 1,
+				"availableIn":[
+					{
+						"all": [{ "in": "Artillery Platoon" }, { "in": "Russia" }]			
+					}
+				],
+				"points": 0,
+				"models": 1,
+				"sortPriority": 3,
+				"limits": [
+					{
+						"key": "Arty",
+						"limit": 4,
+						"perParent": true
+					}
+				],
+				"options": [
+					{
+						"name": "Inexperienced",
+						"points": 44,
+						"availableIn": ["Russia"],
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Regular",
+						"points": 55,
+						"availableIn": ["Russia"],
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Veteran",
+						"points": 66,
+						"availableIn": ["Russia"],
+						"requireChooseOneKey": "morale"
+					}
+				],
+				"keywords": ["Stationary Firing Platform"],
+				"specialText": "Armored Carrier - 7+\n Tracked Vehicle",
+				"equipment": ["Turret Mounted SAM"]
+			},
+			{
+				"name": "MT-LB APC",
+				"factions": [],
+				"order": 1,
+				"availableIn": [
+					{
+						"all": [{ "in": "HQ Platoon"	}, { "in": "Russia" }]			
+					},
+					{
+						"all": [{ "in": "Rifle Platoon"	}, { "in": "Russia" }]			
+					},
+					{
+						"all": [{ "in": "Engineer Platoon"	}, { "in": "Russia" }]			
+					},
+					{
+						"all": [{ "in": "Artillery Platoon"	}, { "in": "Russia" }]			
+					},
+					{
+						"all": [{ "in": "Heavy Weapons Platoon"	}, { "in": "Russia" }]			
+					}
+				],
+				"points": 0,
+				"models": 1,
+				"options": [
+					{
+						"name": "Inexperienced",
+						"points": 78,
+						"availableIn": ["Russia"],
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Regular",
+						"points": 97,
+						"availableIn": ["Russia"],
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Veteran",
+						"points": 117,
+						"availableIn": ["Russia"],
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Turret Mounted HMG",
+						"points": 20,
+						"availableIn": ["Russia"],
+						"chooseOneKey": "priWeapon"
+					},
+					{
+						"name": "Turret Mounted Heavy Autocannon",
+						"points": 45,
+						"availableIn": ["Russia"],
+						"chooseOneKey": "priWeapon"
+					},
+					{
+						"name": "Turret Mounted Automatic Grenade Launcher",
+						"points": 30,
+						"availableIn": ["Russia"],
+						"chooseOneKey": "priWeapon"
+					}
+					
+				],
+				"keywords": ["Transport","Tow","Amphibious"],
+				"specialText": "Armored Carrier - 7+\n Transport: 11\n Tow: Any\n Tracked Vehicle",
+				"equipment": ["Pintle Mounted HMG"]
+			},
+			{
+				"name": "MT-LB APC - Recce",
+				"factions": [],
+				"order": 1,
+				"availableIn": [
+					{
+						"all": [{ "in": "Recce Platoon"	}, { "in": "Russia" }]			
+					}
+				],
+				"points": 0,
+				"models": 1,
+				"options": [
+					{
+						"name": "Recce",
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
+						"points": 10,
+						"requireChooseOneKey": "Recce"
+					},
+					{
+						"name": "Inexperienced",
+						"points": 78,
+						"availableIn": ["Russia"],
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Regular",
+						"points": 97,
+						"availableIn": ["Russia"],
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Veteran",
+						"points": 117,
+						"availableIn": ["Russia"],
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Turret Mounted HMG",
+						"points": 20,
+						"availableIn": ["Russia"],
+						"chooseOneKey": "priWeapon"
+					},
+					{
+						"name": "Turret Mounted Heavy Autocannon",
+						"points": 45,
+						"availableIn": ["Russia"],
+						"chooseOneKey": "priWeapon"
+					},
+					{
+						"name": "Turret Mounted Automatic Grenade Launcher",
+						"points": 30,
+						"availableIn": ["Russia"],
+						"chooseOneKey": "priWeapon"
+					}
+					
+				],
+				"keywords": ["Transport","Tow","Amphibious"],
+				"specialText": "Armored Carrier - 7+\n Transport: 11\n Tow: Any\n Tracked Vehicle",
+				"equipment": ["Pintle Mounted HMG"]
+			},
+			{
+				"name": "BTR-50 APC",
+				"factions": [],
+				"order": 1,
+				"availableIn": [
+					{
+						"all": [{ "in": "HQ Platoon"	}, { "in": "Russia" }]			
+					},
+					{
+						"all": [{ "in": "Rifle Platoon"	}, { "in": "Russia" }]			
+					},
+					{
+						"all": [{ "in": "Engineer Platoon"	}, { "in": "Russia" }]			
+					},
+					{
+						"all": [{ "in": "Artillery Platoon"	}, { "in": "Russia" }]			
+					},
+					{
+						"all": [{ "in": "Heavy Weapons Platoon"	}, { "in": "Russia" }]			
+					}
+				],
+				"points": 0,
+				"models": 1,
+				"options": [
+					{
+						"name": "Inexperienced",
+						"points": 72,
+						"availableIn": ["Russia"],
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Regular",
+						"points": 90,
+						"availableIn": ["Russia"],
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Veteran",
+						"points": 108,
+						"availableIn": ["Russia"],
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Front Facing Pintle Mounted MMG",
+						"points": 10,
+						"availableIn": ["Russia"],
+						"chooseOneKey": "priWeapon"
+					},
+					{
+						"name": "Front Facing Pintle Mounted HMG",
+						"points": 20,
+						"availableIn": ["Russia"],
+						"chooseOneKey": "priWeapon"
+					}
+					
+				],
+				"keywords": ["Transport","Tow","Amphibious"],
+				"specialText": "Armored Carrier - 7+\n Transport: 11\n Tow: Any\n Tracked Vehicle",
+				"equipment": []
+			},
+			{
+				"name": "BTR-50 APC - Recce",
+				"factions": [],
+				"order": 1,
+				"availableIn": [
+					{
+						"all": [{ "in": "Recce Platoon"	}, { "in": "Russia" }]			
+					}
+				],
+				"points": 0,
+				"models": 1,
+				"options": [
+					{
+						"name": "Recce",
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
+						"points": 10,
+						"requireChooseOneKey": "Recce"
+					},
+					{
+						"name": "Inexperienced",
+						"points": 72,
+						"availableIn": ["Russia"],
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Regular",
+						"points": 90,
+						"availableIn": ["Russia"],
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Veteran",
+						"points": 108,
+						"availableIn": ["Russia"],
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Front Facing Pintle Mounted MMG",
+						"points": 10,
+						"availableIn": ["Russia"],
+						"chooseOneKey": "priWeapon"
+					},
+					{
+						"name": "Front Facing Pintle Mounted HMG",
+						"points": 20,
+						"availableIn": ["Russia"],
+						"chooseOneKey": "priWeapon"
+					}
+					
+				],
+				"keywords": ["Transport","Tow","Amphibious"],
+				"specialText": "Armored Carrier - 7+\n Transport: 11\n Tow: Any\n Tracked Vehicle",
+				"equipment": []
+			},
+			{
+				"name": "BTR-60P APC",
+				"factions": [],
+				"order": 1,
+				"availableIn": [
+					{
+						"all": [{ "in": "HQ Platoon"	}, { "in": "Russia" }]			
+					},
+					{
+						"all": [{ "in": "Rifle Platoon"	}, { "in": "Russia" }]			
+					},
+					{
+						"all": [{ "in": "Engineer Platoon"	}, { "in": "Russia" }]			
+					},
+					{
+						"all": [{ "in": "Artillery Platoon"	}, { "in": "Russia" }]			
+					},
+					{
+						"all": [{ "in": "Heavy Weapons Platoon"	}, { "in": "Russia" }]			
+					}
+				],
+				"points": 0,
+				"models": 1,
+				"options": [
+					{
+						"name": "Inexperienced",
+						"points": 63,
+						"availableIn": ["Russia"],
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Regular",
+						"points": 78,
+						"availableIn": ["Russia"],
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Veteran",
+						"points": 94,
+						"availableIn": ["Russia"],
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Front Facing Pintle Mounted MMG",
+						"points": 10,
+						"availableIn": ["Russia"],
+						"chooseOneKey": "priWeapon"
+					},
+					{
+						"name": "Front Facing Pintle Mounted HMG",
+						"points": 20,
+						"availableIn": ["Russia"],
+						"chooseOneKey": "priWeapon"
+					},
+					{
+						"name": "Left Facing Pintle Mounted MMG",
+						"points": 10,
+						"availableIn": ["Russia"]
+					},
+					{
+						"name": "Right Facing Pintle Mounted MMG",
+						"points": 10,
+						"availableIn": ["Russia"]
+					}
+					
+				],
+				"keywords": ["Transport","Amphibious","Open Topped"],
+				"specialText": "Armored Carrier - 7+\n Transport: 14\n Wheeled Vehicle",
+				"equipment": []
+			},
+			{
+				"name": "BTR-60P APC - Recce",
+				"factions": [],
+				"order": 1,
+				"availableIn": [
+					{
+						"all": [{ "in": "Recce Platoon"	}, { "in": "Russia" }]			
+					}
+				],
+				"points": 0,
+				"models": 1,
+				"options": [
+					{
+						"name": "Recce",
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
+						"points": 10,
+						"requireChooseOneKey": "Recce"
+					},
+					{
+						"name": "Inexperienced",
+						"points": 63,
+						"availableIn": ["Russia"],
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Regular",
+						"points": 78,
+						"availableIn": ["Russia"],
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Veteran",
+						"points": 94,
+						"availableIn": ["Russia"],
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Front Facing Pintle Mounted MMG",
+						"points": 10,
+						"availableIn": ["Russia"],
+						"chooseOneKey": "priWeapon"
+					},
+					{
+						"name": "Front Facing Pintle Mounted HMG",
+						"points": 20,
+						"availableIn": ["Russia"],
+						"chooseOneKey": "priWeapon"
+					},
+					{
+						"name": "Left Facing Pintle Mounted MMG",
+						"points": 10,
+						"availableIn": ["Russia"]
+					},
+					{
+						"name": "Right Facing Pintle Mounted MMG",
+						"points": 10,
+						"availableIn": ["Russia"]
+					}
+					
+				],
+				"keywords": ["Transport","Amphibious","Open Topped"],
+				"specialText": "Armored Carrier - 7+\n Transport: 14\n Wheeled Vehicle",
+				"equipment": []
+			},
+			{
+				"name": "BTR-60PA APC",
+				"factions": [],
+				"order": 1,
+				"availableIn": [
+					{
+						"all": [{ "in": "HQ Platoon"	}, { "in": "Russia" }]			
+					},
+					{
+						"all": [{ "in": "Rifle Platoon"	}, { "in": "Russia" }]			
+					},
+					{
+						"all": [{ "in": "Engineer Platoon"	}, { "in": "Russia" }]			
+					},
+					{
+						"all": [{ "in": "Artillery Platoon"	}, { "in": "Russia" }]			
+					},
+					{
+						"all": [{ "in": "Heavy Weapons Platoon"	}, { "in": "Russia" }]			
+					}
+				],
+				"points": 0,
+				"models": 1,
+				"options": [
+					{
+						"name": "Inexperienced",
+						"points": 83,
+						"availableIn": ["Russia"],
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Regular",
+						"points": 103,
+						"availableIn": ["Russia"],
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Veteran",
+						"points": 124,
+						"availableIn": ["Russia"],
+						"requireChooseOneKey": "morale"
+					}
+					
+				],
+				"keywords": ["Transport","Amphibious"],
+				"specialText": "Armored Carrier - 7+\n Transport: 14\n Wheeled Vehicle",
+				"equipment": ["Forward Facing Pintle Mounted HMG"]
+			},
+			{
+				"name": "BTR-60PA APC - Recce",
+				"factions": [],
+				"order": 1,
+				"availableIn": [
+					{
+						"all": [{ "in": "Recce Platoon"	}, { "in": "Russia" }]			
+					}
+				],
+				"points": 0,
+				"models": 1,
+				"options": [
+					{
+						"name": "Recce",
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
+						"points": 10,
+						"requireChooseOneKey": "Recce"
+					},
+					{
+						"name": "Inexperienced",
+						"points": 83,
+						"availableIn": ["Russia"],
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Regular",
+						"points": 103,
+						"availableIn": ["Russia"],
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Veteran",
+						"points": 124,
+						"availableIn": ["Russia"],
+						"requireChooseOneKey": "morale"
+					}
+					
+				],
+				"keywords": ["Transport","Amphibious"],
+				"specialText": "Armored Carrier - 7+\n Transport: 14\n Wheeled Vehicle",
+				"equipment": ["Forward Facing Pintle Mounted HMG"]
+			},
+			{
+				"name": "BTR-70 APC",
+				"factions": [],
+				"order": 1,
+				"availableIn": [
+					{
+						"all": [{ "in": "HQ Platoon"	}, { "in": "Russia" }]			
+					},
+					{
+						"all": [{ "in": "Rifle Platoon"	}, { "in": "Russia" }]			
+					},
+					{
+						"all": [{ "in": "Engineer Platoon"	}, { "in": "Russia" }]			
+					},
+					{
+						"all": [{ "in": "Artillery Platoon"	}, { "in": "Russia" }]			
+					},
+					{
+						"all": [{ "in": "Heavy Weapons Platoon"	}, { "in": "Russia" }]			
+					}
+				],
+				"points": 0,
+				"models": 1,
+				"options": [
+					{
+						"name": "Inexperienced",
+						"points": 72,
+						"availableIn": ["Russia"],
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Regular",
+						"points": 89,
+						"availableIn": ["Russia"],
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Veteran",
+						"points": 107,
+						"availableIn": ["Russia"],
+						"requireChooseOneKey": "morale"
+					}
+				],
+				"keywords": ["Transport","Amphibious"],
+				"specialText": "Armored Carrier - 7+\n Transport: 7\n Wheeled Vehicle",
+				"equipment": ["Turret Mounted HMG"]
+			},
+			{
+				"name": "BTR-70 APC - Recce",
+				"factions": [],
+				"order": 1,
+				"availableIn": [
+					{
+						"all": [{ "in": "Recce Platoon"	}, { "in": "Russia" }]			
+					}
+				],
+				"points": 0,
+				"models": 1,
+				"options": [
+					{
+						"name": "Recce",
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
+						"points": 10,
+						"requireChooseOneKey": "Recce"
+					},
+					{
+						"name": "Inexperienced",
+						"points": 72,
+						"availableIn": ["Russia"],
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Regular",
+						"points": 89,
+						"availableIn": ["Russia"],
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Veteran",
+						"points": 107,
+						"availableIn": ["Russia"],
+						"requireChooseOneKey": "morale"
+					}
+				],
+				"keywords": ["Transport","Amphibious"],
+				"specialText": "Armored Carrier - 7+\n Transport: 7\n Wheeled Vehicle",
+				"equipment": ["Turret Mounted HMG"]
+			},
+			{
+				"name": "BTR-80 APC",
+				"factions": [],
+				"order": 1,
+				"availableIn": [
+					{
+						"all": [{ "in": "HQ Platoon"	}, { "in": "Russia" }]			
+					},
+					{
+						"all": [{ "in": "Rifle Platoon"	}, { "in": "Russia" }]			
+					},
+					{
+						"all": [{ "in": "Engineer Platoon"	}, { "in": "Russia" }]			
+					},
+					{
+						"all": [{ "in": "Artillery Platoon"	}, { "in": "Russia" }]			
+					},
+					{
+						"all": [{ "in": "Heavy Weapons Platoon"	}, { "in": "Russia" }]			
+					}
+				],
+				"points": 0,
+				"models": 1,
+				"options": [
+					{
+						"name": "Inexperienced",
+						"points": 60,
+						"availableIn": ["Russia"],
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Regular",
+						"points": 74,
+						"availableIn": ["Russia"],
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Veteran",
+						"points": 89,
+						"availableIn": ["Russia"],
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Turret Mounted HMG",
+						"points": 20,
+						"availableIn": ["Russia"],
+						"chooseOneKey": "priWeapon"
+					},
+					{
+						"name": "Turret Mounted Heavy Autocannon",
+						"points": 45,
+						"availableIn": ["Russia"],
+						"chooseOneKey": "priWeapon"
+					}
+				],
+				"keywords": ["Transport","Amphibious"],
+				"specialText": "Armored Carrier - 7+\n Transport: 7\n Wheeled Vehicle",
+				"equipment": ["Turret Mounted Coaxial MMG"]
+			},
+			{
+				"name": "BTR-80 APC - Recce",
+				"factions": [],
+				"order": 1,
+				"availableIn": [
+					{
+						"all": [{ "in": "Recce Platoon"	}, { "in": "Russia" }]			
+					}
+				],
+				"points": 0,
+				"models": 1,
+				"options": [
+					{
+						"name": "Recce",
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
+						"points": 10,
+						"requireChooseOneKey": "Recce"
+					},
+					{
+						"name": "Inexperienced",
+						"points": 60,
+						"availableIn": ["Russia"],
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Regular",
+						"points": 74,
+						"availableIn": ["Russia"],
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Veteran",
+						"points": 89,
+						"availableIn": ["Russia"],
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Turret Mounted HMG",
+						"points": 20,
+						"availableIn": ["Russia"],
+						"chooseOneKey": "priWeapon"
+					},
+					{
+						"name": "Turret Mounted Heavy Autocannon",
+						"points": 45,
+						"availableIn": ["Russia"],
+						"chooseOneKey": "priWeapon"
+					}
+				],
+				"keywords": ["Transport","Amphibious"],
+				"specialText": "Armored Carrier - 7+\n Transport: 7\n Wheeled Vehicle",
+				"equipment": ["Turret Mounted Coaxial MMG"]
+			},
+			{
+				"name": "BTR-90 APC",
+				"factions": [],
+				"order": 1,
+				"availableIn": [
+					{
+						"all": [{ "in": "HQ Platoon"	}, { "in": "Russia" }]			
+					},
+					{
+						"all": [{ "in": "Rifle Platoon"	}, { "in": "Russia" }]			
+					},
+					{
+						"all": [{ "in": "Engineer Platoon"	}, { "in": "Russia" }]			
+					},
+					{
+						"all": [{ "in": "Artillery Platoon"	}, { "in": "Russia" }]			
+					},
+					{
+						"all": [{ "in": "Heavy Weapons Platoon"	}, { "in": "Russia" }]			
+					}
+				],
+				"points": 0,
+				"models": 1,
+				"options": [
+					{
+						"name": "Inexperienced",
+						"points": 196,
+						"availableIn": ["Russia"],
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Regular",
+						"points": 244,
+						"availableIn": ["Russia"],
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Veteran",
+						"points": 293,
+						"availableIn": ["Russia"],
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Reactive Armor",
+						"points": 20,
+						"availableIn": ["Russia"]
+					}
+				],
+				"keywords": ["Transport","Amphibious"],
+				"specialText": "Armored Carrier - 7+\n Transport: 7\n Wheeled Vehicle",
+				"equipment": ["Turret Mounted Heavy Autocannon","Turret Mounted Coaxial Automatic Grenade Launcher","Turret Mounted Coaxial MMG","Pintle Mounted ATGM"]
+			},
+			{
+				"name": "BTR-90 APC - Recce",
+				"factions": [],
+				"order": 1,
+				"availableIn": [
+					{
+						"all": [{ "in": "Recce Platoon"	}, { "in": "Russia" }]			
+					}
+				],
+				"points": 0,
+				"models": 1,
+				"options": [
+					{
+						"name": "Recce",
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
+						"points": 10,
+						"requireChooseOneKey": "Recce"
+					},
+					{
+						"name": "Inexperienced",
+						"points": 196,
+						"availableIn": ["Russia"],
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Regular",
+						"points": 244,
+						"availableIn": ["Russia"],
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Veteran",
+						"points": 293,
+						"availableIn": ["Russia"],
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Reactive Armor",
+						"points": 20,
+						"availableIn": ["Russia"]
+					}
+				],
+				"keywords": ["Transport","Amphibious"],
+				"specialText": "Armored Carrier - 7+\n Transport: 7\n Wheeled Vehicle",
+				"equipment": ["Turret Mounted Heavy Autocannon","Turret Mounted Coaxial Automatic Grenade Launcher","Turret Mounted Coaxial MMG","Pintle Mounted ATGM"]
+			},
+			{
+				"name": "SBA-60K2 'Bulat' APC",
+				"factions": [],
+				"order": 1,
+				"availableIn": [
+					{
+						"all": [{ "in": "HQ Platoon"	}, { "in": "Russia" }]			
+					},
+					{
+						"all": [{ "in": "Rifle Platoon"	}, { "in": "Russia" }]			
+					},
+					{
+						"all": [{ "in": "Engineer Platoon"	}, { "in": "Russia" }]			
+					},
+					{
+						"all": [{ "in": "Artillery Platoon"	}, { "in": "Russia" }]			
+					},
+					{
+						"all": [{ "in": "Heavy Weapons Platoon"	}, { "in": "Russia" }]			
+					}
+				],
+				"points": 0,
+				"models": 1,
+				"options": [
+					{
+						"name": "Inexperienced",
+						"points": 57,
+						"availableIn": ["Russia"],
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Regular",
+						"points": 71,
+						"availableIn": ["Russia"],
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Veteran",
+						"points": 86,
+						"availableIn": ["Russia"],
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Turret Mounted MMG",
+						"points": 10,
+						"availableIn": ["Russia"],
+						"chooseOneKey": "priWeapon"
+					},
+					{
+						"name": "Turret Mounted HMG",
+						"points": 20,
+						"availableIn": ["Russia"],
+						"chooseOneKey": "priWeapon"
+					}
+				],
+				"keywords": ["Transport","MRAPP"],
+				"specialText": "Armored Carrier - 7+\n Transport: 8\n Wheeled Vehicle",
+				"equipment": []
+			},
+			{
+				"name": "SBA-60K2 'Bulat' APC - Recce",
+				"factions": [],
+				"order": 1,
+				"availableIn": [
+					{
+						"all": [{ "in": "Recce Platoon"	}, { "in": "Russia" }]			
+					}
+				],
+				"points": 0,
+				"models": 1,
+				"options": [
+					{
+						"name": "Recce",
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
+						"points": 10,
+						"requireChooseOneKey": "Recce"
+					},
+					{
+						"name": "Inexperienced",
+						"points": 57,
+						"availableIn": ["Russia"],
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Regular",
+						"points": 71,
+						"availableIn": ["Russia"],
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Veteran",
+						"points": 86,
+						"availableIn": ["Russia"],
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Turret Mounted MMG",
+						"points": 10,
+						"availableIn": ["Russia"],
+						"chooseOneKey": "priWeapon"
+					},
+					{
+						"name": "Turret Mounted HMG",
+						"points": 20,
+						"availableIn": ["Russia"],
+						"chooseOneKey": "priWeapon"
+					}
+				],
+				"keywords": ["Transport","MRAPP"],
+				"specialText": "Armored Carrier - 7+\n Transport: 8\n Wheeled Vehicle",
+				"equipment": []
+			},
+			{
+				"name": "Ural Typhoon APC",
+				"factions": [],
+				"order": 1,
+				"availableIn": [
+					{
+						"all": [{ "in": "HQ Platoon"	}, { "in": "Russia" }]			
+					},
+					{
+						"all": [{ "in": "Rifle Platoon"	}, { "in": "Russia" }]			
+					},
+					{
+						"all": [{ "in": "Engineer Platoon"	}, { "in": "Russia" }]			
+					},
+					{
+						"all": [{ "in": "Artillery Platoon"	}, { "in": "Russia" }]			
+					},
+					{
+						"all": [{ "in": "Heavy Weapons Platoon"	}, { "in": "Russia" }]			
+					}
+				],
+				"points": 0,
+				"models": 1,
+				"options": [
+					{
+						"name": "Inexperienced",
+						"points": 70,
+						"availableIn": ["Russia"],
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Regular",
+						"points": 87,
+						"availableIn": ["Russia"],
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Veteran",
+						"points": 105,
+						"availableIn": ["Russia"],
+						"requireChooseOneKey": "morale"
+					}
+				],
+				"keywords": ["Transport","MRAPP"],
+				"specialText": "Armored Carrier - 7+\n Transport: 16\n Wheeled Vehicle",
+				"equipment": []
+			},
+			{
+				"name": "Ural Typhoon APC - Recce",
+				"factions": [],
+				"order": 1,
+				"availableIn": [
+					{
+						"all": [{ "in": "Recce Platoon"	}, { "in": "Russia" }]			
+					}
+				],
+				"points": 0,
+				"models": 1,
+				"options": [
+					{
+						"name": "Recce",
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
+						"points": 10,
+						"requireChooseOneKey": "Recce"
+					},
+					{
+						"name": "Inexperienced",
+						"points": 70,
+						"availableIn": ["Russia"],
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Regular",
+						"points": 87,
+						"availableIn": ["Russia"],
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Veteran",
+						"points": 105,
+						"availableIn": ["Russia"],
+						"requireChooseOneKey": "morale"
+					}
+				],
+				"keywords": ["Transport","MRAPP"],
+				"specialText": "Armored Carrier - 7+\n Transport: 16\n Wheeled Vehicle",
+				"equipment": []
+			},
+			{
+				"name": "GAZ Small Personal Transport",
+				"factions": [],
+				"order": 1,
+				"availableIn": [
+					{
+						"all": [{ "in": "HQ Platoon"	}, { "in": "Russia" }]			
+					},
+					{
+						"all": [{ "in": "Rifle Platoon"	}, { "in": "Russia" }]			
+					},
+					{
+						"all": [{ "in": "Engineer Platoon"	}, { "in": "Russia" }]			
+					},
+					{
+						"all": [{ "in": "Artillery Platoon"	}, { "in": "Russia" }]			
+					},
+					{
+						"all": [{ "in": "Heavy Weapons Platoon"	}, { "in": "Russia" }]			
+					}
+				],
+				"points": 0,
+				"models": 1,
+				"options": [
+					{
+						"name": "Inexperienced",
+						"points": 9,
+						"availableIn": ["Russia"],
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Regular",
+						"points": 11,
+						"availableIn": ["Russia"],
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Veteran",
+						"points": 14,
+						"availableIn": ["Russia"],
+						"requireChooseOneKey": "morale"
+					}
+				],
+				"keywords": ["Transport"],
+				"specialText": "Soft-Skin - 6+\n Transport: 3\n Wheeled Vehicle",
+				"equipment": []
+			},
+			{
+				"name": "GAZ Small Personal Transport - Recce",
+				"factions": [],
+				"order": 1,
+				"availableIn": [
+					{
+						"all": [{ "in": "Recce Platoon"	}, { "in": "Russia" }]			
+					}
+				],
+				"points": 0,
+				"models": 1,
+				"options": [
+					{
+						"name": "Recce",
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
+						"points": 10,
+						"requireChooseOneKey": "Recce"
+					},
+					{
+						"name": "Inexperienced",
+						"points": 9,
+						"availableIn": ["Russia"],
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Regular",
+						"points": 11,
+						"availableIn": ["Russia"],
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Veteran",
+						"points": 14,
+						"availableIn": ["Russia"],
+						"requireChooseOneKey": "morale"
+					}
+				],
+				"keywords": ["Transport"],
+				"specialText": "Soft-Skin - 6+\n Transport: 3\n Wheeled Vehicle",
+				"equipment": []
+			},
+			{
+				"name": "GAZ Large Transport Truck",
+				"factions": [],
+				"order": 1,
+				"availableIn": [
+					{
+						"all": [{ "in": "HQ Platoon"	}, { "in": "Russia" }]			
+					},
+					{
+						"all": [{ "in": "Rifle Platoon"	}, { "in": "Russia" }]			
+					},
+					{
+						"all": [{ "in": "Engineer Platoon"	}, { "in": "Russia" }]			
+					},
+					{
+						"all": [{ "in": "Artillery Platoon"	}, { "in": "Russia" }]			
+					},
+					{
+						"all": [{ "in": "Heavy Weapons Platoon"	}, { "in": "Russia" }]			
+					}
+				],
+				"points": 0,
+				"models": 1,
+				"options": [
+					{
+						"name": "Inexperienced",
+						"points": 43,
+						"availableIn": ["Russia"],
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Regular",
+						"points": 53,
+						"availableIn": ["Russia"],
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Veteran",
+						"points": 64,
+						"availableIn": ["Russia"],
+						"requireChooseOneKey": "morale"
+					}
+				],
+				"keywords": ["Transport","Tow"],
+				"specialText": "Soft-Skin - 6+\n Transport: 3\n Tow: Any\n Wheeled Vehicle",
+				"equipment": []
+			},
+			{
+				"name": "GAZ Large Transport Truck - Recce",
+				"factions": [],
+				"order": 1,
+				"availableIn": [
+					{
+						"all": [{ "in": "Recce Platoon"	}, { "in": "Russia" }]			
+					}
+				],
+				"points": 0,
+				"models": 1,
+				"options": [
+					{
+						"name": "Recce",
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
+						"points": 10,
+						"requireChooseOneKey": "Recce"
+					},
+					{
+						"name": "Inexperienced",
+						"points": 43,
+						"availableIn": ["Russia"],
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Regular",
+						"points": 53,
+						"availableIn": ["Russia"],
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Veteran",
+						"points": 64,
+						"availableIn": ["Russia"],
+						"requireChooseOneKey": "morale"
+					}
+				],
+				"keywords": ["Transport","Tow"],
+				"specialText": "Soft-Skin - 6+\n Transport: 3\n Tow: Any\n Wheeled Vehicle",
+				"equipment": []
 			},
 			{
 				"name": "Humvee Infantry Support",
@@ -10454,6 +12639,417 @@
 				"keywords": ["Transport","Air Lift"],
 				"specialText": "Light Helicopter - 7+\n Helicopter\n Transport: 20",
 				"equipment": ["Port Side Door Mounted MMG","STBD Side Door Mounted MMG\n Air Lift: S"]
+			},
+			{
+				"name": "Kamov Ka-29TB Assault Transport Helicopter",
+				"factions": [],
+				"order": 1,
+				"availableIn":[
+					{
+						"all": [{ "in": "Air Support" }, { "in": "Russia" }]			
+					}
+				],
+				"points": 0,
+				"models": 1,
+				"sortPriority": 3,
+				"limits": [
+					{
+						"key": "gunship",
+						"limit": 2,
+						"perParent": true
+					}
+				],
+				"options": [
+					{
+						"name": "Inexperienced",
+						"points": 46,
+						"availableIn": ["Russia"],
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Regular",
+						"points": 57,
+						"availableIn": ["Russia"],
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Veteran",
+						"points": 69,
+						"availableIn": ["Russia"],
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Two Pylon Mounted Light Autocannons",
+						"points": 60,
+						"availableIn": ["France"],
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"]
+					},
+					{
+						"name": "Two Pylon Mounted Unguided Rocket Pods",
+						"points": 90,
+						"availableIn": ["Russia"],
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"]
+					}
+				],
+				"keywords": ["Transport"],
+				"specialText": "Unarmored Helicopter - 6+\n Transport: 16\n Helicopter",
+				"equipment": []
+			},
+			{
+				"name": "Kamov Ka-50 'Black Shark' Attack Helicopter",
+				"factions": [],
+				"order": 1,
+				"availableIn":[
+					{
+						"all": [{ "in": "Air Support" }, { "in": "Russia" }]			
+					}
+				],
+				"points": 0,
+				"models": 1,
+				"sortPriority": 3,
+				"limits": [
+					{
+						"key": "gunship",
+						"limit": 2,
+						"perParent": true
+					}
+				],
+				"options": [
+					{
+						"name": "Inexperienced",
+						"points": 56,
+						"availableIn": ["Russia"],
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Regular",
+						"points": 70,
+						"availableIn": ["Russia"],
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Veteran",
+						"points": 84,
+						"availableIn": ["Russia"],
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Two Pylon Mounted Light Autocannons",
+						"points": 60,
+						"availableIn": ["France"],
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"]
+					},
+					{
+						"name": "Two Pylon Mounted Heavy Autocannons",
+						"points": 60,
+						"availableIn": ["France"],
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"]
+					},
+					{
+						"name": "Two Pylon Mounted Unguided Rocket Pods",
+						"points": 90,
+						"availableIn": ["Russia"],
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"]
+					},
+					{
+						"name": "Pylon Mounted ATGM",
+						"points": 100,
+						"availableIn": ["Russia"],
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"]
+					}
+				],
+				"keywords": [],
+				"specialText": "Unarmored Helicopter - 6+\n Helicopter",
+				"equipment": []
+			},
+			{
+				"name": "Mil Mi-8MT Transport Helicopter",
+				"factions": [],
+				"order": 1,
+				"availableIn":[
+					{
+						"all": [{ "in": "Air Support" }, { "in": "Russia" }]			
+					}
+				],
+				"points": 0,
+				"models": 1,
+				"sortPriority": 3,
+				"limits": [
+					{
+						"key": "gunship",
+						"limit": 2,
+						"perParent": true
+					}
+				],
+				"options": [
+					{
+						"name": "Inexperienced",
+						"points": 59,
+						"availableIn": ["Russia"],
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Regular",
+						"points": 73,
+						"availableIn": ["Russia"],
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Veteran",
+						"points": 88,
+						"availableIn": ["Russia"],
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Two Pylon Mounted Unguided Rocket Pods",
+						"points": 90,
+						"availableIn": ["Russia"],
+						"chooseOneKey": "morale",
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"]
+					},
+					{
+						"name": "Pylon Mounted ATGM",
+						"points": 100,
+						"availableIn": ["Russia"],
+						"chooseOneKey": "morale",
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"]
+					}
+				],
+				"keywords": ["Transport"],
+				"specialText": "Unarmored Helicopter - 6+\n Transport: 24\n Helicopter",
+				"equipment": []
+			},
+			{
+				"name": "Mil Mi-24 Multipurpose Helicopter",
+				"factions": [],
+				"order": 1,
+				"availableIn":[
+					{
+						"all": [{ "in": "Air Support" }, { "in": "Russia" }]			
+					}
+				],
+				"points": 0,
+				"models": 1,
+				"sortPriority": 3,
+				"limits": [
+					{
+						"key": "gunship",
+						"limit": 2,
+						"perParent": true
+					}
+				],
+				"options": [
+					{
+						"name": "Inexperienced",
+						"points": 65,
+						"availableIn": ["Russia"],
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Regular",
+						"points": 81,
+						"availableIn": ["Russia"],
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Veteran",
+						"points": 98,
+						"availableIn": ["Russia"],
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Internally Carried Bombs",
+						"points": 60,
+						"availableIn": ["Russia"],
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"]
+					},
+					{
+						"name": "Two Pylon Mounted Heavy Autocannons",
+						"points": 90,
+						"availableIn": ["Russia"],
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"]
+					},
+					{
+						"name": "Two Pylon Mounted Unguided Rocket Pods",
+						"points": 90,
+						"availableIn": ["Russia"],
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"]
+					},
+					{
+						"name": "Pylon Mounted ATGM",
+						"points": 100,
+						"availableIn": ["Russia"],
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"]
+					}
+				],
+				"keywords": ["Transport","Heavily Armored"],
+				"specialText": "Unarmored Helicopter - 6+\n Transport: 8\n Helicopter",
+				"equipment": ["Chin Mounted HMG"]
+			},
+			{
+				"name": "Mil Mi-24P/VP/VM & Mi-35 Multipurpose Helicopter",
+				"factions": [],
+				"order": 1,
+				"availableIn":[
+					{
+						"all": [{ "in": "Air Support" }, { "in": "Russia" }]			
+					}
+				],
+				"points": 0,
+				"models": 1,
+				"sortPriority": 3,
+				"limits": [
+					{
+						"key": "gunship",
+						"limit": 2,
+						"perParent": true
+					}
+				],
+				"options": [
+					{
+						"name": "Inexperienced",
+						"points": 121,
+						"availableIn": ["Russia"],
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Regular",
+						"points": 151,
+						"availableIn": ["Russia"],
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Veteran",
+						"points": 182,
+						"availableIn": ["Russia"],
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Internally Carried Bombs",
+						"points": 60,
+						"availableIn": ["Russia"],
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"]
+					},
+					{
+						"name": "Two Pylon Mounted Heavy Autocannons",
+						"points": 90,
+						"availableIn": ["Russia"],
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"]
+					},
+					{
+						"name": "Two Pylon Mounted Unguided Rocket Pods",
+						"points": 90,
+						"availableIn": ["Russia"],
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"]
+					},
+					{
+						"name": "Pylon Mounted ATGM",
+						"points": 100,
+						"availableIn": ["Russia"],
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"]
+					}
+				],
+				"keywords": ["Transport","Heavily Armored"],
+				"specialText": "Unarmored Helicopter - 6+\n Transport: 8\n Helicopter",
+				"equipment": ["Twin Chin Mounted Heavy Autocannons"]
+			},
+			{
+				"name": "Mil Mi-26 Transport Helicopter",
+				"factions": [],
+				"order": 1,
+				"availableIn":[
+					{
+						"all": [{ "in": "Air Support" }, { "in": "Russia" }]			
+					}
+				],
+				"points": 0,
+				"models": 1,
+				"sortPriority": 3,
+				"limits": [
+					{
+						"key": "gunship",
+						"limit": 2,
+						"perParent": true
+					}
+				],
+				"options": [
+					{
+						"name": "Inexperienced",
+						"points": 164,
+						"availableIn": ["Russia"],
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Regular",
+						"points": 205,
+						"availableIn": ["Russia"],
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Veteran",
+						"points": 246,
+						"availableIn": ["Russia"],
+						"requireChooseOneKey": "morale"
+					}
+				],
+				"keywords": ["Transport"],
+				"specialText": "Unarmored Helicopter - 6+\n Transport: 90\n Helicopter",
+				"equipment": []
+			},
+			{
+				"name": "Mil Mi-28 Attack Helicopter",
+				"factions": [],
+				"order": 1,
+				"availableIn":[
+					{
+						"all": [{ "in": "Air Support" }, { "in": "Russia" }]			
+					}
+				],
+				"points": 0,
+				"models": 1,
+				"sortPriority": 3,
+				"limits": [
+					{
+						"key": "gunship",
+						"limit": 2,
+						"perParent": true
+					}
+				],
+				"options": [
+					{
+						"name": "Inexperienced",
+						"points": 56,
+						"availableIn": ["Russia"],
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Regular",
+						"points": 70,
+						"availableIn": ["Russia"],
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Veteran",
+						"points": 84,
+						"availableIn": ["Russia"],
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Two Pylon Mounted Unguided Rocket Pods",
+						"points": 90,
+						"availableIn": ["Russia"],
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"]
+					},
+					{
+						"name": "Pylon Mounted ATGM",
+						"points": 100,
+						"availableIn": ["Russia"],
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"]
+					}
+				],
+				"keywords": [],
+				"specialText": "Unarmored Helicopter - 6+\n Helicopter",
+				"equipment": ["Chin Mounted Heavy Autocannon"]
 			},
 			{
 				"name": "Bell AH-1Z Viper Attack Helicopter",

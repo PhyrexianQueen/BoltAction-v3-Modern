@@ -140,16 +140,67 @@
 	{
 		"factions": [
 			{
+				"name": "Australia"
+			},
+			{
+				"name": "Britain"
+			},
+			{
+				"name": "Canada"
+			},
+			{
+				"name": "China"
+			},
+			{
 				"name": "France",
 				"additionalRules": [
 					"Culture of Expeditionary Warfare: All HQ and Platoon Leaders must be taken as Veterans, including Vehicles being given the Command Rule or having the Command Rule when taken as your Armored Platoon Commander.","French Foreign Legion: Any unit in this army can be fielded as French Foreign Legion, gaining the 'Marche ou Crève' Special Rule.", "Honneur et Patrie: French Army Infantry Units get a +1 to their Morale Rating when taking a Morale Test if any other French Army Infantry Unit is is within 8in."
 				]
 			},
 			{
+				"name": "Germany"
+			},
+			{
+				"name": "Italy"
+			},
+			{
+				"name": "Japan"
+			},
+			{
+				"name": "NATO"
+			},
+			{
+				"name": "North Korea"
+			},
+			{
+				"name": "PMC"
+			},
+			{
 				"name": "Russia",
 				"additionalRules": [
-					"In Defense of the Motherland: At the start of the turn, each Regular or Veteran Russian unit can remove 1 Pin if they roll a 4+ on a D6. If no pins remain, still take an order test.","Non-Linear Battle: russian units can be ordered on to the table with an Advance or Run starting on Turn 1. When Outflanking, they must be given a Down order on Turn 1. Outflanking units on turn 2 or 3 may enter on the your side of the table or on the declared side, up to your opponents deployment area.", "Stockpiled Artillery Ammunition: Artillery Units and Artillery Bombardments are +1 to Hit and -1 to their Pen Value.","VDV: Russian Veteran Infantry Units may be given Air Assault for +2 Point Per Model."
+					"In Defense of the Motherland: At the start of the turn, each Regular or Veteran Russian unit can remove 1 Pin if they roll a 4+ on a D6. If no pins remain, still take an order test.","Non-Linear Battle: Russian units can be ordered on to the table with an Advance or Run starting on Turn 1. When Outflanking, they must be given a Down order on Turn 1. Outflanking units on turn 2 or 3 may enter on the your side of the table or on the declared side, up to your opponents deployment area.", "Stockpiled Artillery Ammunition: Artillery Units and Artillery Bombardments are +1 to Hit and -1 to their Pen Value.","VDV: Russian Veteran Infantry Units may be given Air Assault for +2 Point Per Model."
 				]
+			},
+			{
+				"name": "South Africa"
+			},
+			{
+				"name": "South Korea"
+			},
+			{
+				"name": "Sweden",
+				"additionalRules": [
+					"Preparedness in Peactime: At the start of the game, Regular or Veteran units that start on the table may be given an Ambush Order. Take an order from the bag and place it next to the unit in Ambush","Artic Operations: Infantry and unmounted Artillery Units may take Skis and Winter Equipment for free. Swedish vehicles ignore the Snow Rules. Swedish units moving across Ice have a +1 to the first roll on the Thin Ice Table.", "Total Defense - Enemy units on the table cannot be given the Run order during the first turn. First Wave are exempt as they enter the table. If using a scenario with Attacker and Defender rules, the Swedish player may choose if they Defend or not, unless both players are Swedish. If the Swedish player is defending, any Enemy Unit that starts the game outside of its deployment zone gains 1 pin at the start of the game.","Mission Command: After each unit is issued an order via a Snap-To, each time you select the next order to resolve after the Company or Platoon Commander, you may change the order originally given via Snap-To. At the end of a round, in addition to attempting to Fire, a unit with an Ambush may test to Run or Advance as well in the same way it would attempt to resolve to Fire."
+				]
+			},
+			{
+				"name": "Turkey"
+			},
+			{
+				"name": "Ukraine"
+			},
+			{
+				"name": "UN"
 			},
 			{
 				"name": "United States of America",

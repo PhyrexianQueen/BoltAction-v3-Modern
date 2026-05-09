@@ -161,6 +161,12 @@
 				"name": "Germany"
 			},
 			{
+				"name": "Iran"
+			},
+			{
+				"name": "Iraq"
+			},
+			{
 				"name": "Italy"
 			},
 			{
@@ -219,10 +225,64 @@
 				"decreaseModelCount": 1,
 				"factions": [
 					{
+						"name": "Australia"
+					},
+					{
+						"name": "Britain"
+					},
+					{
+						"name": "Canada"
+					},
+					{
+						"name": "China"
+					},
+					{
 						"name": "France"
 					},
 					{
+						"name": "Germany"
+					},
+					{
+						"name": "Iran"
+					},
+					{
+						"name": "Iraq"
+					},
+					{
+						"name": "Italy"
+					},
+					{
+						"name": "Japan"
+					},
+					{
+						"name": "NATO"
+					},
+					{
+						"name": "North Korea"
+					},
+					{
+						"name": "PMC"
+					},
+					{
 						"name": "Russia"
+					},
+					{
+						"name": "South Africa"
+					},
+					{
+						"name": "South Korea"
+					},
+					{
+						"name": "Sweden"
+					},
+					{
+						"name": "Turkey"
+					},
+					{
+						"name": "Ukraine"
+					},
+					{
+						"name": "UN"
 					},
 					{
 						"name": "United States of America"
@@ -238,10 +298,64 @@
 				"unlimited": true,
 				"factions": [
 					{
+						"name": "Australia"
+					},
+					{
+						"name": "Britain"
+					},
+					{
+						"name": "Canada"
+					},
+					{
+						"name": "China"
+					},
+					{
 						"name": "France"
 					},
 					{
+						"name": "Germany"
+					},
+					{
+						"name": "Iran"
+					},
+					{
+						"name": "Iraq"
+					},
+					{
+						"name": "Italy"
+					},
+					{
+						"name": "Japan"
+					},
+					{
+						"name": "NATO"
+					},
+					{
+						"name": "North Korea"
+					},
+					{
+						"name": "PMC"
+					},
+					{
 						"name": "Russia"
+					},
+					{
+						"name": "South Africa"
+					},
+					{
+						"name": "South Korea"
+					},
+					{
+						"name": "Sweden"
+					},
+					{
+						"name": "Turkey"
+					},
+					{
+						"name": "Ukraine"
+					},
+					{
+						"name": "UN"
 					},
 					{
 						"name": "United States of America"
@@ -257,10 +371,64 @@
 				"decreaseModelCount": 1,
 				"factions": [
 					{
+						"name": "Australia"
+					},
+					{
+						"name": "Britain"
+					},
+					{
+						"name": "Canada"
+					},
+					{
+						"name": "China"
+					},
+					{
 						"name": "France"
 					},
 					{
+						"name": "Germany"
+					},
+					{
+						"name": "Iran"
+					},
+					{
+						"name": "Iraq"
+					},
+					{
+						"name": "Italy"
+					},
+					{
+						"name": "Japan"
+					},
+					{
+						"name": "NATO"
+					},
+					{
+						"name": "North Korea"
+					},
+					{
+						"name": "PMC"
+					},
+					{
 						"name": "Russia"
+					},
+					{
+						"name": "South Africa"
+					},
+					{
+						"name": "South Korea"
+					},
+					{
+						"name": "Sweden"
+					},
+					{
+						"name": "Turkey"
+					},
+					{
+						"name": "Ukraine"
+					},
+					{
+						"name": "UN"
 					},
 					{
 						"name": "United States of America"
@@ -282,10 +450,64 @@
 				"decreaseModelCount": 1,
 				"factions": [
 					{
+						"name": "Australia"
+					},
+					{
+						"name": "Britain"
+					},
+					{
+						"name": "Canada"
+					},
+					{
+						"name": "China"
+					},
+					{
 						"name": "France"
 					},
 					{
+						"name": "Germany"
+					},
+					{
+						"name": "Iran"
+					},
+					{
+						"name": "Iraq"
+					},
+					{
+						"name": "Italy"
+					},
+					{
+						"name": "Japan"
+					},
+					{
+						"name": "NATO"
+					},
+					{
+						"name": "North Korea"
+					},
+					{
+						"name": "PMC"
+					},
+					{
 						"name": "Russia"
+					},
+					{
+						"name": "South Africa"
+					},
+					{
+						"name": "South Korea"
+					},
+					{
+						"name": "Sweden"
+					},
+					{
+						"name": "Turkey"
+					},
+					{
+						"name": "Ukraine"
+					},
+					{
+						"name": "UN"
 					},
 					{
 						"name": "United States of America"
@@ -307,10 +529,64 @@
 				"decreaseModelCount": 1,
 				"factions": [
 					{
+						"name": "Australia"
+					},
+					{
+						"name": "Britain"
+					},
+					{
+						"name": "Canada"
+					},
+					{
+						"name": "China"
+					},
+					{
 						"name": "France"
 					},
 					{
+						"name": "Germany"
+					},
+					{
+						"name": "Iran"
+					},
+					{
+						"name": "Iraq"
+					},
+					{
+						"name": "Italy"
+					},
+					{
+						"name": "Japan"
+					},
+					{
+						"name": "NATO"
+					},
+					{
+						"name": "North Korea"
+					},
+					{
+						"name": "PMC"
+					},
+					{
 						"name": "Russia"
+					},
+					{
+						"name": "South Africa"
+					},
+					{
+						"name": "South Korea"
+					},
+					{
+						"name": "Sweden"
+					},
+					{
+						"name": "Turkey"
+					},
+					{
+						"name": "Ukraine"
+					},
+					{
+						"name": "UN"
 					},
 					{
 						"name": "United States of America"
@@ -332,10 +608,64 @@
 				"decreaseModelCount": 1,
 				"factions": [
 					{
+						"name": "Australia"
+					},
+					{
+						"name": "Britain"
+					},
+					{
+						"name": "Canada"
+					},
+					{
+						"name": "China"
+					},
+					{
 						"name": "France"
 					},
 					{
+						"name": "Germany"
+					},
+					{
+						"name": "Iran"
+					},
+					{
+						"name": "Iraq"
+					},
+					{
+						"name": "Italy"
+					},
+					{
+						"name": "Japan"
+					},
+					{
+						"name": "NATO"
+					},
+					{
+						"name": "North Korea"
+					},
+					{
+						"name": "PMC"
+					},
+					{
 						"name": "Russia"
+					},
+					{
+						"name": "South Africa"
+					},
+					{
+						"name": "South Korea"
+					},
+					{
+						"name": "Sweden"
+					},
+					{
+						"name": "Turkey"
+					},
+					{
+						"name": "Ukraine"
+					},
+					{
+						"name": "UN"
 					},
 					{
 						"name": "United States of America"
@@ -357,10 +687,64 @@
 				"decreaseModelCount": 1,
 				"factions": [
 					{
+						"name": "Australia"
+					},
+					{
+						"name": "Britain"
+					},
+					{
+						"name": "Canada"
+					},
+					{
+						"name": "China"
+					},
+					{
 						"name": "France"
 					},
 					{
+						"name": "Germany"
+					},
+					{
+						"name": "Iran"
+					},
+					{
+						"name": "Iraq"
+					},
+					{
+						"name": "Italy"
+					},
+					{
+						"name": "Japan"
+					},
+					{
+						"name": "NATO"
+					},
+					{
+						"name": "North Korea"
+					},
+					{
+						"name": "PMC"
+					},
+					{
 						"name": "Russia"
+					},
+					{
+						"name": "South Africa"
+					},
+					{
+						"name": "South Korea"
+					},
+					{
+						"name": "Sweden"
+					},
+					{
+						"name": "Turkey"
+					},
+					{
+						"name": "Ukraine"
+					},
+					{
+						"name": "UN"
 					},
 					{
 						"name": "United States of America"
@@ -382,10 +766,64 @@
 				"decreaseModelCount": 1,
 				"factions": [
 					{
+						"name": "Australia"
+					},
+					{
+						"name": "Britain"
+					},
+					{
+						"name": "Canada"
+					},
+					{
+						"name": "China"
+					},
+					{
 						"name": "France"
 					},
 					{
+						"name": "Germany"
+					},
+					{
+						"name": "Iran"
+					},
+					{
+						"name": "Iraq"
+					},
+					{
+						"name": "Italy"
+					},
+					{
+						"name": "Japan"
+					},
+					{
+						"name": "NATO"
+					},
+					{
+						"name": "North Korea"
+					},
+					{
+						"name": "PMC"
+					},
+					{
 						"name": "Russia"
+					},
+					{
+						"name": "South Africa"
+					},
+					{
+						"name": "South Korea"
+					},
+					{
+						"name": "Sweden"
+					},
+					{
+						"name": "Turkey"
+					},
+					{
+						"name": "Ukraine"
+					},
+					{
+						"name": "UN"
 					},
 					{
 						"name": "United States of America"
@@ -402,10 +840,64 @@
 				"decreaseModelCount": 1,
 				"factions": [
 					{
+						"name": "Australia"
+					},
+					{
+						"name": "Britain"
+					},
+					{
+						"name": "Canada"
+					},
+					{
+						"name": "China"
+					},
+					{
 						"name": "France"
 					},
 					{
+						"name": "Germany"
+					},
+					{
+						"name": "Iran"
+					},
+					{
+						"name": "Iraq"
+					},
+					{
+						"name": "Italy"
+					},
+					{
+						"name": "Japan"
+					},
+					{
+						"name": "NATO"
+					},
+					{
+						"name": "North Korea"
+					},
+					{
+						"name": "PMC"
+					},
+					{
 						"name": "Russia"
+					},
+					{
+						"name": "South Africa"
+					},
+					{
+						"name": "South Korea"
+					},
+					{
+						"name": "Sweden"
+					},
+					{
+						"name": "Turkey"
+					},
+					{
+						"name": "Ukraine"
+					},
+					{
+						"name": "UN"
 					},
 					{
 						"name": "United States of America"
@@ -428,6 +920,9 @@
 						"all": [{ "in": "HQ Platoon" }, { "in": "Russia" }]			
 					},
 					{
+						"all": [{ "in": "HQ Platoon" }, { "in": "Sweden" }]			
+					},
+					{
 						"all": [{ "in": "HQ Platoon" }, { "in": "United States of America" }]			
 					}
 				],
@@ -447,6 +942,7 @@
 						"points": 42,
 						"availableIn": [
 							"Russia",
+							"Sweden",
 							"United States of America"
 						],
 						"requireChooseOneKey": "morale"
@@ -456,6 +952,7 @@
 						"points": 60,
 						"availableIn": [
 							"Russia",
+							"Sweden",
 							"United States of America"
 						],
 						"requireChooseOneKey": "morale"
@@ -466,6 +963,7 @@
 						"availableIn": [
 							"France",
 							"Russia",
+							"Sweden",
 							"United States of America"
 						],
 						"requireChooseOneKey": "morale"
@@ -479,6 +977,7 @@
 						"unlockedByLocal": "Inexperienced",
 						"availableIn": [
 							"Russia",
+							"Sweden",
 							"United States of America"
 						]
 					},
@@ -491,6 +990,7 @@
 						"unlockedByLocal": "Regular",
 						"availableIn": [
 							"Russia",
+							"Sweden",
 							"United States of America"
 						]
 					},
@@ -504,6 +1004,7 @@
 						"availableIn": [
 							"France",
 							"Russia",
+							"Sweden",
 							"United States of America"
 						]
 					},
@@ -518,6 +1019,7 @@
 						"availableIn": [
 							"France",
 							"Russia",
+							"Sweden",
 							"United States of America"
 						]
 					},
@@ -531,6 +1033,7 @@
 						"availableIn": [
 							"France",
 							"Russia",
+							"Sweden",
 							"United States of America"
 						]
 					},
@@ -545,6 +1048,7 @@
 						"availableIn": [
 							"France",
 							"Russia",
+							"Sweden",
 							"United States of America"
 						]
 					},
@@ -558,6 +1062,7 @@
 						"availableIn": [
 							"France",
 							"Russia",
+							"Sweden",
 							"United States of America"
 						]
 					},
@@ -569,6 +1074,7 @@
 						"availableIn": [
 							"France",
 							"Russia",
+							"Sweden",
 							"United States of America"
 						]
 					},
@@ -580,6 +1086,7 @@
 						"availableIn": [
 							"France",
 							"Russia",
+							"Sweden",
 							"United States of America"
 						]
 					},
@@ -591,6 +1098,7 @@
 						"availableIn": [
 							"France",
 							"Russia",
+							"Sweden",
 							"United States of America"
 						]
 					},
@@ -602,6 +1110,7 @@
 						"availableIn": [
 							"France",
 							"Russia",
+							"Sweden",
 							"United States of America"
 						]
 					},
@@ -613,6 +1122,7 @@
 						"availableIn": [
 							"France",
 							"Russia",
+							"Sweden",
 							"United States of America"
 						]
 					},
@@ -622,6 +1132,13 @@
 						"perModel": true,
 						"unlockedByLocal": "Veteran",
 						"availableIn": ["France"]
+					},
+					{
+						"name": "SOG",
+						"points": 2,
+						"perModel": true,
+						"unlockedByLocal": "Veteran",
+						"availableIn": ["Sweden"]
 					},
 					{
 						"name": "VDV",
@@ -645,6 +1162,13 @@
 						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
 						"availableIn": ["United States of America"],
 						"requireChooseOneKey": "branchUS"
+					},
+					{
+						"name": "Winter Equipment",
+						"points": 0,
+						"perModel": true,
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
+						"availableIn": ["Sweden"]
 					}
 				],
 				"keywords": ["First Aid"],
@@ -687,6 +1211,21 @@
 						"all": [{ "in": "Heavy Weapons Platoon" }, { "in": "Russia" }]			
 					},
 					{
+						"all": [{ "in": "Rifle Platoon" }, { "in": "Sweden" }]			
+					},
+					{
+						"all": [{ "in": "Recce Platoon" }, { "in": "Sweden" }]			
+					},
+					{
+						"all": [{ "in": "Engineer Platoon" }, { "in": "Sweden" }]			
+					},
+					{
+						"all": [{ "in": "Artillery Platoon" }, { "in": "Sweden" }]			
+					},
+					{
+						"all": [{ "in": "Heavy Weapons Platoon" }, { "in": "Sweden" }]			
+					},
+					{
 						"all": [{ "in": "Rifle Platoon" }, { "in": "United States of America" }]			
 					},
 					{
@@ -718,6 +1257,7 @@
 						"points": 21,
 						"availableIn": [
 							"Russia",
+							"Sweden",
 							"United States of America"
 						],
 						"requireChooseOneKey": "morale"
@@ -727,6 +1267,7 @@
 						"points": 30,
 						"availableIn": [
 							"Russia",
+							"Sweden",
 							"United States of America"
 						],
 						"requireChooseOneKey": "morale"
@@ -737,6 +1278,7 @@
 						"availableIn": [
 							"France",
 							"Russia",
+							"Sweden",
 							"United States of America"
 						],
 						"requireChooseOneKey": "morale"
@@ -750,7 +1292,8 @@
 						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
 						"availableIn": [
 							"France",
-							"Russia"
+							"Russia",
+							"Sweden"
 						]
 					},
 					{
@@ -764,6 +1307,7 @@
 						"availableIn": [
 							"France",
 							"Russia",
+							"Sweden",
 							"United States of America"
 						]
 					},
@@ -778,6 +1322,7 @@
 						"availableIn": [
 							"France",
 							"Russia",
+							"Sweden",
 							"United States of America"
 						]
 					},
@@ -789,6 +1334,7 @@
 						"availableIn": [
 							"France",
 							"Russia",
+							"Sweden",
 							"United States of America"
 						]
 					},
@@ -798,6 +1344,13 @@
 						"perModel": true,
 						"unlockedByLocal": "Veteran",
 						"availableIn": ["France"]
+					},
+					{
+						"name": "SOG",
+						"points": 2,
+						"perModel": true,
+						"unlockedByLocal": "Veteran",
+						"availableIn": ["Sweden"]
 					},
 					{
 						"name": "VDV",
@@ -821,6 +1374,13 @@
 						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
 						"availableIn": ["United States of America"],
 						"requireChooseOneKey": "branchUS"
+					},
+					{
+						"name": "Winter Equipment",
+						"points": 0,
+						"perModel": true,
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
+						"availableIn": ["Sweden"]
 					}
 				],
 				"keywords": ["First Aid"],
@@ -837,6 +1397,9 @@
 					},
 					{
 						"all": [{ "in": "Rifle Platoon" }, { "in": "Russia" }]			
+					},
+					{
+						"all": [{ "in": "Rifle Platoon" }, { "in": "Sweden" }]			
 					},
 					{
 						"all": [{ "in": "Rifle Platoon" }, { "in": "United States of America" }]			
@@ -859,6 +1422,7 @@
 						"availableIn": [
 							"France",
 							"Russia",
+							"Sweden",
 							"United States of America"
 						],
 						"requireChooseOneKey": "morale"
@@ -869,6 +1433,7 @@
 						"availableIn": [
 							"France",
 							"Russia",
+							"Sweden",
 							"United States of America"
 						],
 						"requireChooseOneKey": "morale"
@@ -888,6 +1453,13 @@
 						"availableIn": ["Russia"]
 					},
 					{
+						"name": "SOG",
+						"points": 2,
+						"perModel": true,
+						"unlockedByLocal": "Veteran",
+						"availableIn": ["Sweden"]
+					},
+					{
 						"name": "US Army",
 						"points": 0,
 						"perModel": true,
@@ -902,6 +1474,13 @@
 						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
 						"availableIn": ["United States of America"],
 						"requireChooseOneKey": "branchUS"
+					},
+					{
+						"name": "Winter Equipment",
+						"points": 0,
+						"perModel": true,
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
+						"availableIn": ["Sweden"]
 					}
 				],
 				"keywords": ["Medic"],
@@ -1225,6 +1804,12 @@
 						"all": [{ "in": "Recce Platoon" }, { "in": "Russia" }]			
 					},
 					{
+						"all": [{ "in": "Rifle Platoon" }, { "in": "Sweden" }]			
+					},
+					{
+						"all": [{ "in": "Recce Platoon" }, { "in": "Sweden" }]			
+					},
+					{
 						"all": [{ "in": "Rifle Platoon" }, { "in": "United States of America" }]			
 					},
 					{
@@ -1248,6 +1833,7 @@
 						"availableIn": [
 							"France",
 							"Russia",
+							"Sweden",
 							"United States of America"
 						],
 						"requireChooseOneKey": "morale"
@@ -1258,6 +1844,7 @@
 						"availableIn": [
 							"France",
 							"Russia",
+							"Sweden",
 							"United States of America"
 						],
 						"requireChooseOneKey": "morale"
@@ -1272,6 +1859,7 @@
 						"availableIn": [
 							"France",
 							"Russia",
+							"Sweden",
 							"United States of America"
 						]
 					},
@@ -1285,6 +1873,7 @@
 						"availableIn": [
 							"France",
 							"Russia",
+							"Sweden",
 							"United States of America"
 						]
 					},
@@ -1299,6 +1888,7 @@
 						"availableIn": [
 							"France",
 							"Russia",
+							"Sweden",
 							"United States of America"
 						]
 					},
@@ -1312,6 +1902,7 @@
 						"availableIn": [
 							"France",
 							"Russia",
+							"Sweden",
 							"United States of America"
 						]
 					},
@@ -1326,6 +1917,7 @@
 						"availableIn": [
 							"France",
 							"Russia",
+							"Sweden",
 							"United States of America"
 						]
 					},
@@ -1339,6 +1931,7 @@
 						"availableIn": [
 							"France",
 							"Russia",
+							"Sweden",
 							"United States of America"
 						]
 					},
@@ -1357,6 +1950,13 @@
 						"availableIn": ["Russia"]
 					},
 					{
+						"name": "SOG",
+						"points": 2,
+						"perModel": true,
+						"unlockedByLocal": "Veteran",
+						"availableIn": ["Sweden"]
+					},
+					{
 						"name": "US Army",
 						"points": 0,
 						"perModel": true,
@@ -1371,6 +1971,13 @@
 						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
 						"availableIn": ["United States of America"],
 						"requireChooseOneKey": "branchUS"
+					},
+					{
+						"name": "Winter Equipment",
+						"points": 0,
+						"perModel": true,
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
+						"availableIn": ["Sweden"]
 					}
 				],
 				"keywords": ["Infiltrator","First Aid"],
@@ -1395,6 +2002,12 @@
 						"all": [{ "in": "Recce Platoon" }, { "in": "Russia" }]			
 					},
 					{
+						"all": [{ "in": "Rifle Platoon" }, { "in": "Sweden" }]			
+					},
+					{
+						"all": [{ "in": "Recce Platoon" }, { "in": "Sweden" }]			
+					},
+					{
 						"all": [{ "in": "Rifle Platoon" }, { "in": "United States of America" }]			
 					},
 					{
@@ -1418,6 +2031,7 @@
 						"availableIn": [
 							"France",
 							"Russia",
+							"Sweden",
 							"United States of America"
 						],
 						"requireChooseOneKey": "morale"
@@ -1428,6 +2042,7 @@
 						"availableIn": [
 							"France",
 							"Russia",
+							"Sweden",
 							"United States of America"
 						],
 						"requireChooseOneKey": "morale"
@@ -1442,6 +2057,7 @@
 						"availableIn": [
 							"France",
 							"Russia",
+							"Sweden",
 							"United States of America"
 						]
 					},
@@ -1455,6 +2071,7 @@
 						"availableIn": [
 							"France",
 							"Russia",
+							"Sweden",
 							"United States of America"
 						]
 					},
@@ -1469,6 +2086,7 @@
 						"availableIn": [
 							"France",
 							"Russia",
+							"Sweden",
 							"United States of America"
 						]
 					},
@@ -1482,6 +2100,7 @@
 						"availableIn": [
 							"France",
 							"Russia",
+							"Sweden",
 							"United States of America"
 						]
 					},
@@ -1496,6 +2115,7 @@
 						"availableIn": [
 							"France",
 							"Russia",
+							"Sweden",
 							"United States of America"
 						]
 					},
@@ -1509,6 +2129,7 @@
 						"availableIn": [
 							"France",
 							"Russia",
+							"Sweden",
 							"United States of America"
 						]
 					},
@@ -1527,6 +2148,13 @@
 						"availableIn": ["Russia"]
 					},
 					{
+						"name": "SOG",
+						"points": 2,
+						"perModel": true,
+						"unlockedByLocal": "Veteran",
+						"availableIn": ["Sweden"]
+					},
+					{
 						"name": "US Army",
 						"points": 0,
 						"perModel": true,
@@ -1541,6 +2169,13 @@
 						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
 						"availableIn": ["United States of America"],
 						"requireChooseOneKey": "branchUS"
+					},
+					{
+						"name": "Winter Equipment",
+						"points": 0,
+						"perModel": true,
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
+						"availableIn": ["Sweden"]
 					}
 				],
 				"keywords": ["Infiltrator","First Aid"],
@@ -1563,6 +2198,12 @@
 					},
 					{
 						"all": [{ "in": "Recce Platoon" }, { "in": "Russia" }]			
+					},
+					{
+						"all": [{ "in": "Rifle Platoon" }, { "in": "Sweden" }]			
+					},
+					{
+						"all": [{ "in": "Recce Platoon" }, { "in": "Sweden" }]			
 					},
 					{
 						"all": [{ "in": "Rifle Platoon" }, { "in": "United States of America" }]			
@@ -1588,6 +2229,7 @@
 						"availableIn": [
 							"France",
 							"Russia",
+							"Sweden",
 							"United States of America"
 						],
 						"requireChooseOneKey": "morale"
@@ -1598,6 +2240,7 @@
 						"availableIn": [
 							"France",
 							"Russia",
+							"Sweden",
 							"United States of America"
 						],
 						"requireChooseOneKey": "morale"
@@ -1613,6 +2256,7 @@
 						"availableIn": [
 							"France",
 							"Russia",
+							"Sweden",
 							"United States of America"
 						]
 					},
@@ -1626,6 +2270,7 @@
 						"availableIn": [
 							"France",
 							"Russia",
+							"Sweden",
 							"United States of America"
 						]
 					},
@@ -1640,6 +2285,7 @@
 						"availableIn": [
 							"France",
 							"Russia",
+							"Sweden",
 							"United States of America"
 						]
 					},
@@ -1653,6 +2299,7 @@
 						"availableIn": [
 							"France",
 							"Russia",
+							"Sweden",
 							"United States of America"
 						]
 					},
@@ -1693,6 +2340,13 @@
 						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
 						"availableIn": ["United States of America"],
 						"requireChooseOneKey": "branchUS"
+					},
+					{
+						"name": "Winter Equipment",
+						"points": 0,
+						"perModel": true,
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
+						"availableIn": ["Sweden"]
 					}
 				],
 				"keywords": ["Infiltrator","First Aid"],
@@ -2112,15 +2766,15 @@
 				"equipment": ["Infantry ATGM/TOW","MOPP"]
 			},
 			{
-				"name": "JAVELIN AT Team",
+				"name": "Granatgevär 18 AT Team",
 				"factions": [],
 				"order": 1,
 				"availableIn":[
 					{
-						"all": [{ "in": "Rifle Platoon" }, { "in": "United States of America" }]			
+						"all": [{ "in": "Rifle Platoon" }, { "in": "Sweden" }]			
 					},
 					{
-						"all": [{ "in": "Recce Platoon" }, { "in": "United States of America" }]			
+						"all": [{ "in": "Recce Platoon" }, { "in": "Sweden" }]			
 					}
 				],
 				"points": 0,
@@ -2137,36 +2791,34 @@
 					{
 						"name": "Inexperienced",
 						"points": 42,
-						"availableIn": ["France"],
+						"availableIn": ["Sweden"],
 						"requireChooseOneKey": "morale"
 					},
 					{
 						"name": "Regular",
 						"points": 60,
-						"availableIn": ["France"],
+						"availableIn": ["Sweden"],
 						"requireChooseOneKey": "morale"
 					},
 					{
 						"name": "Veteran",
 						"points": 78,
-						"availableIn": ["France"],
+						"availableIn": ["Sweden"],
 						"requireChooseOneKey": "morale"
 					},
 					{
-						"name": "US Army",
+						"name": "SOG",
+						"points": 2,
+						"perModel": true,
+						"unlockedByLocal": "Veteran",
+						"availableIn": ["Sweden"]
+					},
+					{
+						"name": "Winter Equipment",
 						"points": 0,
 						"perModel": true,
 						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
-						"availableIn": ["United States of America"],
-						"requireChooseOneKey": "branchUS"
-					},
-					{
-						"name": "USMC",
-						"points": 1,
-						"perModel": true,
-						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
-						"availableIn": ["United States of America"],
-						"requireChooseOneKey": "branchUS"
+						"availableIn": ["Sweden"]
 					}
 				],
 				"keywords": [],
@@ -2174,12 +2826,12 @@
 				"equipment": ["Infantry ATGM/TOW","MOPP"]
 			},
 			{
-				"name": "JAVELIN AT Team",
+				"name": "Granatgevär 18 AT Team",
 				"factions": [],
 				"order": 1,
 				"availableIn":[
 					{
-						"all": [{ "in": "Heavy Weapons Platoon" }, { "in": "United States of America" }]			
+						"all": [{ "in": "Heavy Weapons Platoon" }, { "in": "Sweden" }]			
 					}
 				],
 				"points": 0,
@@ -2196,36 +2848,34 @@
 					{
 						"name": "Inexperienced",
 						"points": 42,
-						"availableIn": ["France"],
+						"availableIn": ["Sweden"],
 						"requireChooseOneKey": "morale"
 					},
 					{
 						"name": "Regular",
 						"points": 60,
-						"availableIn": ["France"],
+						"availableIn": ["Sweden"],
 						"requireChooseOneKey": "morale"
 					},
 					{
 						"name": "Veteran",
 						"points": 78,
-						"availableIn": ["France"],
+						"availableIn": ["Sweden"],
 						"requireChooseOneKey": "morale"
 					},
 					{
-						"name": "US Army",
+						"name": "SOG",
+						"points": 2,
+						"perModel": true,
+						"unlockedByLocal": "Veteran",
+						"availableIn": ["Sweden"]
+					},
+					{
+						"name": "Winter Equipment",
 						"points": 0,
 						"perModel": true,
 						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
-						"availableIn": ["United States of America"],
-						"requireChooseOneKey": "branchUS"
-					},
-					{
-						"name": "USMC",
-						"points": 1,
-						"perModel": true,
-						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
-						"availableIn": ["United States of America"],
-						"requireChooseOneKey": "branchUS"
+						"availableIn": ["Sweden"]
 					}
 				],
 				"keywords": [],
@@ -2233,15 +2883,132 @@
 				"equipment": ["Infantry ATGM/TOW","MOPP"]
 			},
 			{
-				"name": "Stinger AA Team",
+				"name": "RBS 56 BILL AT Team",
 				"factions": [],
 				"order": 1,
 				"availableIn":[
 					{
-						"all": [{ "in": "Rifle Platoon" }, { "in": "United States of America" }]			
+						"all": [{ "in": "Rifle Platoon" }, { "in": "Sweden" }]			
 					},
 					{
-						"all": [{ "in": "Recce Platoon" }, { "in": "United States of America" }]			
+						"all": [{ "in": "Recce Platoon" }, { "in": "Sweden" }]			
+					}
+				],
+				"points": 0,
+				"models": 2,
+				"sortPriority": 2,
+				"limits": [
+					{
+						"key": "ATAA",
+						"limit": 1,
+						"perParent": true
+					}
+				],
+				"options": [
+					{
+						"name": "Inexperienced",
+						"points": 46,
+						"availableIn": ["France"],
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Regular",
+						"points": 70,
+						"availableIn": ["France"],
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Veteran",
+						"points": 94,
+						"availableIn": ["France"],
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "SOG",
+						"points": 2,
+						"perModel": true,
+						"unlockedByLocal": "Veteran",
+						"availableIn": ["Sweden"]
+					},
+					{
+						"name": "Winter Equipment",
+						"points": 0,
+						"perModel": true,
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
+						"availableIn": ["Sweden"]
+					}
+				],
+				"keywords": ["Top Attack"],
+				"specialText": "1 Weapon Operator\n 1 Weapon Assistant",
+				"equipment": ["Infantry ATGM/TOW","MOPP"]
+			},
+			{
+				"name": "RBS 56 BILL AT Team",
+				"factions": [],
+				"order": 1,
+				"availableIn":[
+					{
+						"all": [{ "in": "Heavy Weapons Platoon" }, { "in": "Sweden" }]			
+					}
+				],
+				"points": 0,
+				"models": 2,
+				"sortPriority": 2,
+				"limits": [
+					{
+						"key": "ATAA",
+						"limit": 3,
+						"perParent": true
+					}
+				],
+				"options": [
+					{
+						"name": "Inexperienced",
+						"points": 46,
+						"availableIn": ["France"],
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Regular",
+						"points": 70,
+						"availableIn": ["France"],
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Veteran",
+						"points": 94,
+						"availableIn": ["France"],
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "SOG",
+						"points": 2,
+						"perModel": true,
+						"unlockedByLocal": "Veteran",
+						"availableIn": ["Sweden"]
+					},
+					{
+						"name": "Winter Equipment",
+						"points": 0,
+						"perModel": true,
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
+						"availableIn": ["Sweden"]
+					}
+				],
+				"keywords": ["Top Attack"],
+				"specialText": "1 Weapon Operator\n 1 Weapon Assistant",
+				"equipment": ["Infantry ATGM/TOW","MOPP"]
+			},
+			{
+				"name": "RBS 70 SHORAD AA Team",
+				"factions": [],
+				"order": 1,
+				"availableIn":[
+					{
+						"all": [{ "in": "Rifle Platoon" }, { "in": "Sweden" }]			
+					},
+					{
+						"all": [{ "in": "Recce Platoon" }, { "in": "Sweden" }]			
 					}
 				],
 				"points": 0,
@@ -2271,6 +3038,244 @@
 						"name": "Veteran",
 						"points": 45,
 						"availableIn": ["France"],
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "SOG",
+						"points": 2,
+						"perModel": true,
+						"unlockedByLocal": "Veteran",
+						"availableIn": ["Sweden"]
+					},
+					{
+						"name": "Winter Equipment",
+						"points": 0,
+						"perModel": true,
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
+						"availableIn": ["Sweden"]
+					}
+				],
+				"keywords": [],
+				"specialText": "1 Weapon Operator\n 1 Weapon Assistant",
+				"equipment": ["Infantry SAM","MOPP"]
+			},
+			{
+				"name": "RBS 70 SHORAD AA Team",
+				"factions": [],
+				"order": 1,
+				"availableIn":[
+					{
+						"all": [{ "in": "Heavy Weapons Platoon" }, { "in": "Sweden" }]			
+					}
+				],
+				"points": 0,
+				"models": 2,
+				"sortPriority": 2,
+				"limits": [
+					{
+						"key": "ATAA",
+						"limit": 3,
+						"perParent": true
+					}
+				],
+				"options": [
+					{
+						"name": "Inexperienced",
+						"points": 25,
+						"availableIn": ["France"],
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Regular",
+						"points": 35,
+						"availableIn": ["France"],
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Veteran",
+						"points": 45,
+						"availableIn": ["France"],
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "SOG",
+						"points": 2,
+						"perModel": true,
+						"unlockedByLocal": "Veteran",
+						"availableIn": ["Sweden"]
+					},
+					{
+						"name": "Winter Equipment",
+						"points": 0,
+						"perModel": true,
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
+						"availableIn": ["Sweden"]
+					}
+				],
+				"keywords": [],
+				"specialText": "1 Weapon Operator\n 1 Weapon Assistant",
+				"equipment": ["Infantry SAM","MOPP"]
+			},
+			{
+				"name": "JAVELIN AT Team",
+				"factions": [],
+				"order": 1,
+				"availableIn":[
+					{
+						"all": [{ "in": "Rifle Platoon" }, { "in": "United States of America" }]			
+					},
+					{
+						"all": [{ "in": "Recce Platoon" }, { "in": "United States of America" }]			
+					}
+				],
+				"points": 0,
+				"models": 2,
+				"sortPriority": 2,
+				"limits": [
+					{
+						"key": "ATAA",
+						"limit": 1,
+						"perParent": true
+					}
+				],
+				"options": [
+					{
+						"name": "Inexperienced",
+						"points": 46,
+						"availableIn": ["United States of America"],
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Regular",
+						"points": 70,
+						"availableIn": ["United States of America"],
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Veteran",
+						"points": 94,
+						"availableIn": ["United States of America"],
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "US Army",
+						"points": 0,
+						"perModel": true,
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
+						"availableIn": ["United States of America"],
+						"requireChooseOneKey": "branchUS"
+					},
+					{
+						"name": "USMC",
+						"points": 1,
+						"perModel": true,
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
+						"availableIn": ["United States of America"],
+						"requireChooseOneKey": "branchUS"
+					}
+				],
+				"keywords": ["Top Attack"],
+				"specialText": "1 Weapon Operator\n 1 Weapon Assistant",
+				"equipment": ["Infantry ATGM/TOW","MOPP"]
+			},
+			{
+				"name": "JAVELIN AT Team",
+				"factions": [],
+				"order": 1,
+				"availableIn":[
+					{
+						"all": [{ "in": "Heavy Weapons Platoon" }, { "in": "United States of America" }]			
+					}
+				],
+				"points": 0,
+				"models": 2,
+				"sortPriority": 2,
+				"limits": [
+					{
+						"key": "ATAA",
+						"limit": 3,
+						"perParent": true
+					}
+				],
+				"options": [
+					{
+						"name": "Inexperienced",
+						"points": 46,
+						"availableIn": ["United States of America"],
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Regular",
+						"points": 70,
+						"availableIn": ["United States of America"],
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Veteran",
+						"points": 94,
+						"availableIn": ["United States of America"],
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "US Army",
+						"points": 0,
+						"perModel": true,
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
+						"availableIn": ["United States of America"],
+						"requireChooseOneKey": "branchUS"
+					},
+					{
+						"name": "USMC",
+						"points": 1,
+						"perModel": true,
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
+						"availableIn": ["United States of America"],
+						"requireChooseOneKey": "branchUS"
+					}
+				],
+				"keywords": ["Top Attack"],
+				"specialText": "1 Weapon Operator\n 1 Weapon Assistant",
+				"equipment": ["Infantry ATGM/TOW","MOPP"]
+			},
+			{
+				"name": "Stinger AA Team",
+				"factions": [],
+				"order": 1,
+				"availableIn":[
+					{
+						"all": [{ "in": "Rifle Platoon" }, { "in": "United States of America" }]			
+					},
+					{
+						"all": [{ "in": "Recce Platoon" }, { "in": "United States of America" }]			
+					}
+				],
+				"points": 0,
+				"models": 2,
+				"sortPriority": 2,
+				"limits": [
+					{
+						"key": "ATAA",
+						"limit": 1,
+						"perParent": true
+					}
+				],
+				"options": [
+					{
+						"name": "Inexperienced",
+						"points": 25,
+						"availableIn": ["United States of America"],
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Regular",
+						"points": 35,
+						"availableIn": ["United States of America"],
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Veteran",
+						"points": 45,
+						"availableIn": ["United States of America"],
 						"requireChooseOneKey": "morale"
 					},
 					{
@@ -2317,19 +3322,19 @@
 					{
 						"name": "Inexperienced",
 						"points": 25,
-						"availableIn": ["France"],
+						"availableIn": ["United States of America"],
 						"requireChooseOneKey": "morale"
 					},
 					{
 						"name": "Regular",
 						"points": 35,
-						"availableIn": ["France"],
+						"availableIn": ["United States of America"],
 						"requireChooseOneKey": "morale"
 					},
 					{
 						"name": "Veteran",
 						"points": 45,
-						"availableIn": ["France"],
+						"availableIn": ["United States of America"],
 						"requireChooseOneKey": "morale"
 					},
 					{
@@ -2352,6 +3357,107 @@
 				"keywords": [],
 				"specialText": "1 Weapon Operator\n 1 Weapon Assistant",
 				"equipment": ["Infantry SAM","MOPP"]
+			},
+			{
+				"name": "Light Mortar Team",
+				"factions": [],
+				"order": 1,
+				"availableIn":[
+					{
+						"all": [{ "in": "Rifle Platoon" }, { "in": "France" }]			
+					},
+					{
+						"all": [{ "in": "Rifle Platoon" }, { "in": "Russia" }]			
+					},
+					{
+						"all": [{ "in": "Rifle Platoon" }, { "in": "United States of America" }]			
+					}
+				],
+				"points": 0,
+				"models": 2,
+				"sortPriority": 2,
+				"limits": [
+					{
+						"key": "Mortar",
+						"limit": 1,
+						"perParent": true
+					}
+				],
+				"options": [
+					{
+						"name": "Inexperienced",
+						"points": 25,
+						"availableIn": [
+							"France",
+							"Russia",
+							"Sweden",
+							"United States of America"
+						],
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Regular",
+						"points": 35,
+						"availableIn": [
+							"France",
+							"Russia",
+							"Sweden",
+							"United States of America"
+						],
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Veteran",
+						"points": 45,
+						"availableIn": [
+							"France",
+							"Russia",
+							"Sweden",
+							"United States of America"
+						],
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "French Foreign Legion",
+						"points": 1,
+						"perModel": true,
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
+						"availableIn": ["France"]
+					},
+					{
+						"name": "VDV",
+						"points": 2,
+						"perModel": true,
+						"unlockedByLocal": "Veteran",
+						"availableIn": ["Russia"]
+					},
+					{
+						"name": "US Army",
+						"points": 0,
+						"perModel": true,
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
+						"availableIn": ["United States of America"],
+						"requireChooseOneKey": "branchUS"
+					},
+					{
+						"name": "USMC",
+						"points": 1,
+						"perModel": true,
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
+						"availableIn": ["United States of America"],
+						"requireChooseOneKey": "branchUS"
+					},
+					{
+						"name": "Winter Equipment",
+						"points": 0,
+						"perModel": true,
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
+						"availableIn": ["Sweden"]
+					}
+				],
+				"keywords": [],
+				"specialText": "1 Weapon Operator\n 1 Weapon Assistant",
+				"equipment": ["Light Mortar Team","MOPP"]
 			},
 			{
 				"name": "Light Mortar Team",
@@ -2385,6 +3491,7 @@
 						"availableIn": [
 							"France",
 							"Russia",
+							"Sweden",
 							"United States of America"
 						],
 						"requireChooseOneKey": "morale"
@@ -2395,6 +3502,7 @@
 						"availableIn": [
 							"France",
 							"Russia",
+							"Sweden",
 							"United States of America"
 						],
 						"requireChooseOneKey": "morale"
@@ -2405,6 +3513,7 @@
 						"availableIn": [
 							"France",
 							"Russia",
+							"Sweden",
 							"United States of America"
 						],
 						"requireChooseOneKey": "morale"
@@ -2456,6 +3565,9 @@
 						"all": [{ "in": "Heavy Weapons Platoon" }, { "in": "Russia" }]			
 					},
 					{
+						"all": [{ "in": "Heavy Weapons Platoon" }, { "in": "Sweden" }]			
+					},
+					{
 						"all": [{ "in": "Heavy Weapons Platoon" }, { "in": "United States of America" }]			
 					}
 				],
@@ -2476,6 +3588,7 @@
 						"availableIn": [
 							"France",
 							"Russia",
+							"Sweden",
 							"United States of America"
 						],
 						"requireChooseOneKey": "morale"
@@ -2486,6 +3599,7 @@
 						"availableIn": [
 							"France",
 							"Russia",
+							"Sweden",
 							"United States of America"
 						],
 						"requireChooseOneKey": "morale"
@@ -2496,6 +3610,7 @@
 						"availableIn": [
 							"France",
 							"Russia",
+							"Sweden",
 							"United States of America"
 						],
 						"requireChooseOneKey": "morale"
@@ -2507,6 +3622,7 @@
 						"availableIn": [
 							"France",
 							"Russia",
+							"Sweden",
 							"United States of America"
 						],
 						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
@@ -2534,6 +3650,13 @@
 						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
 						"availableIn": ["United States of America"],
 						"requireChooseOneKey": "branchUS"
+					},
+					{
+						"name": "Winter Equipment",
+						"points": 0,
+						"perModel": true,
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
+						"availableIn": ["Sweden"]
 					}
 				],
 				"keywords": [],
@@ -2550,6 +3673,9 @@
 					},
 					{
 						"all": [{ "in": "Heavy Weapons Platoon" }, { "in": "Russia" }]			
+					},
+					{
+						"all": [{ "in": "Heavy Weapons Platoon" }, { "in": "Sweden" }]			
 					},
 					{
 						"all": [{ "in": "Heavy Weapons Platoon" }, { "in": "United States of America" }]			
@@ -2572,6 +3698,7 @@
 						"availableIn": [
 							"France",
 							"Russia",
+							"Sweden",
 							"United States of America"
 						],
 						"requireChooseOneKey": "morale"
@@ -2582,6 +3709,7 @@
 						"availableIn": [
 							"France",
 							"Russia",
+							"Sweden",
 							"United States of America"
 						],
 						"requireChooseOneKey": "morale"
@@ -2592,6 +3720,7 @@
 						"availableIn": [
 							"France",
 							"Russia",
+							"Sweden",
 							"United States of America"
 						],
 						"requireChooseOneKey": "morale"
@@ -2603,6 +3732,7 @@
 						"availableIn": [
 							"France",
 							"Russia",
+							"Sweden",
 							"United States of America"
 						],
 						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
@@ -2630,6 +3760,13 @@
 						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
 						"availableIn": ["United States of America"],
 						"requireChooseOneKey": "branchUS"
+					},
+					{
+						"name": "Winter Equipment",
+						"points": 0,
+						"perModel": true,
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
+						"availableIn": ["Sweden"]
 					}
 				],
 				"keywords": [],
@@ -2646,6 +3783,9 @@
 					},
 					{
 						"all": [{ "in": "Heavy Weapons Platoon" }, { "in": "Russia" }]			
+					},
+					{
+						"all": [{ "in": "Heavy Weapons Platoon" }, { "in": "Sweden" }]			
 					},
 					{
 						"all": [{ "in": "Heavy Weapons Platoon" }, { "in": "United States of America" }]			
@@ -2668,6 +3808,7 @@
 						"availableIn": [
 							"France",
 							"Russia",
+							"Sweden",
 							"United States of America"
 						],
 						"requireChooseOneKey": "morale"
@@ -2678,6 +3819,7 @@
 						"availableIn": [
 							"France",
 							"Russia",
+							"Sweden",
 							"United States of America"
 						],
 						"requireChooseOneKey": "morale"
@@ -2688,6 +3830,7 @@
 						"availableIn": [
 							"France",
 							"Russia",
+							"Sweden",
 							"United States of America"
 						],
 						"requireChooseOneKey": "morale"
@@ -2707,6 +3850,13 @@
 						"availableIn": ["Russia"]
 					},
 					{
+						"name": "SOG",
+						"points": 2,
+						"perModel": true,
+						"unlockedByLocal": "Veteran",
+						"availableIn": ["Sweden"]
+					},
+					{
 						"name": "US Army",
 						"points": 0,
 						"perModel": true,
@@ -2721,6 +3871,13 @@
 						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
 						"availableIn": ["United States of America"],
 						"requireChooseOneKey": "branchUS"
+					},
+					{
+						"name": "Winter Equipment",
+						"points": 0,
+						"perModel": true,
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
+						"availableIn": ["Sweden"]
 					}
 				],
 				"keywords": [],
@@ -2737,6 +3894,9 @@
 					},
 					{
 						"all": [{ "in": "Heavy Weapons Platoon" }, { "in": "Russia" }]			
+					},
+					{
+						"all": [{ "in": "Heavy Weapons Platoon" }, { "in": "Sweden" }]			
 					},
 					{
 						"all": [{ "in": "Heavy Weapons Platoon" }, { "in": "United States of America" }]			
@@ -2759,6 +3919,7 @@
 						"availableIn": [
 							"France",
 							"Russia",
+							"Sweden",
 							"United States of America"
 						],
 						"requireChooseOneKey": "morale"
@@ -2769,6 +3930,7 @@
 						"availableIn": [
 							"France",
 							"Russia",
+							"Sweden",
 							"United States of America"
 						],
 						"requireChooseOneKey": "morale"
@@ -2779,6 +3941,7 @@
 						"availableIn": [
 							"France",
 							"Russia",
+							"Sweden",
 							"United States of America"
 						],
 						"requireChooseOneKey": "morale"
@@ -2789,6 +3952,13 @@
 						"perModel": true,
 						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
 						"availableIn": ["France"]
+					},
+					{
+						"name": "SOG",
+						"points": 2,
+						"perModel": true,
+						"unlockedByLocal": "Veteran",
+						"availableIn": ["Sweden"]
 					},
 					{
 						"name": "US Army",
@@ -2805,6 +3975,13 @@
 						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
 						"availableIn": ["United States of America"],
 						"requireChooseOneKey": "branchUS"
+					},
+					{
+						"name": "Winter Equipment",
+						"points": 0,
+						"perModel": true,
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
+						"availableIn": ["Sweden"]
 					}
 				],
 				"keywords": [],
@@ -4444,6 +5621,1110 @@
 				"keywords": ["First Aid","Reluctant Fighters"],
 				"specialText": "1 NCO\n 4 Soldiers",
 				"equipment": ["Grenades","Assault Rifles"]
+			},
+			{
+				"name": "Swedish Mechanized Rifle Group",
+				"factions": [],
+				"order": 1,
+				"availableIn":[
+					{
+						"all": [{ "in": "Rifle Platoon" }, { "in": "Sweden" }]			
+					}
+				],
+				"points": 0,
+				"models": 6,
+				"sortPriority": 3,
+				"limits": [
+					{
+						"key": "Rifle",
+						"limit": 5,
+						"perParent": true
+					}
+				],
+				"options": [
+					{
+						"name": "Inexperienced",
+						"points": 42,
+						"availableIn": ["Sweden"],
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Regular",
+						"points": 60,
+						"availableIn": ["Sweden"],
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Veteran",
+						"points": 78,
+						"availableIn": ["Sweden"],
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Additional Men",
+						"points": 7,
+						"increment": true,
+						"max": 3,
+						"addsModels": 1,
+						"unlockedByLocal": "Inexperienced",
+						"availableIn": ["Sweden"]
+					},
+					{
+						"name": "Additional Men",
+						"points": 10,
+						"increment": true,
+						"max": 3,
+						"addsModels": 1,
+						"unlockedByLocal": "Regular",
+						"availableIn": ["Sweden"]
+					},
+					{
+						"name": "Additional Men",
+						"points": 13,
+						"increment": true,
+						"max": 3,
+						"addsModels": 1,
+						"unlockedByLocal": "Veteran",
+						"availableIn": ["Sweden"]
+					},
+					{
+						"name": "NCO Pistol",
+						"points": -1,
+						"increment": true,
+						"max": "parentModels",
+						"maxKey": "gun",
+						"localLimit": 1,
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
+						"availableIn": ["Sweden"]
+					},
+					{
+						"name": "NCO SMG",
+						"points": 4,
+						"increment": true,
+						"max": "parentModels",
+						"maxKey": "gun",
+						"localLimit": 1,
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
+						"availableIn": ["Sweden"]
+					},
+					{
+						"name": "LMG",
+						"points": 15,
+						"increment": true,
+						"max": "parentModels",
+						"maxKey": "gun",
+						"localLimit": 1,
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
+						"availableIn": ["Sweden"]
+					},
+					{
+						"name": "Pansar­skott 86",
+						"points": 6,
+						"increment": true,
+						"max": 1,
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
+						"availableIn": ["Sweden"]
+					},
+					{
+						"name": "Winter Equipment",
+						"points": 0,
+						"perModel": true,
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
+						"availableIn": ["Sweden"]
+					}
+				],
+				"keywords": ["First Aid"],
+				"specialText": "1 NCO\n 5 Soldiers",
+				"equipment": ["Body Armor","Grenades","Assault Rifles","MOPP"]
+			},
+			{
+				"name": "Swedish Mechanized Rifle Group",
+				"factions": [],
+				"order": 1,
+				"availableIn":[
+					{
+						"all": [{ "in": "Recce Platoon" }, { "in": "Sweden" }]			
+					}
+				],
+				"points": 0,
+				"models": 5,
+				"sortPriority": 3,
+				"limits": [
+					{
+						"key": "Rifle",
+						"limit": 4,
+						"perParent": true
+					}
+				],
+				"options": [
+					{
+						"name": "Inexperienced",
+						"points": 42,
+						"availableIn": ["Sweden"],
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Regular",
+						"points": 60,
+						"availableIn": ["Sweden"],
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Veteran",
+						"points": 78,
+						"availableIn": ["Sweden"],
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Additional Men",
+						"points": 7,
+						"increment": true,
+						"max": 3,
+						"addsModels": 1,
+						"unlockedByLocal": "Inexperienced",
+						"availableIn": ["Sweden"]
+					},
+					{
+						"name": "Additional Men",
+						"points": 10,
+						"increment": true,
+						"max": 3,
+						"addsModels": 1,
+						"unlockedByLocal": "Regular",
+						"availableIn": ["Sweden"]
+					},
+					{
+						"name": "Additional Men",
+						"points": 13,
+						"increment": true,
+						"max": 3,
+						"addsModels": 1,
+						"unlockedByLocal": "Veteran",
+						"availableIn": ["Sweden"]
+					},
+					{
+						"name": "NCO Pistol",
+						"points": -1,
+						"increment": true,
+						"max": "parentModels",
+						"maxKey": "gun",
+						"localLimit": 1,
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
+						"availableIn": ["Sweden"]
+					},
+					{
+						"name": "NCO SMG",
+						"points": 4,
+						"increment": true,
+						"max": "parentModels",
+						"maxKey": "gun",
+						"localLimit": 1,
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
+						"availableIn": ["Sweden"]
+					},
+					{
+						"name": "LMG",
+						"points": 15,
+						"increment": true,
+						"max": "parentModels",
+						"maxKey": "gun",
+						"localLimit": 1,
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
+						"availableIn": ["Sweden"]
+					},
+					{
+						"name": "Pansar­skott 86",
+						"points": 6,
+						"increment": true,
+						"max": 1,
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
+						"availableIn": ["Sweden"]
+					},
+					{
+						"name": "Winter Equipment",
+						"points": 0,
+						"perModel": true,
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
+						"availableIn": ["Sweden"]
+					}
+				],
+				"keywords": ["First Aid"],
+				"specialText": "1 NCO\n 5 Soldiers",
+				"equipment": ["Body Armor","Grenades","Assault Rifles","MOPP"]
+			},
+			{
+				"name": "Swedish Amphibious Rifle Group",
+				"factions": [],
+				"order": 1,
+				"availableIn":[
+					{
+						"all": [{ "in": "Rifle Platoon" }, { "in": "Sweden" }]			
+					}
+				],
+				"points": 0,
+				"models": 5,
+				"sortPriority": 3,
+				"limits": [
+					{
+						"key": "Rifle",
+						"limit": 5,
+						"perParent": true
+					}
+				],
+				"options": [
+					{
+						"name": "Inexperienced",
+						"points": 40,
+						"availableIn": ["Sweden"],
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Regular",
+						"points": 55,
+						"availableIn": ["Sweden"],
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Veteran",
+						"points": 70,
+						"availableIn": ["Sweden"],
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Additional Men",
+						"points": 8,
+						"increment": true,
+						"max": 3,
+						"addsModels": 1,
+						"unlockedByLocal": "Inexperienced",
+						"availableIn": ["Sweden"]
+					},
+					{
+						"name": "Additional Men",
+						"points": 11,
+						"increment": true,
+						"max": 3,
+						"addsModels": 1,
+						"unlockedByLocal": "Regular",
+						"availableIn": ["Sweden"]
+					},
+					{
+						"name": "Additional Men",
+						"points": 14,
+						"increment": true,
+						"max": 3,
+						"addsModels": 1,
+						"unlockedByLocal": "Veteran",
+						"availableIn": ["Sweden"]
+					},
+					{
+						"name": "NCO Pistol",
+						"points": -1,
+						"increment": true,
+						"max": "parentModels",
+						"maxKey": "gun",
+						"localLimit": 1,
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
+						"availableIn": ["Sweden"]
+					},
+					{
+						"name": "Rifle",
+						"points": -1,
+						"increment": true,
+						"max": "parentModels",
+						"maxKey": "gun",
+						"localLimit": 2,
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
+						"availableIn": ["Sweden"]
+					},
+					{
+						"name": "LMG",
+						"points": 15,
+						"increment": true,
+						"max": "parentModels",
+						"maxKey": "gun",
+						"localLimit": 1,
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
+						"availableIn": ["Sweden"]
+					},
+					{
+						"name": "Pansar­skott 86",
+						"points": 6,
+						"increment": true,
+						"max": 2,
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
+						"availableIn": ["Sweden"]
+					},
+					{
+						"name": "Winter Equipment",
+						"points": 0,
+						"perModel": true,
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
+						"availableIn": ["Sweden"]
+					}
+				],
+				"keywords": ["First Aid","Stubborn"],
+				"specialText": "1 NCO\n 4 Soldiers",
+				"equipment": ["Body Armor","Grenades","Assault Rifles","MOPP"]
+			},
+			{
+				"name": "Swedish Amphibious Rifle Group",
+				"factions": [],
+				"order": 1,
+				"availableIn":[
+					{
+						"all": [{ "in": "Recce Platoon" }, { "in": "Sweden" }]			
+					}
+				],
+				"points": 0,
+				"models": 5,
+				"sortPriority": 3,
+				"limits": [
+					{
+						"key": "Rifle",
+						"limit": 4,
+						"perParent": true
+					}
+				],
+				"options": [
+					{
+						"name": "Inexperienced",
+						"points": 40,
+						"availableIn": ["Sweden"],
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Regular",
+						"points": 55,
+						"availableIn": ["Sweden"],
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Veteran",
+						"points": 70,
+						"availableIn": ["Sweden"],
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Additional Men",
+						"points": 8,
+						"increment": true,
+						"max": 3,
+						"addsModels": 1,
+						"unlockedByLocal": "Inexperienced",
+						"availableIn": ["Sweden"]
+					},
+					{
+						"name": "Additional Men",
+						"points": 11,
+						"increment": true,
+						"max": 3,
+						"addsModels": 1,
+						"unlockedByLocal": "Regular",
+						"availableIn": ["Sweden"]
+					},
+					{
+						"name": "Additional Men",
+						"points": 14,
+						"increment": true,
+						"max": 3,
+						"addsModels": 1,
+						"unlockedByLocal": "Veteran",
+						"availableIn": ["Sweden"]
+					},
+					{
+						"name": "NCO Pistol",
+						"points": -1,
+						"increment": true,
+						"max": "parentModels",
+						"maxKey": "gun",
+						"localLimit": 1,
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
+						"availableIn": ["Sweden"]
+					},
+					{
+						"name": "Rifle",
+						"points": -1,
+						"increment": true,
+						"max": "parentModels",
+						"maxKey": "gun",
+						"localLimit": 2,
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
+						"availableIn": ["Sweden"]
+					},
+					{
+						"name": "LMG",
+						"points": 15,
+						"increment": true,
+						"max": "parentModels",
+						"maxKey": "gun",
+						"localLimit": 1,
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
+						"availableIn": ["Sweden"]
+					},
+					{
+						"name": "Pansar­skott 86",
+						"points": 6,
+						"increment": true,
+						"max": 2,
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
+						"availableIn": ["Sweden"]
+					},
+					{
+						"name": "Winter Equipment",
+						"points": 0,
+						"perModel": true,
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
+						"availableIn": ["Sweden"]
+					}
+				],
+				"keywords": ["First Aid","Stubborn"],
+				"specialText": "1 NCO\n 4 Soldiers",
+				"equipment": ["Body Armor","Grenades","Assault Rifles","MOPP"]
+			},
+			{
+				"name": "Swedish Coastal Ranger Group",
+				"factions": [],
+				"order": 1,
+				"availableIn":[
+					{
+						"all": [{ "in": "Rifle Platoon" }, { "in": "Sweden" }]			
+					}
+				],
+				"points": 0,
+				"models": 6,
+				"sortPriority": 3,
+				"limits": [
+					{
+						"key": "Rifle",
+						"limit": 5,
+						"perParent": true
+					}
+				],
+				"options": [
+					{
+						"name": "Veteran",
+						"points": 90,
+						"availableIn": ["Sweden"],
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Additional Men",
+						"points": 15,
+						"increment": true,
+						"max": 3,
+						"addsModels": 1,
+						"unlockedByLocal": "Veteran",
+						"availableIn": ["Sweden"]
+					},
+					{
+						"name": "NCO Pistol",
+						"points": -1,
+						"increment": true,
+						"max": "parentModels",
+						"maxKey": "gun",
+						"localLimit": 1,
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
+						"availableIn": ["Sweden"]
+					},
+					{
+						"name": "NCO SMG",
+						"points": 4,
+						"increment": true,
+						"max": "parentModels",
+						"maxKey": "gun",
+						"localLimit": 1,
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
+						"availableIn": ["Sweden"]
+					},
+					{
+						"name": "SMGs",
+						"points": 4,
+						"increment": true,
+						"max": "parentModels",
+						"maxKey": "gun",
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
+						"availableIn": ["Sweden"]
+					},
+					{
+						"name": "Shotgun",
+						"points": 4,
+						"increment": true,
+						"max": "parentModels",
+						"maxKey": "gun",
+						"localLimit": 2,
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
+						"availableIn": ["Sweden"]
+					},
+					{
+						"name": "Rifle",
+						"points": -1,
+						"increment": true,
+						"max": "parentModels",
+						"maxKey": "gun",
+						"localLimit": 2,
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
+						"availableIn": ["Sweden"]
+					},
+					{
+						"name": "Sniper Rifle",
+						"points": 20,
+						"increment": true,
+						"max": "parentModels",
+						"maxKey": "gun",
+						"localLimit": 1,
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
+						"availableIn": ["Sweden"]
+					},
+					{
+						"name": "LMG",
+						"points": 15,
+						"increment": true,
+						"max": "parentModels",
+						"maxKey": "gun",
+						"localLimit": 1,
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
+						"availableIn": ["Sweden"]
+					},
+					{
+						"name": "Pansar­skott 86",
+						"points": 6,
+						"increment": true,
+						"max": 2,
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
+						"availableIn": ["Sweden"]
+					},
+					{
+						"name": "Winter Equipment",
+						"points": 0,
+						"perModel": true,
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
+						"availableIn": ["Sweden"]
+					}
+				],
+				"keywords": ["First Aid","Medic","Stubborn","Tough Fighters","Elite"],
+				"specialText": "1 NCO\n 5 Soldiers",
+				"equipment": ["Body Armor","Grenades","Assault Rifles","MOPP","Night Vision"]
+			},
+			{
+				"name": "Swedish Coastal Ranger Group",
+				"factions": [],
+				"order": 1,
+				"availableIn":[
+					{
+						"all": [{ "in": "Recce Platoon" }, { "in": "Sweden" }]			
+					}
+				],
+				"points": 0,
+				"models": 6,
+				"sortPriority": 3,
+				"limits": [
+					{
+						"key": "Rifle",
+						"limit": 4,
+						"perParent": true
+					}
+				],
+				"options": [
+					{
+						"name": "Veteran",
+						"points": 90,
+						"availableIn": ["Sweden"],
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Additional Men",
+						"points": 15,
+						"increment": true,
+						"max": 3,
+						"addsModels": 1,
+						"unlockedByLocal": "Veteran",
+						"availableIn": ["Sweden"]
+					},
+					{
+						"name": "NCO Pistol",
+						"points": -1,
+						"increment": true,
+						"max": "parentModels",
+						"maxKey": "gun",
+						"localLimit": 1,
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
+						"availableIn": ["Sweden"]
+					},
+					{
+						"name": "NCO SMG",
+						"points": 4,
+						"increment": true,
+						"max": "parentModels",
+						"maxKey": "gun",
+						"localLimit": 1,
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
+						"availableIn": ["Sweden"]
+					},
+					{
+						"name": "SMGs",
+						"points": 4,
+						"increment": true,
+						"max": "parentModels",
+						"maxKey": "gun",
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
+						"availableIn": ["Sweden"]
+					},
+					{
+						"name": "Shotgun",
+						"points": 4,
+						"increment": true,
+						"max": "parentModels",
+						"maxKey": "gun",
+						"localLimit": 2,
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
+						"availableIn": ["Sweden"]
+					},
+					{
+						"name": "Rifle",
+						"points": -1,
+						"increment": true,
+						"max": "parentModels",
+						"maxKey": "gun",
+						"localLimit": 2,
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
+						"availableIn": ["Sweden"]
+					},
+					{
+						"name": "Sniper Rifle",
+						"points": 20,
+						"increment": true,
+						"max": "parentModels",
+						"maxKey": "gun",
+						"localLimit": 1,
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
+						"availableIn": ["Sweden"]
+					},
+					{
+						"name": "LMG",
+						"points": 15,
+						"increment": true,
+						"max": "parentModels",
+						"maxKey": "gun",
+						"localLimit": 1,
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
+						"availableIn": ["Sweden"]
+					},
+					{
+						"name": "Pansar­skott 86",
+						"points": 6,
+						"increment": true,
+						"max": 2,
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
+						"availableIn": ["Sweden"]
+					},
+					{
+						"name": "Winter Equipment",
+						"points": 0,
+						"perModel": true,
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
+						"availableIn": ["Sweden"]
+					}
+				],
+				"keywords": ["First Aid","Medic","Stubborn","Tough Fighters","Elite"],
+				"specialText": "1 NCO\n 5 Soldiers",
+				"equipment": ["Body Armor","Grenades","Assault Rifles","MOPP","Night Vision"]
+			},
+			{
+				"name": "Swedish Parachute Ranger Group",
+				"factions": [],
+				"order": 1,
+				"availableIn":[
+					{
+						"all": [{ "in": "Rifle Platoon" }, { "in": "Sweden" }]			
+					}
+				],
+				"points": 0,
+				"models": 5,
+				"sortPriority": 3,
+				"limits": [
+					{
+						"key": "Rifle",
+						"limit": 5,
+						"perParent": true
+					}
+				],
+				"options": [
+					{
+						"name": "Veteran",
+						"points": 75,
+						"availableIn": ["Sweden"],
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Additional Men",
+						"points": 15,
+						"increment": true,
+						"max": 3,
+						"addsModels": 1,
+						"unlockedByLocal": "Veteran",
+						"availableIn": ["Sweden"]
+					},
+					{
+						"name": "NCO Pistol",
+						"points": -1,
+						"increment": true,
+						"max": "parentModels",
+						"maxKey": "gun",
+						"localLimit": 1,
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
+						"availableIn": ["Sweden"]
+					},
+					{
+						"name": "NCO SMG",
+						"points": 4,
+						"increment": true,
+						"max": "parentModels",
+						"maxKey": "gun",
+						"localLimit": 1,
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
+						"availableIn": ["Sweden"]
+					},
+					{
+						"name": "SMGs",
+						"points": 4,
+						"increment": true,
+						"max": "parentModels",
+						"maxKey": "gun",
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
+						"availableIn": ["Sweden"]
+					},
+					{
+						"name": "Shotgun",
+						"points": 4,
+						"increment": true,
+						"max": "parentModels",
+						"maxKey": "gun",
+						"localLimit": 2,
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
+						"availableIn": ["Sweden"]
+					},
+					{
+						"name": "Rifle",
+						"points": -1,
+						"increment": true,
+						"max": "parentModels",
+						"maxKey": "gun",
+						"localLimit": 2,
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
+						"availableIn": ["Sweden"]
+					},
+					{
+						"name": "Sniper Rifle",
+						"points": 20,
+						"increment": true,
+						"max": "parentModels",
+						"maxKey": "gun",
+						"localLimit": 1,
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
+						"availableIn": ["Sweden"]
+					},
+					{
+						"name": "LMG",
+						"points": 15,
+						"increment": true,
+						"max": "parentModels",
+						"maxKey": "gun",
+						"localLimit": 1,
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
+						"availableIn": ["Sweden"]
+					},
+					{
+						"name": "Pansar­skott 86",
+						"points": 6,
+						"increment": true,
+						"max": 2,
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
+						"availableIn": ["Sweden"]
+					},
+					{
+						"name": "Winter Equipment",
+						"points": 0,
+						"perModel": true,
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
+						"availableIn": ["Sweden"]
+					}
+				],
+				"keywords": ["First Aid","Stubborn","Elite","Air Assault"],
+				"specialText": "1 NCO\n 4 Soldiers",
+				"equipment": ["Body Armor","Grenades","Assault Rifles","MOPP","Night Vision"]
+			},
+			{
+				"name": "Swedish Parachute Ranger Group",
+				"factions": [],
+				"order": 1,
+				"availableIn":[
+					{
+						"all": [{ "in": "Recce Platoon" }, { "in": "Sweden" }]			
+					}
+				],
+				"points": 0,
+				"models": 5,
+				"sortPriority": 3,
+				"limits": [
+					{
+						"key": "Rifle",
+						"limit": 4,
+						"perParent": true
+					}
+				],
+				"options": [
+					{
+						"name": "Veteran",
+						"points": 75,
+						"availableIn": ["Sweden"],
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Additional Men",
+						"points": 15,
+						"increment": true,
+						"max": 3,
+						"addsModels": 1,
+						"unlockedByLocal": "Veteran",
+						"availableIn": ["Sweden"]
+					},
+					{
+						"name": "NCO Pistol",
+						"points": -1,
+						"increment": true,
+						"max": "parentModels",
+						"maxKey": "gun",
+						"localLimit": 1,
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
+						"availableIn": ["Sweden"]
+					},
+					{
+						"name": "NCO SMG",
+						"points": 4,
+						"increment": true,
+						"max": "parentModels",
+						"maxKey": "gun",
+						"localLimit": 1,
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
+						"availableIn": ["Sweden"]
+					},
+					{
+						"name": "SMGs",
+						"points": 4,
+						"increment": true,
+						"max": "parentModels",
+						"maxKey": "gun",
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
+						"availableIn": ["Sweden"]
+					},
+					{
+						"name": "Shotgun",
+						"points": 4,
+						"increment": true,
+						"max": "parentModels",
+						"maxKey": "gun",
+						"localLimit": 2,
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
+						"availableIn": ["Sweden"]
+					},
+					{
+						"name": "Rifle",
+						"points": -1,
+						"increment": true,
+						"max": "parentModels",
+						"maxKey": "gun",
+						"localLimit": 2,
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
+						"availableIn": ["Sweden"]
+					},
+					{
+						"name": "Sniper Rifle",
+						"points": 20,
+						"increment": true,
+						"max": "parentModels",
+						"maxKey": "gun",
+						"localLimit": 1,
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
+						"availableIn": ["Sweden"]
+					},
+					{
+						"name": "LMG",
+						"points": 15,
+						"increment": true,
+						"max": "parentModels",
+						"maxKey": "gun",
+						"localLimit": 1,
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
+						"availableIn": ["Sweden"]
+					},
+					{
+						"name": "Pansar­skott 86",
+						"points": 6,
+						"increment": true,
+						"max": 2,
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
+						"availableIn": ["Sweden"]
+					},
+					{
+						"name": "Winter Equipment",
+						"points": 0,
+						"perModel": true,
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
+						"availableIn": ["Sweden"]
+					}
+				],
+				"keywords": ["First Aid","Stubborn","Elite","Air Assault"],
+				"specialText": "1 NCO\n 4 Soldiers",
+				"equipment": ["Body Armor","Grenades","Assault Rifles","MOPP","Night Vision"]
+			},
+			{
+				"name": "Swedish Reservist Group",
+				"factions": [],
+				"order": 1,
+				"availableIn":[
+					{
+						"all": [{ "in": "Rifle Platoon" }, { "in": "Sweden" }]			
+					}
+				],
+				"points": 0,
+				"models": 6,
+				"sortPriority": 3,
+				"limits": [
+					{
+						"key": "Rifle",
+						"limit": 5,
+						"perParent": true
+					}
+				],
+				"options": [
+					{
+						"name": "Inexperienced",
+						"points": 42,
+						"availableIn": ["Sweden"],
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Additional Men",
+						"points": 7,
+						"increment": true,
+						"max": 6,
+						"addsModels": 1,
+						"unlockedByLocal": "Inexperienced",
+						"availableIn": ["Sweden"]
+					},
+					{
+						"name": "Rifle",
+						"points": 0,
+						"increment": true,
+						"max": "parentModels",
+						"maxKey": "gun",
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
+						"availableIn": ["Sweden"]
+					},
+					{
+						"name": "LMG",
+						"points": 15,
+						"increment": true,
+						"max": "parentModels",
+						"maxKey": "gun",
+						"localLimit": 1,
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
+						"availableIn": ["Sweden"]
+					},
+					{
+						"name": "Pansar­skott 86",
+						"points": 6,
+						"increment": true,
+						"max": 1,
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
+						"availableIn": ["Sweden"]
+					},
+					{
+						"name": "Winter Equipment",
+						"points": 0,
+						"perModel": true,
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
+						"availableIn": ["Sweden"]
+					}
+				],
+				"keywords": ["First Aid","Green"],
+				"specialText": "1 NCO\n 5 Soldiers",
+				"equipment": ["Body Armor","Grenades","Assault Rifles"]
+			},
+			{
+				"name": "Swedish Reservist Group",
+				"factions": [],
+				"order": 1,
+				"availableIn":[
+					{
+						"all": [{ "in": "Recce Platoon" }, { "in": "Sweden" }]			
+					}
+				],
+				"points": 0,
+				"models": 6,
+				"sortPriority": 3,
+				"limits": [
+					{
+						"key": "Rifle",
+						"limit": 4,
+						"perParent": true
+					}
+				],
+				"options": [
+					{
+						"name": "Inexperienced",
+						"points": 42,
+						"availableIn": ["Sweden"],
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Additional Men",
+						"points": 7,
+						"increment": true,
+						"max": 6,
+						"addsModels": 1,
+						"unlockedByLocal": "Inexperienced",
+						"availableIn": ["Sweden"]
+					},
+					{
+						"name": "Rifle",
+						"points": 0,
+						"increment": true,
+						"max": "parentModels",
+						"maxKey": "gun",
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
+						"availableIn": ["Sweden"]
+					},
+					{
+						"name": "LMG",
+						"points": 15,
+						"increment": true,
+						"max": "parentModels",
+						"maxKey": "gun",
+						"localLimit": 1,
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
+						"availableIn": ["Sweden"]
+					},
+					{
+						"name": "Pansar­skott 86",
+						"points": 6,
+						"increment": true,
+						"max": 1,
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
+						"availableIn": ["Sweden"]
+					},
+					{
+						"name": "Winter Equipment",
+						"points": 0,
+						"perModel": true,
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
+						"availableIn": ["Sweden"]
+					}
+				],
+				"keywords": ["First Aid","Green"],
+				"specialText": "1 NCO\n 5 Soldiers",
+				"equipment": ["Body Armor","Grenades","Assault Rifles"]
 			},
 			{
 				"name": "Marine Rifle Platoon",
@@ -6143,6 +8424,184 @@
 				"keywords": [],
 				"specialText": "Armored Car/Carrier - 7+\n Wheeled Vehicle",
 				"equipment": ["Turret Mounted MLRS"]
+			},
+			{
+				"name": "Grkpbv 90 'Mjölner' Mortar Vehicle",
+				"factions": [],
+				"order": 1,
+				"availableIn":[
+					{
+						"all": [{ "in": "Artillery Platoon" }, { "in": "Sweden" }]			
+					}
+				],
+				"points": 0,
+				"models": 1,
+				"sortPriority": 3,
+				"limits": [
+					{
+						"key": "Vehicles",
+						"limit": 5,
+						"perParent": true
+					}
+				],
+				"options": [
+					{
+						"name": "Inexperienced",
+						"points": 104,
+						"availableIn": ["Sweden"],
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Regular",
+						"points": 130,
+						"availableIn": ["Sweden"],
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Veteran",
+						"points": 156,
+						"availableIn": ["Sweden"],
+						"requireChooseOneKey": "morale"
+					}
+				],
+				"keywords": [],
+				"specialText": "Light Tank - 8+\n Tracked Vehicle",
+				"equipment": ["Turret Mounted Medium Howitzer"]
+			},
+			{
+				"name": "Lvkv 9040 AA Vehicle",
+				"factions": [],
+				"order": 1,
+				"availableIn":[
+					{
+						"all": [{ "in": "Artillery Platoon" }, { "in": "Sweden" }]			
+					}
+				],
+				"points": 0,
+				"models": 1,
+				"sortPriority": 3,
+				"limits": [
+					{
+						"key": "Vehicles",
+						"limit": 5,
+						"perParent": true
+					}
+				],
+				"options": [
+					{
+						"name": "Inexperienced",
+						"points": 96,
+						"availableIn": ["Sweden"],
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Regular",
+						"points": 120,
+						"availableIn": ["Sweden"],
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Veteran",
+						"points": 144,
+						"availableIn": ["Sweden"],
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "FCS",
+						"points": 5,
+						"availableIn": ["Sweden"],
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"]
+					}
+				],
+				"keywords": ["Flak"],
+				"specialText": "Light Tank - 8+\n Tracked Vehicle",
+				"equipment": ["Turret Mounted Heavy Autocannon"]
+			},
+			{
+				"name": "Archer FH77BW L52 Heavy Howitzer SPG",
+				"factions": [],
+				"order": 1,
+				"availableIn":[
+					{
+						"all": [{ "in": "Artillery Platoon" }, { "in": "Sweden" }]			
+					}
+				],
+				"points": 0,
+				"models": 1,
+				"sortPriority": 3,
+				"limits": [
+					{
+						"key": "Vehicles",
+						"limit": 5,
+						"perParent": true
+					}
+				],
+				"options": [
+					{
+						"name": "Inexperienced",
+						"points": 84,
+						"availableIn": ["Sweden"],
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Regular",
+						"points": 105,
+						"availableIn": ["Sweden"],
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Veteran",
+						"points": 126,
+						"availableIn": ["Sweden"],
+						"requireChooseOneKey": "morale"
+					}
+				],
+				"keywords": [],
+				"specialText": "Soft Skin - 6+\n Wheeled Vehicle",
+				"equipment": ["Platform Mounted Heavy Howitzer"]
+			},
+			{
+				"name": "Bofors Vagnkanon 155mm L/50 Heavy Howitzer SPG",
+				"factions": [],
+				"order": 1,
+				"availableIn":[
+					{
+						"all": [{ "in": "Artillery Platoon" }, { "in": "Sweden" }]			
+					}
+				],
+				"points": 0,
+				"models": 1,
+				"sortPriority": 3,
+				"limits": [
+					{
+						"key": "Vehicles",
+						"limit": 5,
+						"perParent": true
+					}
+				],
+				"options": [
+					{
+						"name": "Inexperienced",
+						"points": 164,
+						"availableIn": ["Sweden"],
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Regular",
+						"points": 205,
+						"availableIn": ["Sweden"],
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Veteran",
+						"points": 246,
+						"availableIn": ["Sweden"],
+						"requireChooseOneKey": "morale"
+					}
+				],
+				"keywords": ["Rapid Fire"],
+				"specialText": "Armored Carrier - 7+\n Tracked Vehicle",
+				"equipment": ["Hull Mounted Heavy Howitzer"]
 			},
 			{
 				"name": "M119 / M777 Heavy Howitzer",
@@ -10979,6 +13438,1437 @@
 				"equipment": []
 			},
 			{
+				"name": "Strf 9040 IFV",
+				"factions": [],
+				"order": 1,
+				"availableIn": [
+					{
+						"all": [{ "in": "HQ Platoon"	}, { "in": "Sweden" }]			
+					},
+					{
+						"all": [{ "in": "Rifle Platoon"	}, { "in": "Sweden" }]			
+					},
+					{
+						"all": [{ "in": "Engineer Platoon"	}, { "in": "Sweden" }]			
+					},
+					{
+						"all": [{ "in": "Artillery Platoon"	}, { "in": "Sweden" }]			
+					},
+					{
+						"all": [{ "in": "Heavy Weapons Platoon"	}, { "in": "Sweden" }]			
+					}
+				],
+				"points": 0,
+				"models": 1,
+				"options": [
+					{
+						"name": "Inexperienced",
+						"points": 133,
+						"availableIn": ["Sweden"],
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Regular",
+						"points": 166,
+						"availableIn": ["Sweden"],
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Veteran",
+						"points": 200,
+						"availableIn": ["Sweden"],
+						"requireChooseOneKey": "morale"
+					}
+				],
+				"keywords": ["Transport"],
+				"specialText": "Light Tank - 8+\n Transport: 8\n Tracked Vehicle",
+				"equipment": ["Turret Mounted Heavy Autocannon","Smoke Dischargers"]
+			},
+			{
+				"name": "Strf 9040 IFV - Recce",
+				"factions": [],
+				"order": 1,
+				"availableIn": [
+					{
+						"all": [{ "in": "Recce Platoon"	}, { "in": "Sweden" }]			
+					}
+				],
+				"points": 0,
+				"models": 1,
+				"options": [
+					{
+						"name": "Recce",
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
+						"points": 10,
+						"requireChooseOneKey": "Recce"
+					},
+					{
+						"name": "Inexperienced",
+						"points": 133,
+						"availableIn": ["Sweden"],
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Regular",
+						"points": 166,
+						"availableIn": ["Sweden"],
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Veteran",
+						"points": 200,
+						"availableIn": ["Sweden"],
+						"requireChooseOneKey": "morale"
+					}
+				],
+				"keywords": ["Transport"],
+				"specialText": "Light Tank - 8+\n Transport: 8\n Tracked Vehicle",
+				"equipment": ["Turret Mounted Heavy Autocannon","Smoke Dischargers"]
+			},
+			{
+				"name": "Strf 9040B IFV",
+				"factions": [],
+				"order": 1,
+				"availableIn": [
+					{
+						"all": [{ "in": "HQ Platoon"	}, { "in": "Sweden" }]			
+					},
+					{
+						"all": [{ "in": "Rifle Platoon"	}, { "in": "Sweden" }]			
+					},
+					{
+						"all": [{ "in": "Engineer Platoon"	}, { "in": "Sweden" }]			
+					},
+					{
+						"all": [{ "in": "Artillery Platoon"	}, { "in": "Sweden" }]			
+					},
+					{
+						"all": [{ "in": "Heavy Weapons Platoon"	}, { "in": "Sweden" }]			
+					}
+				],
+				"points": 0,
+				"models": 1,
+				"options": [
+					{
+						"name": "Inexperienced",
+						"points": 137,
+						"availableIn": ["Sweden"],
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Regular",
+						"points": 171,
+						"availableIn": ["Sweden"],
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Veteran",
+						"points": 206,
+						"availableIn": ["Sweden"],
+						"requireChooseOneKey": "morale"
+					}
+				],
+				"keywords": ["Transport","FCS"],
+				"specialText": "Light Tank - 8+\n Transport: 8\n Tracked Vehicle",
+				"equipment": ["Turret Mounted Heavy Autocannon","Smoke Dischargers"]
+			},
+			{
+				"name": "Strf 9040B IFV - Recce",
+				"factions": [],
+				"order": 1,
+				"availableIn": [
+					{
+						"all": [{ "in": "Recce Platoon"	}, { "in": "Sweden" }]			
+					}
+				],
+				"points": 0,
+				"models": 1,
+				"options": [
+					{
+						"name": "Recce",
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
+						"points": 10,
+						"requireChooseOneKey": "Recce"
+					},
+					{
+						"name": "Inexperienced",
+						"points": 137,
+						"availableIn": ["Sweden"],
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Regular",
+						"points": 171,
+						"availableIn": ["Sweden"],
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Veteran",
+						"points": 206,
+						"availableIn": ["Sweden"],
+						"requireChooseOneKey": "morale"
+					}
+				],
+				"keywords": ["Transport","FCS"],
+				"specialText": "Light Tank - 8+\n Transport: 8\n Tracked Vehicle",
+				"equipment": ["Turret Mounted Heavy Autocannon","Smoke Dischargers"]
+			},
+			{
+				"name": "Strf 9040C IFV",
+				"factions": [],
+				"order": 1,
+				"availableIn": [
+					{
+						"all": [{ "in": "HQ Platoon"	}, { "in": "Sweden" }]			
+					},
+					{
+						"all": [{ "in": "Rifle Platoon"	}, { "in": "Sweden" }]			
+					},
+					{
+						"all": [{ "in": "Engineer Platoon"	}, { "in": "Sweden" }]			
+					},
+					{
+						"all": [{ "in": "Artillery Platoon"	}, { "in": "Sweden" }]			
+					},
+					{
+						"all": [{ "in": "Heavy Weapons Platoon"	}, { "in": "Sweden" }]			
+					}
+				],
+				"points": 0,
+				"models": 1,
+				"options": [
+					{
+						"name": "Inexperienced",
+						"points": 150,
+						"availableIn": ["Sweden"],
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Regular",
+						"points": 187,
+						"availableIn": ["Sweden"],
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Veteran",
+						"points": 225,
+						"availableIn": ["Sweden"],
+						"requireChooseOneKey": "morale"
+					}
+				],
+				"keywords": ["Transport","FCS","Armored All Around"],
+				"specialText": "Light Tank - 8+\n Transport: 8\n Tracked Vehicle",
+				"equipment": ["Turret Mounted Heavy Autocannon","Smoke Dischargers"]
+			},
+			{
+				"name": "Strf 9040C IFV - Recce",
+				"factions": [],
+				"order": 1,
+				"availableIn": [
+					{
+						"all": [{ "in": "Recce Platoon"	}, { "in": "Sweden" }]			
+					}
+				],
+				"points": 0,
+				"models": 1,
+				"options": [
+					{
+						"name": "Recce",
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
+						"points": 10,
+						"requireChooseOneKey": "Recce"
+					},
+					{
+						"name": "Inexperienced",
+						"points": 150,
+						"availableIn": ["Sweden"],
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Regular",
+						"points": 187,
+						"availableIn": ["Sweden"],
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Veteran",
+						"points": 225,
+						"availableIn": ["Sweden"],
+						"requireChooseOneKey": "morale"
+					}
+				],
+				"keywords": ["Transport","FCS","Armored All Around"],
+				"specialText": "Light Tank - 8+\n Transport: 8\n Tracked Vehicle",
+				"equipment": ["Turret Mounted Heavy Autocannon","Smoke Dischargers"]
+			},
+			{
+				"name": "Stridsvagn 103C MBT",
+				"factions": [],
+				"order": 1,
+				"availableIn":[
+					{
+						"all": [{ "in": "Armored Platoon" }, { "in": "Sweden" }]			
+					}
+				],
+				"points": 0,
+				"models": 1,
+				"sortPriority": 3,
+				"limits": [
+					{
+						"key": "Vehicles",
+						"limit": 5,
+						"perParent": true
+					}
+				],
+				"options": [
+					{
+						"name": "Inexperienced",
+						"points": 268,
+						"availableIn": ["Sweden"],
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Regular",
+						"points": 335,
+						"availableIn": ["Sweden"],
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Veteran",
+						"points": 402,
+						"availableIn": ["Sweden"],
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Command Vehicle",
+						"points": 10,
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
+						"availableIn": ["Sweden"]
+					}
+				],
+				"keywords": ["Extra Frontal Armor","Weak Sides","Advanced Optics"],
+				"specialText": "Medium Tank - 9+\n Tracked Vehicle",
+				"equipment": ["Hull Mounted Heavy AT Gun","Twin Hull Mounted MMG","Pintle Mounted MMG","Smoke Dischargers"]
+			},
+			{
+				"name": "Stridsvagn 122A MBT",
+				"factions": [],
+				"order": 1,
+				"availableIn":[
+					{
+						"all": [{ "in": "Armored Platoon" }, { "in": "Sweden" }]			
+					}
+				],
+				"points": 0,
+				"models": 1,
+				"sortPriority": 3,
+				"limits": [
+					{
+						"key": "Vehicles",
+						"limit": 5,
+						"perParent": true
+					}
+				],
+				"options": [
+					{
+						"name": "Inexperienced",
+						"points": 324,
+						"availableIn": ["Sweden"],
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Regular",
+						"points": 405,
+						"availableIn": ["Sweden"],
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Veteran",
+						"points": 486,
+						"availableIn": ["Sweden"],
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Command Vehicle",
+						"points": 10,
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
+						"availableIn": ["Sweden"]
+					}
+				],
+				"keywords": ["Advanced Optics","FCS","Advanced Ammunition"],
+				"specialText": "Heavy Tank - 10+\n Tracked Vehicle",
+				"equipment": ["Turret Mounted Super Heavy AT Gun","Turret Mounted Coaxial MMG","Pintle Mounted MMG","Smoke Dischargers"]
+			},
+			{
+				"name": "Stridsvagn 122B MBT",
+				"factions": [],
+				"order": 1,
+				"availableIn":[
+					{
+						"all": [{ "in": "Armored Platoon" }, { "in": "Sweden" }]			
+					}
+				],
+				"points": 0,
+				"models": 1,
+				"sortPriority": 3,
+				"limits": [
+					{
+						"key": "Vehicles",
+						"limit": 5,
+						"perParent": true
+					}
+				],
+				"options": [
+					{
+						"name": "Inexperienced",
+						"points": 336,
+						"availableIn": ["Sweden"],
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Regular",
+						"points": 420,
+						"availableIn": ["Sweden"],
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Veteran",
+						"points": 504,
+						"availableIn": ["Sweden"],
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Command Vehicle",
+						"points": 10,
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
+						"availableIn": ["Sweden"]
+					}
+				],
+				"keywords": ["Advanced Optics","FCS","Advanced Ammunition","MRAPP","IR Damping Camo Net"],
+				"specialText": "Heavy Tank - 10+\n Tracked Vehicle",
+				"equipment": ["Turret Mounted Super Heavy AT Gun","Turret Mounted Coaxial MMG","Pintle Mounted MMG","Smoke Dischargers"]
+			},
+			{
+				"name": "Stridsvagn 123A/B MBT",
+				"factions": [],
+				"order": 1,
+				"availableIn":[
+					{
+						"all": [{ "in": "Armored Platoon" }, { "in": "Sweden" }]			
+					}
+				],
+				"points": 0,
+				"models": 1,
+				"sortPriority": 3,
+				"limits": [
+					{
+						"key": "Vehicles",
+						"limit": 5,
+						"perParent": true
+					}
+				],
+				"options": [
+					{
+						"name": "Inexperienced",
+						"points": 352,
+						"availableIn": ["Sweden"],
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Regular",
+						"points": 440,
+						"availableIn": ["Sweden"],
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Veteran",
+						"points": 528,
+						"availableIn": ["Sweden"],
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Command Vehicle",
+						"points": 10,
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
+						"availableIn": ["Sweden"]
+					}
+				],
+				"keywords": ["Advanced Optics","FCS","Advanced Ammunition","MRAPP","APS"],
+				"specialText": "Heavy Tank - 10+\n Tracked Vehicle",
+				"equipment": ["Turret Mounted Super Heavy AT Gun","Turret Mounted Coaxial MMG","Pintle Mounted MMG","Smoke Dischargers"]
+			},
+			{
+				"name": "Stridsvagn 81/101/102/104/105 MBT",
+				"factions": [],
+				"order": 1,
+				"availableIn":[
+					{
+						"all": [{ "in": "Armored Platoon" }, { "in": "Sweden" }]			
+					}
+				],
+				"points": 0,
+				"models": 1,
+				"sortPriority": 3,
+				"limits": [
+					{
+						"key": "Vehicles",
+						"limit": 5,
+						"perParent": true
+					}
+				],
+				"options": [
+					{
+						"name": "Inexperienced",
+						"points": 316,
+						"availableIn": ["Sweden"],
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Regular",
+						"points": 395,
+						"availableIn": ["Sweden"],
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Veteran",
+						"points": 474,
+						"availableIn": ["Sweden"],
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Command Vehicle",
+						"points": 10,
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
+						"availableIn": ["Sweden"]
+					}
+				],
+				"keywords": ["Advanced Optics","FCS"],
+				"specialText": "Super Heavy Tank - 11+\n Tracked Vehicle",
+				"equipment": ["Turret Mounted Heavy AT Gun","Turret Mounted Coaxial MMG","Smoke Dischargers"]
+			},
+			{
+				"name": "Ikv 91 AFV",
+				"factions": [],
+				"order": 1,
+				"availableIn":[
+					{
+						"all": [{ "in": "Armored Platoon" }, { "in": "Sweden" }]			
+					}
+				],
+				"points": 0,
+				"models": 1,
+				"sortPriority": 3,
+				"limits": [
+					{
+						"key": "Vehicles",
+						"limit": 5,
+						"perParent": true
+					}
+				],
+				"options": [
+					{
+						"name": "Inexperienced",
+						"points": 188,
+						"availableIn": ["Sweden"],
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Regular",
+						"points": 235,
+						"availableIn": ["Sweden"],
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Veteran",
+						"points": 282,
+						"availableIn": ["Sweden"],
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Command Vehicle",
+						"points": 10,
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
+						"availableIn": ["Sweden"]
+					}
+				],
+				"keywords": ["Advanced Optics","FCS"],
+				"specialText": "Light Tank - 8+\n Tracked Vehicle",
+				"equipment": ["Turret Mounted Low Velocity Heavy AT Gun","Turret Mounted Coaxial MMG","Pintle Mounted MMG","Smoke Dischargers"]
+			},
+			{
+				"name": "Pbv XA-185 APC",
+				"factions": [],
+				"order": 1,
+				"availableIn": [
+					{
+						"all": [{ "in": "HQ Platoon"	}, { "in": "Sweden" }]			
+					},
+					{
+						"all": [{ "in": "Rifle Platoon"	}, { "in": "Sweden" }]			
+					},
+					{
+						"all": [{ "in": "Engineer Platoon"	}, { "in": "Sweden" }]			
+					},
+					{
+						"all": [{ "in": "Artillery Platoon"	}, { "in": "Sweden" }]			
+					},
+					{
+						"all": [{ "in": "Heavy Weapons Platoon"	}, { "in": "Sweden" }]			
+					}
+				],
+				"points": 0,
+				"models": 1,
+				"options": [
+					{
+						"name": "Inexperienced",
+						"points": 97,
+						"availableIn": ["Sweden"],
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Regular",
+						"points": 121,
+						"availableIn": ["Sweden"],
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Veteran",
+						"points": 146,
+						"availableIn": ["Sweden"],
+						"requireChooseOneKey": "morale"
+					}
+				],
+				"keywords": ["Transport","Amphibious","MRAPP"],
+				"specialText": "Armored Carrier - 7+\n Transport: 18\n Wheeled Vehicle",
+				"equipment": ["Pintle Mounted HMG"]
+			},
+			{
+				"name": "Pbv XA-185 APC - Recce",
+				"factions": [],
+				"order": 1,
+				"availableIn": [
+					{
+						"all": [{ "in": "Recce Platoon"	}, { "in": "Sweden" }]			
+					}
+				],
+				"points": 0,
+				"models": 1,
+				"options": [
+					{
+						"name": "Recce",
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
+						"points": 10,
+						"requireChooseOneKey": "Recce"
+					},
+					{
+						"name": "Inexperienced",
+						"points": 97,
+						"availableIn": ["Sweden"],
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Regular",
+						"points": 121,
+						"availableIn": ["Sweden"],
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Veteran",
+						"points": 146,
+						"availableIn": ["Sweden"],
+						"requireChooseOneKey": "morale"
+					}
+				],
+				"keywords": ["Transport","Amphibious","MRAPP"],
+				"specialText": "Armored Carrier - 7+\n Transport: 18\n Wheeled Vehicle",
+				"equipment": ["Pintle Mounted HMG"]
+			},
+			{
+				"name": "Pbv 203A APC",
+				"factions": [],
+				"order": 1,
+				"availableIn": [
+					{
+						"all": [{ "in": "HQ Platoon"	}, { "in": "Sweden" }]			
+					},
+					{
+						"all": [{ "in": "Rifle Platoon"	}, { "in": "Sweden" }]			
+					},
+					{
+						"all": [{ "in": "Engineer Platoon"	}, { "in": "Sweden" }]			
+					},
+					{
+						"all": [{ "in": "Artillery Platoon"	}, { "in": "Sweden" }]			
+					},
+					{
+						"all": [{ "in": "Heavy Weapons Platoon"	}, { "in": "Sweden" }]			
+					}
+				],
+				"points": 0,
+				"models": 1,
+				"options": [
+					{
+						"name": "Inexperienced",
+						"points": 101,
+						"availableIn": ["Sweden"],
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Regular",
+						"points": 126,
+						"availableIn": ["Sweden"],
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Veteran",
+						"points": 152,
+						"availableIn": ["Sweden"],
+						"requireChooseOneKey": "morale"
+					}
+				],
+				"keywords": ["Transport","Amphibious","MRAPP"],
+				"specialText": "Armored Carrier - 7+\n Transport: 18\n Wheeled Vehicle",
+				"equipment": ["Turret Mounted Light Autocannon"]
+			},
+			{
+				"name": "Pbv 203A APC - Recce",
+				"factions": [],
+				"order": 1,
+				"availableIn": [
+					{
+						"all": [{ "in": "Recce Platoon"	}, { "in": "Sweden" }]			
+					}
+				],
+				"points": 0,
+				"models": 1,
+				"options": [
+					{
+						"name": "Recce",
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
+						"points": 10,
+						"requireChooseOneKey": "Recce"
+					},
+					{
+						"name": "Inexperienced",
+						"points": 101,
+						"availableIn": ["Sweden"],
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Regular",
+						"points": 126,
+						"availableIn": ["Sweden"],
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Veteran",
+						"points": 152,
+						"availableIn": ["Sweden"],
+						"requireChooseOneKey": "morale"
+					}
+				],
+				"keywords": ["Transport","Amphibious","MRAPP"],
+				"specialText": "Armored Carrier - 7+\n Transport: 18\n Wheeled Vehicle",
+				"equipment": ["Turret Mounted Light Autocannon"]
+			},
+			{
+				"name": "Pbv 203B APC",
+				"factions": [],
+				"order": 1,
+				"availableIn": [
+					{
+						"all": [{ "in": "HQ Platoon"	}, { "in": "Sweden" }]			
+					},
+					{
+						"all": [{ "in": "Rifle Platoon"	}, { "in": "Sweden" }]			
+					},
+					{
+						"all": [{ "in": "Engineer Platoon"	}, { "in": "Sweden" }]			
+					},
+					{
+						"all": [{ "in": "Artillery Platoon"	}, { "in": "Sweden" }]			
+					},
+					{
+						"all": [{ "in": "Heavy Weapons Platoon"	}, { "in": "Sweden" }]			
+					}
+				],
+				"points": 0,
+				"models": 1,
+				"options": [
+					{
+						"name": "Inexperienced",
+						"points": 77,
+						"availableIn": ["Sweden"],
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Regular",
+						"points": 96,
+						"availableIn": ["Sweden"],
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Veteran",
+						"points": 116,
+						"availableIn": ["Sweden"],
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Turret Mounted HMG",
+						"points": 20,
+						"availableIn": ["Sweden"],
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
+						"chooseOneKey": "priWeapon"
+					},
+					{
+						"name": "Turret Mounted MMG",
+						"points": 10,
+						"availableIn": ["Sweden"],
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
+						"chooseOneKey": "priWeapon"
+					},
+					{
+						"name": "Turret Mounted Automatic Grenade Launcher",
+						"points": 30,
+						"availableIn": ["Sweden"],
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
+						"chooseOneKey": "priWeapon"
+					},
+					{
+						"name": "Turret Mounted ATGM",
+						"points": 100,
+						"availableIn": ["Sweden"],
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
+						"chooseOneKey": "priWeapon"
+					}
+				],
+				"keywords": ["Transport","Amphibious","MRAPP"],
+				"specialText": "Armored Carrier - 7+\n Transport: 18\n Wheeled Vehicle",
+				"equipment": []
+			},
+			{
+				"name": "Pbv 203B APC - Recce",
+				"factions": [],
+				"order": 1,
+				"availableIn": [
+					{
+						"all": [{ "in": "Recce Platoon"	}, { "in": "Sweden" }]			
+					}
+				],
+				"points": 0,
+				"models": 1,
+				"options": [
+					{
+						"name": "Recce",
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
+						"points": 10,
+						"requireChooseOneKey": "Recce"
+					},
+					{
+						"name": "Inexperienced",
+						"points": 77,
+						"availableIn": ["Sweden"],
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Regular",
+						"points": 96,
+						"availableIn": ["Sweden"],
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Veteran",
+						"points": 116,
+						"availableIn": ["Sweden"],
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Turret Mounted HMG",
+						"points": 20,
+						"availableIn": ["Sweden"],
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
+						"chooseOneKey": "priWeapon"
+					},
+					{
+						"name": "Turret Mounted MMG",
+						"points": 10,
+						"availableIn": ["Sweden"],
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
+						"chooseOneKey": "priWeapon"
+					},
+					{
+						"name": "Turret Mounted Automatic Grenade Launcher",
+						"points": 30,
+						"availableIn": ["Sweden"],
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
+						"chooseOneKey": "priWeapon"
+					},
+					{
+						"name": "Turret Mounted ATGM",
+						"points": 100,
+						"availableIn": ["Sweden"],
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
+						"chooseOneKey": "priWeapon"
+					}
+				],
+				"keywords": ["Transport","Amphibious","MRAPP"],
+				"specialText": "Armored Carrier - 7+\n Transport: 18\n Wheeled Vehicle",
+				"equipment": []
+			},
+			{
+				"name": "Pbv 360 AFV",
+				"factions": [],
+				"order": 1,
+				"availableIn":[
+					{
+						"all": [{ "in": "Armored Platoon" }, { "in": "Sweden" }]			
+					}
+				],
+				"points": 0,
+				"models": 1,
+				"sortPriority": 3,
+				"limits": [
+					{
+						"key": "Vehicles",
+						"limit": 5,
+						"perParent": true
+					}
+				],
+				"options": [
+					{
+						"name": "Inexperienced",
+						"points": 160,
+						"availableIn": ["Sweden"],
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Regular",
+						"points": 200,
+						"availableIn": ["Sweden"],
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Veteran",
+						"points": 240,
+						"availableIn": ["Sweden"],
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Turret Mounted HMG",
+						"points": 20,
+						"availableIn": ["Sweden"],
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
+						"chooseOneKey": "priWeapon"
+					},
+					{
+						"name": "Turret Mounted MMG",
+						"points": 10,
+						"availableIn": ["Sweden"],
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
+						"chooseOneKey": "priWeapon"
+					},
+					{
+						"name": "Turret Mounted Automatic Grenade Launcher",
+						"points": 30,
+						"availableIn": ["Sweden"],
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
+						"chooseOneKey": "priWeapon"
+					},
+					{
+						"name": "Turret Mounted ATGM",
+						"points": 100,
+						"availableIn": ["Sweden"],
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
+						"chooseOneKey": "priWeapon"
+					}
+				],
+				"keywords": ["Advanced Optics","FCS","Amphibious"],
+				"specialText": "Light Tank - 8+\n Wheeled Vehicle",
+				"equipment": ["Turret Mounted Heavy AT Gun","Smoke Dischargers"]
+			},
+			{
+				"name": "Terrängbil 16 / 24 Scout Vehicles",
+				"factions": [],
+				"order": 1,
+				"availableIn": [
+					{
+						"all": [{ "in": "HQ Platoon"	}, { "in": "Sweden" }]			
+					},
+					{
+						"all": [{ "in": "Rifle Platoon"	}, { "in": "Sweden" }]			
+					},
+					{
+						"all": [{ "in": "Engineer Platoon"	}, { "in": "Sweden" }]			
+					},
+					{
+						"all": [{ "in": "Artillery Platoon"	}, { "in": "Sweden" }]			
+					},
+					{
+						"all": [{ "in": "Heavy Weapons Platoon"	}, { "in": "Sweden" }]			
+					}
+				],
+				"points": 0,
+				"models": 1,
+				"options": [
+					{
+						"name": "Inexperienced",
+						"points": 77,
+						"availableIn": ["Sweden"],
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Regular",
+						"points": 96,
+						"availableIn": ["Sweden"],
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Veteran",
+						"points": 116,
+						"availableIn": ["Sweden"],
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Pintle Mounted HMG",
+						"points": 25,
+						"availableIn": ["Sweden"],
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
+						"chooseOneKey": "priWeapon"
+					}
+				],
+				"keywords": ["Transport","MRAPP"],
+				"specialText": "Armored Carrier - 7+\n Transport: 8\n Wheeled Vehicle",
+				"equipment": []
+			},
+			{
+				"name": "Terrängbil 16 / 24 Scout Vehicles - Recce",
+				"factions": [],
+				"order": 1,
+				"availableIn": [
+					{
+						"all": [{ "in": "Recce Platoon"	}, { "in": "Sweden" }]			
+					}
+				],
+				"points": 0,
+				"models": 1,
+				"options": [
+					{
+						"name": "Recce",
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
+						"points": 10,
+						"requireChooseOneKey": "Recce"
+					},
+					{
+						"name": "Inexperienced",
+						"points": 77,
+						"availableIn": ["Sweden"],
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Regular",
+						"points": 96,
+						"availableIn": ["Sweden"],
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Veteran",
+						"points": 116,
+						"availableIn": ["Sweden"],
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Pintle Mounted HMG",
+						"points": 25,
+						"availableIn": ["Sweden"],
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
+						"chooseOneKey": "priWeapon"
+					}
+				],
+				"keywords": ["Transport","MRAPP"],
+				"specialText": "Armored Carrier - 7+\n Transport: 8\n Wheeled Vehicle",
+				"equipment": []
+			},
+			{
+				"name": "Bandvagn 206 Transport Vehicle",
+				"factions": [],
+				"order": 1,
+				"availableIn": [
+					{
+						"all": [{ "in": "HQ Platoon"	}, { "in": "Sweden" }]			
+					},
+					{
+						"all": [{ "in": "Rifle Platoon"	}, { "in": "Sweden" }]			
+					},
+					{
+						"all": [{ "in": "Engineer Platoon"	}, { "in": "Sweden" }]			
+					},
+					{
+						"all": [{ "in": "Artillery Platoon"	}, { "in": "Sweden" }]			
+					},
+					{
+						"all": [{ "in": "Heavy Weapons Platoon"	}, { "in": "Sweden" }]			
+					}
+				],
+				"points": 0,
+				"models": 1,
+				"options": [
+					{
+						"name": "Inexperienced",
+						"points": 66,
+						"availableIn": ["Sweden"],
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Regular",
+						"points": 82,
+						"availableIn": ["Sweden"],
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Veteran",
+						"points": 99,
+						"availableIn": ["Sweden"],
+						"requireChooseOneKey": "morale"
+					}
+				],
+				"keywords": ["Transport","Trailer"],
+				"specialText": "Soft Skin - 6+\n Transport: 11\n Tracked Vehicle",
+				"equipment": ["Pintle Mounted HMG","Smoke Dischargers"]
+			},
+			{
+				"name": "Bandvagn 206 Transport Vehicle - Recce",
+				"factions": [],
+				"order": 1,
+				"availableIn": [
+					{
+						"all": [{ "in": "Recce Platoon"	}, { "in": "Sweden" }]			
+					}
+				],
+				"points": 0,
+				"models": 1,
+				"options": [
+					{
+						"name": "Recce",
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
+						"points": 10,
+						"requireChooseOneKey": "Recce"
+					},
+					{
+						"name": "Inexperienced",
+						"points": 66,
+						"availableIn": ["Sweden"],
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Regular",
+						"points": 82,
+						"availableIn": ["Sweden"],
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Veteran",
+						"points": 99,
+						"availableIn": ["Sweden"],
+						"requireChooseOneKey": "morale"
+					}
+				],
+				"keywords": ["Transport","Trailer"],
+				"specialText": "Soft Skin - 6+\n Transport: 11\n Tracked Vehicle",
+				"equipment": ["Pintle Mounted HMG","Smoke Dischargers"]
+			},
+			{
+				"name": "Bandvagn 410 Transport Vehicle",
+				"factions": [],
+				"order": 1,
+				"availableIn": [
+					{
+						"all": [{ "in": "HQ Platoon"	}, { "in": "Sweden" }]			
+					},
+					{
+						"all": [{ "in": "Rifle Platoon"	}, { "in": "Sweden" }]			
+					},
+					{
+						"all": [{ "in": "Engineer Platoon"	}, { "in": "Sweden" }]			
+					},
+					{
+						"all": [{ "in": "Artillery Platoon"	}, { "in": "Sweden" }]			
+					},
+					{
+						"all": [{ "in": "Heavy Weapons Platoon"	}, { "in": "Sweden" }]			
+					}
+				],
+				"points": 0,
+				"models": 1,
+				"options": [
+					{
+						"name": "Inexperienced",
+						"points": 104,
+						"availableIn": ["Sweden"],
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Regular",
+						"points": 129,
+						"availableIn": ["Sweden"],
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Veteran",
+						"points": 155,
+						"availableIn": ["Sweden"],
+						"requireChooseOneKey": "morale"
+					}
+				],
+				"keywords": ["Transport","Trailer"],
+				"specialText": "Armored Carrier - 7+\n Transport: 12\n Tracked Vehicle",
+				"equipment": ["Pintle Mounted HMG","Smoke Dischargers"]
+			},
+			{
+				"name": "Bandvagn 410 Transport Vehicle - Recce",
+				"factions": [],
+				"order": 1,
+				"availableIn": [
+					{
+						"all": [{ "in": "Recce Platoon"	}, { "in": "Sweden" }]			
+					}
+				],
+				"points": 0,
+				"models": 1,
+				"options": [
+					{
+						"name": "Recce",
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
+						"points": 10,
+						"requireChooseOneKey": "Recce"
+					},
+					{
+						"name": "Inexperienced",
+						"points": 104,
+						"availableIn": ["Sweden"],
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Regular",
+						"points": 129,
+						"availableIn": ["Sweden"],
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Veteran",
+						"points": 155,
+						"availableIn": ["Sweden"],
+						"requireChooseOneKey": "morale"
+					}
+				],
+				"keywords": ["Transport","Trailer"],
+				"specialText": "Armored Carrier - 7+\n Transport: 12\n Tracked Vehicle",
+				"equipment": ["Pintle Mounted HMG","Smoke Dischargers"]
+			},
+			{
+				"name": "Bandvagn 410 Uparmored Transport Vehicle",
+				"factions": [],
+				"order": 1,
+				"availableIn": [
+					{
+						"all": [{ "in": "HQ Platoon"	}, { "in": "Sweden" }]			
+					},
+					{
+						"all": [{ "in": "Rifle Platoon"	}, { "in": "Sweden" }]			
+					},
+					{
+						"all": [{ "in": "Engineer Platoon"	}, { "in": "Sweden" }]			
+					},
+					{
+						"all": [{ "in": "Artillery Platoon"	}, { "in": "Sweden" }]			
+					},
+					{
+						"all": [{ "in": "Heavy Weapons Platoon"	}, { "in": "Sweden" }]			
+					}
+				],
+				"points": 0,
+				"models": 1,
+				"options": [
+					{
+						"name": "Inexperienced",
+						"points": 124,
+						"availableIn": ["Sweden"],
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Regular",
+						"points": 154,
+						"availableIn": ["Sweden"],
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Veteran",
+						"points": 185,
+						"availableIn": ["Sweden"],
+						"requireChooseOneKey": "morale"
+					}
+				],
+				"keywords": ["Transport","Trailer"],
+				"specialText": "Light Tank - 8+\n Transport: 12\n Tracked Vehicle",
+				"equipment": ["Pintle Mounted HMG","Smoke Dischargers"]
+			},
+			{
+				"name": "Bandvagn 410 Uparmored Transport Vehicle - Recce",
+				"factions": [],
+				"order": 1,
+				"availableIn": [
+					{
+						"all": [{ "in": "Recce Platoon"	}, { "in": "Sweden" }]			
+					}
+				],
+				"points": 0,
+				"models": 1,
+				"options": [
+					{
+						"name": "Recce",
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
+						"points": 10,
+						"requireChooseOneKey": "Recce"
+					},
+					{
+						"name": "Inexperienced",
+						"points": 124,
+						"availableIn": ["Sweden"],
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Regular",
+						"points": 154,
+						"availableIn": ["Sweden"],
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Veteran",
+						"points": 185,
+						"availableIn": ["Sweden"],
+						"requireChooseOneKey": "morale"
+					}
+				],
+				"keywords": ["Transport","Trailer"],
+				"specialText": "Light Tank - 8+\n Transport: 12\n Tracked Vehicle",
+				"equipment": ["Pintle Mounted HMG","Smoke Dischargers"]
+			},
+			{
+				"name": "CB-90 Fast Assault Boat",
+				"factions": [],
+				"order": 1,
+				"availableIn": [
+					{
+						"all": [{ "in": "HQ Platoon"	}, { "in": "Sweden" }]			
+					},
+					{
+						"all": [{ "in": "Rifle Platoon"	}, { "in": "Sweden" }]			
+					},
+					{
+						"all": [{ "in": "Engineer Platoon"	}, { "in": "Sweden" }]			
+					},
+					{
+						"all": [{ "in": "Artillery Platoon"	}, { "in": "Sweden" }]			
+					},
+					{
+						"all": [{ "in": "Heavy Weapons Platoon"	}, { "in": "Sweden" }]			
+					}
+				],
+				"points": 0,
+				"models": 1,
+				"options": [
+					{
+						"name": "Inexperienced",
+						"points": 117,
+						"availableIn": ["Sweden"],
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Regular",
+						"points": 146,
+						"availableIn": ["Sweden"],
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Veteran",
+						"points": 176,
+						"availableIn": ["Sweden"],
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Pintle Mounted HMG",
+						"points": 25,
+						"availableIn": ["Sweden"],
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
+						"chooseOneKey": "priWeapon"
+					},
+					{
+						"name": "Pintle Mounted Automatic Grenade Launcher",
+						"points": 35,
+						"availableIn": ["Sweden"],
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
+						"chooseOneKey": "priWeapon"
+					}
+				],
+				"keywords": ["Transport","Armored All Around","Waterborne"],
+				"specialText": "Armored Carrier - 8+\n Transport: 18\n Boat",
+				"equipment": ["Twin Hull Mounted HMGs"]
+			},
+			{
+				"name": "CB-90 Fast Assault Boat - Recce",
+				"factions": [],
+				"order": 1,
+				"availableIn": [
+					{
+						"all": [{ "in": "Recce Platoon"	}, { "in": "Sweden" }]			
+					}
+				],
+				"points": 0,
+				"models": 1,
+				"options": [
+					{
+						"name": "Recce",
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
+						"points": 10,
+						"requireChooseOneKey": "Recce"
+					},
+					{
+						"name": "Inexperienced",
+						"points": 117,
+						"availableIn": ["Sweden"],
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Regular",
+						"points": 146,
+						"availableIn": ["Sweden"],
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Veteran",
+						"points": 176,
+						"availableIn": ["Sweden"],
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Pintle Mounted HMG",
+						"points": 25,
+						"availableIn": ["Sweden"],
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
+						"chooseOneKey": "priWeapon"
+					},
+					{
+						"name": "Pintle Mounted Automatic Grenade Launcher",
+						"points": 35,
+						"availableIn": ["Sweden"],
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
+						"chooseOneKey": "priWeapon"
+					}
+				],
+				"keywords": ["Transport","Armored All Around","Waterborne"],
+				"specialText": "Armored Carrier - 8+\n Transport: 18\n Boat",
+				"equipment": ["Twin Hull Mounted HMGs"]
+			},
+			{
 				"name": "Humvee Infantry Support",
 				"factions": [],
 				"order": 1,
@@ -12569,6 +16459,9 @@
 				"availableIn":[
 					{
 						"all": [{ "in": "Air Support" }, { "in": "France" }]			
+					},
+					{
+						"all": [{ "in": "Air Support" }, { "in": "Sweden" }]			
 					}
 				],
 				"points": 0,
@@ -12585,19 +16478,28 @@
 					{
 						"name": "Inexperienced",
 						"points": 75,
-						"availableIn": ["France"],
+						"availableIn": [
+							"France",
+							"Sweden"
+						],
 						"requireChooseOneKey": "morale"
 					},
 					{
 						"name": "Regular",
 						"points": 93,
-						"availableIn": ["France"],
+						"availableIn": [
+							"France",
+							"Sweden"
+						],
 						"requireChooseOneKey": "morale"
 					},
 					{
 						"name": "Veteran",
 						"points": 112,
-						"availableIn": ["France"],
+						"availableIn": [
+							"France",
+							"Sweden"
+						],
 						"requireChooseOneKey": "morale"
 					}
 				],
@@ -12655,6 +16557,9 @@
 				"availableIn":[
 					{
 						"all": [{ "in": "Air Support" }, { "in": "France" }]			
+					},
+					{
+						"all": [{ "in": "Air Support" }, { "in": "Sweden" }]			
 					}
 				],
 				"points": 0,
@@ -12671,19 +16576,28 @@
 					{
 						"name": "Inexperienced",
 						"points": 89,
-						"availableIn": ["France"],
+						"availableIn": [
+							"France",
+							"Sweden"
+						],
 						"requireChooseOneKey": "morale"
 					},
 					{
 						"name": "Regular",
 						"points": 111,
-						"availableIn": ["France"],
+						"availableIn": [
+							"France",
+							"Sweden"
+						],
 						"requireChooseOneKey": "morale"
 					},
 					{
 						"name": "Veteran",
 						"points": 134,
-						"availableIn": ["France"],
+						"availableIn": [
+							"France",
+							"Sweden"
+						],
 						"requireChooseOneKey": "morale"
 					}
 				],
@@ -13103,6 +17017,92 @@
 				"equipment": ["Chin Mounted Heavy Autocannon"]
 			},
 			{
+				"name": "Agusta Bell 204B Helikopter 3 Transport Helicopter",
+				"factions": [],
+				"order": 1,
+				"availableIn":[
+					{
+						"all": [{ "in": "Air Support" }, { "in": "Sweden" }]			
+					}
+				],
+				"points": 0,
+				"models": 1,
+				"sortPriority": 3,
+				"limits": [
+					{
+						"key": "gunship",
+						"limit": 2,
+						"perParent": true
+					}
+				],
+				"options": [
+					{
+						"name": "Inexperienced",
+						"points": 36,
+						"availableIn": ["Sweden"],
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Regular",
+						"points": 45,
+						"availableIn": ["Sweden"],
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Veteran",
+						"points": 54,
+						"availableIn": ["Sweden"],
+						"requireChooseOneKey": "morale"
+					}
+				],
+				"keywords": ["Transport"],
+				"specialText": "Unarmored Helicopter - 6+\n Transport: 10\n Helicopter",
+				"equipment": []
+			},
+			{
+				"name": "Messerschmitt-Bölkow-Blohm Bo 105 Attack Helicopter",
+				"factions": [],
+				"order": 1,
+				"availableIn":[
+					{
+						"all": [{ "in": "Air Support" }, { "in": "Sweden" }]			
+					}
+				],
+				"points": 0,
+				"models": 1,
+				"sortPriority": 3,
+				"limits": [
+					{
+						"key": "gunship",
+						"limit": 2,
+						"perParent": true
+					}
+				],
+				"options": [
+					{
+						"name": "Inexperienced",
+						"points": 100,
+						"availableIn": ["Sweden"],
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Regular",
+						"points": 125,
+						"availableIn": ["Sweden"],
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Veteran",
+						"points": 150,
+						"availableIn": ["Sweden"],
+						"requireChooseOneKey": "morale"
+					}
+				],
+				"keywords": [],
+				"specialText": "Unarmored Helicopter - 6+\n Helicopter",
+				"equipment": ["Pylon Mounted ATGM"]
+			},
+			{
 				"name": "Bell AH-1Z Viper Attack Helicopter",
 				"factions": [],
 				"order": 1,
@@ -13493,6 +17493,9 @@
 				"order": 1,
 				"availableIn":[
 					{
+						"all": [{ "in": "Air Support" }, { "in": "Sweden" }]			
+					},
+					{
 						"all": [{ "in": "Air Support" }, { "in": "United States of America" }]			
 					}
 				],
@@ -13510,19 +17513,28 @@
 					{
 						"name": "Inexperienced",
 						"points": 64,
-						"availableIn": ["United States of America"],
+						"availableIn": [
+							"Sweden",
+							"United States of America"
+						],
 						"requireChooseOneKey": "morale"
 					},
 					{
 						"name": "Regular",
 						"points": 79,
-						"availableIn": ["United States of America"],
+						"availableIn": [
+							"Sweden",
+							"United States of America"
+						],
 						"requireChooseOneKey": "morale"
 					},
 					{
 						"name": "Veteran",
 						"points": 95,
-						"availableIn": ["United States of America"],
+						"availableIn": [
+							"Sweden",
+							"United States of America"
+						],
 						"requireChooseOneKey": "morale"
 					},
 					{
@@ -13544,7 +17556,10 @@
 					{
 						"name": "Port and STBD MMGs",
 						"points": 0,
-						"availableIn": ["United States of America"],
+						"availableIn": [
+							"Sweden",
+							"United States of America"
+						],
 						"chooseOneKey": "priWeapon",
 						"unlockedByLocal": ["Inexperienced","Regular","Veteran"]
 					},

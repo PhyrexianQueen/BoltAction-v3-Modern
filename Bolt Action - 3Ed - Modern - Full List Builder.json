@@ -8,7 +8,7 @@
 "credit": [
 	"Phy; phyrexian.queen@gmail.com for any questions, thoughts, concerns, or comments!"
 ],
-"game": "Bolt Action",
+"game": "Bolt Action 3ed Modern",
 "stats": [
 	{
 		"name": "Strength",
@@ -215,7 +215,13 @@
 				]
 			}
 		],
-		"equipment": [],
+		"equipment": [
+			{
+				"name": "Command Vehicle",
+				"validationKeys": ["CommandVehicle"],
+				"specialRules": ["Command Vehicle"]
+			}
+		],
 		"keywords": [],
 		"platoons": [
 			{
@@ -223,6 +229,17 @@
 				"unlimited": false,
 				"specialText": "Company Commander: 0 - 1\n Chaplain: 0 - 1\n Company Commander Transport: 0 - 1",
 				"decreaseModelCount": 1,
+				"validations":[
+					{
+							"requiredChildren": [
+								{
+									"key": "CompCommander",
+									"quantity": 1,
+									"message": "This platoon requires at least 1 Company Commander"
+								}
+							]
+					}
+				],
 				"factions": [
 					{
 						"name": "Australia"
@@ -295,6 +312,26 @@
 				"name": "Rifle Platoon",
 				"specialText": "Platoon Commander: 1\n Infantry Squads (Not-Eng): 2\n Infantry Squads (Not-Eng): 0-2\n Medic: 0-1\n FAO (Arty or Air): 0-1\n Sniper: 0-1\n AT Team: 0-1\n Light Mortar: 0-1\n Transport: Per Unit in the Platoon\n",
 				"decreaseModelCount": 1,
+				"validations":[
+					{
+						"requiredChildren": [
+							{
+								"key": "PlatCommander",
+								"quantity": 1,
+								"message": "This platoon requires at least 1 Platoon Commander."
+							}
+						]
+					},
+					{
+						"requiredChildren": [
+							{
+								"key": "RifleTeams",
+								"quantity": 2,
+								"message": "This platoon requires at least 2 Rifle Teams"
+							}
+						]
+					}
+				],
 				"unlimited": true,
 				"factions": [
 					{
@@ -369,6 +406,31 @@
 				"unlimited": true,
 				"specialText": "Platoon Commander: 1\n Infantry Squads (Not-Eng): 1\n Infantry Squads (Not-Eng): 0-3\n FAO (Arty or Air): 0-1\n AT Team: 0-1\n Transport: Enough so that every soldier in the platoon may ride. Transports have Recce.\n",
 				"decreaseModelCount": 1,
+				"validations":[
+					{
+						"requiredChildren": [
+							{
+								"key": "PlatCommander",
+								"quantity": 1,
+								"message": "This platoon requires at least 1 Platoon Commander."
+							}
+						]
+					},
+					{
+							"requiredChildren": [
+								{
+									"key": "RifleTeams",
+									"quantity": 1,
+									"message": "This platoon requires at least 1 Rifle Team"
+								},
+								{
+									"key": "Vehicle",
+									"quantity": 1,
+									"message": "This platoon requires enough transports for ALL MODELs in the platoon.\n Message will remain even if transports selected."
+								}
+							]
+					}
+				],
 				"factions": [
 					{
 						"name": "Australia"
@@ -448,6 +510,26 @@
 				"unlimited": true,
 				"specialText": "Platoon Commander: 1\n Engineer Squads: 2\n Engineer Squads: 0-2\n Flame Thrower Teams: 0-3\n Transport: Per Unit in the Platoon\n",
 				"decreaseModelCount": 1,
+				"validations":[
+					{
+						"requiredChildren": [
+							{
+								"key": "PlatCommander",
+								"quantity": 1,
+								"message": "This platoon requires at least 1 Platoon Commander."
+							}
+						]
+					},
+					{
+							"requiredChildren": [
+								{
+									"key": "EngineerTeams",
+									"quantity": 2,
+									"message": "This platoon requires at least 2 Engineer Teams"
+								}
+							]
+					}
+				],
 				"factions": [
 					{
 						"name": "Australia"
@@ -527,6 +609,26 @@
 				"unlimited": true,
 				"specialText": "Platoon Commander: 1\n MG or Mortar Team (Any Mix): 2\n Mortar Teams: 0-3\n MG Teams: 0-3\n AT Teams: 0-3\n Transport: Per Unit in the Platoon\n",
 				"decreaseModelCount": 1,
+				"validations":[
+					{
+						"requiredChildren": [
+							{
+								"key": "PlatCommander",
+								"quantity": 1,
+								"message": "This platoon requires at least 1 Platoon Commander."
+							}
+						]
+					},
+					{
+							"requiredChildren": [
+								{
+									"key": "HeavyWepTeams",
+									"quantity": 2,
+									"message": "This platoon requires at least 2 Heavy Weapons Teams"
+								}
+							]
+					}
+				],
 				"factions": [
 					{
 						"name": "Australia"
@@ -606,6 +708,26 @@
 				"unlimited": true,
 				"specialText": "Platoon Commander: 1\n Field Artillery/AA Gun/AT Gun: 1\n Field Artillery/AA Gun/AT Gun (Any Mix): 0-3\n Transport: Per Unit in the Platoon\n",
 				"decreaseModelCount": 1,
+				"validations":[
+					{
+						"requiredChildren": [
+							{
+								"key": "PlatCommander",
+								"quantity": 1,
+								"message": "This platoon requires at least 1 Platoon Commander."
+							}
+						]
+					},
+					{
+							"requiredChildren": [
+								{
+									"key": "ArtyTeams",
+									"quantity": 1,
+									"message": "This platoon requires at least 1 Artillery Team"
+								}
+							]
+					}
+				],
 				"factions": [
 					{
 						"name": "Australia"
@@ -685,6 +807,27 @@
 				"unlimited": true,
 				"specialText": "Platoon Command Vehicle: 1\n Vehicle: 1\n Vehicles: 0-3",
 				"decreaseModelCount": 1,
+				
+				"validations":[
+					{
+						"requiredChildren": [
+							{
+								"key": "CommandVehicle",
+								"quantity": 1,
+								"message": "This platoon requires at least 1 Vehicle with the Command Vehicle Rule"
+							}
+						]
+					},
+					{
+						"requiredChildren": [
+							{
+								"key": "TotalVehicle",
+								"quantity": 2,
+								"message": "This platoon requires at least 2 Vehicles"
+							}
+						]
+					}
+				],
 				"factions": [
 					{
 						"name": "Australia"
@@ -910,6 +1053,7 @@
 		"units": [
 			{
 				"name": "Company Commander",
+				"validationKeys": ["CompCommander"],
 				"factions": [],
 				"order": 1,
 				"availableIn":[
@@ -1177,6 +1321,7 @@
 			},
 			{
 				"name": "Platoon Commander",
+				"validationKeys": ["PlatCommander"],
 				"factions": [],
 				"order": 1,
 				"availableIn":[
@@ -3461,6 +3606,7 @@
 			},
 			{
 				"name": "Light Mortar Team",
+				"validationKeys": ["HeavyWepTeams"],
 				"factions": [],
 				"order": 1,
 				"availableIn":[
@@ -3480,6 +3626,11 @@
 				"limits": [
 					{
 						"key": "Mortar",
+						"limit": 5,
+						"perParent": true
+					},
+					{
+						"key": "MainTeam",
 						"limit": 5,
 						"perParent": true
 					}
@@ -3555,6 +3706,7 @@
 			},
 			{
 				"name": "Medium Mortar Team",
+				"validationKeys": ["HeavyWepTeams"],
 				"factions": [],
 				"order": 1,
 				"availableIn":[
@@ -3577,6 +3729,11 @@
 				"limits": [
 					{
 						"key": "Mortar",
+						"limit": 5,
+						"perParent": true
+					},
+					{
+						"key": "MainTeam",
 						"limit": 5,
 						"perParent": true
 					}
@@ -3665,6 +3822,7 @@
 			},
 			{
 				"name": "Heavy Mortar Team",
+				"validationKeys": ["HeavyWepTeams"],
 				"factions": [],
 				"order": 1,
 				"availableIn":[
@@ -3687,6 +3845,11 @@
 				"limits": [
 					{
 						"key": "Mortar",
+						"limit": 5,
+						"perParent": true
+					},
+					{
+						"key": "MainTeam",
 						"limit": 5,
 						"perParent": true
 					}
@@ -3775,6 +3938,7 @@
 			},
 			{
 				"name": "Medium Machine Gun Team",
+				"validationKeys": ["HeavyWepTeams"],
 				"factions": [],
 				"order": 1,
 				"availableIn":[
@@ -3797,6 +3961,11 @@
 				"limits": [
 					{
 						"key": "MG",
+						"limit": 5,
+						"perParent": true
+					},
+					{
+						"key": "MainTeam",
 						"limit": 5,
 						"perParent": true
 					}
@@ -3886,6 +4055,8 @@
 			},
 			{
 				"name": "Heavy Machine Gun Team",
+				"validationKeys": ["HeavyWepTeams"],
+				"factions": [],
 				"factions": [],
 				"order": 1,
 				"availableIn":[
@@ -3908,6 +4079,11 @@
 				"limits": [
 					{
 						"key": "MG",
+						"limit": 5,
+						"perParent": true
+					},
+					{
+						"key": "MainTeam",
 						"limit": 5,
 						"perParent": true
 					}
@@ -3990,143 +4166,13 @@
 			},
 			{
 				"name": "Infantry Team (300)",
+				"validationKeys": ["RifleTeams"],
 				"factions": [],
 				"order": 1,
 				"availableIn":[
 					{
 						"all": [{ "in": "Rifle Platoon" }, { "in": "France" }]			
-					}
-				],
-				"points": 0,
-				"models": 3,
-				"sortPriority": 3,
-				"limits": [
-					{
-						"key": "Rifle",
-						"limit": 5,
-						"perParent": true
-					}
-				],
-				"options": [
-					{
-						"name": "Inexperienced",
-						"points": 42,
-						"availableIn": ["France"],
-						"requireChooseOneKey": "morale"
 					},
-					{
-						"name": "Regular",
-						"points": 60,
-						"availableIn": ["France"],
-						"requireChooseOneKey": "morale"
-					},
-					{
-						"name": "Veteran",
-						"points": 78,
-						"availableIn": ["France"],
-						"requireChooseOneKey": "morale"
-					},
-					{
-						"name": "Additional Men",
-						"points": 7,
-						"increment": true,
-						"max": 2,
-						"addsModels": 1,
-						"unlockedByLocal": "Inexperienced",
-						"availableIn": ["France"]
-					},
-					{
-						"name": "Additional Men",
-						"points": 10,
-						"increment": true,
-						"max": 2,
-						"addsModels": 1,
-						"unlockedByLocal": "Regular",
-						"availableIn": ["France"]
-					},
-					{
-						"name": "Additional Men",
-						"points": 13,
-						"increment": true,
-						"max": 2,
-						"addsModels": 1,
-						"unlockedByLocal": "Veteran",
-						"availableIn": ["France"]
-					},
-					{
-						"name": "French Foreign Legion",
-						"points": 1,
-						"perModel": true,
-						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
-						"availableIn": ["France"]
-					},
-					{
-						"name": "NCO SMG",
-						"points": 3,
-						"increment": true,
-						"max": "parentModels",
-						"maxKey": "gun",
-						"localLimit": 1,
-						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
-						"availableIn": ["France"]
-					},
-					{
-						"name": "SMGs",
-						"points": 4,
-						"increment": true,
-						"max": "parentModels",
-						"maxKey": "gun",
-						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
-						"availableIn": ["France"]
-					},
-					{
-						"name": "NCO Pistol",
-						"points": -1,
-						"increment": true,
-						"max": "parentModels",
-						"maxKey": "gun",
-						"localLimit": 1,
-						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
-						"availableIn": ["France"]
-					},
-					{
-						"name": "NCO Shotgun",
-						"points": 4,
-						"increment": true,
-						"max": "parentModels",
-						"maxKey": "gun",
-						"localLimit": 1,
-						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
-						"availableIn": ["France"]
-					},
-					{
-						"name": "Shotgun",
-						"points": 4,
-						"increment": true,
-						"max": "parentModels",
-						"maxKey": "gun",
-						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
-						"availableIn": ["France"]
-					},
-					{
-						"name": "Carl Gustav",
-						"points": 4,
-						"increment": true,
-						"max": 1,
-						"maxKey": "gun",
-						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
-						"availableIn": ["France"]
-					}
-				],
-				"keywords": ["First Aid"],
-				"specialText": "1 NCO\n 2 Soldiers",
-				"equipment": ["Body Armor","Assault Rifles","Grenades","MOPP"]
-			},
-			{
-				"name": "Infantry Team (300)",
-				"factions": [],
-				"order": 1,
-				"availableIn":[
 					{
 						"all": [{ "in": "Recce Platoon" }, { "in": "France" }]			
 					}
@@ -4254,155 +4300,17 @@
 				],
 				"keywords": ["First Aid"],
 				"specialText": "1 NCO\n 2 Soldiers",
-				"equipment": ["Body Armor","Grenades","MOPP","Assault Rifles"]
+				"equipment": ["Body Armor","Assault Rifles","Grenades","MOPP"]
 			},
 			{
 				"name": "Infantry Team (600)",
+				"validationKeys": ["RifleTeams"],
 				"factions": [],
 				"order": 1,
 				"availableIn":[
 					{
 						"all": [{ "in": "Rifle Platoon" }, { "in": "France" }]			
-					}
-				],
-				"points": 0,
-				"models": 3,
-				"sortPriority": 3,
-				"limits": [
-					{
-						"key": "Rifle",
-						"limit": 5,
-						"perParent": true
-					}
-				],
-				"options": [
-					{
-						"name": "Inexperienced",
-						"points": 45,
-						"availableIn": ["France"],
-						"requireChooseOneKey": "morale"
 					},
-					{
-						"name": "Regular",
-						"points": 63,
-						"availableIn": ["France"],
-						"requireChooseOneKey": "morale"
-					},
-					{
-						"name": "Veteran",
-						"points": 81,
-						"availableIn": ["France"],
-						"requireChooseOneKey": "morale"
-					},
-					{
-						"name": "Additional Men",
-						"points": 7,
-						"increment": true,
-						"max": 5,
-						"addsModels": 1,
-						"unlockedByLocal": "Inexperienced",
-						"availableIn": ["France"]
-					},
-					{
-						"name": "Additional Men",
-						"points": 10,
-						"increment": true,
-						"max": 5,
-						"addsModels": 1,
-						"unlockedByLocal": "Regular",
-						"availableIn": ["France"]
-					},
-					{
-						"name": "Additional Men",
-						"points": 13,
-						"increment": true,
-						"max": 5,
-						"addsModels": 1,
-						"unlockedByLocal": "Veteran",
-						"availableIn": ["France"]
-					},
-					{
-						"name": "French Foreign Legion",
-						"points": 1,
-						"perModel": true,
-						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
-						"availableIn": ["France"]
-					},
-					{
-						"name": "NCO SMG",
-						"points": 3,
-						"increment": true,
-						"max": "parentModels",
-						"maxKey": "gun",
-						"localLimit": 1,
-						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
-						"availableIn": ["France"]
-					},
-					{
-						"name": "SMGs",
-						"points": 4,
-						"increment": true,
-						"max": "parentModels",
-						"maxKey": "gun",
-						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
-						"availableIn": ["France"]
-					},
-					{
-						"name": "NCO Pistol",
-						"points": -1,
-						"increment": true,
-						"max": "parentModels",
-						"maxKey": "gun",
-						"localLimit": 1,
-						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
-						"availableIn": ["France"]
-					},
-					{
-						"name": "NCO Shotgun",
-						"points": 4,
-						"increment": true,
-						"max": "parentModels",
-						"maxKey": "gun",
-						"localLimit": 1,
-						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
-						"availableIn": ["France"]
-					},
-					{
-						"name": "Shotgun",
-						"points": 4,
-						"increment": true,
-						"max": "parentModels",
-						"maxKey": "gun",
-						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
-						"availableIn": ["France"]
-					},
-					{
-						"name": "LMG",
-						"points": 4,
-						"increment": true,
-						"max": 1,
-						"maxKey": "gun",
-						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
-						"availableIn": ["France"]
-					},
-					{
-						"name": "Grenade Launcher",
-						"points": 4,
-						"increment": true,
-						"max": 1,
-						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
-						"availableIn": ["France"]
-					}
-				],
-				"keywords": ["First Aid"],
-				"specialText": "1 NCO\n 2 Soldiers",
-				"equipment": ["Body Armor","Assault Rifles","Grenades","MOPP"]
-			},
-			{
-				"name": "Infantry Team (600)",
-				"factions": [],
-				"order": 1,
-				"availableIn":[
 					{
 						"all": [{ "in": "Recce Platoon" }, { "in": "France" }]			
 					}
@@ -4542,104 +4450,13 @@
 			},
 			{
 				"name": "Commandos Marine",
+				"validationKeys": ["RifleTeams"],
 				"factions": [],
 				"order": 1,
 				"availableIn":[
 					{
 						"all": [{ "in": "Rifle Platoon" }, { "in": "France" }]			
-					}
-				],
-				"points": 0,
-				"models": 4,
-				"sortPriority": 3,
-				"limits": [
-					{
-						"key": "Rifle",
-						"limit": 5,
-						"perParent": true
-					}
-				],
-				"options": [
-					{
-						"name": "Veteran",
-						"points": 85,
-						"availableIn": ["France"],
-						"requireChooseOneKey": "morale"
 					},
-					{
-						"name": "Additional Men",
-						"points": 13,
-						"increment": true,
-						"max": 4,
-						"addsModels": 1,
-						"unlockedByLocal": "Veteran",
-						"availableIn": ["France"]
-					},
-					{
-						"name": "French Foreign Legion",
-						"points": 1,
-						"perModel": true,
-						"unlockedByLocal": "Veteran",
-						"availableIn": ["France"]
-					},
-					{
-						"name": "NCO SMG",
-						"points": 3,
-						"increment": true,
-						"max": "parentModels",
-						"maxKey": "gun",
-						"localLimit": 1,
-						"unlockedByLocal": "Veteran",
-						"availableIn": ["France"]
-					},
-					{
-						"name": "SMGs",
-						"points": 4,
-						"increment": true,
-						"max": "parentModels",
-						"maxKey": "gun",
-						"unlockedByLocal": "Veteran",
-						"availableIn": ["France"]
-					},
-					{
-						"name": "NCO Pistol",
-						"points": -1,
-						"increment": true,
-						"max": "parentModels",
-						"maxKey": "gun",
-						"localLimit": 1,
-						"unlockedByLocal": "Veteran",
-						"availableIn": ["France"]
-					},
-					{
-						"name": "NCO Shotgun",
-						"points": 4,
-						"increment": true,
-						"max": "parentModels",
-						"maxKey": "gun",
-						"localLimit": 1,
-						"unlockedByLocal": "Veteran",
-						"availableIn": ["France"]
-					},
-					{
-						"name": "Shotgun",
-						"points": 4,
-						"increment": true,
-						"max": "parentModels",
-						"maxKey": "gun",
-						"unlockedByLocal": "Veteran",
-						"availableIn": ["France"]
-					}
-				],
-				"keywords": ["First Aid","Elite","Air Assault","Infiltrator"],
-				"specialText": "1 NCO\n 3 Soldiers",
-				"equipment": ["Body Armor","Assault Rifles","Grenades","Night Vision"]
-			},
-			{
-				"name": "Commandos Marine",
-				"factions": [],
-				"order": 1,
-				"availableIn":[
 					{
 						"all": [{ "in": "Recce Platoon" }, { "in": "France" }]			
 					}
@@ -4732,133 +4549,13 @@
 			},
 			{
 				"name": "BMP Motor Rifle Squad",
+				"validationKeys": ["RifleTeams"],
 				"factions": [],
 				"order": 1,
 				"availableIn":[
 					{
 						"all": [{ "in": "Rifle Platoon" }, { "in": "Russia" }]			
-					}
-				],
-				"points": 0,
-				"models": 5,
-				"sortPriority": 3,
-				"limits": [
-					{
-						"key": "Rifle",
-						"limit": 5,
-						"perParent": true
-					}
-				],
-				"options": [
-					{
-						"name": "Inexperienced",
-						"points": 46,
-						"availableIn": ["Russia"],
-						"requireChooseOneKey": "morale"
 					},
-					{
-						"name": "Regular",
-						"points": 64,
-						"availableIn": ["Russia"],
-						"requireChooseOneKey": "morale"
-					},
-					{
-						"name": "Veteran",
-						"points": 82,
-						"availableIn": ["Russia"],
-						"requireChooseOneKey": "morale"
-					},
-					{
-						"name": "Additional Men",
-						"points": 7,
-						"increment": true,
-						"max": 3,
-						"addsModels": 1,
-						"unlockedByLocal": "Inexperienced",
-						"availableIn": ["Russia"]
-					},
-					{
-						"name": "Additional Men",
-						"points": 10,
-						"increment": true,
-						"max": 3,
-						"addsModels": 1,
-						"unlockedByLocal": "Regular",
-						"availableIn": ["Russia"]
-					},
-					{
-						"name": "Additional Men",
-						"points": 13,
-						"increment": true,
-						"max": 3,
-						"addsModels": 1,
-						"unlockedByLocal": "Veteran",
-						"availableIn": ["Russia"]
-					},
-					{
-						"name": "Drone",
-						"points": 25,
-						"increment": true,
-						"max": 1,
-						"addsModels": 1,
-						"unlockedByLocal": ["Inexperienced","Regular","Veteran"]
-					},
-					{
-						"name": "NCO Pistol",
-						"points": -1,
-						"increment": true,
-						"max": "parentModels",
-						"maxKey": "gun",
-						"localLimit": 1,
-						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
-						"availableIn": ["Russia"]
-					},
-					{
-						"name": "NCO SMG",
-						"points": 4,
-						"increment": true,
-						"max": "parentModels",
-						"maxKey": "gun",
-						"localLimit": 1,
-						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
-						"availableIn": ["Russia"]
-					},
-					{
-						"name": "LMG",
-						"points": 15,
-						"increment": true,
-						"max": "parentModels",
-						"maxKey": "gun",
-						"localLimit": 1,
-						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
-						"availableIn": ["Russia"]
-					},
-					{
-						"name": "Grenade Launcher",
-						"points": 5,
-						"increment": true,
-						"max": 2,
-						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
-						"availableIn": ["Russia"]
-					},
-					{
-						"name": "RPG",
-						"points": 6,
-						"increment": true,
-						"max": 1,
-						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
-						"availableIn": ["Russia"]
-					}
-				],
-				"keywords": ["First Aid"],
-				"specialText": "1 NCO\n 4 Soldiers",
-				"equipment": ["Body Armor","Grenades","MOPP","Assault Rifles"]
-			},
-			{
-				"name": "BMP Motor Rifle Squad",
-				"factions": [],
-				"order": 1,
-				"availableIn":[
 					{
 						"all": [{ "in": "Recce Platoon" }, { "in": "Russia" }]			
 					}
@@ -4980,141 +4677,13 @@
 			},
 			{
 				"name": "VDV Airborne Squad",
+				"validationKeys": ["RifleTeams"],
 				"factions": [],
 				"order": 1,
 				"availableIn":[
 					{
 						"all": [{ "in": "Rifle Platoon" }, { "in": "Russia" }]			
-					}
-				],
-				"points": 0,
-				"models": 5,
-				"sortPriority": 3,
-				"limits": [
-					{
-						"key": "Rifle",
-						"limit": 5,
-						"perParent": true
-					}
-				],
-				"options": [
-					{
-						"name": "Inexperienced",
-						"points": 55,
-						"availableIn": ["Russia"],
-						"requireChooseOneKey": "morale"
 					},
-					{
-						"name": "Regular",
-						"points": 75,
-						"availableIn": ["Russia"],
-						"requireChooseOneKey": "morale"
-					},
-					{
-						"name": "Veteran",
-						"points": 97,
-						"availableIn": ["Russia"],
-						"requireChooseOneKey": "morale"
-					},
-					{
-						"name": "Additional Men",
-						"points": 9,
-						"increment": true,
-						"max": 2,
-						"addsModels": 1,
-						"unlockedByLocal": "Inexperienced",
-						"availableIn": ["Russia"]
-					},
-					{
-						"name": "Additional Men",
-						"points": 12,
-						"increment": true,
-						"max": 2,
-						"addsModels": 1,
-						"unlockedByLocal": "Regular",
-						"availableIn": ["Russia"]
-					},
-					{
-						"name": "Additional Men",
-						"points": 15,
-						"increment": true,
-						"max": 2,
-						"addsModels": 1,
-						"unlockedByLocal": "Veteran",
-						"availableIn": ["Russia"]
-					},
-					{
-						"name": "Drone",
-						"points": 25,
-						"increment": true,
-						"max": 1,
-						"addsModels": 1,
-						"unlockedByLocal": ["Inexperienced","Regular","Veteran"]
-					},
-					{
-						"name": "NCO Pistol",
-						"points": -1,
-						"increment": true,
-						"max": "parentModels",
-						"maxKey": "gun",
-						"localLimit": 1,
-						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
-						"availableIn": ["Russia"]
-					},
-					{
-						"name": "NCO SMG",
-						"points": 4,
-						"increment": true,
-						"max": "parentModels",
-						"maxKey": "gun",
-						"localLimit": 1,
-						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
-						"availableIn": ["Russia"]
-					},
-					{
-						"name": "LMG",
-						"points": 15,
-						"increment": true,
-						"max": "parentModels",
-						"maxKey": "gun",
-						"localLimit": 1,
-						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
-						"availableIn": ["Russia"]
-					},
-					{
-						"name": "Grenade Launcher",
-						"points": 5,
-						"increment": true,
-						"max": 2,
-						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
-						"availableIn": ["Russia"]
-					},
-					{
-						"name": "RPG",
-						"points": 6,
-						"increment": true,
-						"max": 1,
-						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
-						"availableIn": ["Russia"]
-					},
-					{
-						"name": "Light AT Weapon",
-						"points": 5,
-						"increment": true,
-						"max": "parentModels",
-						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
-						"availableIn": ["Russia"]
-					}
-				],
-				"keywords": ["First Aid","Air Assault"],
-				"specialText": "1 NCO\n 4 Soldiers",
-				"equipment": ["Body Armor","Grenades","MOPP","Assault Rifles"]
-			},
-			{
-				"name": "VDV Airborne Squad",
-				"factions": [],
-				"order": 1,
-				"availableIn":[
 					{
 						"all": [{ "in": "Recce Platoon" }, { "in": "Russia" }]			
 					}
@@ -5244,106 +4813,13 @@
 			},
 			{
 				"name": "GRU Spetsnaz",
+				"validationKeys": ["RifleTeams"],
 				"factions": [],
 				"order": 1,
 				"availableIn":[
 					{
 						"all": [{ "in": "Rifle Platoon" }, { "in": "Russia" }]			
-					}
-				],
-				"points": 0,
-				"models": 4,
-				"sortPriority": 3,
-				"limits": [
-					{
-						"key": "Rifle",
-						"limit": 5,
-						"perParent": true
-					}
-				],
-				"options": [
-					{
-						"name": "Veteran",
-						"points": 85,
-						"availableIn": ["Russia"],
-						"requireChooseOneKey": "morale"
 					},
-					{
-						"name": "Additional Men",
-						"points": 13,
-						"increment": true,
-						"max": 6,
-						"addsModels": 1,
-						"unlockedByLocal": "Veteran",
-						"availableIn": ["Russia"]
-					},
-					{
-						"name": "Drone",
-						"points": 25,
-						"increment": true,
-						"max": 1,
-						"addsModels": 1,
-						"unlockedByLocal": ["Inexperienced","Regular","Veteran"]
-					},
-					{
-						"name": "NCO Pistol",
-						"points": -1,
-						"increment": true,
-						"max": "parentModels",
-						"maxKey": "gun",
-						"localLimit": 1,
-						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
-						"availableIn": ["Russia"]
-					},
-					{
-						"name": "NCO SMG",
-						"points": 4,
-						"increment": true,
-						"max": "parentModels",
-						"maxKey": "gun",
-						"localLimit": 1,
-						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
-						"availableIn": ["Russia"]
-					},
-					{
-						"name": "SMGs",
-						"points": 4,
-						"increment": true,
-						"max": "parentModels",
-						"maxKey": "gun",
-						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
-						"availableIn": ["Russia"]
-					},
-					{
-						"name": "Shotguns",
-						"points": 4,
-						"increment": true,
-						"max": "parentModels",
-						"maxKey": "gun",
-						"localLimit": 5,
-						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
-						"availableIn": ["Russia"]
-					},
-					{
-						"name": "LMG",
-						"points": 15,
-						"increment": true,
-						"max": "parentModels",
-						"maxKey": "gun",
-						"localLimit": 1,
-						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
-						"availableIn": ["Russia"]
-					}
-				],
-				"keywords": ["First Aid","Air Assault","Elite","Variable Weapons"],
-				"specialText": "1 NCO\n 3 Soldiers",
-				"equipment": ["Body Armor","Grenades","MOPP","Assault Rifles","Night Vision"]
-			},
-			{
-				"name": "GRU Spetsnaz",
-				"factions": [],
-				"order": 1,
-				"availableIn":[
 					{
 						"all": [{ "in": "Recce Platoon" }, { "in": "Russia" }]			
 					}
@@ -5438,102 +4914,13 @@
 			},
 			{
 				"name": "Conscripted BMP Motor Rifle Squad",
+				"validationKeys": ["RifleTeams"],
 				"factions": [],
 				"order": 1,
 				"availableIn":[
 					{
 						"all": [{ "in": "Rifle Platoon" }, { "in": "Russia" }]			
-					}
-				],
-				"points": 0,
-				"models": 5,
-				"sortPriority": 3,
-				"limits": [
-					{
-						"key": "Rifle",
-						"limit": 5,
-						"perParent": true
-					}
-				],
-				"options": [
-					{
-						"name": "Inexperienced",
-						"points": 38,
-						"availableIn": ["Russia"],
-						"requireChooseOneKey": "morale"
 					},
-					{
-						"name": "Regular",
-						"points": 45,
-						"availableIn": ["Russia"],
-						"requireChooseOneKey": "morale"
-					},
-					{
-						"name": "Additional Men",
-						"points": 6,
-						"increment": true,
-						"max": 3,
-						"addsModels": 1,
-						"unlockedByLocal": "Inexperienced",
-						"availableIn": ["Russia"]
-					},
-					{
-						"name": "Additional Men",
-						"points": 9,
-						"increment": true,
-						"max": 3,
-						"addsModels": 1,
-						"unlockedByLocal": "Regular",
-						"availableIn": ["Russia"]
-					},
-					{
-						"name": "NCO Pistol",
-						"points": -1,
-						"increment": true,
-						"max": "parentModels",
-						"maxKey": "gun",
-						"localLimit": 1,
-						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
-						"availableIn": ["Russia"]
-					},
-					{
-						"name": "NCO SMG",
-						"points": 4,
-						"increment": true,
-						"max": "parentModels",
-						"maxKey": "gun",
-						"localLimit": 1,
-						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
-						"availableIn": ["Russia"]
-					},
-					{
-						"name": "LMG",
-						"points": 15,
-						"increment": true,
-						"max": "parentModels",
-						"maxKey": "gun",
-						"localLimit": 1,
-						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
-						"availableIn": ["Russia"]
-					},
-					{
-						"name": "RPG",
-						"points": 6,
-						"increment": true,
-						"max": 1,
-						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
-						"availableIn": ["Russia"]
-					}
-				],
-				"keywords": ["First Aid","Reluctant Fighters"],
-				"specialText": "1 NCO\n 4 Soldiers",
-				"equipment": ["Grenades","Assault Rifles"]
-			},
-			{
-				"name": "Conscripted BMP Motor Rifle Squad",
-				"factions": [],
-				"order": 1,
-				"availableIn":[
 					{
 						"all": [{ "in": "Recce Platoon" }, { "in": "Russia" }]			
 					}
@@ -5624,11 +5011,15 @@
 			},
 			{
 				"name": "Swedish Mechanized Rifle Group",
+				"validationKeys": ["RifleTeams"],
 				"factions": [],
 				"order": 1,
 				"availableIn":[
 					{
 						"all": [{ "in": "Rifle Platoon" }, { "in": "Sweden" }]			
+					},
+					{
+						"all": [{ "in": "Recce Platoon" }, { "in": "Sweden" }]			
 					}
 				],
 				"points": 0,
@@ -5637,121 +5028,6 @@
 				"limits": [
 					{
 						"key": "Rifle",
-						"limit": 5,
-						"perParent": true
-					}
-				],
-				"options": [
-					{
-						"name": "Inexperienced",
-						"points": 42,
-						"availableIn": ["Sweden"],
-						"requireChooseOneKey": "morale"
-					},
-					{
-						"name": "Regular",
-						"points": 60,
-						"availableIn": ["Sweden"],
-						"requireChooseOneKey": "morale"
-					},
-					{
-						"name": "Veteran",
-						"points": 78,
-						"availableIn": ["Sweden"],
-						"requireChooseOneKey": "morale"
-					},
-					{
-						"name": "Additional Men",
-						"points": 7,
-						"increment": true,
-						"max": 3,
-						"addsModels": 1,
-						"unlockedByLocal": "Inexperienced",
-						"availableIn": ["Sweden"]
-					},
-					{
-						"name": "Additional Men",
-						"points": 10,
-						"increment": true,
-						"max": 3,
-						"addsModels": 1,
-						"unlockedByLocal": "Regular",
-						"availableIn": ["Sweden"]
-					},
-					{
-						"name": "Additional Men",
-						"points": 13,
-						"increment": true,
-						"max": 3,
-						"addsModels": 1,
-						"unlockedByLocal": "Veteran",
-						"availableIn": ["Sweden"]
-					},
-					{
-						"name": "NCO Pistol",
-						"points": -1,
-						"increment": true,
-						"max": "parentModels",
-						"maxKey": "gun",
-						"localLimit": 1,
-						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
-						"availableIn": ["Sweden"]
-					},
-					{
-						"name": "NCO SMG",
-						"points": 4,
-						"increment": true,
-						"max": "parentModels",
-						"maxKey": "gun",
-						"localLimit": 1,
-						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
-						"availableIn": ["Sweden"]
-					},
-					{
-						"name": "LMG",
-						"points": 15,
-						"increment": true,
-						"max": "parentModels",
-						"maxKey": "gun",
-						"localLimit": 1,
-						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
-						"availableIn": ["Sweden"]
-					},
-					{
-						"name": "Pansar­skott 86",
-						"points": 6,
-						"increment": true,
-						"max": 1,
-						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
-						"availableIn": ["Sweden"]
-					},
-					{
-						"name": "Winter Equipment",
-						"points": 0,
-						"perModel": true,
-						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
-						"availableIn": ["Sweden"]
-					}
-				],
-				"keywords": ["First Aid"],
-				"specialText": "1 NCO\n 5 Soldiers",
-				"equipment": ["Body Armor","Grenades","Assault Rifles","MOPP"]
-			},
-			{
-				"name": "Swedish Mechanized Rifle Group",
-				"factions": [],
-				"order": 1,
-				"availableIn":[
-					{
-						"all": [{ "in": "Recce Platoon" }, { "in": "Sweden" }]			
-					}
-				],
-				"points": 0,
-				"models": 5,
-				"sortPriority": 3,
-				"limits": [
-					{
-						"key": "Rifle",
 						"limit": 4,
 						"perParent": true
 					}
@@ -5854,124 +5130,13 @@
 			},
 			{
 				"name": "Swedish Amphibious Rifle Group",
+				"validationKeys": ["RifleTeams"],
 				"factions": [],
 				"order": 1,
 				"availableIn":[
 					{
 						"all": [{ "in": "Rifle Platoon" }, { "in": "Sweden" }]			
-					}
-				],
-				"points": 0,
-				"models": 5,
-				"sortPriority": 3,
-				"limits": [
-					{
-						"key": "Rifle",
-						"limit": 5,
-						"perParent": true
-					}
-				],
-				"options": [
-					{
-						"name": "Inexperienced",
-						"points": 40,
-						"availableIn": ["Sweden"],
-						"requireChooseOneKey": "morale"
 					},
-					{
-						"name": "Regular",
-						"points": 55,
-						"availableIn": ["Sweden"],
-						"requireChooseOneKey": "morale"
-					},
-					{
-						"name": "Veteran",
-						"points": 70,
-						"availableIn": ["Sweden"],
-						"requireChooseOneKey": "morale"
-					},
-					{
-						"name": "Additional Men",
-						"points": 8,
-						"increment": true,
-						"max": 3,
-						"addsModels": 1,
-						"unlockedByLocal": "Inexperienced",
-						"availableIn": ["Sweden"]
-					},
-					{
-						"name": "Additional Men",
-						"points": 11,
-						"increment": true,
-						"max": 3,
-						"addsModels": 1,
-						"unlockedByLocal": "Regular",
-						"availableIn": ["Sweden"]
-					},
-					{
-						"name": "Additional Men",
-						"points": 14,
-						"increment": true,
-						"max": 3,
-						"addsModels": 1,
-						"unlockedByLocal": "Veteran",
-						"availableIn": ["Sweden"]
-					},
-					{
-						"name": "NCO Pistol",
-						"points": -1,
-						"increment": true,
-						"max": "parentModels",
-						"maxKey": "gun",
-						"localLimit": 1,
-						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
-						"availableIn": ["Sweden"]
-					},
-					{
-						"name": "Rifle",
-						"points": -1,
-						"increment": true,
-						"max": "parentModels",
-						"maxKey": "gun",
-						"localLimit": 2,
-						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
-						"availableIn": ["Sweden"]
-					},
-					{
-						"name": "LMG",
-						"points": 15,
-						"increment": true,
-						"max": "parentModels",
-						"maxKey": "gun",
-						"localLimit": 1,
-						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
-						"availableIn": ["Sweden"]
-					},
-					{
-						"name": "Pansar­skott 86",
-						"points": 6,
-						"increment": true,
-						"max": 2,
-						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
-						"availableIn": ["Sweden"]
-					},
-					{
-						"name": "Winter Equipment",
-						"points": 0,
-						"perModel": true,
-						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
-						"availableIn": ["Sweden"]
-					}
-				],
-				"keywords": ["First Aid","Stubborn"],
-				"specialText": "1 NCO\n 4 Soldiers",
-				"equipment": ["Body Armor","Grenades","Assault Rifles","MOPP"]
-			},
-			{
-				"name": "Swedish Amphibious Rifle Group",
-				"factions": [],
-				"order": 1,
-				"availableIn":[
 					{
 						"all": [{ "in": "Recce Platoon" }, { "in": "Sweden" }]			
 					}
@@ -6084,133 +5249,13 @@
 			},
 			{
 				"name": "Swedish Coastal Ranger Group",
+				"validationKeys": ["RifleTeams"],
 				"factions": [],
 				"order": 1,
 				"availableIn":[
 					{
 						"all": [{ "in": "Rifle Platoon" }, { "in": "Sweden" }]			
-					}
-				],
-				"points": 0,
-				"models": 6,
-				"sortPriority": 3,
-				"limits": [
-					{
-						"key": "Rifle",
-						"limit": 5,
-						"perParent": true
-					}
-				],
-				"options": [
-					{
-						"name": "Veteran",
-						"points": 90,
-						"availableIn": ["Sweden"],
-						"requireChooseOneKey": "morale"
 					},
-					{
-						"name": "Additional Men",
-						"points": 15,
-						"increment": true,
-						"max": 3,
-						"addsModels": 1,
-						"unlockedByLocal": "Veteran",
-						"availableIn": ["Sweden"]
-					},
-					{
-						"name": "NCO Pistol",
-						"points": -1,
-						"increment": true,
-						"max": "parentModels",
-						"maxKey": "gun",
-						"localLimit": 1,
-						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
-						"availableIn": ["Sweden"]
-					},
-					{
-						"name": "NCO SMG",
-						"points": 4,
-						"increment": true,
-						"max": "parentModels",
-						"maxKey": "gun",
-						"localLimit": 1,
-						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
-						"availableIn": ["Sweden"]
-					},
-					{
-						"name": "SMGs",
-						"points": 4,
-						"increment": true,
-						"max": "parentModels",
-						"maxKey": "gun",
-						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
-						"availableIn": ["Sweden"]
-					},
-					{
-						"name": "Shotgun",
-						"points": 4,
-						"increment": true,
-						"max": "parentModels",
-						"maxKey": "gun",
-						"localLimit": 2,
-						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
-						"availableIn": ["Sweden"]
-					},
-					{
-						"name": "Rifle",
-						"points": -1,
-						"increment": true,
-						"max": "parentModels",
-						"maxKey": "gun",
-						"localLimit": 2,
-						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
-						"availableIn": ["Sweden"]
-					},
-					{
-						"name": "Sniper Rifle",
-						"points": 20,
-						"increment": true,
-						"max": "parentModels",
-						"maxKey": "gun",
-						"localLimit": 1,
-						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
-						"availableIn": ["Sweden"]
-					},
-					{
-						"name": "LMG",
-						"points": 15,
-						"increment": true,
-						"max": "parentModels",
-						"maxKey": "gun",
-						"localLimit": 1,
-						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
-						"availableIn": ["Sweden"]
-					},
-					{
-						"name": "Pansar­skott 86",
-						"points": 6,
-						"increment": true,
-						"max": 2,
-						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
-						"availableIn": ["Sweden"]
-					},
-					{
-						"name": "Winter Equipment",
-						"points": 0,
-						"perModel": true,
-						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
-						"availableIn": ["Sweden"]
-					}
-				],
-				"keywords": ["First Aid","Medic","Stubborn","Tough Fighters","Elite"],
-				"specialText": "1 NCO\n 5 Soldiers",
-				"equipment": ["Body Armor","Grenades","Assault Rifles","MOPP","Night Vision"]
-			},
-			{
-				"name": "Swedish Coastal Ranger Group",
-				"factions": [],
-				"order": 1,
-				"availableIn":[
 					{
 						"all": [{ "in": "Recce Platoon" }, { "in": "Sweden" }]			
 					}
@@ -6332,133 +5377,13 @@
 			},
 			{
 				"name": "Swedish Parachute Ranger Group",
+				"validationKeys": ["RifleTeams"],
 				"factions": [],
 				"order": 1,
 				"availableIn":[
 					{
 						"all": [{ "in": "Rifle Platoon" }, { "in": "Sweden" }]			
-					}
-				],
-				"points": 0,
-				"models": 5,
-				"sortPriority": 3,
-				"limits": [
-					{
-						"key": "Rifle",
-						"limit": 5,
-						"perParent": true
-					}
-				],
-				"options": [
-					{
-						"name": "Veteran",
-						"points": 75,
-						"availableIn": ["Sweden"],
-						"requireChooseOneKey": "morale"
 					},
-					{
-						"name": "Additional Men",
-						"points": 15,
-						"increment": true,
-						"max": 3,
-						"addsModels": 1,
-						"unlockedByLocal": "Veteran",
-						"availableIn": ["Sweden"]
-					},
-					{
-						"name": "NCO Pistol",
-						"points": -1,
-						"increment": true,
-						"max": "parentModels",
-						"maxKey": "gun",
-						"localLimit": 1,
-						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
-						"availableIn": ["Sweden"]
-					},
-					{
-						"name": "NCO SMG",
-						"points": 4,
-						"increment": true,
-						"max": "parentModels",
-						"maxKey": "gun",
-						"localLimit": 1,
-						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
-						"availableIn": ["Sweden"]
-					},
-					{
-						"name": "SMGs",
-						"points": 4,
-						"increment": true,
-						"max": "parentModels",
-						"maxKey": "gun",
-						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
-						"availableIn": ["Sweden"]
-					},
-					{
-						"name": "Shotgun",
-						"points": 4,
-						"increment": true,
-						"max": "parentModels",
-						"maxKey": "gun",
-						"localLimit": 2,
-						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
-						"availableIn": ["Sweden"]
-					},
-					{
-						"name": "Rifle",
-						"points": -1,
-						"increment": true,
-						"max": "parentModels",
-						"maxKey": "gun",
-						"localLimit": 2,
-						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
-						"availableIn": ["Sweden"]
-					},
-					{
-						"name": "Sniper Rifle",
-						"points": 20,
-						"increment": true,
-						"max": "parentModels",
-						"maxKey": "gun",
-						"localLimit": 1,
-						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
-						"availableIn": ["Sweden"]
-					},
-					{
-						"name": "LMG",
-						"points": 15,
-						"increment": true,
-						"max": "parentModels",
-						"maxKey": "gun",
-						"localLimit": 1,
-						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
-						"availableIn": ["Sweden"]
-					},
-					{
-						"name": "Pansar­skott 86",
-						"points": 6,
-						"increment": true,
-						"max": 2,
-						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
-						"availableIn": ["Sweden"]
-					},
-					{
-						"name": "Winter Equipment",
-						"points": 0,
-						"perModel": true,
-						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
-						"availableIn": ["Sweden"]
-					}
-				],
-				"keywords": ["First Aid","Stubborn","Elite","Air Assault"],
-				"specialText": "1 NCO\n 4 Soldiers",
-				"equipment": ["Body Armor","Grenades","Assault Rifles","MOPP","Night Vision"]
-			},
-			{
-				"name": "Swedish Parachute Ranger Group",
-				"factions": [],
-				"order": 1,
-				"availableIn":[
 					{
 						"all": [{ "in": "Recce Platoon" }, { "in": "Sweden" }]			
 					}
@@ -6580,83 +5505,13 @@
 			},
 			{
 				"name": "Swedish Reservist Group",
+				"validationKeys": ["RifleTeams"],
 				"factions": [],
 				"order": 1,
 				"availableIn":[
 					{
 						"all": [{ "in": "Rifle Platoon" }, { "in": "Sweden" }]			
-					}
-				],
-				"points": 0,
-				"models": 6,
-				"sortPriority": 3,
-				"limits": [
-					{
-						"key": "Rifle",
-						"limit": 5,
-						"perParent": true
-					}
-				],
-				"options": [
-					{
-						"name": "Inexperienced",
-						"points": 42,
-						"availableIn": ["Sweden"],
-						"requireChooseOneKey": "morale"
 					},
-					{
-						"name": "Additional Men",
-						"points": 7,
-						"increment": true,
-						"max": 6,
-						"addsModels": 1,
-						"unlockedByLocal": "Inexperienced",
-						"availableIn": ["Sweden"]
-					},
-					{
-						"name": "Rifle",
-						"points": 0,
-						"increment": true,
-						"max": "parentModels",
-						"maxKey": "gun",
-						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
-						"availableIn": ["Sweden"]
-					},
-					{
-						"name": "LMG",
-						"points": 15,
-						"increment": true,
-						"max": "parentModels",
-						"maxKey": "gun",
-						"localLimit": 1,
-						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
-						"availableIn": ["Sweden"]
-					},
-					{
-						"name": "Pansar­skott 86",
-						"points": 6,
-						"increment": true,
-						"max": 1,
-						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
-						"availableIn": ["Sweden"]
-					},
-					{
-						"name": "Winter Equipment",
-						"points": 0,
-						"perModel": true,
-						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
-						"availableIn": ["Sweden"]
-					}
-				],
-				"keywords": ["First Aid","Green"],
-				"specialText": "1 NCO\n 5 Soldiers",
-				"equipment": ["Body Armor","Grenades","Assault Rifles"]
-			},
-			{
-				"name": "Swedish Reservist Group",
-				"factions": [],
-				"order": 1,
-				"availableIn":[
 					{
 						"all": [{ "in": "Recce Platoon" }, { "in": "Sweden" }]			
 					}
@@ -6728,11 +5583,15 @@
 			},
 			{
 				"name": "Marine Rifle Platoon",
+				"validationKeys": ["RifleTeams"],
 				"factions": [],
 				"order": 1,
 				"availableIn":[
 					{
 						"all": [{ "in": "Rifle Platoon" }, { "in": "United States of America" }]			
+					},
+					{
+						"all": [{ "in": "Recce Platoon" }, { "in": "United States of America" }]			
 					}
 				],
 				"points": 0,
@@ -6741,7 +5600,7 @@
 				"limits": [
 					{
 						"key": "Rifle",
-						"limit": 5,
+						"limit": 4,
 						"perParent": true
 					}
 				],
@@ -6833,228 +5692,20 @@
 				"equipment": ["Body Armor","Assault Rifles","Grenades","MOPP"]
 			},
 			{
-				"name": "Marine Rifle Platoon",
-				"factions": [],
-				"order": 1,
-				"availableIn":[
-					{
-						"all": [{ "in": "Recce Platoon" }, { "in": "United States of America" }]			
-					}
-				],
-				"points": 0,
-				"models": 4,
-				"sortPriority": 3,
-				"limits": [
-					{
-						"key": "Rifle",
-						"limit": 4,
-						"perParent": true
-					}
-				],
-				"options": [
-					{
-						"name": "Inexperienced",
-						"points": 56,
-						"availableIn": ["United States of America"],
-						"requireChooseOneKey": "morale"
-					},
-					{
-						"name": "Regular",
-						"points": 70,
-						"availableIn": ["United States of America"],
-						"requireChooseOneKey": "morale"
-					},
-					{
-						"name": "Veteran",
-						"points": 84,
-						"availableIn": ["United States of America"],
-						"requireChooseOneKey": "morale"
-					},
-					{
-						"name": "Additional Men",
-						"points": 7,
-						"increment": true,
-						"max": 2,
-						"addsModels": 1,
-						"unlockedByLocal": "Inexperienced",
-						"availableIn": ["United States of America"]
-					},
-					{
-						"name": "Additional Men",
-						"points": 10,
-						"increment": true,
-						"max": 2,
-						"addsModels": 1,
-						"unlockedByLocal": "Regular",
-						"availableIn": ["United States of America"]
-					},
-					{
-						"name": "Additional Men",
-						"points": 13,
-						"increment": true,
-						"max": 2,
-						"addsModels": 1,
-						"unlockedByLocal": "Veteran",
-						"availableIn": ["United States of America"]
-					},
-					{
-						"name": "NCO Pistol",
-						"points": -1,
-						"increment": true,
-						"max": "parentModels",
-						"maxKey": "gun",
-						"localLimit": 1,
-						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
-						"availableIn": ["United States of America"]
-					},
-					{
-						"name": "LMG",
-						"points": 15,
-						"increment": true,
-						"max": "parentModels",
-						"maxKey": "gun",
-						"localLimit": 1,
-						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
-						"availableIn": ["United States of America"]
-					},
-					{
-						"name": "LAW",
-						"points": 6,
-						"increment": true,
-						"max": 1,
-						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
-						"availableIn": ["United States of America"]
-					},
-					{
-						"name": "Grenade Launcher",
-						"points": 5,
-						"increment": true,
-						"max": 1,
-						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
-						"availableIn": ["United States of America"]
-					}
-				],
-				"keywords": ["First Aid","USMC"],
-				"specialText": "1 NCO\n 3 Soldiers",
-				"equipment": ["Body Armor","Assault Rifles","Grenades","MOPP"]
-			},
-			{
 				"name": "US Army Rifle Platoon",
+				"validationKeys": ["RifleTeams"],
 				"factions": [],
 				"order": 1,
 				"availableIn":[
 					{
 						"all": [{ "in": "Rifle Platoon" }, { "in": "United States of America" }]			
-					}
-				],
-				"points": 0,
-				"models": 4,
-				"sortPriority": 3,
-				"limits": [
-					{
-						"key": "Rifle",
-						"limit": 5,
-						"perParent": true
-					}
-				],
-				"options": [
-					{
-						"name": "Inexperienced",
-						"points": 45,
-						"availableIn": ["United States of America"],
-						"requireChooseOneKey": "morale"
 					},
-					{
-						"name": "Regular",
-						"points": 63,
-						"availableIn": ["United States of America"],
-						"requireChooseOneKey": "morale"
-					},
-					{
-						"name": "Veteran",
-						"points": 81,
-						"availableIn": ["United States of America"],
-						"requireChooseOneKey": "morale"
-					},
-					{
-						"name": "Additional Men",
-						"points": 7,
-						"increment": true,
-						"max": 6,
-						"addsModels": 1,
-						"unlockedByLocal": "Inexperienced",
-						"availableIn": ["United States of America"]
-					},
-					{
-						"name": "Additional Men",
-						"points": 10,
-						"increment": true,
-						"max": 6,
-						"addsModels": 1,
-						"unlockedByLocal": "Regular",
-						"availableIn": ["United States of America"]
-					},
-					{
-						"name": "Additional Men",
-						"points": 13,
-						"increment": true,
-						"max": 6,
-						"addsModels": 1,
-						"unlockedByLocal": "Veteran",
-						"availableIn": ["United States of America"]
-					},
-					{
-						"name": "NCO Pistol",
-						"points": -1,
-						"increment": true,
-						"max": "parentModels",
-						"maxKey": "gun",
-						"localLimit": 1,
-						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
-						"availableIn": ["United States of America"]
-					},
-					{
-						"name": "LMG",
-						"points": 15,
-						"increment": true,
-						"max": "parentModels",
-						"maxKey": "gun",
-						"localLimit": 1,
-						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
-						"availableIn": ["United States of America"]
-					},
-					{
-						"name": "LAW",
-						"points": 6,
-						"increment": true,
-						"max": 1,
-						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
-						"availableIn": ["United States of America"]
-					},
-					{
-						"name": "Grenade Launcher",
-						"points": 5,
-						"increment": true,
-						"max": 1,
-						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
-						"availableIn": ["United States of America"]
-					}
-				],
-				"keywords": ["First Aid","US Army"],
-				"specialText": "1 NCO\n 3 Soldiers",
-				"equipment": ["Body Armor","Assault Rifles","Grenades","MOPP"]
-			},
-			{
-				"name": "US Army Rifle Platoon",
-				"factions": [],
-				"order": 1,
-				"availableIn":[
 					{
 						"all": [{ "in": "Recce Platoon" }, { "in": "United States of America" }]			
 					}
 				],
 				"points": 0,
-				"models": 3,
+				"models": 4,
 				"sortPriority": 3,
 				"limits": [
 					{
@@ -7152,104 +5803,19 @@
 			},
 			{
 				"name": "DEVGRU Team",
+				"validationKeys": ["RifleTeams"],
 				"factions": [],
 				"order": 1,
 				"availableIn":[
 					{
 						"all": [{ "in": "Rifle Platoon" }, { "in": "United States of America" }]			
-					}
-				],
-				"points": 0,
-				"models": 4,
-				"sortPriority": 3,
-				"limits": [
-					{
-						"key": "Rifle",
-						"limit": 5,
-						"perParent": true
-					}
-				],
-				"options": [
-					{
-						"name": "Veteran",
-						"points": 86,
-						"availableIn": ["United States of America"],
-						"requireChooseOneKey": "morale"
 					},
-					{
-						"name": "Additional Men",
-						"points": 13,
-						"increment": true,
-						"max": 2,
-						"addsModels": 1,
-						"unlockedByLocal": "Veteran",
-						"availableIn": ["United States of America"]
-					},
-					{
-						"name": "NCO Pistol",
-						"points": -1,
-						"increment": true,
-						"max": "parentModels",
-						"maxKey": "gun",
-						"localLimit": 1,
-						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
-						"availableIn": ["United States of America"]
-					},
-					{
-						"name": "NCO SMG",
-						"points": 4,
-						"increment": true,
-						"max": "parentModels",
-						"maxKey": "gun",
-						"localLimit": 1,
-						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
-						"availableIn": ["United States of America"]
-					},
-					{
-						"name": "SMGs",
-						"points": 4,
-						"increment": true,
-						"max": "parentModels",
-						"maxKey": "gun",
-						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
-						"availableIn": ["United States of America"]
-					},
-					{
-						"name": "LMG",
-						"points": 15,
-						"increment": true,
-						"max": "parentModels",
-						"maxKey": "gun",
-						"localLimit": 1,
-						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
-						"availableIn": ["United States of America"]
-					},
-					{
-						"name": "Shotgun",
-						"points": 4,
-						"increment": true,
-						"max": "parentModels",
-						"maxKey": "gun",
-						"localLimit": 1,
-						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
-						"availableIn": ["United States of America"]
-					}
-				],
-				"keywords": ["First Aid","USMC","Elite","Variable Weapons"],
-				"specialText": "1 NCO\n 3 Soldiers",
-				"equipment": ["Body Armor","Assault Rifles","Grenades","Night Vision"]
-			},
-			{
-				"name": "DEVGRU Team",
-				"factions": [],
-				"order": 1,
-				"availableIn":[
 					{
 						"all": [{ "in": "Recce Platoon" }, { "in": "United States of America" }]			
 					}
 				],
 				"points": 0,
-				"models": 3,
+				"models": 4,
 				"sortPriority": 3,
 				"limits": [
 					{
@@ -7330,11 +5896,15 @@
 			},
 			{
 				"name": "SFOD-D Team",
+				"validationKeys": ["RifleTeams"],
 				"factions": [],
 				"order": 1,
 				"availableIn":[
 					{
 						"all": [{ "in": "Rifle Platoon" }, { "in": "United States of America" }]			
+					},
+					{
+						"all": [{ "in": "Recce Platoon" }, { "in": "United States of America" }]			
 					}
 				],
 				"points": 0,
@@ -7343,7 +5913,7 @@
 				"limits": [
 					{
 						"key": "Rifle",
-						"limit": 5,
+						"limit": 4,
 						"perParent": true
 					}
 				],
@@ -7418,194 +5988,20 @@
 				"equipment": ["Body Armor","Assault Rifles","Grenades","Night Vision"]
 			},
 			{
-				"name": "SFOD-D Team",
-				"factions": [],
-				"order": 1,
-				"availableIn":[
-					{
-						"all": [{ "in": "Recce Platoon" }, { "in": "United States of America" }]			
-					}
-				],
-				"points": 0,
-				"models": 3,
-				"sortPriority": 3,
-				"limits": [
-					{
-						"key": "Rifle",
-						"limit": 4,
-						"perParent": true
-					}
-				],
-				"options": [
-					{
-						"name": "Veteran",
-						"points": 86,
-						"availableIn": ["United States of America"],
-						"requireChooseOneKey": "morale"
-					},
-					{
-						"name": "Additional Men",
-						"points": 13,
-						"increment": true,
-						"max": 2,
-						"addsModels": 1,
-						"unlockedByLocal": "Veteran",
-						"availableIn": ["United States of America"]
-					},
-					{
-						"name": "NCO Pistol",
-						"points": -1,
-						"increment": true,
-						"max": "parentModels",
-						"maxKey": "gun",
-						"localLimit": 1,
-						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
-						"availableIn": ["United States of America"]
-					},
-					{
-						"name": "NCO SMG",
-						"points": 4,
-						"increment": true,
-						"max": "parentModels",
-						"maxKey": "gun",
-						"localLimit": 1,
-						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
-						"availableIn": ["United States of America"]
-					},
-					{
-						"name": "SMGs",
-						"points": 4,
-						"increment": true,
-						"max": "parentModels",
-						"maxKey": "gun",
-						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
-						"availableIn": ["United States of America"]
-					},
-					{
-						"name": "LMG",
-						"points": 15,
-						"increment": true,
-						"max": "parentModels",
-						"maxKey": "gun",
-						"localLimit": 1,
-						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
-						"availableIn": ["United States of America"]
-					},
-					{
-						"name": "Shotgun",
-						"points": 4,
-						"increment": true,
-						"max": "parentModels",
-						"maxKey": "gun",
-						"localLimit": 1,
-						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
-						"availableIn": ["United States of America"]
-					}
-				],
-				"keywords": ["First Aid","US Army","Elite","Variable Weapons"],
-				"specialText": "1 NCO\n 3 Soldiers",
-				"equipment": ["Body Armor","Assault Rifles","Grenades","Night Vision"]
-			},
-			{
 				"name": "SEAL Team",
+				"validationKeys": ["RifleTeams"],
 				"factions": [],
 				"order": 1,
 				"availableIn":[
 					{
 						"all": [{ "in": "Rifle Platoon" }, { "in": "United States of America" }]			
-					}
-				],
-				"points": 0,
-				"models": 4,
-				"sortPriority": 3,
-				"limits": [
-					{
-						"key": "Rifle",
-						"limit": 5,
-						"perParent": true
-					}
-				],
-				"options": [
-					{
-						"name": "Veteran",
-						"points": 90,
-						"availableIn": ["United States of America"],
-						"requireChooseOneKey": "morale"
 					},
-					{
-						"name": "Additional Men",
-						"points": 13,
-						"increment": true,
-						"max": 2,
-						"addsModels": 1,
-						"unlockedByLocal": "Veteran",
-						"availableIn": ["United States of America"]
-					},
-					{
-						"name": "NCO Pistol",
-						"points": -1,
-						"increment": true,
-						"max": "parentModels",
-						"maxKey": "gun",
-						"localLimit": 1,
-						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
-						"availableIn": ["United States of America"]
-					},
-					{
-						"name": "NCO SMG",
-						"points": 4,
-						"increment": true,
-						"max": "parentModels",
-						"maxKey": "gun",
-						"localLimit": 1,
-						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
-						"availableIn": ["United States of America"]
-					},
-					{
-						"name": "SMGs",
-						"points": 4,
-						"increment": true,
-						"max": "parentModels",
-						"maxKey": "gun",
-						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
-						"availableIn": ["United States of America"]
-					},
-					{
-						"name": "LMG",
-						"points": 15,
-						"increment": true,
-						"max": "parentModels",
-						"maxKey": "gun",
-						"localLimit": 1,
-						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
-						"availableIn": ["United States of America"]
-					},
-					{
-						"name": "Shotgun",
-						"points": 4,
-						"increment": true,
-						"max": "parentModels",
-						"maxKey": "gun",
-						"localLimit": 1,
-						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
-						"availableIn": ["United States of America"]
-					}
-				],
-				"keywords": ["First Aid","US Navy","Elite","Variable Weapons"],
-				"specialText": "1 NCO\n 3 Soldiers",
-				"equipment": ["Body Armor","Assault Rifles","Grenades","Night Vision"]
-			},
-			{
-				"name": "SEAL Team",
-				"factions": [],
-				"order": 1,
-				"availableIn":[
 					{
 						"all": [{ "in": "Recce Platoon" }, { "in": "United States of America" }]			
 					}
 				],
 				"points": 0,
-				"models": 3,
+				"models": 4,
 				"sortPriority": 3,
 				"limits": [
 					{
@@ -7686,6 +6082,7 @@
 			},
 			{
 				"name": "TRF1 Heavy Howitzer",
+				"validationKeys": ["ArtyTeams"],
 				"factions": [],
 				"order": 1,
 				"availableIn":[
@@ -7699,7 +6096,7 @@
 				"limits": [
 					{
 						"key": "Arty",
-						"limit": 4,
+						"limit": 5,
 						"perParent": true
 					}
 				],
@@ -7737,6 +6134,7 @@
 			},
 			{
 				"name": "CAESAR SPG",
+				"validationKeys": ["ArtyTeams"],
 				"factions": [],
 				"order": 1,
 				"availableIn":[
@@ -7750,7 +6148,7 @@
 				"limits": [
 					{
 						"key": "Arty",
-						"limit": 4,
+						"limit": 5,
 						"perParent": true
 					}
 				],
@@ -7788,6 +6186,7 @@
 			},
 			{
 				"name": "AMX-30 AuF1 SPG",
+				"validationKeys": ["ArtyTeams"],
 				"factions": [],
 				"order": 1,
 				"availableIn":[
@@ -7801,7 +6200,7 @@
 				"limits": [
 					{
 						"key": "Arty",
-						"limit": 4,
+						"limit": 5,
 						"perParent": true
 					}
 				],
@@ -7839,6 +6238,7 @@
 			},
 			{
 				"name": "2B9 Vasilek / 2B16 Nona-K Medium Howitzer",
+				"validationKeys": ["ArtyTeams"],
 				"factions": [],
 				"order": 1,
 				"availableIn":[
@@ -7852,7 +6252,7 @@
 				"limits": [
 					{
 						"key": "Arty",
-						"limit": 4,
+						"limit": 5,
 						"perParent": true
 					}
 				],
@@ -7890,6 +6290,7 @@
 			},
 			{
 				"name": "2A18 D-30 Heavy Howitzer",
+				"validationKeys": ["ArtyTeams"],
 				"factions": [],
 				"order": 1,
 				"availableIn":[
@@ -7903,7 +6304,7 @@
 				"limits": [
 					{
 						"key": "Arty",
-						"limit": 4,
+						"limit": 5,
 						"perParent": true
 					}
 				],
@@ -7941,6 +6342,7 @@
 			},
 			{
 				"name": "2A29 MT-22 Rapira Super Heavy AT Gun",
+				"validationKeys": ["ArtyTeams"],
 				"factions": [],
 				"order": 1,
 				"availableIn":[
@@ -7954,7 +6356,7 @@
 				"limits": [
 					{
 						"key": "Arty",
-						"limit": 4,
+						"limit": 5,
 						"perParent": true
 					}
 				],
@@ -7984,6 +6386,7 @@
 			},
 			{
 				"name": "ZU-23-2 AA Gun",
+				"validationKeys": ["ArtyTeams"],
 				"factions": [],
 				"order": 1,
 				"availableIn":[
@@ -7997,7 +6400,7 @@
 				"limits": [
 					{
 						"key": "Arty",
-						"limit": 4,
+						"limit": 5,
 						"perParent": true
 					}
 				],
@@ -8027,6 +6430,7 @@
 			},
 			{
 				"name": "AZP S-60 AA Gun",
+				"validationKeys": ["ArtyTeams"],
 				"factions": [],
 				"order": 1,
 				"availableIn":[
@@ -8040,7 +6444,7 @@
 				"limits": [
 					{
 						"key": "Arty",
-						"limit": 4,
+						"limit": 5,
 						"perParent": true
 					}
 				],
@@ -8070,6 +6474,7 @@
 			},
 			{
 				"name": "2S23 Nona-SVK SPG",
+				"validationKeys": ["ArtyTeams"],
 				"factions": [],
 				"order": 1,
 				"availableIn":[
@@ -8083,7 +6488,7 @@
 				"limits": [
 					{
 						"key": "Arty",
-						"limit": 4,
+						"limit": 5,
 						"perParent": true
 					}
 				],
@@ -8121,6 +6526,7 @@
 			},
 			{
 				"name": "2S9 Nona SPG",
+				"validationKeys": ["ArtyTeams"],
 				"factions": [],
 				"order": 1,
 				"availableIn":[
@@ -8134,7 +6540,7 @@
 				"limits": [
 					{
 						"key": "Arty",
-						"limit": 4,
+						"limit": 5,
 						"perParent": true
 					}
 				],
@@ -8172,6 +6578,7 @@
 			},
 			{
 				"name": "2S1 Gvozdika SPG",
+				"validationKeys": ["ArtyTeams"],
 				"factions": [],
 				"order": 1,
 				"availableIn":[
@@ -8185,7 +6592,7 @@
 				"limits": [
 					{
 						"key": "Arty",
-						"limit": 4,
+						"limit": 5,
 						"perParent": true
 					}
 				],
@@ -8223,6 +6630,7 @@
 			},
 			{
 				"name": "2S40 Floks SPG",
+				"validationKeys": ["ArtyTeams"],
 				"factions": [],
 				"order": 1,
 				"availableIn":[
@@ -8236,7 +6644,7 @@
 				"limits": [
 					{
 						"key": "Arty",
-						"limit": 4,
+						"limit": 5,
 						"perParent": true
 					}
 				],
@@ -8274,6 +6682,7 @@
 			},
 			{
 				"name": "2S3 Akatsiya SPG",
+				"validationKeys": ["ArtyTeams"],
 				"factions": [],
 				"order": 1,
 				"availableIn":[
@@ -8287,7 +6696,7 @@
 				"limits": [
 					{
 						"key": "Arty",
-						"limit": 4,
+						"limit": 5,
 						"perParent": true
 					}
 				],
@@ -8325,6 +6734,7 @@
 			},
 			{
 				"name": "2S19 Msta /2S35 Koalitsiya-SV SPG",
+				"validationKeys": ["ArtyTeams"],
 				"factions": [],
 				"order": 1,
 				"availableIn":[
@@ -8338,7 +6748,7 @@
 				"limits": [
 					{
 						"key": "Arty",
-						"limit": 4,
+						"limit": 5,
 						"perParent": true
 					}
 				],
@@ -8376,6 +6786,7 @@
 			},
 			{
 				"name": "BM21 Grad / 9A53-G Tornado-G MLRs",
+				"validationKeys": ["ArtyTeams"],
 				"factions": [],
 				"order": 1,
 				"availableIn":[
@@ -8389,7 +6800,7 @@
 				"limits": [
 					{
 						"key": "Arty",
-						"limit": 4,
+						"limit": 5,
 						"perParent": true
 					}
 				],
@@ -8427,6 +6838,7 @@
 			},
 			{
 				"name": "Grkpbv 90 'Mjölner' Mortar Vehicle",
+				"validationKeys": ["ArtyTeams"],
 				"factions": [],
 				"order": 1,
 				"availableIn":[
@@ -8470,6 +6882,7 @@
 			},
 			{
 				"name": "Lvkv 9040 AA Vehicle",
+				"validationKeys": ["ArtyTeams"],
 				"factions": [],
 				"order": 1,
 				"availableIn":[
@@ -8519,6 +6932,7 @@
 			},
 			{
 				"name": "Archer FH77BW L52 Heavy Howitzer SPG",
+				"validationKeys": ["ArtyTeams"],
 				"factions": [],
 				"order": 1,
 				"availableIn":[
@@ -8562,6 +6976,7 @@
 			},
 			{
 				"name": "Bofors Vagnkanon 155mm L/50 Heavy Howitzer SPG",
+				"validationKeys": ["ArtyTeams"],
 				"factions": [],
 				"order": 1,
 				"availableIn":[
@@ -8605,6 +7020,7 @@
 			},
 			{
 				"name": "M119 / M777 Heavy Howitzer",
+				"validationKeys": ["ArtyTeams"],
 				"factions": [],
 				"order": 1,
 				"availableIn":[
@@ -8618,7 +7034,7 @@
 				"limits": [
 					{
 						"key": "Arty",
-						"limit": 4,
+						"limit": 5,
 						"perParent": true
 					}
 				],
@@ -8655,7 +7071,8 @@
 				"equipment": ["Heavy Howitzer"]
 			},
 			{
-				"name": "M109 SPG",
+				"name": "M109 'Paladin' SPG",
+				"validationKeys": ["ArtyTeams"],
 				"factions": [],
 				"order": 1,
 				"availableIn":[
@@ -8669,7 +7086,7 @@
 				"limits": [
 					{
 						"key": "Arty",
-						"limit": 4,
+						"limit": 5,
 						"perParent": true
 					}
 				],
@@ -10333,6 +8750,7 @@
 			},
 			{
 				"name": "Panhard VBL Light Armored Vehicle w/ HMG Turret",
+				"validationKeys": ["TotalVehicle"],
 				"factions": [],
 				"order": 1,
 				"availableIn":[
@@ -10377,6 +8795,7 @@
 			},
 			{
 				"name": "Panhard VBL Light Armored Vehicle w/ ATGM Turret",
+				"validationKeys": ["TotalVehicle"],
 				"factions": [],
 				"order": 1,
 				"availableIn":[
@@ -10421,6 +8840,7 @@
 			},
 			{
 				"name": "Nextar AMX-10RC Armored Reconnaissance Vehicle",
+				"validationKeys": ["TotalVehicle"],
 				"factions": [],
 				"order": 1,
 				"availableIn":[
@@ -10476,6 +8896,7 @@
 			},
 			{
 				"name": "Nextar AMX-10RCR Armored Reconnaissance Vehicle",
+				"validationKeys": ["TotalVehicle"],
 				"factions": [],
 				"order": 1,
 				"availableIn":[
@@ -10537,6 +8958,7 @@
 			},
 			{
 				"name": "Panhard ERC-90 'Sagaie ' Armored Vehicle",
+				"validationKeys": ["TotalVehicle"],
 				"factions": [],
 				"order": 1,
 				"availableIn":[
@@ -10586,6 +9008,7 @@
 			},
 			{
 				"name": "Panhard ERC-90 'Sagaie II' Armored Vehicle",
+				"validationKeys": ["TotalVehicle"],
 				"factions": [],
 				"order": 1,
 				"availableIn":[
@@ -10635,6 +9058,7 @@
 			},
 			{
 				"name": "GIAT VBCI Armored Infantry Fighting Vehicle",
+				"validationKeys": ["TotalVehicle"],
 				"factions": [],
 				"order": 1,
 				"availableIn":[
@@ -10678,6 +9102,7 @@
 			},
 			{
 				"name": "EBRC Jaguar AFV",
+				"validationKeys": ["TotalVehicle"],
 				"factions": [],
 				"order": 1,
 				"availableIn":[
@@ -10727,6 +9152,7 @@
 			},
 			{
 				"name": "AMX-30B2",
+				"validationKeys": ["TotalVehicle"],
 				"factions": [],
 				"order": 1,
 				"availableIn":[
@@ -10776,6 +9202,7 @@
 			},
 			{
 				"name": "AMX-30B2 BRENUS",
+				"validationKeys": ["TotalVehicle"],
 				"factions": [],
 				"order": 1,
 				"availableIn":[
@@ -10825,6 +9252,7 @@
 			},
 			{
 				"name": "KNDS Leclerc",
+				"validationKeys": ["TotalVehicle"],
 				"factions": [],
 				"order": 1,
 				"availableIn":[
@@ -10874,6 +9302,7 @@
 			},
 			{
 				"name": "Renault Mephisto HOT Anti-Tank Vehicle",
+				"validationKeys": ["TotalVehicle"],
 				"factions": [],
 				"order": 1,
 				"availableIn":[
@@ -10923,6 +9352,7 @@
 			},
 			{
 				"name": "Renault VAB PC Command Vehicle",
+				"validationKeys": ["TotalVehicle","CommandVehicle"],
 				"factions": [],
 				"order": 1,
 				"availableIn":[
@@ -10966,6 +9396,7 @@
 			},
 			{
 				"name": "Renault VAB RATAC Recce Vehicle",
+				"validationKeys": ["TotalVehicle","CommandVehicle"],
 				"factions": [],
 				"order": 1,
 				"availableIn":[
@@ -11009,6 +9440,7 @@
 			},
 			{
 				"name": "Renault VAB Bromure/SGEA Electronic Warfare Vehicle",
+				"validationKeys": ["TotalVehicle","CommandVehicle"],
 				"factions": [],
 				"order": 1,
 				"availableIn":[
@@ -11052,6 +9484,7 @@
 			},
 			{
 				"name": "Renault VIB IFV",
+				"validationKeys": ["TotalVehicle","CommandVehicle"],
 				"factions": [],
 				"order": 1,
 				"availableIn":[
@@ -11095,6 +9528,7 @@
 			},
 			{
 				"name": "Renault VBC-90 Armored Car",
+				"validationKeys": ["TotalVehicle","CommandVehicle"],
 				"factions": [],
 				"order": 1,
 				"availableIn":[
@@ -11138,6 +9572,7 @@
 			},
 			{
 				"name": "Renault VAB 2R2M Mortar Carrier",
+				"validationKeys": ["ArtyTeams"],
 				"factions": [],
 				"order": 1,
 				"availableIn":[
@@ -11151,7 +9586,7 @@
 				"limits": [
 					{
 						"key": "Arty",
-						"limit": 4,
+						"limit": 5,
 						"perParent": true
 					}
 				],
@@ -11181,6 +9616,7 @@
 			},
 			{
 				"name": "GIAT AMX-10P PAC90 IFV",
+				"validationKeys": ["TotalVehicle"],
 				"factions": [],
 				"order": 1,
 				"availableIn":[
@@ -11230,6 +9666,7 @@
 			},
 			{
 				"name": "AMX-30R Roland I SAM System",
+				"validationKeys": ["ArtyTeams"],
 				"factions": [],
 				"order": 1,
 				"availableIn":[
@@ -11243,7 +9680,7 @@
 				"limits": [
 					{
 						"key": "Arty",
-						"limit": 4,
+						"limit": 5,
 						"perParent": true
 					}
 				],
@@ -11273,6 +9710,7 @@
 			},
 			{
 				"name": "AMX-30DCA Anti-Air Vehicle",
+				"validationKeys": ["ArtyTeams"],
 				"factions": [],
 				"order": 1,
 				"availableIn":[
@@ -11286,7 +9724,7 @@
 				"limits": [
 					{
 						"key": "Arty",
-						"limit": 4,
+						"limit": 5,
 						"perParent": true
 					}
 				],
@@ -11316,6 +9754,7 @@
 			},
 			{
 				"name": "T-54 MBT",
+				"validationKeys": ["TotalVehicle"],
 				"factions": [],
 				"order": 1,
 				"availableIn":[
@@ -11371,6 +9810,7 @@
 			},
 			{
 				"name": "T-54A/B MBT",
+				"validationKeys": ["TotalVehicle"],
 				"factions": [],
 				"order": 1,
 				"availableIn":[
@@ -11426,6 +9866,7 @@
 			},
 			{
 				"name": "T-55 MBT",
+				"validationKeys": ["TotalVehicle"],
 				"factions": [],
 				"order": 1,
 				"availableIn":[
@@ -11481,6 +9922,7 @@
 			},
 			{
 				"name": "T-62 MBT",
+				"validationKeys": ["TotalVehicle"],
 				"factions": [],
 				"order": 1,
 				"availableIn":[
@@ -11536,6 +9978,7 @@
 			},
 			{
 				"name": "T-64A/B MBT",
+				"validationKeys": ["TotalVehicle"],
 				"factions": [],
 				"order": 1,
 				"availableIn":[
@@ -11591,6 +10034,7 @@
 			},
 			{
 				"name": "T-72 MBT",
+				"validationKeys": ["TotalVehicle"],
 				"factions": [],
 				"order": 1,
 				"availableIn":[
@@ -11640,6 +10084,7 @@
 			},
 			{
 				"name": "T-80 MBT",
+				"validationKeys": ["TotalVehicle"],
 				"factions": [],
 				"order": 1,
 				"availableIn":[
@@ -11689,6 +10134,7 @@
 			},
 			{
 				"name": "T-80BVM MBT",
+				"validationKeys": ["TotalVehicle"],
 				"factions": [],
 				"order": 1,
 				"availableIn":[
@@ -11738,6 +10184,7 @@
 			},
 			{
 				"name": "T-90 MBT",
+				"validationKeys": ["TotalVehicle"],
 				"factions": [],
 				"order": 1,
 				"availableIn":[
@@ -12067,6 +10514,7 @@
 			},
 			{
 				"name": "BMPT 'Terminator' AFV",
+				"validationKeys": ["TotalVehicle"],
 				"factions": [],
 				"order": 1,
 				"availableIn":[
@@ -12116,6 +10564,7 @@
 			},
 			{
 				"name": "BRDM-2 Reconnaissance Vehicle",
+				"validationKeys": ["TotalVehicle"],
 				"factions": [],
 				"order": 1,
 				"availableIn":[
@@ -12165,6 +10614,7 @@
 			},
 			{
 				"name": "BRDM-3 ATGM Vehicle",
+				"validationKeys": ["TotalVehicle"],
 				"factions": [],
 				"order": 1,
 				"availableIn":[
@@ -12214,6 +10664,7 @@
 			},
 			{
 				"name": "BRDM-2 9P31 SAM Vehicle",
+				"validationKeys": ["ArtyTeams"],
 				"factions": [],
 				"order": 1,
 				"availableIn":[
@@ -12258,6 +10709,7 @@
 			
 			{
 				"name": " 9K35 Strela-10 SAM System",
+				"validationKeys": ["ArtyTeams"],
 				"factions": [],
 				"order": 1,
 				"availableIn":[
@@ -12271,7 +10723,7 @@
 				"limits": [
 					{
 						"key": "Arty",
-						"limit": 4,
+						"limit": 5,
 						"perParent": true
 					}
 				],
@@ -13703,6 +12155,7 @@
 			},
 			{
 				"name": "Stridsvagn 103C MBT",
+				"validationKeys": ["TotalVehicle"],
 				"factions": [],
 				"order": 1,
 				"availableIn":[
@@ -13752,6 +12205,7 @@
 			},
 			{
 				"name": "Stridsvagn 122A MBT",
+				"validationKeys": ["TotalVehicle"],
 				"factions": [],
 				"order": 1,
 				"availableIn":[
@@ -13801,6 +12255,7 @@
 			},
 			{
 				"name": "Stridsvagn 122B MBT",
+				"validationKeys": ["TotalVehicle"],
 				"factions": [],
 				"order": 1,
 				"availableIn":[
@@ -13850,6 +12305,7 @@
 			},
 			{
 				"name": "Stridsvagn 123A/B MBT",
+				"validationKeys": ["TotalVehicle"],
 				"factions": [],
 				"order": 1,
 				"availableIn":[
@@ -13899,6 +12355,7 @@
 			},
 			{
 				"name": "Stridsvagn 81/101/102/104/105 MBT",
+				"validationKeys": ["TotalVehicle"],
 				"factions": [],
 				"order": 1,
 				"availableIn":[
@@ -13948,6 +12405,7 @@
 			},
 			{
 				"name": "Ikv 91 AFV",
+				"validationKeys": ["TotalVehicle"],
 				"factions": [],
 				"order": 1,
 				"availableIn":[
@@ -14317,6 +12775,7 @@
 			},
 			{
 				"name": "Pbv 360 AFV",
+				"validationKeys": ["TotalVehicle"],
 				"factions": [],
 				"order": 1,
 				"availableIn":[
@@ -14870,6 +13329,7 @@
 			},
 			{
 				"name": "Humvee Infantry Support",
+				"validationKeys": ["TotalVehicle","CommandVehicle"],
 				"factions": [],
 				"order": 1,
 				"availableIn":[
@@ -14978,6 +13438,7 @@
 			},
 			{
 				"name": "Up Armored Humvee Infantry Support",
+				"validationKeys": ["TotalVehicle","CommandVehicle"],
 				"factions": [],
 				"order": 1,
 				"availableIn":[
@@ -15086,6 +13547,7 @@
 			},
 			{
 				"name": "JLTV Heavy Guns Carrier",
+				"validationKeys": ["TotalVehicle","CommandVehicle"],
 				"factions": [],
 				"order": 1,
 				"availableIn":[
@@ -15145,6 +13607,7 @@
 			},
 			{
 				"name": "JLTV Close Combat Carrier",
+				"validationKeys": ["TotalVehicle","CommandVehicle"],
 				"factions": [],
 				"order": 1,
 				"availableIn":[
@@ -15204,6 +13667,7 @@
 			},
 			{
 				"name": "JLTV MADIS",
+				"validationKeys": ["TotalVehicle","CommandVehicle"],
 				"factions": [],
 				"order": 1,
 				"availableIn":[
@@ -15263,6 +13727,7 @@
 			},
 			{
 				"name": "M1117 Guardian",
+				"validationKeys": ["TotalVehicle","CommandVehicle"],
 				"factions": [],
 				"order": 1,
 				"availableIn":[
@@ -15322,6 +13787,7 @@
 			},
 			{
 				"name": "M1200 Knight",
+				"validationKeys": ["TotalVehicle"],
 				"factions": [],
 				"order": 1,
 				"availableIn":[
@@ -15401,6 +13867,7 @@
 			},
 			{
 				"name": "Light Strike Vehicle (LSV)",
+				"validationKeys": ["TotalVehicle"],
 				"factions": [],
 				"order": 1,
 				"availableIn":[
@@ -15454,6 +13921,7 @@
 			},
 			{
 				"name": "Light Strike Vehicle, Heavy Weapons (LSV)",
+				"validationKeys": ["TotalVehicle"],
 				"factions": [],
 				"order": 1,
 				"availableIn":[
@@ -15539,6 +14007,7 @@
 			},
 			{
 				"name": "Ranger Special Operations Vehicle (RSOV)",
+				"validationKeys": ["TotalVehicle"],
 				"factions": [],
 				"order": 1,
 				"availableIn":[
@@ -15600,6 +14069,7 @@
 			},
 			{
 				"name": "M1 Abrams MBT",
+				"validationKeys": ["TotalVehicle"],
 				"factions": [],
 				"order": 1,
 				"availableIn":[
@@ -15665,6 +14135,7 @@
 			},
 			{
 				"name": "M1 A1HA+ Abrams MBT",
+				"validationKeys": ["TotalVehicle"],
 				"factions": [],
 				"order": 1,
 				"availableIn":[
@@ -15730,6 +14201,7 @@
 			},
 			{
 				"name": "M1 A2 SEPv3 Abrams MBT",
+				"validationKeys": ["TotalVehicle"],
 				"factions": [],
 				"order": 1,
 				"availableIn":[
@@ -15795,6 +14267,7 @@
 			},
 			{
 				"name": "M1128 Mobile Gun System",
+				"validationKeys": ["TotalVehicle"],
 				"factions": [],
 				"order": 1,
 				"availableIn":[
@@ -15856,6 +14329,7 @@
 			},
 			{
 				"name": "M1129 Mortar Carrier",
+				"validationKeys": ["ArtyTeams"],
 				"factions": [],
 				"order": 1,
 				"availableIn":[
@@ -15869,7 +14343,7 @@
 				"limits": [
 					{
 						"key": "Arty",
-						"limit": 4,
+						"limit": 5,
 						"perParent": true
 					}
 				],
@@ -15917,6 +14391,7 @@
 			},
 			{
 				"name": "M1134 ATGM Vehicle",
+				"validationKeys": ["TotalVehicle"],
 				"factions": [],
 				"order": 1,
 				"availableIn":[
@@ -15978,6 +14453,7 @@
 			},
 			{
 				"name": "M1296 Dragoon IFV",
+				"validationKeys": ["TotalVehicle"],
 				"factions": [],
 				"order": 1,
 				"availableIn":[
@@ -16039,6 +14515,7 @@
 			},
 			{
 				"name": "LAV-AT",
+				"validationKeys": ["TotalVehicle"],
 				"factions": [],
 				"order": 1,
 				"availableIn":[
@@ -16088,6 +14565,7 @@
 			},
 			{
 				"name": "LAV-M",
+				"validationKeys": ["TotalVehicle"],
 				"factions": [],
 				"order": 1,
 				"availableIn":[
@@ -16137,6 +14615,7 @@
 			},
 			{
 				"name": "LAV-AD",
+				"validationKeys": ["ArtyTeams"],
 				"factions": [],
 				"order": 1,
 				"availableIn":[
@@ -16150,7 +14629,7 @@
 				"limits": [
 					{
 						"key": "Arty",
-						"limit": 4,
+						"limit": 5,
 						"perParent": true
 					}
 				],
@@ -16186,6 +14665,7 @@
 			},
 			{
 				"name": "M60A1 MBT",
+				"validationKeys": ["TotalVehicle"],
 				"factions": [],
 				"order": 1,
 				"availableIn":[

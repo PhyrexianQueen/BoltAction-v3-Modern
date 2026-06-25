@@ -220,6 +220,176 @@
 				"name": "Command Vehicle",
 				"validationKeys": ["CommandVehicle"],
 				"specialRules": ["Command Vehicle"]
+			},
+			{
+				"name": "Sniper Rifle",
+				"specialRules": ["Sniper Rifle"],
+				"adjustlocalQuantities": [
+					{
+						"key": "primary",
+						"quantity": -1
+					},
+					{
+						"property": "Sniper Rifle",
+						"quantity": 1
+					}
+				]
+			},
+			{
+				"name": "NCO SMG",
+				"specialRules": ["Assault"],
+				"adjustlocalQuantities": [
+					{
+						"key": "primary",
+						"quantity": -1
+					},
+					{
+						"property": "NCO SMG(s)",
+						"quantity": 1
+					}
+				]
+			},
+			{
+				"name": "SMGs",
+				"specialRules": ["Assault"],
+				"adjustlocalQuantities": [
+					{
+						"key": "primary",
+						"quantity": -1
+					},
+					{
+						"property": "SMG(s)",
+						"quantity": 1
+					}
+				]
+			},
+			{
+				"name": "NCO Pistol",
+				"specialRules": [],
+				"adjustlocalQuantities": [
+					{
+						"key": "primary",
+						"quantity": -1
+					},
+					{
+						"property": "NCO Pistol(s)",
+						"quantity": 1
+					}
+				]
+			},
+			{
+				"name": "Pistols",
+				"specialRules": [],
+				"adjustlocalQuantities": [
+					{
+						"key": "primary",
+						"quantity": -1
+					},
+					{
+						"property": "Pistol(s)",
+						"quantity": 1
+					}
+				]
+			},
+			{
+				"name": "NCO Shotgun",
+				"specialRules": ["Assault","Anti-Drone"],
+				"adjustlocalQuantities": [
+					{
+						"key": "primary",
+						"quantity": -1
+					},
+					{
+						"property": "NCO Shotgun(s)",
+						"quantity": 1
+					}
+				]
+			},
+			{
+				"name": "Shotguns",
+				"specialRules": ["Assault","Anti-Drone"],
+				"adjustlocalQuantities": [
+					{
+						"key": "primary",
+						"quantity": -1
+					},
+					{
+						"property": "Shotgun(s)",
+						"quantity": 1
+					}
+				]
+			},
+			{
+				"name": "Carl Gustav",
+				"specialRules": ["Shape Charge","Team Weapon"],
+				"adjustlocalQuantities": [
+					{
+						"key": "primary",
+						"quantity": -1
+					},
+					{
+						"property": "RPG/SMAW Operator",
+						"quantity": 1
+					}
+				]
+			},
+			{
+				"name": "RPG",
+				"specialRules": ["Shape Charge","Team Weapon"],
+				"adjustlocalQuantities": [
+					{
+						"key": "primary",
+						"quantity": -1
+					},
+					{
+						"property": "RPG/SMAW Operator",
+						"quantity": 1
+					}
+				]
+			},
+			{
+				"name": "LMG",
+				"specialRules": ["Team Weapon"],
+				"adjustlocalQuantities": [
+					{
+						"key": "primary",
+						"quantity": -1
+					},
+					{
+						"property": "LMG",
+						"quantity": 1
+					}
+				]
+			},
+			{
+				"name": "Additional Men",
+				"specialRules": [],
+				"adjustlocalQuantities": [
+					{
+						"key": "primary",
+						"quantity": 1
+					}
+				]
+			},
+			{
+				"name": "Spotter",
+				"specialRules": [],
+				"adjustlocalQuantities": [
+					{
+						"property": "Spotter",
+						"quantity": 1
+					}
+				]
+			},
+			{
+				"name": "Drone",
+				"specialRules": [],
+				"adjustlocalQuantities": [
+					{
+						"property": "Drone",
+						"quantity": 1
+					}
+				]
 			}
 		],
 		"keywords": [],
@@ -1072,6 +1242,13 @@
 				],
 				"points": 0,
 				"models": 1,
+				"localQuantityDisplay": [
+					{
+						"key": "primary",
+						"property": "Assault Rifles",
+						"quantity": 1
+					}
+				],
 				"sortPriority": 1,
 				"limits": [
 					{
@@ -1388,6 +1565,13 @@
 				],
 				"points": 0,
 				"models": 1,
+				"localQuantityDisplay": [
+					{
+						"key": "primary",
+						"property": "Assault Rifles",
+						"quantity": 1
+					}
+				],
 				"sortPriority": 1,
 				"limits": [
 					{
@@ -1552,6 +1736,13 @@
 				],
 				"points": 0,
 				"models": 1,
+				"localQuantityDisplay": [
+					{
+						"key": "primary",
+						"property": "Pistols",
+						"quantity": 1
+					}
+				],
 				"sortPriority": 2,
 				"limits": [
 					{
@@ -1628,9 +1819,9 @@
 						"availableIn": ["Sweden"]
 					}
 				],
-				"keywords": ["Medic"],
+				"keywords": ["Medic","Self Defense"],
 				"specialText": "1 Medic",
-				"equipment": ["Body Armor","MOPP"]
+				"equipment": ["Body Armor","MOPP","Pistols"]
 			},
 			{
 				"name": "Medic, Renault VAB San Ambulance",
@@ -1963,6 +2154,13 @@
 				],
 				"points": 0,
 				"models": 1,
+				"localQuantityDisplay": [
+					{
+						"key": "primary",
+						"property": "Rifles",
+						"quantity": 1
+					}
+				],
 				"sortPriority": 2,
 				"limits": [
 					{
@@ -2127,7 +2325,7 @@
 				],
 				"keywords": ["Infiltrator","First Aid"],
 				"specialText": "1 Forward Air Observer",
-				"equipment": ["Body Armor","MOPP"]
+				"equipment": ["Body Armor","MOPP","Rifle"]
 			},
 			{
 				"name": "Forward Artillery Observer",
@@ -2161,6 +2359,13 @@
 				],
 				"points": 0,
 				"models": 1,
+				"localQuantityDisplay": [
+					{
+						"key": "primary",
+						"property": "Rifles",
+						"quantity": 1
+					}
+				],
 				"sortPriority": 2,
 				"limits": [
 					{
@@ -2325,7 +2530,7 @@
 				],
 				"keywords": ["Infiltrator","First Aid"],
 				"specialText": "1 Forward Artillery Observer",
-				"equipment": ["Body Armor","MOPP"]
+				"equipment": ["Body Armor","MOPP","Rifle"]
 			},
 			{
 				"name": "Sniper Team",
@@ -2359,6 +2564,18 @@
 				],
 				"points": 0,
 				"models": 2,
+				"localQuantityDisplay": [
+					{
+						"key": "primary",
+						"property": "Sniper Rifle",
+						"quantity": 1
+					},
+					{
+						"key": "secondary",
+						"property": "Rifle",
+						"quantity": 1
+					}
+				],
 				"sortPriority": 2,
 				"limits": [
 					{
@@ -2391,7 +2608,36 @@
 						"requireChooseOneKey": "morale"
 					},
 					{
-						"name": "NCO SMG",
+						"name": "Additional NCO SMG",
+						"points": 3,
+						"increment": true,
+						"max": "parentModels",
+						"maxKey": "gun",
+						"localLimit": 1,
+						"unlockedByLocal": ["Regular","Veteran"],
+						"availableIn": [
+							"France",
+							"Russia",
+							"Sweden",
+							"United States of America"
+						]
+					},
+					{
+						"name": "Additional SMGs",
+						"points": 3,
+						"increment": true,
+						"max": "parentModels",
+						"maxKey": "gun",
+						"unlockedByLocal": ["Regular","Veteran"],
+						"availableIn": [
+							"France",
+							"Russia",
+							"Sweden",
+							"United States of America"
+						]
+					},
+					{
+						"name": "Additional NCO Pistol",
 						"points": 0,
 						"increment": true,
 						"max": "parentModels",
@@ -2406,36 +2652,7 @@
 						]
 					},
 					{
-						"name": "SMGs",
-						"points": 0,
-						"increment": true,
-						"max": "parentModels",
-						"maxKey": "gun",
-						"unlockedByLocal": ["Regular","Veteran"],
-						"availableIn": [
-							"France",
-							"Russia",
-							"Sweden",
-							"United States of America"
-						]
-					},
-					{
-						"name": "NCO Pistol",
-						"points": 0,
-						"increment": true,
-						"max": "parentModels",
-						"maxKey": "gun",
-						"localLimit": 1,
-						"unlockedByLocal": ["Regular","Veteran"],
-						"availableIn": [
-							"France",
-							"Russia",
-							"Sweden",
-							"United States of America"
-						]
-					},
-					{
-						"name": "Pistols",
+						"name": "Additional Pistols",
 						"points": 0,
 						"increment": true,
 						"max": "parentModels",
@@ -2496,10 +2713,10 @@
 				],
 				"keywords": ["Infiltrator","First Aid"],
 				"specialText": "1 Sniper \n 1 Observer",
-				"equipment": ["MOPP"]
+				"equipment": ["MOPP","Rifles"]
 			},
 			{
-				"name": "Carl Gustav / Eryx AT Team",
+				"name": "Eryx AT Team",
 				"factions": [],
 				"order": 1,
 				"availableIn":[
@@ -2512,6 +2729,18 @@
 				],
 				"points": 0,
 				"models": 2,
+				"localQuantityDisplay": [
+					{
+						"key": "primary",
+						"property": "ATGM/TOW Operator",
+						"quantity": 1
+					},
+					{
+						"key": "secondary",
+						"property": "Loader/Assistant",
+						"quantity": 1
+					}
+				],
 				"sortPriority": 2,
 				"limits": [
 					{
@@ -2552,7 +2781,7 @@
 				"equipment": ["Infantry ATGM/TOW","MOPP"]
 			},
 			{
-				"name": "Carl Gustav / Eryx AT Team",
+				"name": "Eryx AT Team",
 				"factions": [],
 				"order": 1,
 				"availableIn":[
@@ -2562,6 +2791,18 @@
 				],
 				"points": 0,
 				"models": 2,
+				"localQuantityDisplay": [
+					{
+						"key": "primary",
+						"property": "ATGM/TOW Operator",
+						"quantity": 1
+					},
+					{
+						"key": "secondary",
+						"property": "Loader/Assistant",
+						"quantity": 1
+					}
+				],
 				"sortPriority": 2,
 				"limits": [
 					{
@@ -2602,6 +2843,133 @@
 				"equipment": ["Infantry ATGM/TOW","MOPP"]
 			},
 			{
+				"name": "Carl Gustav AT Team",
+				"factions": [],
+				"order": 1,
+				"availableIn":[
+					{
+						"all": [{ "in": "Rifle Platoon" }, { "in": "France" }]			
+					},
+					{
+						"all": [{ "in": "Recce Platoon" }, { "in": "France" }]			
+					}
+				],
+				"points": 0,
+				"models": 2,
+				"localQuantityDisplay": [
+					{
+						"key": "primary",
+						"property": "RPG/SMAW Operator",
+						"quantity": 1
+					},
+					{
+						"key": "secondary",
+						"property": "Loader/Assistant",
+						"quantity": 1
+					}
+				],
+				"sortPriority": 2,
+				"limits": [
+					{
+						"key": "ATAA",
+						"limit": 1,
+						"perParent": true
+					}
+				],
+				"options": [
+					{
+						"name": "Inexperienced",
+						"points": 42,
+						"availableIn": ["France"],
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Regular",
+						"points": 60,
+						"availableIn": ["France"],
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Veteran",
+						"points": 78,
+						"availableIn": ["France"],
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "French Foreign Legion",
+						"points": 1,
+						"perModel": true,
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
+						"availableIn": ["France"]
+					}
+				],
+				"keywords": [],
+				"specialText": "1 Weapon Operator\n 1 Weapon Assistant",
+				"equipment": ["Infantry RPG/SMAW","MOPP"]
+			},
+			{
+				"name": "Carl Gustav AT Team",
+				"factions": [],
+				"order": 1,
+				"availableIn":[
+					{
+						"all": [{ "in": "Heavy Weapons Platoon" }, { "in": "France" }]			
+					}
+				],
+				"points": 0,
+				"models": 2,
+				"localQuantityDisplay": [
+					{
+						"key": "primary",
+						"property": "ATGM/TOW Operator",
+						"quantity": 1
+					},
+					{
+						"key": "secondary",
+						"property": "Loader/Assistant",
+						"quantity": 1
+					}
+				],
+				"sortPriority": 2,
+				"limits": [
+					{
+						"key": "ATAA",
+						"limit": 3,
+						"perParent": true
+					}
+				],
+				"options": [
+					{
+						"name": "Inexperienced",
+						"points": 42,
+						"availableIn": ["France"],
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Regular",
+						"points": 60,
+						"availableIn": ["France"],
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Veteran",
+						"points": 78,
+						"availableIn": ["France"],
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "French Foreign Legion",
+						"points": 1,
+						"perModel": true,
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
+						"availableIn": ["France"]
+					}
+				],
+				"keywords": [],
+				"specialText": "1 Weapon Operator\n 1 Weapon Assistant",
+				"equipment": ["Infantry RPG/SMAW","MOPP"]
+			},
+			{
 				"name": "Mistral AA Team",
 				"factions": [],
 				"order": 1,
@@ -2614,7 +2982,19 @@
 					}
 				],
 				"points": 0,
-				"models": 1,
+				"models": 2,
+				"localQuantityDisplay": [
+					{
+						"key": "primary",
+						"property": "SAM Operator",
+						"quantity": 1
+					},
+					{
+						"key": "secondary",
+						"property": "Loader/Assistant",
+						"quantity": 1
+					}
+				],
 				"sortPriority": 2,
 				"limits": [
 					{
@@ -2665,6 +3045,18 @@
 				],
 				"points": 0,
 				"models": 2,
+				"localQuantityDisplay": [
+					{
+						"key": "primary",
+						"property": "SAM Operator",
+						"quantity": 1
+					},
+					{
+						"key": "secondary",
+						"property": "Loader/Assistant",
+						"quantity": 1
+					}
+				],
 				"sortPriority": 2,
 				"limits": [
 					{
@@ -2718,6 +3110,18 @@
 				],
 				"points": 0,
 				"models": 2,
+				"localQuantityDisplay": [
+					{
+						"key": "primary",
+						"property": "ATGM/TOW Operator",
+						"quantity": 1
+					},
+					{
+						"key": "secondary",
+						"property": "Loader/Assistant",
+						"quantity": 1
+					}
+				],
 				"sortPriority": 2,
 				"limits": [
 					{
@@ -2768,6 +3172,18 @@
 				],
 				"points": 0,
 				"models": 2,
+				"localQuantityDisplay": [
+					{
+						"key": "primary",
+						"property": "ATGM/TOW Operator",
+						"quantity": 1
+					},
+					{
+						"key": "secondary",
+						"property": "Loader/Assistant",
+						"quantity": 1
+					}
+				],
 				"sortPriority": 2,
 				"limits": [
 					{
@@ -2820,7 +3236,19 @@
 					}
 				],
 				"points": 0,
-				"models": 1,
+				"models": 2,
+				"localQuantityDisplay": [
+					{
+						"key": "primary",
+						"property": "SAM Operator",
+						"quantity": 1
+					},
+					{
+						"key": "secondary",
+						"property": "Loader/Assistant",
+						"quantity": 1
+					}
+				],
 				"sortPriority": 2,
 				"limits": [
 					{
@@ -2861,7 +3289,7 @@
 				"equipment": ["Infantry SAM","MOPP"]
 			},
 			{
-				"name": "Mistral AA Team",
+				"name": "Igla AA Team",
 				"factions": [],
 				"order": 1,
 				"availableIn":[
@@ -2871,6 +3299,18 @@
 				],
 				"points": 0,
 				"models": 2,
+				"localQuantityDisplay": [
+					{
+						"key": "primary",
+						"property": "SAM Operator",
+						"quantity": 1
+					},
+					{
+						"key": "secondary",
+						"property": "Loader/Assistant",
+						"quantity": 1
+					}
+				],
 				"sortPriority": 2,
 				"limits": [
 					{
@@ -2924,6 +3364,18 @@
 				],
 				"points": 0,
 				"models": 2,
+				"localQuantityDisplay": [
+					{
+						"key": "primary",
+						"property": "RPG/SMAW Operator",
+						"quantity": 1
+					},
+					{
+						"key": "secondary",
+						"property": "Loader/Assistant",
+						"quantity": 1
+					}
+				],
 				"sortPriority": 2,
 				"limits": [
 					{
@@ -2968,7 +3420,7 @@
 				],
 				"keywords": [],
 				"specialText": "1 Weapon Operator\n 1 Weapon Assistant",
-				"equipment": ["Infantry ATGM/TOW","MOPP"]
+				"equipment": ["Infantry RPG/SMAW","MOPP"]
 			},
 			{
 				"name": "Granatgevär 18 AT Team",
@@ -2981,6 +3433,18 @@
 				],
 				"points": 0,
 				"models": 2,
+				"localQuantityDisplay": [
+					{
+						"key": "primary",
+						"property": "RPG/SMAW Operator",
+						"quantity": 1
+					},
+					{
+						"key": "secondary",
+						"property": "Loader/Assistant",
+						"quantity": 1
+					}
+				],
 				"sortPriority": 2,
 				"limits": [
 					{
@@ -3025,7 +3489,7 @@
 				],
 				"keywords": [],
 				"specialText": "1 Weapon Operator\n 1 Weapon Assistant",
-				"equipment": ["Infantry ATGM/TOW","MOPP"]
+				"equipment": ["Infantry RPG/SMAW","MOPP"]
 			},
 			{
 				"name": "RBS 56 BILL AT Team",
@@ -3040,6 +3504,18 @@
 					}
 				],
 				"points": 0,
+				"localQuantityDisplay": [
+					{
+						"key": "primary",
+						"property": "ATGM/TOW Operator",
+						"quantity": 1
+					},
+					{
+						"key": "secondary",
+						"property": "Loader/Assistant",
+						"quantity": 1
+					}
+				],
 				"models": 2,
 				"sortPriority": 2,
 				"limits": [
@@ -3098,6 +3574,18 @@
 				],
 				"points": 0,
 				"models": 2,
+				"localQuantityDisplay": [
+					{
+						"key": "primary",
+						"property": "ATGM/TOW Operator",
+						"quantity": 1
+					},
+					{
+						"key": "secondary",
+						"property": "Loader/Assistant",
+						"quantity": 1
+					}
+				],
 				"sortPriority": 2,
 				"limits": [
 					{
@@ -3158,6 +3646,18 @@
 				],
 				"points": 0,
 				"models": 2,
+				"localQuantityDisplay": [
+					{
+						"key": "primary",
+						"property": "SAM Operator",
+						"quantity": 1
+					},
+					{
+						"key": "secondary",
+						"property": "Loader/Assistant",
+						"quantity": 1
+					}
+				],
 				"sortPriority": 2,
 				"limits": [
 					{
@@ -3215,6 +3715,18 @@
 				],
 				"points": 0,
 				"models": 2,
+				"localQuantityDisplay": [
+					{
+						"key": "primary",
+						"property": "SAM Operator",
+						"quantity": 1
+					},
+					{
+						"key": "secondary",
+						"property": "Loader/Assistant",
+						"quantity": 1
+					}
+				],
 				"sortPriority": 2,
 				"limits": [
 					{
@@ -3275,6 +3787,18 @@
 				],
 				"points": 0,
 				"models": 2,
+				"localQuantityDisplay": [
+					{
+						"key": "primary",
+						"property": "ATGM/TOW Operator",
+						"quantity": 1
+					},
+					{
+						"key": "secondary",
+						"property": "Loader/Assistant",
+						"quantity": 1
+					}
+				],
 				"sortPriority": 2,
 				"limits": [
 					{
@@ -3334,6 +3858,18 @@
 				],
 				"points": 0,
 				"models": 2,
+				"localQuantityDisplay": [
+					{
+						"key": "primary",
+						"property": "ATGM/TOW Operator",
+						"quantity": 1
+					},
+					{
+						"key": "secondary",
+						"property": "Loader/Assistant",
+						"quantity": 1
+					}
+				],
 				"sortPriority": 2,
 				"limits": [
 					{
@@ -3383,6 +3919,151 @@
 				"equipment": ["Infantry ATGM/TOW","MOPP"]
 			},
 			{
+				"name": "M3 MAAWS AT Team",
+				"factions": [],
+				"order": 1,
+				"availableIn":[
+					{
+						"all": [{ "in": "Rifle Platoon" }, { "in": "United States of America" }]			
+					},
+					{
+						"all": [{ "in": "Recce Platoon" }, { "in": "United States of America" }]			
+					}
+				],
+				"points": 0,
+				"models": 2,
+				"localQuantityDisplay": [
+					{
+						"key": "primary",
+						"property": "RPG/SMAW Operator",
+						"quantity": 1
+					},
+					{
+						"key": "secondary",
+						"property": "Loader/Assistant",
+						"quantity": 1
+					}
+				],
+				"sortPriority": 2,
+				"limits": [
+					{
+						"key": "ATAA",
+						"limit": 1,
+						"perParent": true
+					}
+				],
+				"options": [
+					{
+						"name": "Inexperienced",
+						"points": 46,
+						"availableIn": ["United States of America"],
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Regular",
+						"points": 70,
+						"availableIn": ["United States of America"],
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Veteran",
+						"points": 94,
+						"availableIn": ["United States of America"],
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "US Army",
+						"points": 0,
+						"perModel": true,
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
+						"availableIn": ["United States of America"],
+						"requireChooseOneKey": "branchUS"
+					},
+					{
+						"name": "USMC",
+						"points": 1,
+						"perModel": true,
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
+						"availableIn": ["United States of America"],
+						"requireChooseOneKey": "branchUS"
+					}
+				],
+				"keywords": ["Top Attack"],
+				"specialText": "1 Weapon Operator\n 1 Weapon Assistant",
+				"equipment": ["Infantry RPG/SMAW","MOPP"]
+			},
+			{
+				"name": "M3 MAAWS AT Team",
+				"factions": [],
+				"order": 1,
+				"availableIn":[
+					{
+						"all": [{ "in": "Heavy Weapons Platoon" }, { "in": "United States of America" }]			
+					}
+				],
+				"points": 0,
+				"models": 2,
+				"localQuantityDisplay": [
+					{
+						"key": "primary",
+						"property": "RPG/SMAW Operator",
+						"quantity": 1
+					},
+					{
+						"key": "secondary",
+						"property": "Loader/Assistant",
+						"quantity": 1
+					}
+				],
+				"sortPriority": 2,
+				"limits": [
+					{
+						"key": "ATAA",
+						"limit": 3,
+						"perParent": true
+					}
+				],
+				"options": [
+					{
+						"name": "Inexperienced",
+						"points": 46,
+						"availableIn": ["United States of America"],
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Regular",
+						"points": 70,
+						"availableIn": ["United States of America"],
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Veteran",
+						"points": 94,
+						"availableIn": ["United States of America"],
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "US Army",
+						"points": 0,
+						"perModel": true,
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
+						"availableIn": ["United States of America"],
+						"requireChooseOneKey": "branchUS"
+					},
+					{
+						"name": "USMC",
+						"points": 1,
+						"perModel": true,
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
+						"availableIn": ["United States of America"],
+						"requireChooseOneKey": "branchUS"
+					}
+				],
+				"keywords": ["Top Attack"],
+				"specialText": "1 Weapon Operator\n 1 Weapon Assistant",
+				"equipment": ["Infantry RPG/SMAW","MOPP"]
+			},
+			{
 				"name": "Stinger AA Team",
 				"factions": [],
 				"order": 1,
@@ -3396,6 +4077,18 @@
 				],
 				"points": 0,
 				"models": 2,
+				"localQuantityDisplay": [
+					{
+						"key": "primary",
+						"property": "SAM Operator",
+						"quantity": 1
+					},
+					{
+						"key": "secondary",
+						"property": "Loader/Assistant",
+						"quantity": 1
+					}
+				],
 				"sortPriority": 2,
 				"limits": [
 					{
@@ -3455,6 +4148,18 @@
 				],
 				"points": 0,
 				"models": 2,
+				"localQuantityDisplay": [
+					{
+						"key": "primary",
+						"property": "SAM Operator",
+						"quantity": 1
+					},
+					{
+						"key": "secondary",
+						"property": "Loader/Assistant",
+						"quantity": 1
+					}
+				],
 				"sortPriority": 2,
 				"limits": [
 					{
@@ -3520,6 +4225,18 @@
 				],
 				"points": 0,
 				"models": 2,
+				"localQuantityDisplay": [
+					{
+						"key": "primary",
+						"property": "Mortar Operator",
+						"quantity": 1
+					},
+					{
+						"key": "secondary",
+						"property": "Loader/Assistant",
+						"quantity": 1
+					}
+				],
 				"sortPriority": 2,
 				"limits": [
 					{
@@ -3622,6 +4339,18 @@
 				],
 				"points": 0,
 				"models": 2,
+				"localQuantityDisplay": [
+					{
+						"key": "primary",
+						"property": "Mortar Operator",
+						"quantity": 1
+					},
+					{
+						"key": "secondary",
+						"property": "Loader/Assistant",
+						"quantity": 1
+					}
+				],
 				"sortPriority": 2,
 				"limits": [
 					{
@@ -3725,6 +4454,18 @@
 				],
 				"points": 0,
 				"models": 3,
+				"localQuantityDisplay": [
+					{
+						"key": "primary",
+						"property": "Mortar Operator",
+						"quantity": 1
+					},
+					{
+						"key": "secondary",
+						"property": "Loader/Assistant",
+						"quantity": 2
+					}
+				],
 				"sortPriority": 2,
 				"limits": [
 					{
@@ -3841,6 +4582,18 @@
 				],
 				"points": 0,
 				"models": 4,
+				"localQuantityDisplay": [
+					{
+						"key": "primary",
+						"property": "Mortar Operator",
+						"quantity": 1
+					},
+					{
+						"key": "secondary",
+						"property": "Loader/Assistant",
+						"quantity": 3
+					}
+				],
 				"sortPriority": 2,
 				"limits": [
 					{
@@ -3957,6 +4710,18 @@
 				],
 				"points": 0,
 				"models": 3,
+				"localQuantityDisplay": [
+					{
+						"key": "primary",
+						"property": "MG Operator",
+						"quantity": 1
+					},
+					{
+						"key": "secondary",
+						"property": "Loader/Assistant",
+						"quantity": 2
+					}
+				],
 				"sortPriority": 3,
 				"limits": [
 					{
@@ -4075,6 +4840,18 @@
 				],
 				"points": 0,
 				"models": 4,
+				"localQuantityDisplay": [
+					{
+						"key": "primary",
+						"property": "MG Operator",
+						"quantity": 1
+					},
+					{
+						"key": "secondary",
+						"property": "Loader/Assistant",
+						"quantity": 3
+					}
+				],
 				"sortPriority": 3,
 				"limits": [
 					{
@@ -4179,6 +4956,13 @@
 				],
 				"points": 0,
 				"models": 3,
+				"localQuantityDisplay": [
+					{
+						"key": "primary",
+						"property": "Assault Rifles",
+						"quantity": 3
+					}
+				],
 				"sortPriority": 3,
 				"limits": [
 					{
@@ -4317,6 +5101,13 @@
 				],
 				"points": 0,
 				"models": 3,
+				"localQuantityDisplay": [
+					{
+						"key": "primary",
+						"property": "Assault Rifles",
+						"quantity": 3
+					}
+				],
 				"sortPriority": 3,
 				"limits": [
 					{
@@ -4463,6 +5254,13 @@
 				],
 				"points": 0,
 				"models": 4,
+				"localQuantityDisplay": [
+					{
+						"key": "primary",
+						"property": "Assault Rifles",
+						"quantity": 4
+					}
+				],
 				"sortPriority": 3,
 				"limits": [
 					{
@@ -4562,6 +5360,13 @@
 				],
 				"points": 0,
 				"models": 5,
+				"localQuantityDisplay": [
+					{
+						"key": "primary",
+						"property": "Assault Rifles",
+						"quantity": 5
+					}
+				],
 				"sortPriority": 3,
 				"limits": [
 					{
@@ -4690,6 +5495,13 @@
 				],
 				"points": 0,
 				"models": 5,
+				"localQuantityDisplay": [
+					{
+						"key": "primary",
+						"property": "Assault Rifles",
+						"quantity": 5
+					}
+				],
 				"sortPriority": 3,
 				"limits": [
 					{
@@ -4826,6 +5638,13 @@
 				],
 				"points": 0,
 				"models": 4,
+				"localQuantityDisplay": [
+					{
+						"key": "primary",
+						"property": "Assault Rifles",
+						"quantity": 4
+					}
+				],
 				"sortPriority": 3,
 				"limits": [
 					{
@@ -4927,6 +5746,13 @@
 				],
 				"points": 0,
 				"models": 5,
+				"localQuantityDisplay": [
+					{
+						"key": "primary",
+						"property": "Assault Rifles",
+						"quantity": 5
+					}
+				],
 				"sortPriority": 3,
 				"limits": [
 					{
@@ -5024,6 +5850,13 @@
 				],
 				"points": 0,
 				"models": 6,
+				"localQuantityDisplay": [
+					{
+						"key": "primary",
+						"property": "Assault Rifles",
+						"quantity": 6
+					}
+				],
 				"sortPriority": 3,
 				"limits": [
 					{
@@ -5143,6 +5976,13 @@
 				],
 				"points": 0,
 				"models": 5,
+				"localQuantityDisplay": [
+					{
+						"key": "primary",
+						"property": "Assault Rifles",
+						"quantity": 5
+					}
+				],
 				"sortPriority": 3,
 				"limits": [
 					{
@@ -5262,6 +6102,13 @@
 				],
 				"points": 0,
 				"models": 6,
+				"localQuantityDisplay": [
+					{
+						"key": "primary",
+						"property": "Assault Rifles",
+						"quantity": 6
+					}
+				],
 				"sortPriority": 3,
 				"limits": [
 					{
@@ -5390,6 +6237,13 @@
 				],
 				"points": 0,
 				"models": 5,
+				"localQuantityDisplay": [
+					{
+						"key": "primary",
+						"property": "Assault Rifles",
+						"quantity": 5
+					}
+				],
 				"sortPriority": 3,
 				"limits": [
 					{
@@ -5518,6 +6372,13 @@
 				],
 				"points": 0,
 				"models": 6,
+				"localQuantityDisplay": [
+					{
+						"key": "primary",
+						"property": "Assault Rifles",
+						"quantity": 6
+					}
+				],
 				"sortPriority": 3,
 				"limits": [
 					{
@@ -5596,6 +6457,13 @@
 				],
 				"points": 0,
 				"models": 4,
+				"localQuantityDisplay": [
+					{
+						"key": "primary",
+						"property": "Assault Rifles",
+						"quantity": 4
+					}
+				],
 				"sortPriority": 3,
 				"limits": [
 					{
@@ -5706,6 +6574,13 @@
 				],
 				"points": 0,
 				"models": 4,
+				"localQuantityDisplay": [
+					{
+						"key": "primary",
+						"property": "Assault Rifles",
+						"quantity": 4
+					}
+				],
 				"sortPriority": 3,
 				"limits": [
 					{
@@ -5816,6 +6691,13 @@
 				],
 				"points": 0,
 				"models": 4,
+				"localQuantityDisplay": [
+					{
+						"key": "primary",
+						"property": "Assault Rifles",
+						"quantity": 4
+					}
+				],
 				"sortPriority": 3,
 				"limits": [
 					{
@@ -5909,6 +6791,13 @@
 				],
 				"points": 0,
 				"models": 4,
+				"localQuantityDisplay": [
+					{
+						"key": "primary",
+						"property": "Assault Rifles",
+						"quantity": 4
+					}
+				],
 				"sortPriority": 3,
 				"limits": [
 					{
@@ -6002,6 +6891,13 @@
 				],
 				"points": 0,
 				"models": 4,
+				"localQuantityDisplay": [
+					{
+						"key": "primary",
+						"property": "Assault Rifles",
+						"quantity": 4
+					}
+				],
 				"sortPriority": 3,
 				"limits": [
 					{
@@ -6092,6 +6988,13 @@
 				],
 				"points": 0,
 				"models": 8,
+				"localQuantityDisplay": [
+					{
+						"key": "primary",
+						"property": "Weapon Crew Members",
+						"quantity": 8
+					}
+				],
 				"sortPriority": 3,
 				"limits": [
 					{
@@ -6248,6 +7151,13 @@
 				],
 				"points": 0,
 				"models": 4,
+				"localQuantityDisplay": [
+					{
+						"key": "primary",
+						"property": "Weapon Crew Members",
+						"quantity": 4
+					}
+				],
 				"sortPriority": 3,
 				"limits": [
 					{
@@ -6300,6 +7210,13 @@
 				],
 				"points": 0,
 				"models": 7,
+				"localQuantityDisplay": [
+					{
+						"key": "primary",
+						"property": "Weapon Crew Members",
+						"quantity": 7
+					}
+				],
 				"sortPriority": 3,
 				"limits": [
 					{
@@ -6352,6 +7269,13 @@
 				],
 				"points": 0,
 				"models": 6,
+				"localQuantityDisplay": [
+					{
+						"key": "primary",
+						"property": "Weapon Crew Members",
+						"quantity": 6
+					}
+				],
 				"sortPriority": 3,
 				"limits": [
 					{
@@ -6396,6 +7320,13 @@
 				],
 				"points": 0,
 				"models": 3,
+				"localQuantityDisplay": [
+					{
+						"key": "primary",
+						"property": "Weapon Crew Members",
+						"quantity": 3
+					}
+				],
 				"sortPriority": 3,
 				"limits": [
 					{
@@ -6440,6 +7371,13 @@
 				],
 				"points": 0,
 				"models": 4,
+				"localQuantityDisplay": [
+					{
+						"key": "primary",
+						"property": "Weapon Crew Members",
+						"quantity": 4
+					}
+				],
 				"sortPriority": 3,
 				"limits": [
 					{
@@ -7030,6 +7968,13 @@
 				],
 				"points": 0,
 				"models": 8,
+				"localQuantityDisplay": [
+					{
+						"key": "primary",
+						"property": "Weapon Crew Members",
+						"quantity": 8
+					}
+				],
 				"sortPriority": 3,
 				"limits": [
 					{

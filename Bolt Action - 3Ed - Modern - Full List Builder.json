@@ -21,6 +21,11 @@
 		"label": "Include Community Rules",
 		"default": false
     },
+	{
+		"property": "soonTM",
+		"label": "Planned",
+		"default": false
+    },
     {
 		"property": "special",
 		"label": "Include Special Rules",
@@ -74,12 +79,29 @@
 				"label": "Platoon",
 				"type": "main",
 				"dataSource": "platoons",
+				 "sortMainOptionsAlphabetically": false,
 				"children": [
 					{
 						"propertyName": "units",
 						"dataSource": "units",
 						"label": "Units",
 						"type": "list",
+						"sortPrioritySeparators": true,
+                        "sortPriorityLabels": {
+                            "1": "Officers",
+                            "2": "Support Units",
+                            "3": "General Infantry Units",
+                            "4": "AT Weapons / Special Weapons Teams",
+                            "5": "Artillery Units",
+                            "6": "Engineer Units",
+                            "7": "Heavy Weapons",
+							"8": "Support Vehicles",
+                            "9": "Armored Vehicles",
+							"10": "Attack Helicopter",
+							"11": "Ground Attack / Bomber",
+							"14": "Fortification and Defenses",
+                            "15": "Transports"
+                        },
 						"children": [
 							{
 								"propertyName": "equipment",
@@ -140,16 +162,20 @@
 	{
 		"factions": [
 			{
-				"name": "Australia"
+				"name": "Australia",
+				"soonTM": true
 			},
 			{
-				"name": "Britain"
+				"name": "Britain",
+				"soonTM": true
 			},
 			{
-				"name": "Canada"
+				"name": "Canada",
+				"soonTM": true
 			},
 			{
-				"name": "China"
+				"name": "China",
+				"soonTM": true
 			},
 			{
 				"name": "France",
@@ -158,28 +184,36 @@
 				]
 			},
 			{
-				"name": "Germany"
+				"name": "Germany",
+				"soonTM": true
 			},
 			{
-				"name": "Iran"
+				"name": "Iran",
+				"soonTM": true
 			},
 			{
-				"name": "Iraq"
+				"name": "Iraq",
+				"soonTM": true
 			},
 			{
-				"name": "Italy"
+				"name": "Italy",
+				"soonTM": true
 			},
 			{
-				"name": "Japan"
+				"name": "Japan",
+				"soonTM": true
 			},
 			{
-				"name": "NATO"
+				"name": "NATO",
+				"soonTM": true
 			},
 			{
-				"name": "North Korea"
+				"name": "North Korea",
+				"soonTM": true
 			},
 			{
-				"name": "PMC"
+				"name": "PMC",
+				"soonTM": true
 			},
 			{
 				"name": "Russia",
@@ -188,10 +222,12 @@
 				]
 			},
 			{
-				"name": "South Africa"
+				"name": "South Africa",
+				"soonTM": true
 			},
 			{
-				"name": "South Korea"
+				"name": "South Korea",
+				"soonTM": true
 			},
 			{
 				"name": "Sweden",
@@ -200,13 +236,16 @@
 				]
 			},
 			{
-				"name": "Turkey"
+				"name": "Turkey",
+				"soonTM": true
 			},
 			{
-				"name": "Ukraine"
+				"name": "Ukraine",
+				"soonTM": true
 			},
 			{
-				"name": "UN"
+				"name": "UN",
+				"soonTM": true
 			},
 			{
 				"name": "United States of America",
@@ -1834,7 +1873,7 @@
 				],
 				"points": 0,
 				"models": 1,
-				"sortPriority": 2,
+				"sortPriority": 8,
 				"limits": [
 					{
 						"key": "Medic",
@@ -1871,7 +1910,7 @@
 				],
 				"points": 0,
 				"models": 1,
-				"sortPriority": 2,
+				"sortPriority": 8,
 				"limits": [
 					{
 						"key": "Medic",
@@ -1908,7 +1947,7 @@
 				],
 				"points": 0,
 				"models": 1,
-				"sortPriority": 2,
+				"sortPriority": 8,
 				"limits": [
 					{
 						"key": "Medic",
@@ -1945,7 +1984,7 @@
 				],
 				"points": 0,
 				"models": 1,
-				"sortPriority": 2,
+				"sortPriority": 8,
 				"limits": [
 					{
 						"key": "Medic",
@@ -1982,7 +2021,7 @@
 				],
 				"points": 0,
 				"models": 1,
-				"sortPriority": 2,
+				"sortPriority": 8,
 				"limits": [
 					{
 						"key": "Medic",
@@ -2035,7 +2074,7 @@
 				],
 				"points": 0,
 				"models": 1,
-				"sortPriority": 2,
+				"sortPriority": 8,
 				"limits": [
 					{
 						"key": "Medic",
@@ -2088,7 +2127,7 @@
 				],
 				"points": 0,
 				"models": 1,
-				"sortPriority": 2,
+				"sortPriority": 8,
 				"limits": [
 					{
 						"key": "Medic",
@@ -2576,7 +2615,7 @@
 						"quantity": 1
 					}
 				],
-				"sortPriority": 2,
+				"sortPriority": 4,
 				"limits": [
 					{
 						"key": "Sniper",
@@ -2741,7 +2780,7 @@
 						"quantity": 1
 					}
 				],
-				"sortPriority": 2,
+				"sortPriority": 4,
 				"limits": [
 					{
 						"key": "ATAA",
@@ -2803,7 +2842,7 @@
 						"quantity": 1
 					}
 				],
-				"sortPriority": 2,
+				"sortPriority": 4,
 				"limits": [
 					{
 						"key": "ATAA",
@@ -2868,7 +2907,7 @@
 						"quantity": 1
 					}
 				],
-				"sortPriority": 2,
+				"sortPriority": 4,
 				"limits": [
 					{
 						"key": "ATAA",
@@ -2930,7 +2969,7 @@
 						"quantity": 1
 					}
 				],
-				"sortPriority": 2,
+				"sortPriority": 4,
 				"limits": [
 					{
 						"key": "ATAA",
@@ -2995,7 +3034,7 @@
 						"quantity": 1
 					}
 				],
-				"sortPriority": 2,
+				"sortPriority": 4,
 				"limits": [
 					{
 						"key": "ATAA",
@@ -3057,7 +3096,7 @@
 						"quantity": 1
 					}
 				],
-				"sortPriority": 2,
+				"sortPriority": 4,
 				"limits": [
 					{
 						"key": "ATAA",
@@ -3122,7 +3161,7 @@
 						"quantity": 1
 					}
 				],
-				"sortPriority": 2,
+				"sortPriority": 4,
 				"limits": [
 					{
 						"key": "ATAA",
@@ -3184,7 +3223,7 @@
 						"quantity": 1
 					}
 				],
-				"sortPriority": 2,
+				"sortPriority": 4,
 				"limits": [
 					{
 						"key": "ATAA",
@@ -3249,7 +3288,7 @@
 						"quantity": 1
 					}
 				],
-				"sortPriority": 2,
+				"sortPriority": 4,
 				"limits": [
 					{
 						"key": "ATAA",
@@ -3311,7 +3350,7 @@
 						"quantity": 1
 					}
 				],
-				"sortPriority": 2,
+				"sortPriority": 4,
 				"limits": [
 					{
 						"key": "ATAA",
@@ -3376,7 +3415,7 @@
 						"quantity": 1
 					}
 				],
-				"sortPriority": 2,
+				"sortPriority": 4,
 				"limits": [
 					{
 						"key": "ATAA",
@@ -3445,7 +3484,7 @@
 						"quantity": 1
 					}
 				],
-				"sortPriority": 2,
+				"sortPriority": 4,
 				"limits": [
 					{
 						"key": "ATAA",
@@ -3517,7 +3556,7 @@
 					}
 				],
 				"models": 2,
-				"sortPriority": 2,
+				"sortPriority": 4,
 				"limits": [
 					{
 						"key": "ATAA",
@@ -3586,7 +3625,7 @@
 						"quantity": 1
 					}
 				],
-				"sortPriority": 2,
+				"sortPriority": 4,
 				"limits": [
 					{
 						"key": "ATAA",
@@ -3658,7 +3697,7 @@
 						"quantity": 1
 					}
 				],
-				"sortPriority": 2,
+				"sortPriority": 4,
 				"limits": [
 					{
 						"key": "ATAA",
@@ -3727,7 +3766,7 @@
 						"quantity": 1
 					}
 				],
-				"sortPriority": 2,
+				"sortPriority": 4,
 				"limits": [
 					{
 						"key": "ATAA",
@@ -3799,7 +3838,7 @@
 						"quantity": 1
 					}
 				],
-				"sortPriority": 2,
+				"sortPriority": 4,
 				"limits": [
 					{
 						"key": "ATAA",
@@ -3870,7 +3909,7 @@
 						"quantity": 1
 					}
 				],
-				"sortPriority": 2,
+				"sortPriority": 4,
 				"limits": [
 					{
 						"key": "ATAA",
@@ -3944,7 +3983,7 @@
 						"quantity": 1
 					}
 				],
-				"sortPriority": 2,
+				"sortPriority": 4,
 				"limits": [
 					{
 						"key": "ATAA",
@@ -4015,7 +4054,7 @@
 						"quantity": 1
 					}
 				],
-				"sortPriority": 2,
+				"sortPriority": 4,
 				"limits": [
 					{
 						"key": "ATAA",
@@ -4089,7 +4128,7 @@
 						"quantity": 1
 					}
 				],
-				"sortPriority": 2,
+				"sortPriority": 4,
 				"limits": [
 					{
 						"key": "ATAA",
@@ -4160,7 +4199,7 @@
 						"quantity": 1
 					}
 				],
-				"sortPriority": 2,
+				"sortPriority": 4,
 				"limits": [
 					{
 						"key": "ATAA",
@@ -4237,7 +4276,7 @@
 						"quantity": 1
 					}
 				],
-				"sortPriority": 2,
+				"sortPriority": 4,
 				"limits": [
 					{
 						"key": "Mortar",
@@ -4351,7 +4390,7 @@
 						"quantity": 1
 					}
 				],
-				"sortPriority": 2,
+				"sortPriority": 4,
 				"limits": [
 					{
 						"key": "Mortar",
@@ -4466,7 +4505,7 @@
 						"quantity": 2
 					}
 				],
-				"sortPriority": 2,
+				"sortPriority": 7,
 				"limits": [
 					{
 						"key": "Mortar",
@@ -4594,7 +4633,7 @@
 						"quantity": 3
 					}
 				],
-				"sortPriority": 2,
+				"sortPriority": 7,
 				"limits": [
 					{
 						"key": "Mortar",
@@ -4722,7 +4761,7 @@
 						"quantity": 2
 					}
 				],
-				"sortPriority": 3,
+				"sortPriority": 7,
 				"limits": [
 					{
 						"key": "MG",
@@ -4852,7 +4891,7 @@
 						"quantity": 3
 					}
 				],
-				"sortPriority": 3,
+				"sortPriority": 7,
 				"limits": [
 					{
 						"key": "MG",
@@ -4955,12 +4994,12 @@
 					}
 				],
 				"points": 0,
-				"models": 3,
+				"models": 6,
 				"localQuantityDisplay": [
 					{
 						"key": "primary",
 						"property": "Assault Rifles",
-						"quantity": 3
+						"quantity": 6
 					}
 				],
 				"sortPriority": 3,
@@ -5083,7 +5122,7 @@
 					}
 				],
 				"keywords": ["First Aid"],
-				"specialText": "1 NCO\n 2 Soldiers",
+				"specialText": "1 NCO\n 5 Soldiers",
 				"equipment": ["Body Armor","Assault Rifles","Grenades","MOPP"]
 			},
 			{
@@ -5100,12 +5139,12 @@
 					}
 				],
 				"points": 0,
-				"models": 3,
+				"models": 6,
 				"localQuantityDisplay": [
 					{
 						"key": "primary",
 						"property": "Assault Rifles",
-						"quantity": 3
+						"quantity": 6
 					}
 				],
 				"sortPriority": 3,
@@ -5119,19 +5158,19 @@
 				"options": [
 					{
 						"name": "Inexperienced",
-						"points": 45,
+						"points": 42,
 						"availableIn": ["France"],
 						"requireChooseOneKey": "morale"
 					},
 					{
 						"name": "Regular",
-						"points": 63,
+						"points": 60,
 						"availableIn": ["France"],
 						"requireChooseOneKey": "morale"
 					},
 					{
 						"name": "Veteran",
-						"points": 81,
+						"points": 78,
 						"availableIn": ["France"],
 						"requireChooseOneKey": "morale"
 					},
@@ -5236,7 +5275,7 @@
 					}
 				],
 				"keywords": ["First Aid"],
-				"specialText": "1 NCO\n 2 Soldiers",
+				"specialText": "1 NCO\n 5 Soldiers",
 				"equipment": ["Body Armor","Assault Rifles","Grenades","MOPP"]
 			},
 			{
@@ -6995,7 +7034,7 @@
 						"quantity": 8
 					}
 				],
-				"sortPriority": 3,
+				"sortPriority": 5,
 				"limits": [
 					{
 						"key": "Arty",
@@ -7047,7 +7086,7 @@
 				],
 				"points": 0,
 				"models": 1,
-				"sortPriority": 3,
+				"sortPriority": 5,
 				"limits": [
 					{
 						"key": "Arty",
@@ -7099,7 +7138,7 @@
 				],
 				"points": 0,
 				"models": 1,
-				"sortPriority": 3,
+				"sortPriority": 5,
 				"limits": [
 					{
 						"key": "Arty",
@@ -7158,7 +7197,7 @@
 						"quantity": 4
 					}
 				],
-				"sortPriority": 3,
+				"sortPriority": 5,
 				"limits": [
 					{
 						"key": "Arty",
@@ -7217,7 +7256,7 @@
 						"quantity": 7
 					}
 				],
-				"sortPriority": 3,
+				"sortPriority": 5,
 				"limits": [
 					{
 						"key": "Arty",
@@ -7276,7 +7315,7 @@
 						"quantity": 6
 					}
 				],
-				"sortPriority": 3,
+				"sortPriority": 5,
 				"limits": [
 					{
 						"key": "Arty",
@@ -7327,7 +7366,7 @@
 						"quantity": 3
 					}
 				],
-				"sortPriority": 3,
+				"sortPriority": 5,
 				"limits": [
 					{
 						"key": "Arty",
@@ -7378,7 +7417,7 @@
 						"quantity": 4
 					}
 				],
-				"sortPriority": 3,
+				"sortPriority": 5,
 				"limits": [
 					{
 						"key": "Arty",
@@ -7422,7 +7461,7 @@
 				],
 				"points": 0,
 				"models": 1,
-				"sortPriority": 3,
+				"sortPriority": 5,
 				"limits": [
 					{
 						"key": "Arty",
@@ -7474,7 +7513,7 @@
 				],
 				"points": 0,
 				"models": 1,
-				"sortPriority": 3,
+				"sortPriority": 5,
 				"limits": [
 					{
 						"key": "Arty",
@@ -7526,7 +7565,7 @@
 				],
 				"points": 0,
 				"models": 1,
-				"sortPriority": 3,
+				"sortPriority": 5,
 				"limits": [
 					{
 						"key": "Arty",
@@ -7578,7 +7617,7 @@
 				],
 				"points": 0,
 				"models": 1,
-				"sortPriority": 3,
+				"sortPriority": 5,
 				"limits": [
 					{
 						"key": "Arty",
@@ -7630,7 +7669,7 @@
 				],
 				"points": 0,
 				"models": 1,
-				"sortPriority": 3,
+				"sortPriority": 5,
 				"limits": [
 					{
 						"key": "Arty",
@@ -7682,7 +7721,7 @@
 				],
 				"points": 0,
 				"models": 1,
-				"sortPriority": 3,
+				"sortPriority": 5,
 				"limits": [
 					{
 						"key": "Arty",
@@ -7734,7 +7773,7 @@
 				],
 				"points": 0,
 				"models": 1,
-				"sortPriority": 3,
+				"sortPriority": 5,
 				"limits": [
 					{
 						"key": "Arty",
@@ -7786,7 +7825,7 @@
 				],
 				"points": 0,
 				"models": 1,
-				"sortPriority": 3,
+				"sortPriority": 5,
 				"limits": [
 					{
 						"key": "Vehicles",
@@ -7830,7 +7869,7 @@
 				],
 				"points": 0,
 				"models": 1,
-				"sortPriority": 3,
+				"sortPriority": 5,
 				"limits": [
 					{
 						"key": "Vehicles",
@@ -7880,7 +7919,7 @@
 				],
 				"points": 0,
 				"models": 1,
-				"sortPriority": 3,
+				"sortPriority": 5,
 				"limits": [
 					{
 						"key": "Vehicles",
@@ -7924,7 +7963,7 @@
 				],
 				"points": 0,
 				"models": 1,
-				"sortPriority": 3,
+				"sortPriority": 5,
 				"limits": [
 					{
 						"key": "Vehicles",
@@ -7975,7 +8014,7 @@
 						"quantity": 8
 					}
 				],
-				"sortPriority": 3,
+				"sortPriority": 5,
 				"limits": [
 					{
 						"key": "Arty",
@@ -8027,7 +8066,7 @@
 				],
 				"points": 0,
 				"models": 1,
-				"sortPriority": 3,
+				"sortPriority": 9,
 				"limits": [
 					{
 						"key": "Arty",
@@ -8090,6 +8129,7 @@
 				],
 				"points": 0,
 				"models": 1,
+				"sortPriority": 15,
 				"options": [
 					{
 						"name": "Inexperienced",
@@ -8112,7 +8152,7 @@
 				"equipment": []
 			},
 			{
-				"name": "Renault VAB - Recce",
+				"name": "Renault VAB ",
 				"factions": [],
 				"order": 1,
 				"availableIn": [
@@ -8122,6 +8162,7 @@
 				],
 				"points": 0,
 				"models": 1,
+				"sortPriority": 15,
 				"options": [
 					{
 						"name": "Inexperienced",
@@ -8172,6 +8213,7 @@
 				],
 				"points": 0,
 				"models": 1,
+				"sortPriority": 15,
 				"options": [
 					{
 						"name": "Inexperienced",
@@ -8197,7 +8239,7 @@
 				"equipment": ["Smoke Dischargers","Turret Mounted Light Autocannon"]
 			},
 			{
-				"name": "GIAT AMX-10P IFV - Recce",
+				"name": "GIAT AMX-10P IFV ",
 				"factions": [],
 				"order": 1,
 				"availableIn": [
@@ -8207,6 +8249,7 @@
 				],
 				"points": 0,
 				"models": 1,
+				"sortPriority": 15,
 				"options": [
 					{
 						"name": "Inexperienced",
@@ -8260,6 +8303,7 @@
 				],
 				"points": 0,
 				"models": 1,
+				"sortPriority": 15,
 				"options": [
 					{
 						"name": "Inexperienced",
@@ -8285,7 +8329,7 @@
 				"equipment": ["Smoke Dischargers","Pintle Mounted MMG"]
 			},
 			{
-				"name": "VBMR Griffon/Serval - Recce",
+				"name": "VBMR Griffon/Serval ",
 				"factions": [],
 				"order": 1,
 				"availableIn": [
@@ -8295,6 +8339,7 @@
 				],
 				"points": 0,
 				"models": 1,
+				"sortPriority": 15,
 				"options": [
 					{
 						"name": "Inexperienced",
@@ -8348,6 +8393,7 @@
 				],
 				"points": 0,
 				"models": 1,
+				"sortPriority": 15,
 				"options": [
 					{
 						"name": "Inexperienced",
@@ -8373,7 +8419,7 @@
 				"equipment": ["Smoke Dischargers","Pintle Mounted MMG"]
 			},
 			{
-				"name": "Petit Véhicule Protégé (PVP) - Recce",
+				"name": "Petit Véhicule Protégé (PVP) ",
 				"factions": [],
 				"order": 1,
 				"availableIn": [
@@ -8383,6 +8429,7 @@
 				],
 				"points": 0,
 				"models": 1,
+				"sortPriority": 15,
 				"options": [
 					{
 						"name": "Inexperienced",
@@ -8436,6 +8483,7 @@
 				],
 				"points": 0,
 				"models": 1,
+				"sortPriority": 15,
 				"options": [
 					{
 						"name": "Inexperienced",
@@ -8493,7 +8541,7 @@
 				"equipment": []
 			},
 			{
-				"name": "Humvee - Recce",
+				"name": "Humvee ",
 				"factions": [],
 				"order": 1,
 				"availableIn": [
@@ -8503,6 +8551,7 @@
 				],
 				"points": 0,
 				"models": 1,
+				"sortPriority": 15,
 				"options": [
 					{
 						"name": "Inexperienced",
@@ -8588,6 +8637,7 @@
 				],
 				"points": 0,
 				"models": 1,
+				"sortPriority": 15,
 				"options": [
 					{
 						"name": "Inexperienced",
@@ -8645,7 +8695,7 @@
 				"equipment": ["MRAP"]
 			},
 			{
-				"name": "Uparmored Humvee - Recce",
+				"name": "Uparmored Humvee ",
 				"factions": [],
 				"order": 1,
 				"availableIn": [
@@ -8655,6 +8705,7 @@
 				],
 				"points": 0,
 				"models": 1,
+				"sortPriority": 15,
 				"options": [
 					{
 						"name": "Inexperienced",
@@ -8740,6 +8791,7 @@
 				],
 				"points": 0,
 				"models": 1,
+				"sortPriority": 15,
 				"options": [
 					{
 						"name": "Inexperienced",
@@ -8781,7 +8833,7 @@
 				"equipment": []
 			},
 			{
-				"name": "JLTV Utility - Recce",
+				"name": "JLTV Utility ",
 				"factions": [],
 				"order": 1,
 				"availableIn": [
@@ -8791,6 +8843,7 @@
 				],
 				"points": 0,
 				"models": 1,
+				"sortPriority": 15,
 				"options": [
 					{
 						"name": "Inexperienced",
@@ -8863,6 +8916,7 @@
 				],
 				"points": 0,
 				"models": 1,
+				"sortPriority": 15,
 				"options": [
 					{
 						"name": "Inexperienced",
@@ -8926,6 +8980,7 @@
 				],
 				"points": 0,
 				"models": 1,
+				"sortPriority": 15,
 				"options": [
 					{
 						"name": "Inexperienced",
@@ -8979,7 +9034,7 @@
 				"equipment": ["Smoke Dischargers"]
 			},
 			{
-				"name": "M1126 Infantry Carrier Vehicle - Recce",
+				"name": "M1126 Infantry Carrier Vehicle ",
 				"factions": [],
 				"order": 1,
 				"availableIn": [
@@ -8989,6 +9044,7 @@
 				],
 				"points": 0,
 				"models": 1,
+				"sortPriority": 15,
 				"options": [
 					{
 						"name": "Recce",
@@ -9064,6 +9120,7 @@
 				],
 				"points": 0,
 				"models": 1,
+				"sortPriority": 15,
 				"options": [
 					{
 						"name": "Inexperienced",
@@ -9089,7 +9146,7 @@
 				"equipment": ["Smoke Dischargers","Turret Mounted Light Autocannon","Turret Mounted Coaxial MMG","Pintle Mounted HMG"]
 			},
 			{
-				"name": "LAV-25 - Recce",
+				"name": "LAV-25 ",
 				"factions": [],
 				"order": 1,
 				"availableIn": [
@@ -9099,6 +9156,7 @@
 				],
 				"points": 0,
 				"models": 1,
+				"sortPriority": 15,
 				"options": [
 					{
 						"name": "Recce",
@@ -9152,6 +9210,7 @@
 				],
 				"points": 0,
 				"models": 1,
+				"sortPriority": 15,
 				"options": [
 					{
 						"name": "Inexperienced",
@@ -9177,7 +9236,7 @@
 				"equipment": ["Smoke Dischargers","Turret Mounted Light Autocannon","Turret Mounted Coaxial MMG","Pintle Mounted HMG"]
 			},
 			{
-				"name": "LAV-25A2 - Recce",
+				"name": "LAV-25A2 ",
 				"factions": [],
 				"order": 1,
 				"availableIn": [
@@ -9187,6 +9246,7 @@
 				],
 				"points": 0,
 				"models": 1,
+				"sortPriority": 15,
 				"options": [
 					{
 						"name": "Recce",
@@ -9240,6 +9300,7 @@
 				],
 				"points": 0,
 				"models": 1,
+				"sortPriority": 15,
 				"options": [
 					{
 						"name": "Inexperienced",
@@ -9270,7 +9331,7 @@
 				"equipment": ["Smoke Dischargers","Pintle Mounted HMG"]
 			},
 			{
-				"name": "Amphibious Combat Vehicle - Recce",
+				"name": "Amphibious Combat Vehicle ",
 				"factions": [],
 				"order": 1,
 				"availableIn": [
@@ -9280,6 +9341,7 @@
 				],
 				"points": 0,
 				"models": 1,
+				"sortPriority": 15,
 				"options": [
 					{
 						"name": "Recce",
@@ -9338,6 +9400,7 @@
 				],
 				"points": 0,
 				"models": 1,
+				"sortPriority": 15,
 				"options": [
 					{
 						"name": "Inexperienced",
@@ -9363,7 +9426,7 @@
 				"equipment": ["Smoke Dischargers","Turret Mounted Light Autocannon","Turret Mounted ATGM"]
 			},
 			{
-				"name": "ACV-30 - Recce",
+				"name": "ACV-30 ",
 				"factions": [],
 				"order": 1,
 				"availableIn": [
@@ -9373,6 +9436,7 @@
 				],
 				"points": 0,
 				"models": 1,
+				"sortPriority": 15,
 				"options": [
 					{
 						"name": "Recce",
@@ -9426,6 +9490,7 @@
 				],
 				"points": 0,
 				"models": 1,
+				"sortPriority": 15,
 				"options": [
 					{
 						"name": "Inexperienced",
@@ -9456,7 +9521,7 @@
 				"equipment": ["Smoke Dischargers","Turret Mounted Light Autocannon","Turret Mounted ATGM"]
 			},
 			{
-				"name": "Bradley M2 IFV - Recce",
+				"name": "Bradley M2 IFV ",
 				"factions": [],
 				"order": 1,
 				"availableIn": [
@@ -9466,6 +9531,7 @@
 				],
 				"points": 0,
 				"models": 1,
+				"sortPriority": 15,
 				"options": [
 					{
 						"name": "Recce",
@@ -9524,6 +9590,7 @@
 				],
 				"points": 0,
 				"models": 1,
+				"sortPriority": 15,
 				"options": [
 					{
 						"name": "Recce",
@@ -9555,7 +9622,7 @@
 				"equipment": ["Smoke Dischargers","Turret Mounted Light Autocannon","Turret Mounted Coaxial MMG","Turret Mounted ATGM"]
 			},
 			{
-				"name": "Bradley M3A4 IFV - Recce",
+				"name": "Bradley M3A4 IFV ",
 				"factions": [],
 				"order": 1,
 				"availableIn": [
@@ -9565,6 +9632,7 @@
 				],
 				"points": 0,
 				"models": 1,
+				"sortPriority": 15,
 				"options": [
 					{
 						"name": "Recce",
@@ -9618,6 +9686,7 @@
 				],
 				"points": 0,
 				"models": 1,
+				"sortPriority": 15,
 				"options": [
 					{
 						"name": "Inexperienced",
@@ -9648,7 +9717,7 @@
 				"equipment": ["Smoke Dischargers","Turret Mounted Automatic Grenade Launcher","Turret Mounted Coaxial MMG"]
 			},
 			{
-				"name": "AAV-7A1 - Recce",
+				"name": "AAV-7A1 ",
 				"factions": [],
 				"order": 1,
 				"availableIn": [
@@ -9658,6 +9727,7 @@
 				],
 				"points": 0,
 				"models": 1,
+				"sortPriority": 15,
 				"options": [
 					{
 						"name": "Recce",
@@ -9705,7 +9775,7 @@
 				],
 				"points": 0,
 				"models": 1,
-				"sortPriority": 3,
+				"sortPriority": 9,
 				"limits": [
 					{
 						"key": "Vehicles",
@@ -9750,7 +9820,7 @@
 				],
 				"points": 0,
 				"models": 1,
-				"sortPriority": 3,
+				"sortPriority": 9,
 				"limits": [
 					{
 						"key": "Vehicles",
@@ -9795,7 +9865,7 @@
 				],
 				"points": 0,
 				"models": 1,
-				"sortPriority": 3,
+				"sortPriority": 9,
 				"limits": [
 					{
 						"key": "Vehicles",
@@ -9851,7 +9921,7 @@
 				],
 				"points": 0,
 				"models": 1,
-				"sortPriority": 3,
+				"sortPriority": 9,
 				"limits": [
 					{
 						"key": "Vehicles",
@@ -9913,7 +9983,7 @@
 				],
 				"points": 0,
 				"models": 1,
-				"sortPriority": 3,
+				"sortPriority": 9,
 				"limits": [
 					{
 						"key": "Vehicles",
@@ -9963,7 +10033,7 @@
 				],
 				"points": 0,
 				"models": 1,
-				"sortPriority": 3,
+				"sortPriority": 9,
 				"limits": [
 					{
 						"key": "Vehicles",
@@ -10013,7 +10083,7 @@
 				],
 				"points": 0,
 				"models": 1,
-				"sortPriority": 3,
+				"sortPriority": 9,
 				"limits": [
 					{
 						"key": "Vehicles",
@@ -10057,7 +10127,7 @@
 				],
 				"points": 0,
 				"models": 1,
-				"sortPriority": 3,
+				"sortPriority": 9,
 				"limits": [
 					{
 						"key": "Vehicles",
@@ -10107,7 +10177,7 @@
 				],
 				"points": 0,
 				"models": 1,
-				"sortPriority": 3,
+				"sortPriority": 9,
 				"limits": [
 					{
 						"key": "Vehicles",
@@ -10157,7 +10227,7 @@
 				],
 				"points": 0,
 				"models": 1,
-				"sortPriority": 3,
+				"sortPriority": 9,
 				"limits": [
 					{
 						"key": "Vehicles",
@@ -10207,7 +10277,7 @@
 				],
 				"points": 0,
 				"models": 1,
-				"sortPriority": 3,
+				"sortPriority": 9,
 				"limits": [
 					{
 						"key": "Vehicles",
@@ -10257,7 +10327,7 @@
 				],
 				"points": 0,
 				"models": 1,
-				"sortPriority": 3,
+				"sortPriority": 9,
 				"limits": [
 					{
 						"key": "Vehicles",
@@ -10307,7 +10377,7 @@
 				],
 				"points": 0,
 				"models": 1,
-				"sortPriority": 3,
+				"sortPriority": 9,
 				"limits": [
 					{
 						"key": "Vehicles",
@@ -10351,7 +10421,7 @@
 				],
 				"points": 0,
 				"models": 1,
-				"sortPriority": 3,
+				"sortPriority": 9,
 				"limits": [
 					{
 						"key": "Vehicles",
@@ -10395,7 +10465,7 @@
 				],
 				"points": 0,
 				"models": 1,
-				"sortPriority": 3,
+				"sortPriority": 9,
 				"limits": [
 					{
 						"key": "Vehicles",
@@ -10439,7 +10509,7 @@
 				],
 				"points": 0,
 				"models": 1,
-				"sortPriority": 3,
+				"sortPriority": 9,
 				"limits": [
 					{
 						"key": "Vehicles",
@@ -10483,7 +10553,7 @@
 				],
 				"points": 0,
 				"models": 1,
-				"sortPriority": 3,
+				"sortPriority": 9,
 				"limits": [
 					{
 						"key": "Vehicles",
@@ -10527,7 +10597,7 @@
 				],
 				"points": 0,
 				"models": 1,
-				"sortPriority": 3,
+				"sortPriority": 9,
 				"limits": [
 					{
 						"key": "Arty",
@@ -10571,7 +10641,7 @@
 				],
 				"points": 0,
 				"models": 1,
-				"sortPriority": 3,
+				"sortPriority": 9,
 				"limits": [
 					{
 						"key": "Vehicles",
@@ -10621,7 +10691,7 @@
 				],
 				"points": 0,
 				"models": 1,
-				"sortPriority": 3,
+				"sortPriority": 9,
 				"limits": [
 					{
 						"key": "Arty",
@@ -10665,7 +10735,7 @@
 				],
 				"points": 0,
 				"models": 1,
-				"sortPriority": 3,
+				"sortPriority": 9,
 				"limits": [
 					{
 						"key": "Arty",
@@ -10709,7 +10779,7 @@
 				],
 				"points": 0,
 				"models": 1,
-				"sortPriority": 3,
+				"sortPriority": 9,
 				"limits": [
 					{
 						"key": "Vehicles",
@@ -10765,7 +10835,7 @@
 				],
 				"points": 0,
 				"models": 1,
-				"sortPriority": 3,
+				"sortPriority": 9,
 				"limits": [
 					{
 						"key": "Vehicles",
@@ -10821,7 +10891,7 @@
 				],
 				"points": 0,
 				"models": 1,
-				"sortPriority": 3,
+				"sortPriority": 9,
 				"limits": [
 					{
 						"key": "Vehicles",
@@ -10877,7 +10947,7 @@
 				],
 				"points": 0,
 				"models": 1,
-				"sortPriority": 3,
+				"sortPriority": 9,
 				"limits": [
 					{
 						"key": "Vehicles",
@@ -10933,7 +11003,7 @@
 				],
 				"points": 0,
 				"models": 1,
-				"sortPriority": 3,
+				"sortPriority": 9,
 				"limits": [
 					{
 						"key": "Vehicles",
@@ -10989,7 +11059,7 @@
 				],
 				"points": 0,
 				"models": 1,
-				"sortPriority": 3,
+				"sortPriority": 9,
 				"limits": [
 					{
 						"key": "Vehicles",
@@ -11039,7 +11109,7 @@
 				],
 				"points": 0,
 				"models": 1,
-				"sortPriority": 3,
+				"sortPriority": 9,
 				"limits": [
 					{
 						"key": "Vehicles",
@@ -11089,7 +11159,7 @@
 				],
 				"points": 0,
 				"models": 1,
-				"sortPriority": 3,
+				"sortPriority": 9,
 				"limits": [
 					{
 						"key": "Vehicles",
@@ -11139,7 +11209,7 @@
 				],
 				"points": 0,
 				"models": 1,
-				"sortPriority": 3,
+				"sortPriority": 9,
 				"limits": [
 					{
 						"key": "Vehicles",
@@ -11206,6 +11276,7 @@
 				],
 				"points": 0,
 				"models": 1,
+				"sortPriority": 15,
 				"options": [
 					{
 						"name": "Inexperienced",
@@ -11231,7 +11302,7 @@
 				"equipment": ["Turret Mounted Medium AT Gun","Turret Mounted Coaxial MMG","Pintle Mounted ATGM"]
 			},
 			{
-				"name": "BMP-1 IFV - Recce",
+				"name": "BMP-1 IFV ",
 				"factions": [],
 				"order": 1,
 				"availableIn": [
@@ -11241,6 +11312,7 @@
 				],
 				"points": 0,
 				"models": 1,
+				"sortPriority": 15,
 				"options": [
 					{
 						"name": "Recce",
@@ -11294,6 +11366,7 @@
 				],
 				"points": 0,
 				"models": 1,
+				"sortPriority": 15,
 				"options": [
 					{
 						"name": "Inexperienced",
@@ -11319,7 +11392,7 @@
 				"equipment": ["Turret Mounted Heavy Autocannon","Turret Mounted Coaxial MMG","Pintle Mounted ATGM","Smoke Dischargers"]
 			},
 			{
-				"name": "BMP-2 IFV - Recce",
+				"name": "BMP-2 IFV ",
 				"factions": [],
 				"order": 1,
 				"availableIn": [
@@ -11329,6 +11402,7 @@
 				],
 				"points": 0,
 				"models": 1,
+				"sortPriority": 15,
 				"options": [
 					{
 						"name": "Recce",
@@ -11382,6 +11456,7 @@
 				],
 				"points": 0,
 				"models": 1,
+				"sortPriority": 15,
 				"options": [
 					{
 						"name": "Inexperienced",
@@ -11412,7 +11487,7 @@
 				"equipment": ["Turret Mounted Low Velocity Heavy AT Gun","Turret Mounted Coaxial Heavy Autocannon","Turret Mounted Coaxial MMG","Hull Mounted MMGs","x2","Pintle Mounted ATGM","Smoke Dischargers"]
 			},
 			{
-				"name": "BMP-3 IFV - Recce",
+				"name": "BMP-3 IFV ",
 				"factions": [],
 				"order": 1,
 				"availableIn": [
@@ -11422,6 +11497,7 @@
 				],
 				"points": 0,
 				"models": 1,
+				"sortPriority": 15,
 				"options": [
 					{
 						"name": "Recce",
@@ -11469,7 +11545,7 @@
 				],
 				"points": 0,
 				"models": 1,
-				"sortPriority": 3,
+				"sortPriority": 9,
 				"limits": [
 					{
 						"key": "Vehicles",
@@ -11519,7 +11595,7 @@
 				],
 				"points": 0,
 				"models": 1,
-				"sortPriority": 3,
+				"sortPriority": 9,
 				"limits": [
 					{
 						"key": "Vehicles",
@@ -11569,7 +11645,7 @@
 				],
 				"points": 0,
 				"models": 1,
-				"sortPriority": 3,
+				"sortPriority": 9,
 				"limits": [
 					{
 						"key": "Vehicles",
@@ -11619,7 +11695,7 @@
 				],
 				"points": 0,
 				"models": 1,
-				"sortPriority": 3,
+				"sortPriority": 9,
 				"limits": [
 					{
 						"key": "Vehicles",
@@ -11651,7 +11727,6 @@
 				"specialText": "Armored Carrier - 7+\n Wheeled Vehicle",
 				"equipment": ["Turret Mounted SAM"]
 			},
-			
 			{
 				"name": " 9K35 Strela-10 SAM System",
 				"validationKeys": ["ArtyTeams"],
@@ -11664,7 +11739,7 @@
 				],
 				"points": 0,
 				"models": 1,
-				"sortPriority": 3,
+				"sortPriority": 9,
 				"limits": [
 					{
 						"key": "Arty",
@@ -11719,6 +11794,7 @@
 				],
 				"points": 0,
 				"models": 1,
+				"sortPriority": 15,
 				"options": [
 					{
 						"name": "Inexperienced",
@@ -11763,7 +11839,7 @@
 				"equipment": ["Pintle Mounted HMG"]
 			},
 			{
-				"name": "MT-LB APC - Recce",
+				"name": "MT-LB APC ",
 				"factions": [],
 				"order": 1,
 				"availableIn": [
@@ -11773,6 +11849,7 @@
 				],
 				"points": 0,
 				"models": 1,
+				"sortPriority": 15,
 				"options": [
 					{
 						"name": "Recce",
@@ -11845,6 +11922,7 @@
 				],
 				"points": 0,
 				"models": 1,
+				"sortPriority": 15,
 				"options": [
 					{
 						"name": "Inexperienced",
@@ -11883,7 +11961,7 @@
 				"equipment": []
 			},
 			{
-				"name": "BTR-50 APC - Recce",
+				"name": "BTR-50 APC ",
 				"factions": [],
 				"order": 1,
 				"availableIn": [
@@ -11893,6 +11971,7 @@
 				],
 				"points": 0,
 				"models": 1,
+				"sortPriority": 15,
 				"options": [
 					{
 						"name": "Recce",
@@ -11959,6 +12038,7 @@
 				],
 				"points": 0,
 				"models": 1,
+				"sortPriority": 15,
 				"options": [
 					{
 						"name": "Inexperienced",
@@ -12007,7 +12087,7 @@
 				"equipment": []
 			},
 			{
-				"name": "BTR-60P APC - Recce",
+				"name": "BTR-60P APC ",
 				"factions": [],
 				"order": 1,
 				"availableIn": [
@@ -12017,6 +12097,7 @@
 				],
 				"points": 0,
 				"models": 1,
+				"sortPriority": 15,
 				"options": [
 					{
 						"name": "Recce",
@@ -12093,6 +12174,7 @@
 				],
 				"points": 0,
 				"models": 1,
+				"sortPriority": 15,
 				"options": [
 					{
 						"name": "Inexperienced",
@@ -12119,7 +12201,7 @@
 				"equipment": ["Forward Facing Pintle Mounted HMG"]
 			},
 			{
-				"name": "BTR-60PA APC - Recce",
+				"name": "BTR-60PA APC ",
 				"factions": [],
 				"order": 1,
 				"availableIn": [
@@ -12129,6 +12211,7 @@
 				],
 				"points": 0,
 				"models": 1,
+				"sortPriority": 15,
 				"options": [
 					{
 						"name": "Recce",
@@ -12183,6 +12266,7 @@
 				],
 				"points": 0,
 				"models": 1,
+				"sortPriority": 15,
 				"options": [
 					{
 						"name": "Inexperienced",
@@ -12208,7 +12292,7 @@
 				"equipment": ["Turret Mounted HMG"]
 			},
 			{
-				"name": "BTR-70 APC - Recce",
+				"name": "BTR-70 APC ",
 				"factions": [],
 				"order": 1,
 				"availableIn": [
@@ -12218,6 +12302,7 @@
 				],
 				"points": 0,
 				"models": 1,
+				"sortPriority": 15,
 				"options": [
 					{
 						"name": "Recce",
@@ -12271,6 +12356,7 @@
 				],
 				"points": 0,
 				"models": 1,
+				"sortPriority": 15,
 				"options": [
 					{
 						"name": "Inexperienced",
@@ -12308,7 +12394,7 @@
 				"equipment": ["Turret Mounted Coaxial MMG"]
 			},
 			{
-				"name": "BTR-80 APC - Recce",
+				"name": "BTR-80 APC ",
 				"factions": [],
 				"order": 1,
 				"availableIn": [
@@ -12318,6 +12404,7 @@
 				],
 				"points": 0,
 				"models": 1,
+				"sortPriority": 15,
 				"options": [
 					{
 						"name": "Recce",
@@ -12383,6 +12470,7 @@
 				],
 				"points": 0,
 				"models": 1,
+				"sortPriority": 15,
 				"options": [
 					{
 						"name": "Inexperienced",
@@ -12413,7 +12501,7 @@
 				"equipment": ["Turret Mounted Heavy Autocannon","Turret Mounted Coaxial Automatic Grenade Launcher","Turret Mounted Coaxial MMG","Pintle Mounted ATGM"]
 			},
 			{
-				"name": "BTR-90 APC - Recce",
+				"name": "BTR-90 APC ",
 				"factions": [],
 				"order": 1,
 				"availableIn": [
@@ -12423,6 +12511,7 @@
 				],
 				"points": 0,
 				"models": 1,
+				"sortPriority": 15,
 				"options": [
 					{
 						"name": "Recce",
@@ -12481,6 +12570,7 @@
 				],
 				"points": 0,
 				"models": 1,
+				"sortPriority": 15,
 				"options": [
 					{
 						"name": "Inexperienced",
@@ -12518,7 +12608,7 @@
 				"equipment": []
 			},
 			{
-				"name": "SBA-60K2 'Bulat' APC - Recce",
+				"name": "SBA-60K2 'Bulat' APC ",
 				"factions": [],
 				"order": 1,
 				"availableIn": [
@@ -12528,6 +12618,7 @@
 				],
 				"points": 0,
 				"models": 1,
+				"sortPriority": 15,
 				"options": [
 					{
 						"name": "Recce",
@@ -12593,6 +12684,7 @@
 				],
 				"points": 0,
 				"models": 1,
+				"sortPriority": 15,
 				"options": [
 					{
 						"name": "Inexperienced",
@@ -12618,7 +12710,7 @@
 				"equipment": []
 			},
 			{
-				"name": "Ural Typhoon APC - Recce",
+				"name": "Ural Typhoon APC ",
 				"factions": [],
 				"order": 1,
 				"availableIn": [
@@ -12628,6 +12720,7 @@
 				],
 				"points": 0,
 				"models": 1,
+				"sortPriority": 15,
 				"options": [
 					{
 						"name": "Recce",
@@ -12681,6 +12774,7 @@
 				],
 				"points": 0,
 				"models": 1,
+				"sortPriority": 15,
 				"options": [
 					{
 						"name": "Inexperienced",
@@ -12706,7 +12800,7 @@
 				"equipment": []
 			},
 			{
-				"name": "GAZ Small Personal Transport - Recce",
+				"name": "GAZ Small Personal Transport ",
 				"factions": [],
 				"order": 1,
 				"availableIn": [
@@ -12716,6 +12810,7 @@
 				],
 				"points": 0,
 				"models": 1,
+				"sortPriority": 15,
 				"options": [
 					{
 						"name": "Recce",
@@ -12769,6 +12864,7 @@
 				],
 				"points": 0,
 				"models": 1,
+				"sortPriority": 15,
 				"options": [
 					{
 						"name": "Inexperienced",
@@ -12794,7 +12890,7 @@
 				"equipment": []
 			},
 			{
-				"name": "GAZ Large Transport Truck - Recce",
+				"name": "GAZ Large Transport Truck ",
 				"factions": [],
 				"order": 1,
 				"availableIn": [
@@ -12804,6 +12900,7 @@
 				],
 				"points": 0,
 				"models": 1,
+				"sortPriority": 15,
 				"options": [
 					{
 						"name": "Recce",
@@ -12857,6 +12954,7 @@
 				],
 				"points": 0,
 				"models": 1,
+				"sortPriority": 15,
 				"options": [
 					{
 						"name": "Inexperienced",
@@ -12882,7 +12980,7 @@
 				"equipment": ["Turret Mounted Heavy Autocannon","Smoke Dischargers"]
 			},
 			{
-				"name": "Strf 9040 IFV - Recce",
+				"name": "Strf 9040 IFV ",
 				"factions": [],
 				"order": 1,
 				"availableIn": [
@@ -12892,6 +12990,7 @@
 				],
 				"points": 0,
 				"models": 1,
+				"sortPriority": 15,
 				"options": [
 					{
 						"name": "Recce",
@@ -12945,6 +13044,7 @@
 				],
 				"points": 0,
 				"models": 1,
+				"sortPriority": 15,
 				"options": [
 					{
 						"name": "Inexperienced",
@@ -12970,7 +13070,7 @@
 				"equipment": ["Turret Mounted Heavy Autocannon","Smoke Dischargers"]
 			},
 			{
-				"name": "Strf 9040B IFV - Recce",
+				"name": "Strf 9040B IFV ",
 				"factions": [],
 				"order": 1,
 				"availableIn": [
@@ -12980,6 +13080,7 @@
 				],
 				"points": 0,
 				"models": 1,
+				"sortPriority": 15,
 				"options": [
 					{
 						"name": "Recce",
@@ -13033,6 +13134,7 @@
 				],
 				"points": 0,
 				"models": 1,
+				"sortPriority": 15,
 				"options": [
 					{
 						"name": "Inexperienced",
@@ -13058,7 +13160,7 @@
 				"equipment": ["Turret Mounted Heavy Autocannon","Smoke Dischargers"]
 			},
 			{
-				"name": "Strf 9040C IFV - Recce",
+				"name": "Strf 9040C IFV ",
 				"factions": [],
 				"order": 1,
 				"availableIn": [
@@ -13068,6 +13170,7 @@
 				],
 				"points": 0,
 				"models": 1,
+				"sortPriority": 15,
 				"options": [
 					{
 						"name": "Recce",
@@ -13110,7 +13213,7 @@
 				],
 				"points": 0,
 				"models": 1,
-				"sortPriority": 3,
+				"sortPriority": 9,
 				"limits": [
 					{
 						"key": "Vehicles",
@@ -13160,7 +13263,7 @@
 				],
 				"points": 0,
 				"models": 1,
-				"sortPriority": 3,
+				"sortPriority": 9,
 				"limits": [
 					{
 						"key": "Vehicles",
@@ -13210,7 +13313,7 @@
 				],
 				"points": 0,
 				"models": 1,
-				"sortPriority": 3,
+				"sortPriority": 9,
 				"limits": [
 					{
 						"key": "Vehicles",
@@ -13260,7 +13363,7 @@
 				],
 				"points": 0,
 				"models": 1,
-				"sortPriority": 3,
+				"sortPriority": 9,
 				"limits": [
 					{
 						"key": "Vehicles",
@@ -13310,7 +13413,7 @@
 				],
 				"points": 0,
 				"models": 1,
-				"sortPriority": 3,
+				"sortPriority": 9,
 				"limits": [
 					{
 						"key": "Vehicles",
@@ -13360,7 +13463,7 @@
 				],
 				"points": 0,
 				"models": 1,
-				"sortPriority": 3,
+				"sortPriority": 9,
 				"limits": [
 					{
 						"key": "Vehicles",
@@ -13421,6 +13524,7 @@
 				],
 				"points": 0,
 				"models": 1,
+				"sortPriority": 15,
 				"options": [
 					{
 						"name": "Inexperienced",
@@ -13446,7 +13550,7 @@
 				"equipment": ["Pintle Mounted HMG"]
 			},
 			{
-				"name": "Pbv XA-185 APC - Recce",
+				"name": "Pbv XA-185 APC ",
 				"factions": [],
 				"order": 1,
 				"availableIn": [
@@ -13456,6 +13560,7 @@
 				],
 				"points": 0,
 				"models": 1,
+				"sortPriority": 15,
 				"options": [
 					{
 						"name": "Recce",
@@ -13509,6 +13614,7 @@
 				],
 				"points": 0,
 				"models": 1,
+				"sortPriority": 15,
 				"options": [
 					{
 						"name": "Inexperienced",
@@ -13534,7 +13640,7 @@
 				"equipment": ["Turret Mounted Light Autocannon"]
 			},
 			{
-				"name": "Pbv 203A APC - Recce",
+				"name": "Pbv 203A APC ",
 				"factions": [],
 				"order": 1,
 				"availableIn": [
@@ -13544,6 +13650,7 @@
 				],
 				"points": 0,
 				"models": 1,
+				"sortPriority": 15,
 				"options": [
 					{
 						"name": "Recce",
@@ -13597,6 +13704,7 @@
 				],
 				"points": 0,
 				"models": 1,
+				"sortPriority": 15,
 				"options": [
 					{
 						"name": "Inexperienced",
@@ -13650,7 +13758,7 @@
 				"equipment": []
 			},
 			{
-				"name": "Pbv 203B APC - Recce",
+				"name": "Pbv 203B APC ",
 				"factions": [],
 				"order": 1,
 				"availableIn": [
@@ -13660,6 +13768,7 @@
 				],
 				"points": 0,
 				"models": 1,
+				"sortPriority": 15,
 				"options": [
 					{
 						"name": "Recce",
@@ -13730,7 +13839,7 @@
 				],
 				"points": 0,
 				"models": 1,
-				"sortPriority": 3,
+				"sortPriority": 9,
 				"limits": [
 					{
 						"key": "Vehicles",
@@ -13813,6 +13922,7 @@
 				],
 				"points": 0,
 				"models": 1,
+				"sortPriority": 15,
 				"options": [
 					{
 						"name": "Inexperienced",
@@ -13845,7 +13955,7 @@
 				"equipment": []
 			},
 			{
-				"name": "Terrängbil 16 / 24 Scout Vehicles - Recce",
+				"name": "Terrängbil 16 / 24 Scout Vehicles ",
 				"factions": [],
 				"order": 1,
 				"availableIn": [
@@ -13855,6 +13965,7 @@
 				],
 				"points": 0,
 				"models": 1,
+				"sortPriority": 15,
 				"options": [
 					{
 						"name": "Recce",
@@ -13915,6 +14026,7 @@
 				],
 				"points": 0,
 				"models": 1,
+				"sortPriority": 15,
 				"options": [
 					{
 						"name": "Inexperienced",
@@ -13940,7 +14052,7 @@
 				"equipment": ["Pintle Mounted HMG","Smoke Dischargers"]
 			},
 			{
-				"name": "Bandvagn 206 Transport Vehicle - Recce",
+				"name": "Bandvagn 206 Transport Vehicle ",
 				"factions": [],
 				"order": 1,
 				"availableIn": [
@@ -13950,6 +14062,7 @@
 				],
 				"points": 0,
 				"models": 1,
+				"sortPriority": 15,
 				"options": [
 					{
 						"name": "Recce",
@@ -14003,6 +14116,7 @@
 				],
 				"points": 0,
 				"models": 1,
+				"sortPriority": 15,
 				"options": [
 					{
 						"name": "Inexperienced",
@@ -14028,7 +14142,7 @@
 				"equipment": ["Pintle Mounted HMG","Smoke Dischargers"]
 			},
 			{
-				"name": "Bandvagn 410 Transport Vehicle - Recce",
+				"name": "Bandvagn 410 Transport Vehicle ",
 				"factions": [],
 				"order": 1,
 				"availableIn": [
@@ -14038,6 +14152,7 @@
 				],
 				"points": 0,
 				"models": 1,
+				"sortPriority": 15,
 				"options": [
 					{
 						"name": "Recce",
@@ -14091,6 +14206,7 @@
 				],
 				"points": 0,
 				"models": 1,
+				"sortPriority": 15,
 				"options": [
 					{
 						"name": "Inexperienced",
@@ -14116,7 +14232,7 @@
 				"equipment": ["Pintle Mounted HMG","Smoke Dischargers"]
 			},
 			{
-				"name": "Bandvagn 410 Uparmored Transport Vehicle - Recce",
+				"name": "Bandvagn 410 Uparmored Transport Vehicle ",
 				"factions": [],
 				"order": 1,
 				"availableIn": [
@@ -14126,6 +14242,7 @@
 				],
 				"points": 0,
 				"models": 1,
+				"sortPriority": 15,
 				"options": [
 					{
 						"name": "Recce",
@@ -14179,6 +14296,7 @@
 				],
 				"points": 0,
 				"models": 1,
+				"sortPriority": 15,
 				"options": [
 					{
 						"name": "Inexperienced",
@@ -14218,7 +14336,7 @@
 				"equipment": ["Twin Hull Mounted HMGs"]
 			},
 			{
-				"name": "CB-90 Fast Assault Boat - Recce",
+				"name": "CB-90 Fast Assault Boat ",
 				"factions": [],
 				"order": 1,
 				"availableIn": [
@@ -14228,6 +14346,7 @@
 				],
 				"points": 0,
 				"models": 1,
+				"sortPriority": 15,
 				"options": [
 					{
 						"name": "Recce",
@@ -14284,7 +14403,7 @@
 				],
 				"points": 0,
 				"models": 1,
-				"sortPriority": 3,
+				"sortPriority": 9,
 				"limits": [
 					{
 						"key": "Vehicles",
@@ -14393,7 +14512,7 @@
 				],
 				"points": 0,
 				"models": 1,
-				"sortPriority": 3,
+				"sortPriority": 9,
 				"limits": [
 					{
 						"key": "Vehicles",
@@ -14502,7 +14621,7 @@
 				],
 				"points": 0,
 				"models": 1,
-				"sortPriority": 3,
+				"sortPriority": 9,
 				"limits": [
 					{
 						"key": "Vehicles",
@@ -14562,7 +14681,7 @@
 				],
 				"points": 0,
 				"models": 1,
-				"sortPriority": 3,
+				"sortPriority": 9,
 				"limits": [
 					{
 						"key": "Vehicles",
@@ -14622,7 +14741,7 @@
 				],
 				"points": 0,
 				"models": 1,
-				"sortPriority": 3,
+				"sortPriority": 9,
 				"limits": [
 					{
 						"key": "Vehicles",
@@ -14682,7 +14801,7 @@
 				],
 				"points": 0,
 				"models": 1,
-				"sortPriority": 3,
+				"sortPriority": 9,
 				"limits": [
 					{
 						"key": "Vehicles",
@@ -14742,7 +14861,7 @@
 				],
 				"points": 0,
 				"models": 1,
-				"sortPriority": 3,
+				"sortPriority": 9,
 				"limits": [
 					{
 						"key": "Vehicles",
@@ -14822,7 +14941,7 @@
 				],
 				"points": 0,
 				"models": 1,
-				"sortPriority": 3,
+				"sortPriority": 9,
 				"limits": [
 					{
 						"key": "Vehicles",
@@ -14876,7 +14995,7 @@
 				],
 				"points": 0,
 				"models": 1,
-				"sortPriority": 3,
+				"sortPriority": 9,
 				"limits": [
 					{
 						"key": "Vehicles",
@@ -14962,7 +15081,7 @@
 				],
 				"points": 0,
 				"models": 1,
-				"sortPriority": 3,
+				"sortPriority": 9,
 				"limits": [
 					{
 						"key": "Vehicles",
@@ -15024,7 +15143,7 @@
 				],
 				"points": 0,
 				"models": 1,
-				"sortPriority": 3,
+				"sortPriority": 9,
 				"limits": [
 					{
 						"key": "Vehicles",
@@ -15090,7 +15209,7 @@
 				],
 				"points": 0,
 				"models": 1,
-				"sortPriority": 3,
+				"sortPriority": 9,
 				"limits": [
 					{
 						"key": "Vehicles",
@@ -15156,7 +15275,7 @@
 				],
 				"points": 0,
 				"models": 1,
-				"sortPriority": 3,
+				"sortPriority": 9,
 				"limits": [
 					{
 						"key": "Vehicles",
@@ -15222,7 +15341,7 @@
 				],
 				"points": 0,
 				"models": 1,
-				"sortPriority": 3,
+				"sortPriority": 9,
 				"limits": [
 					{
 						"key": "Vehicles",
@@ -15284,7 +15403,7 @@
 				],
 				"points": 0,
 				"models": 1,
-				"sortPriority": 3,
+				"sortPriority": 9,
 				"limits": [
 					{
 						"key": "Arty",
@@ -15346,7 +15465,7 @@
 				],
 				"points": 0,
 				"models": 1,
-				"sortPriority": 3,
+				"sortPriority": 9,
 				"limits": [
 					{
 						"key": "Vehicles",
@@ -15408,7 +15527,7 @@
 				],
 				"points": 0,
 				"models": 1,
-				"sortPriority": 3,
+				"sortPriority": 9,
 				"limits": [
 					{
 						"key": "Vehicles",
@@ -15470,7 +15589,7 @@
 				],
 				"points": 0,
 				"models": 1,
-				"sortPriority": 3,
+				"sortPriority": 9,
 				"limits": [
 					{
 						"key": "Vehicles",
@@ -15520,7 +15639,7 @@
 				],
 				"points": 0,
 				"models": 1,
-				"sortPriority": 3,
+				"sortPriority": 9,
 				"limits": [
 					{
 						"key": "Vehicles",
@@ -15570,7 +15689,7 @@
 				],
 				"points": 0,
 				"models": 1,
-				"sortPriority": 3,
+				"sortPriority": 9,
 				"limits": [
 					{
 						"key": "Arty",
@@ -15620,7 +15739,7 @@
 				],
 				"points": 0,
 				"models": 1,
-				"sortPriority": 3,
+				"sortPriority": 9,
 				"limits": [
 					{
 						"key": "Vehicles",
@@ -15703,7 +15822,7 @@
 				],
 				"points": 0,
 				"models": 1,
-				"sortPriority": 3,
+				"sortPriority": 10,
 				"limits": [
 					{
 						"key": "Gunship",
@@ -15767,7 +15886,7 @@
 				],
 				"points": 0,
 				"models": 1,
-				"sortPriority": 3,
+				"sortPriority": 10,
 				"limits": [
 					{
 						"key": "Gunship",
@@ -15824,7 +15943,7 @@
 				],
 				"points": 0,
 				"models": 1,
-				"sortPriority": 3,
+				"sortPriority": 10,
 				"limits": [
 					{
 						"key": "Gunship",
@@ -15891,7 +16010,7 @@
 				],
 				"points": 0,
 				"models": 1,
-				"sortPriority": 3,
+				"sortPriority": 15,
 				"limits": [
 					{
 						"key": "transport",
@@ -15943,7 +16062,7 @@
 				],
 				"points": 0,
 				"models": 1,
-				"sortPriority": 3,
+				"sortPriority": 15,
 				"limits": [
 					{
 						"key": "transport",
@@ -15989,7 +16108,7 @@
 				],
 				"points": 0,
 				"models": 1,
-				"sortPriority": 3,
+				"sortPriority": 15,
 				"limits": [
 					{
 						"key": "transport",
@@ -16041,7 +16160,7 @@
 				],
 				"points": 0,
 				"models": 1,
-				"sortPriority": 3,
+				"sortPriority": 15,
 				"limits": [
 					{
 						"key": "gunship",
@@ -16096,7 +16215,7 @@
 				],
 				"points": 0,
 				"models": 1,
-				"sortPriority": 3,
+				"sortPriority": 10,
 				"limits": [
 					{
 						"key": "gunship",
@@ -16163,7 +16282,7 @@
 				],
 				"points": 0,
 				"models": 1,
-				"sortPriority": 3,
+				"sortPriority": 15,
 				"limits": [
 					{
 						"key": "gunship",
@@ -16220,7 +16339,7 @@
 				],
 				"points": 0,
 				"models": 1,
-				"sortPriority": 3,
+				"sortPriority": 10,
 				"limits": [
 					{
 						"key": "gunship",
@@ -16287,7 +16406,7 @@
 				],
 				"points": 0,
 				"models": 1,
-				"sortPriority": 3,
+				"sortPriority": 10,
 				"limits": [
 					{
 						"key": "gunship",
@@ -16354,7 +16473,7 @@
 				],
 				"points": 0,
 				"models": 1,
-				"sortPriority": 3,
+				"sortPriority": 15,
 				"limits": [
 					{
 						"key": "gunship",
@@ -16397,7 +16516,7 @@
 				],
 				"points": 0,
 				"models": 1,
-				"sortPriority": 3,
+				"sortPriority": 10,
 				"limits": [
 					{
 						"key": "gunship",
@@ -16452,7 +16571,7 @@
 				],
 				"points": 0,
 				"models": 1,
-				"sortPriority": 3,
+				"sortPriority": 15,
 				"limits": [
 					{
 						"key": "gunship",
@@ -16495,7 +16614,7 @@
 				],
 				"points": 0,
 				"models": 1,
-				"sortPriority": 3,
+				"sortPriority": 10,
 				"limits": [
 					{
 						"key": "gunship",
@@ -16538,7 +16657,7 @@
 				],
 				"points": 0,
 				"models": 1,
-				"sortPriority": 3,
+				"sortPriority": 10,
 				"limits": [
 					{
 						"key": "gunship",
@@ -16611,7 +16730,7 @@
 				],
 				"points": 0,
 				"models": 1,
-				"sortPriority": 3,
+				"sortPriority": 10,
 				"limits": [
 					{
 						"key": "gunship",
@@ -16666,7 +16785,7 @@
 				],
 				"points": 0,
 				"models": 1,
-				"sortPriority": 3,
+				"sortPriority": 10,
 				"limits": [
 					{
 						"key": "gunship",
@@ -16746,7 +16865,7 @@
 				],
 				"points": 0,
 				"models": 1,
-				"sortPriority": 3,
+				"sortPriority": 12,
 				"limits": [
 					{
 						"key": "transport",
@@ -16805,7 +16924,7 @@
 				],
 				"points": 0,
 				"models": 1,
-				"sortPriority": 3,
+				"sortPriority": 12,
 				"limits": [
 					{
 						"key": "transport",
@@ -16864,7 +16983,7 @@
 				],
 				"points": 0,
 				"models": 1,
-				"sortPriority": 3,
+				"sortPriority": 12,
 				"limits": [
 					{
 						"key": "transport",
@@ -16926,7 +17045,7 @@
 				],
 				"points": 0,
 				"models": 1,
-				"sortPriority": 3,
+				"sortPriority": 12,
 				"limits": [
 					{
 						"key": "transport",
@@ -17011,7 +17130,7 @@
 				],
 				"points": 0,
 				"models": 1,
-				"sortPriority": 3,
+				"sortPriority": 10,
 				"limits": [
 					{
 						"key": "gunship",

@@ -9559,6 +9559,7 @@
 				],
 				"points": 0,
 				"models": 1,
+				"sortPriority": 15,
 				"options": [
 					{
 						"name": "Inexperienced",
@@ -9611,6 +9612,7 @@
 				],
 				"points": 0,
 				"models": 1,
+				"sortPriority": 15,
 				"options": [
 					{
 						"name": "Recce",
@@ -9681,6 +9683,7 @@
 				],
 				"points": 0,
 				"models": 1,
+				"sortPriority": 15,
 				"options": [
 					{
 						"name": "Inexperienced",
@@ -9719,6 +9722,7 @@
 				],
 				"points": 0,
 				"models": 1,
+				"sortPriority": 15,
 				"options": [
 					{
 						"name": "Recce",
@@ -9775,6 +9779,7 @@
 				],
 				"points": 0,
 				"models": 1,
+				"sortPriority": 15,
 				"options": [
 					{
 						"name": "Inexperienced",
@@ -9813,6 +9818,7 @@
 				],
 				"points": 0,
 				"models": 1,
+				"sortPriority": 15,
 				"options": [
 					{
 						"name": "Recce",
@@ -10064,6 +10070,7 @@
 				],
 				"points": 0,
 				"models": 1,
+				"sortPriority": 15,
 				"options": [
 					{
 						"name": "Inexperienced",
@@ -10102,6 +10109,7 @@
 				],
 				"points": 0,
 				"models": 1,
+				"sortPriority": 15,
 				"options": [
 					{
 						"name": "Recce",
@@ -10158,6 +10166,7 @@
 				],
 				"points": 0,
 				"models": 1,
+				"sortPriority": 15,
 				"options": [
 					{
 						"name": "Inexperienced",
@@ -10216,6 +10225,7 @@
 				],
 				"points": 0,
 				"models": 1,
+				"sortPriority": 15,
 				"options": [
 					{
 						"name": "Recce",
@@ -10308,6 +10318,7 @@
 				],
 				"points": 0,
 				"models": 1,
+				"sortPriority": 15,
 				"options": [
 					{
 						"name": "Inexperienced",
@@ -10376,6 +10387,7 @@
 				],
 				"points": 0,
 				"models": 1,
+				"sortPriority": 15,
 				"options": [
 					{
 						"name": "Recce",
@@ -10459,6 +10471,7 @@
 				],
 				"points": 0,
 				"models": 1,
+				"sortPriority": 15,
 				"options": [
 					{
 						"name": "Inexperienced",
@@ -10524,6 +10537,7 @@
 				],
 				"points": 0,
 				"models": 1,
+				"sortPriority": 15,
 				"options": [
 					{
 						"name": "Recce",

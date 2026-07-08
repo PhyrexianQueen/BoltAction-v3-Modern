@@ -9235,18 +9235,21 @@
 				"options": [
 					{
 						"name": "Inexperienced",
+						"addsPrefix": "Inexperienced ",
 						"points": 92,
 						"availableIn": ["Japan"],
 						"requireChooseOneKey": "morale"
 					},
 					{
 						"name": "Regular",
+						"addsPrefix": "Regular ",
 						"points": 135,
 						"availableIn": ["Japan"],
 						"requireChooseOneKey": "morale"
 					},
 					{
 						"name": "Veteran",
+						"addsPrefix": "Veteran ",
 						"points": 178,
 						"availableIn": ["Japan"],
 						"requireChooseOneKey": "morale"
@@ -9263,6 +9266,585 @@
 				"keywords": [],
 				"specialText": "8 Crew Members",
 				"equipment": ["Heavy Howitzer"]
+			},
+			{
+				"name": "Type 19 SPG",
+				"validationKeys": ["ArtyTeams"],
+				"factions": [],
+				"order": 1,
+				"availableIn":[
+					{
+						"all": [{ "in": "Artillery Platoon" }, { "in": "Japan" }]
+					}
+				],
+				"points": 0,
+				"models": 1,
+				"sortPriority": 9,
+				"limits": [
+					{
+						"key": "Arty",
+						"limit": 5,
+						"perParent": true
+					}
+				],
+				"options": [
+					{
+						"name": "Inexperienced",
+						"addsPrefix": "Inexperienced ",
+						"points": 68,
+						"availableIn": ["Japan"],
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Regular",
+						"addsPrefix": "Regular ",
+						"points": 85,
+						"availableIn": ["Japan"],
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Veteran",
+						"addsPrefix": "Veteran ",
+						"points": 102,
+						"availableIn": ["Japan"],
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Spotter",
+						"points": 10,
+						"addsModels": 1,
+						"availableIn": ["Japan"],
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
+						"requireChooseOneKey": "morale"
+					}
+				],
+				"keywords": ["Stationary Firing Platform"],
+				"specialText": "Soft Skin - 6+\n Wheeled Vehicle",
+				"equipment": ["Turret Mounted Heavy Howitzer"]
+			},
+			{
+				"name": "Type 99 SPG",
+				"validationKeys": ["ArtyTeams"],
+				"factions": [],
+				"order": 1,
+				"availableIn":[
+					{
+						"all": [{ "in": "Artillery Platoon" }, { "in": "Japan" }]
+					}
+				],
+				"points": 0,
+				"models": 1,
+				"sortPriority": 9,
+				"limits": [
+					{
+						"key": "Arty",
+						"limit": 5,
+						"perParent": true
+					}
+				],
+				"options": [
+					{
+						"name": "Inexperienced",
+						"addsPrefix": "Inexperienced ",
+						"points": 116,
+						"availableIn": ["Japan"],
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Regular",
+						"addsPrefix": "Regular ",
+						"points": 145,
+						"availableIn": ["Japan"],
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Veteran",
+						"addsPrefix": "Veteran ",
+						"points": 174,
+						"availableIn": ["Japan"],
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Spotter",
+						"points": 10,
+						"addsModels": 1,
+						"availableIn": ["Japan"],
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Pintle Mounted HMG",
+						"points": 25,
+						"availableIn": ["Japan"],
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
+						"requireChooseOneKey": "morale"
+					}
+				],
+				"keywords": [],
+				"specialText": "Armored Carrier - 7+\n Tracked Vehicle",
+				"equipment": ["Turret Mounted Heavy Howitzer"]
+			},
+			{
+				"name": "Type 87 SPAAG",
+				"validationKeys": ["ArtyTeams"],
+				"factions": [],
+				"order": 1,
+				"availableIn":[
+					{
+						"all": [{ "in": "Artillery Platoon" }, { "in": "Japan" }]
+					}
+				],
+				"points": 0,
+				"models": 1,
+				"sortPriority": 9,
+				"limits": [
+					{
+						"key": "Arty",
+						"limit": 5,
+						"perParent": true
+					}
+				],
+				"options": [
+					{
+						"name": "Inexperienced",
+						"addsPrefix": "Inexperienced ",
+						"points": 144,
+						"availableIn": ["Japan"],
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Regular",
+						"addsPrefix": "Regular ",
+						"points": 180,
+						"availableIn": ["Japan"],
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Veteran",
+						"addsPrefix": "Veteran ",
+						"points": 216,
+						"availableIn": ["Japan"],
+						"requireChooseOneKey": "morale"
+					}
+				],
+				"keywords": [],
+				"specialText": "Soft Skin - 6+\n Wheeled Vehicle",
+				"equipment": ["Turret Mounted Twin Heavy Autocannon","Smoke Dischargers"]
+			},
+			{
+				"name": "Type 11 / 81 / 93 SAM Trucks",
+				"validationKeys": ["ArtyTeams"],
+				"factions": [],
+				"order": 1,
+				"availableIn":[
+					{
+						"all": [{ "in": "Artillery Platoon" }, { "in": "Japan" }]
+					}
+				],
+				"points": 0,
+				"models": 1,
+				"sortPriority": 9,
+				"limits": [
+					{
+						"key": "Arty",
+						"limit": 5,
+						"perParent": true
+					}
+				],
+				"options": [
+					{
+						"name": "Inexperienced",
+						"addsPrefix": "Inexperienced ",
+						"points": 24,
+						"availableIn": ["Japan"],
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Regular",
+						"addsPrefix": "Regular ",
+						"points": 30,
+						"availableIn": ["Japan"],
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Veteran",
+						"addsPrefix": "Veteran ",
+						"points": 36,
+						"availableIn": ["Japan"],
+						"requireChooseOneKey": "morale"
+					}
+				],
+				"keywords": [],
+				"specialText": "Soft Skin - 6+\n Wheeled Vehicle",
+				"equipment": ["Turret Mounted SAM"]
+			},
+			{
+				"name": "MIM-23 HAWK SAM",
+				"factions": [],
+				"order": 1,
+				"availableIn":[
+					{
+						"all": [{ "in": "Artillery Platoon" }, { "in": "Japan" }]			
+					},
+					{
+						"all": [{ "in": "Artillery Platoon" }, { "in": "United States of America" }]			
+					}
+				],
+				"points": 0,
+				"models": 3,
+				"sortPriority": 3,
+				"limits": [
+					{
+						"key": "Arty",
+						"limit": 4,
+						"perParent": true
+					}
+				],
+				"options": [
+					{
+						"name": "Inexperienced",
+						"addsPrefix": "Inexperienced ",
+						"points": 32,
+						"availableIn": [
+							"Japan",
+							"United States of America"
+						],
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Regular",
+						"addsPrefix": "Regular ",
+						"points": 45,
+						"availableIn": [
+							"Japan",
+							"United States of America"
+						],
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Veteran",
+						"addsPrefix": "Veteran ",
+						"points": 58,
+						"availableIn": [
+							"Japan",
+							"United States of America"
+						],
+						"requireChooseOneKey": "morale"
+					}
+				],
+				"keywords": ["Fixed","Team Weapon"],
+				"specialText": "3 Crew Members",
+				"equipment": ["Turret Mounted SAM"]
+			},
+			{
+				"name": "Mowag Eagle V 4x4 / Hawkei Transport",
+				"factions": [],
+				"order": 1,
+				"availableIn": [
+					{
+						"all": [{ "in": "HQ Platoon"	}, { "in": "Japan" }]			
+					},
+					{
+						"all": [{ "in": "Rifle Platoon"	}, { "in": "Japan" }]			
+					},
+					{
+						"all": [{ "in": "Engineer Platoon"	}, { "in": "Japan" }]			
+					},
+					{
+						"all": [{ "in": "Artillery Platoon"	}, { "in": "Japan" }]			
+					},
+					{
+						"all": [{ "in": "Heavy Weapons Platoon"	}, { "in": "Japan" }]			
+					}
+				],
+				"points": 0,
+				"models": 1,
+				"options": [
+					{
+						"name": "Inexperienced",
+						"addsPrefix": "Inexperienced ",
+						"points": 79,
+						"availableIn": ["Japan"],
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Regular",
+						"addsPrefix": "Regular ",
+						"points": 98,
+						"availableIn": ["Japan"],
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Veteran",
+						"addsPrefix": "Veteran ",
+						"points": 118,
+						"availableIn": ["Japan"],
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Pintle Mounted HMG",
+						"addsPrefix": "Veteran ",
+						"points": 25,
+						"availableIn": ["Japan"],
+						"chooseOneKey": "priWeapon"
+					},
+					{
+						"name": "Turret Mounted Automatic Grenade Launcher",
+						"addsPrefix": "Veteran ",
+						"points": 35,
+						"availableIn": ["Japan"],
+						"chooseOneKey": "priWeapon"
+					}
+				],
+				"keywords": ["Transport","MRAPP"],
+				"specialText": "Armored Carrier - 7+\n Transport: 4\n Wheeled Vehicle",
+				"equipment": ["Smoke Dischargers"]
+			},
+			{
+				"name": "Mowag Eagle V 4x4 / Hawkei Transport  ",
+				"factions": [],
+				"order": 1,
+				"availableIn": [
+					{
+						"all": [{ "in": "Recce Platoon"	}, { "in": "Japan" }]			
+					}
+				],
+				"points": 0,
+				"models": 1,
+				"options": [
+					{
+						"name": "Recce",
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
+						"points": 10,
+						"requireChooseOneKey": "Recce"
+					},
+					{
+						"name": "Inexperienced",
+						"addsPrefix": "Inexperienced ",
+						"points": 79,
+						"availableIn": ["Japan"],
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Regular",
+						"addsPrefix": "Regular ",
+						"points": 98,
+						"availableIn": ["Japan"],
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Veteran",
+						"addsPrefix": "Veteran ",
+						"points": 118,
+						"availableIn": ["Japan"],
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Pintle Mounted HMG",
+						"addsPrefix": "Veteran ",
+						"points": 25,
+						"availableIn": ["Japan"],
+						"chooseOneKey": "priWeapon"
+					},
+					{
+						"name": "Turret Mounted Automatic Grenade Launcher",
+						"addsPrefix": "Veteran ",
+						"points": 35,
+						"availableIn": ["Japan"],
+						"chooseOneKey": "priWeapon"
+					}
+				],
+				"keywords": ["Transport","MRAPP"],
+				"specialText": "Armored Carrier - 7+\n Transport: 4\n Wheeled Vehicle",
+				"equipment": ["Smoke Dischargers"]
+			},
+			{
+				"name": "Toyota Megacruiser Transport ",
+				"factions": [],
+				"order": 1,
+				"availableIn": [
+					{
+						"all": [{ "in": "HQ Platoon"	}, { "in": "Japan" }]			
+					},
+					{
+						"all": [{ "in": "Rifle Platoon"	}, { "in": "Japan" }]			
+					},
+					{
+						"all": [{ "in": "Engineer Platoon"	}, { "in": "Japan" }]			
+					},
+					{
+						"all": [{ "in": "Artillery Platoon"	}, { "in": "Japan" }]			
+					},
+					{
+						"all": [{ "in": "Heavy Weapons Platoon"	}, { "in": "Japan" }]			
+					}
+				],
+				"points": 0,
+				"models": 1,
+				"options": [
+					{
+						"name": "Inexperienced",
+						"addsPrefix": "Inexperienced ",
+						"points": 11,
+						"availableIn": ["Japan"],
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Regular",
+						"addsPrefix": "Regular ",
+						"points": 13,
+						"availableIn": ["Japan"],
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Veteran",
+						"addsPrefix": "Veteran ",
+						"points": 16,
+						"availableIn": ["Japan"],
+						"requireChooseOneKey": "morale"
+					}
+				],
+				"keywords": ["Transport"],
+				"specialText": "Soft Skin - 6+\n Transport: 4\n Wheeled Vehicle",
+				"equipment": []
+			},
+			{
+				"name": "Toyota Megacruiser Transport  ",
+				"factions": [],
+				"order": 1,
+				"availableIn": [
+					{
+						"all": [{ "in": "Recce Platoon"	}, { "in": "Japan" }]			
+					}
+				],
+				"points": 0,
+				"models": 1,
+				"options": [
+					{
+						"name": "Recce",
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
+						"points": 10,
+						"requireChooseOneKey": "Recce"
+					},
+					{
+						"name": "Inexperienced",
+						"addsPrefix": "Inexperienced ",
+						"points": 11,
+						"availableIn": ["Japan"],
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Regular",
+						"addsPrefix": "Regular ",
+						"points": 13,
+						"availableIn": ["Japan"],
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Veteran",
+						"addsPrefix": "Veteran ",
+						"points": 16,
+						"availableIn": ["Japan"],
+						"requireChooseOneKey": "morale"
+					}
+				],
+				"keywords": ["Transport"],
+				"specialText": "Soft Skin - 6+\n Transport: 4\n Wheeled Vehicle",
+				"equipment": []
+			},
+			{
+				"name": "Toyota Type 73 Medium Truck ",
+				"factions": [],
+				"order": 1,
+				"availableIn": [
+					{
+						"all": [{ "in": "HQ Platoon"	}, { "in": "Japan" }]			
+					},
+					{
+						"all": [{ "in": "Rifle Platoon"	}, { "in": "Japan" }]			
+					},
+					{
+						"all": [{ "in": "Engineer Platoon"	}, { "in": "Japan" }]			
+					},
+					{
+						"all": [{ "in": "Artillery Platoon"	}, { "in": "Japan" }]			
+					},
+					{
+						"all": [{ "in": "Heavy Weapons Platoon"	}, { "in": "Japan" }]			
+					}
+				],
+				"points": 0,
+				"models": 1,
+				"options": [
+					{
+						"name": "Inexperienced",
+						"addsPrefix": "Inexperienced ",
+						"points": 30,
+						"availableIn": ["Japan"],
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Regular",
+						"addsPrefix": "Regular ",
+						"points": 37,
+						"availableIn": ["Japan"],
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Veteran",
+						"addsPrefix": "Veteran ",
+						"points": 45,
+						"availableIn": ["Japan"],
+						"requireChooseOneKey": "morale"
+					}
+				],
+				"keywords": ["Transport"],
+				"specialText": "Soft Skin - 6+\n Transport: 16\n Wheeled Vehicle",
+				"equipment": []
+			},
+			{
+				"name": "Toyota Type 73 Medium Truck  ",
+				"factions": [],
+				"order": 1,
+				"availableIn": [
+					{
+						"all": [{ "in": "Recce Platoon"	}, { "in": "Japan" }]			
+					}
+				],
+				"points": 0,
+				"models": 1,
+				"options": [
+					{
+						"name": "Recce",
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
+						"points": 10,
+						"requireChooseOneKey": "Recce"
+					},
+					{
+						"name": "Inexperienced",
+						"addsPrefix": "Inexperienced ",
+						"points": 30,
+						"availableIn": ["Japan"],
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Regular",
+						"addsPrefix": "Regular ",
+						"points": 37,
+						"availableIn": ["Japan"],
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Veteran",
+						"addsPrefix": "Veteran ",
+						"points": 45,
+						"availableIn": ["Japan"],
+						"requireChooseOneKey": "morale"
+					}
+				],
+				"keywords": ["Transport"],
+				"specialText": "Soft Skin - 6+\n Transport: 16\n Wheeled Vehicle",
+				"equipment": []
 			},
 			{
 				"name": "Type 89 IFV ",
@@ -9309,17 +9891,11 @@
 						"points": 335,
 						"availableIn": ["Japan"],
 						"requireChooseOneKey": "morale"
-					},
-					{
-						"name": "Command Vehicle",
-						"points": 10,
-						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
-						"availableIn": ["Japan"]
 					}
 				],
 				"keywords": ["Fire Control System","Advanced Optics (M)","Transport"],
 				"specialText": "Armored Carrier - 7+\n Transport: 7\n Tracked Vehicle",
-				"equipment": ["Smoke Dischargers","Turret Mounted Heavy Autocannon","Turret Mounted Coaxial MMG","ATGM/TOW"]
+				"equipment": ["Smoke Dischargers","Turret Mounted Heavy Autocannon","Turret Mounted Coaxial MMG","Turret Mounted ATGM/TOW"]
 			},
 			{
 				"name": "Type 89 IFV  ",
@@ -9353,17 +9929,11 @@
 						"points": 335,
 						"availableIn": ["Japan"],
 						"requireChooseOneKey": "morale"
-					},
-					{
-						"name": "Command Vehicle",
-						"points": 10,
-						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
-						"availableIn": ["Japan"]
 					}
 				],
 				"keywords": ["Fire Control System","Advanced Optics (M)","Transport"],
 				"specialText": "Armored Carrier - 7+\n Transport: 7\n Tracked Vehicle",
-				"equipment": ["Smoke Dischargers","Turret Mounted Heavy Autocannon","Turret Mounted Coaxial MMG","ATGM/TOW"]
+				"equipment": ["Smoke Dischargers","Turret Mounted Heavy Autocannon","Turret Mounted Coaxial MMG","Turret Mounted ATGM/TOW"]
 			},
 			{
 				"name": "AAV-7A1     ",
@@ -9470,6 +10040,549 @@
 				"keywords": ["Transport","Amphibious"],
 				"specialText": "Light Tank - 8+\n Transport: 25\n Tracked Vehicle",
 				"equipment": ["Smoke Dischargers","Turret Mounted Automatic Grenade Launcher","Turret Mounted Coaxial MMG"]
+			},
+			{
+				"name": "Type 73 APC ",
+				"factions": [],
+				"order": 1,
+				"availableIn": [
+					{
+						"all": [{ "in": "HQ Platoon"	}, { "in": "Japan" }]			
+					},
+					{
+						"all": [{ "in": "Rifle Platoon"	}, { "in": "Japan" }]			
+					},
+					{
+						"all": [{ "in": "Engineer Platoon"	}, { "in": "Japan" }]			
+					},
+					{
+						"all": [{ "in": "Artillery Platoon"	}, { "in": "Japan" }]			
+					},
+					{
+						"all": [{ "in": "Heavy Weapons Platoon"	}, { "in": "Japan" }]			
+					}
+				],
+				"points": 0,
+				"models": 1,
+				"options": [
+					{
+						"name": "Inexperienced",
+						"addsPrefix": "Inexperienced ",
+						"points": 105,
+						"availableIn": ["Japan"],
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Regular",
+						"addsPrefix": "Regular ",
+						"points": 131,
+						"availableIn": ["Japan"],
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Veteran",
+						"addsPrefix": "Veteran ",
+						"points": 158,
+						"availableIn": ["Japan"],
+						"requireChooseOneKey": "morale"
+					}
+				],
+				"keywords": ["Transport"],
+				"specialText": "Armored Carrier - 7+\n Transport: 8\n Tracked Vehicle",
+				"equipment": ["Smoke Dischargers","Pintle Mounted HMG","Hull Mounted MMG"]
+			},
+			{
+				"name": "Type 73 APC  ",
+				"factions": [],
+				"order": 1,
+				"availableIn": [
+					{
+						"all": [{ "in": "Recce Platoon"	}, { "in": "Japan" }]			
+					}
+				],
+				"points": 0,
+				"models": 1,
+				"options": [
+					{
+						"name": "Recce",
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
+						"points": 10,
+						"requireChooseOneKey": "Recce"
+					},
+					{
+						"name": "Inexperienced",
+						"addsPrefix": "Inexperienced ",
+						"points": 105,
+						"availableIn": ["Japan"],
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Regular",
+						"addsPrefix": "Regular ",
+						"points": 131,
+						"availableIn": ["Japan"],
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Veteran",
+						"addsPrefix": "Veteran ",
+						"points": 158,
+						"availableIn": ["Japan"],
+						"requireChooseOneKey": "morale"
+					}
+				],
+				"keywords": ["Transport"],
+				"specialText": "Armored Carrier - 7+\n Transport: 8\n Tracked Vehicle",
+				"equipment": ["Smoke Dischargers","Pintle Mounted HMG","Hull Mounted MMG"]
+			},
+			{
+				"name": "Type 96 APC ",
+				"factions": [],
+				"order": 1,
+				"availableIn": [
+					{
+						"all": [{ "in": "HQ Platoon"	}, { "in": "Japan" }]			
+					},
+					{
+						"all": [{ "in": "Rifle Platoon"	}, { "in": "Japan" }]			
+					},
+					{
+						"all": [{ "in": "Engineer Platoon"	}, { "in": "Japan" }]			
+					},
+					{
+						"all": [{ "in": "Artillery Platoon"	}, { "in": "Japan" }]			
+					},
+					{
+						"all": [{ "in": "Heavy Weapons Platoon"	}, { "in": "Japan" }]			
+					}
+				],
+				"points": 0,
+				"models": 1,
+				"options": [
+					{
+						"name": "Inexperienced",
+						"addsPrefix": "Inexperienced ",
+						"points": 85,
+						"availableIn": ["Japan"],
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Regular",
+						"addsPrefix": "Regular ",
+						"points": 106,
+						"availableIn": ["Japan"],
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Veteran",
+						"addsPrefix": "Veteran ",
+						"points": 128,
+						"availableIn": ["Japan"],
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Turret Mounted Automatic Grenade Launcher",
+						"addsPrefix": "Veteran ",
+						"points": 30,
+						"availableIn": ["Japan"],
+						"chooseOneKey": "priWeapon"
+					},
+					{
+						"name": "Pintle Mounted HMG",
+						"addsPrefix": "Veteran ",
+						"points": 25,
+						"availableIn": ["Japan"],
+						"chooseOneKey": "priWeapon"
+					},
+					{
+						"name": "Armored All Around",
+						"addsPrefix": "Veteran ",
+						"points": 10,
+						"availableIn": ["Japan"]
+					}
+				],
+				"keywords": ["Transport"],
+				"specialText": "Armored Carrier - 7+\n Transport: 8\n Wheeled Vehicle",
+				"equipment": ["Smoke Dischargers"]
+			},
+			{
+				"name": "Type 96 APC  ",
+				"factions": [],
+				"order": 1,
+				"availableIn": [
+					{
+						"all": [{ "in": "Recce Platoon"	}, { "in": "Japan" }]			
+					}
+				],
+				"points": 0,
+				"models": 1,
+				"options": [
+					{
+						"name": "Recce",
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
+						"points": 10,
+						"requireChooseOneKey": "Recce"
+					},
+					{
+						"name": "Inexperienced",
+						"addsPrefix": "Inexperienced ",
+						"points": 85,
+						"availableIn": ["Japan"],
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Regular",
+						"addsPrefix": "Regular ",
+						"points": 106,
+						"availableIn": ["Japan"],
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Veteran",
+						"addsPrefix": "Veteran ",
+						"points": 128,
+						"availableIn": ["Japan"],
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Turret Mounted Automatic Grenade Launcher",
+						"addsPrefix": "Veteran ",
+						"points": 30,
+						"availableIn": ["Japan"],
+						"chooseOneKey": "priWeapon"
+					},
+					{
+						"name": "Pintle Mounted HMG",
+						"addsPrefix": "Veteran ",
+						"points": 25,
+						"availableIn": ["Japan"],
+						"chooseOneKey": "priWeapon"
+					},
+					{
+						"name": "Armored All Around",
+						"addsPrefix": "Veteran ",
+						"points": 10,
+						"availableIn": ["Japan"]
+					}
+					
+				],
+				"keywords": ["Transport"],
+				"specialText": "Armored Carrier - 7+\n Transport: 8\n Wheeled Vehicle",
+				"equipment": ["Smoke Dischargers"]
+			},
+			{
+				"name": "Patria AMV ",
+				"factions": [],
+				"order": 1,
+				"availableIn": [
+					{
+						"all": [{ "in": "HQ Platoon"	}, { "in": "Japan" }]			
+					},
+					{
+						"all": [{ "in": "Rifle Platoon"	}, { "in": "Japan" }]			
+					},
+					{
+						"all": [{ "in": "Engineer Platoon"	}, { "in": "Japan" }]			
+					},
+					{
+						"all": [{ "in": "Artillery Platoon"	}, { "in": "Japan" }]			
+					},
+					{
+						"all": [{ "in": "Heavy Weapons Platoon"	}, { "in": "Japan" }]			
+					},
+					{
+						"all": [{ "in": "HQ Platoon"	}, { "in": "Sweden" }]			
+					},
+					{
+						"all": [{ "in": "Rifle Platoon"	}, { "in": "Sweden" }]			
+					},
+					{
+						"all": [{ "in": "Engineer Platoon"	}, { "in": "Sweden" }]			
+					},
+					{
+						"all": [{ "in": "Artillery Platoon"	}, { "in": "Sweden" }]			
+					},
+					{
+						"all": [{ "in": "Heavy Weapons Platoon"	}, { "in": "Sweden" }]			
+					}
+				],
+				"points": 0,
+				"models": 1,
+				"options": [
+					{
+						"name": "Inexperienced",
+						"addsPrefix": "Inexperienced ",
+						"points": 116,
+						"availableIn": [
+							"Japan",
+							"Sweden"
+						],
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Regular",
+						"addsPrefix": "Regular ",
+						"points": 144,
+						"availableIn": [
+							"Japan",
+							"Sweden"
+						],
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Veteran",
+						"addsPrefix": "Veteran ",
+						"points": 173,
+						"availableIn": [
+							"Japan",
+							"Sweden"
+						],
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Pintle Mounted HMG",
+						"addsPrefix": "Veteran ",
+						"points": 25,
+						"availableIn": [
+							"Japan",
+							"Sweden"
+						]
+					},
+					{
+						"name": "Amphibious",
+						"addsPrefix": "Veteran ",
+						"points": 5,
+						"availableIn": [
+							"Japan",
+							"Sweden"
+						]
+					}
+				],
+				"keywords": ["Transport","MRAPP"],
+				"specialText": "Armored Carrier - 8+\n Transport: 12\n Wheeled Vehicle",
+				"equipment": ["Smoke Dischargers"]
+			},
+			{
+				"name": "Patria AMV  ",
+				"factions": [],
+				"order": 1,
+				"availableIn": [
+					{
+						"all": [{ "in": "Recce Platoon"	}, { "in": "Japan" }]			
+					},
+					{
+						"all": [{ "in": "Recce Platoon"	}, { "in": "Sweden" }]			
+					}
+				],
+				"points": 0,
+				"models": 1,
+				"options": [
+					{
+						"name": "Recce",
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
+						"points": 10,
+						"requireChooseOneKey": "Recce"
+					},
+					{
+						"name": "Inexperienced",
+						"addsPrefix": "Inexperienced ",
+						"points": 116,
+						"availableIn": [
+							"Japan",
+							"Sweden"
+						],
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Regular",
+						"addsPrefix": "Regular ",
+						"points": 144,
+						"availableIn": [
+							"Japan",
+							"Sweden"
+						],
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Veteran",
+						"addsPrefix": "Veteran ",
+						"points": 173,
+						"availableIn": [
+							"Japan",
+							"Sweden"
+						],
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Pintle Mounted HMG",
+						"addsPrefix": "Veteran ",
+						"points": 25,
+						"availableIn": [
+							"Japan",
+							"Sweden"
+						]
+					},
+					{
+						"name": "Amphibious",
+						"addsPrefix": "Veteran ",
+						"points": 5,
+						"availableIn": [
+							"Japan",
+							"Sweden"
+						]
+					}
+				],
+				"keywords": ["Transport","MRAPP"],
+				"specialText": "Armored Carrier - 8+\n Transport: 12\n Wheeled Vehicle",
+				"equipment": ["Smoke Dischargers"]
+			},
+			{
+				"name": "Komatsu LAV ",
+				"factions": [],
+				"order": 1,
+				"availableIn": [
+					{
+						"all": [{ "in": "HQ Platoon"	}, { "in": "Japan" }]			
+					},
+					{
+						"all": [{ "in": "Rifle Platoon"	}, { "in": "Japan" }]			
+					},
+					{
+						"all": [{ "in": "Engineer Platoon"	}, { "in": "Japan" }]			
+					},
+					{
+						"all": [{ "in": "Artillery Platoon"	}, { "in": "Japan" }]			
+					},
+					{
+						"all": [{ "in": "Heavy Weapons Platoon"	}, { "in": "Japan" }]			
+					}
+				],
+				"points": 0,
+				"models": 1,
+				"options": [
+					{
+						"name": "Inexperienced",
+						"addsPrefix": "Inexperienced ",
+						"points": 53,
+						"availableIn": ["Japan"],
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Regular",
+						"addsPrefix": "Regular ",
+						"points": 66,
+						"availableIn": ["Japan"],
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Veteran",
+						"addsPrefix": "Veteran ",
+						"points": 80,
+						"availableIn": ["Japan"],
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Pintle Mounted LMG",
+						"addsPrefix": "Veteran ",
+						"points": 10,
+						"availableIn": ["Japan"],
+						"chooseOneKey": "priWeapon"
+					},
+					{
+						"name": "Pintle Mounted HMG",
+						"addsPrefix": "Veteran ",
+						"points": 25,
+						"availableIn": ["Japan"],
+						"chooseOneKey": "priWeapon"
+					},
+					{
+						"name": "Turret Mounted ATGM/TOW",
+						"addsPrefix": "Veteran ",
+						"points": 100,
+						"availableIn": ["Japan"],
+						"chooseOneKey": "priWeapon"
+					},
+					{
+						"name": "Smoke Dischargers",
+						"addsPrefix": "Veteran ",
+						"points": 35,
+						"availableIn": ["Japan"]
+					}
+				],
+				"keywords": ["Transport","Air Mobile (M)"],
+				"specialText": "Armored Carrier - 7+\n Transport: 4\n Wheeled Vehicle",
+				"equipment": []
+			},
+			{
+				"name": "Komatsu LAV  ",
+				"factions": [],
+				"order": 1,
+				"availableIn": [
+					{
+						"all": [{ "in": "Recce Platoon"	}, { "in": "Japan" }]			
+					}
+				],
+				"points": 0,
+				"models": 1,
+				"options": [
+					{
+						"name": "Recce",
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
+						"points": 10,
+						"requireChooseOneKey": "Recce"
+					},
+					{
+						"name": "Inexperienced",
+						"addsPrefix": "Inexperienced ",
+						"points": 53,
+						"availableIn": ["Japan"],
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Regular",
+						"addsPrefix": "Regular ",
+						"points": 66,
+						"availableIn": ["Japan"],
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Veteran",
+						"addsPrefix": "Veteran ",
+						"points": 80,
+						"availableIn": ["Japan"],
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Pintle Mounted LMG",
+						"addsPrefix": "Veteran ",
+						"points": 10,
+						"availableIn": ["Japan"],
+						"chooseOneKey": "priWeapon"
+					},
+					{
+						"name": "Pintle Mounted HMG",
+						"addsPrefix": "Veteran ",
+						"points": 25,
+						"availableIn": ["Japan"],
+						"chooseOneKey": "priWeapon"
+					},
+					{
+						"name": "Turret Mounted ATGM/TOW",
+						"addsPrefix": "Veteran ",
+						"points": 100,
+						"availableIn": ["Japan"],
+						"chooseOneKey": "priWeapon"
+					},
+					{
+						"name": "Smoke Dischargers",
+						"addsPrefix": "Veteran ",
+						"points": 35,
+						"availableIn": ["Japan"]
+					}
+				],
+				"keywords": ["Transport","Air Mobile (M)"],
+				"specialText": "Armored Carrier - 7+\n Transport: 4\n Wheeled Vehicle",
+				"equipment": []
 			},
 			{
 				"name": "2B9 Vasilek / 2B16 Nona-K Medium Howitzer",
@@ -13503,7 +14616,7 @@
 				],
 				"keywords": ["Fire Control System","Advanced Optics (M)"],
 				"specialText": "Armored Carrier - 7+\n Tracked Vehicle",
-				"equipment": ["Smoke Dischargers","Turret Mounted Heavy Autocannon","Turret Mounted Coaxial MMG","ATGM/TOW"]
+				"equipment": ["Smoke Dischargers","Turret Mounted Heavy Autocannon","Turret Mounted Coaxial MMG","Turret Mounted ATGM/TOW"]
 			},
 			{
 				"name": "Type 87 RCV",
@@ -19334,6 +20447,130 @@
 				"equipment": ["Port Side Door Mounted MMG","STBD Side Door Mounted MMG\n Air Lift: S"]
 			},
 			{
+				"name": "Kawasaki OH-1 Observation Helicopter",
+				"factions": [],
+				"order": 1,
+				"availableIn":[
+					{
+						"all": [{ "in": "Air Support" }, { "in": "Japan" }]			
+					}
+				],
+				"points": 0,
+				"models": 1,
+				"sortPriority": 3,
+				"limits": [
+					{
+						"key": "gunship",
+						"limit": 2,
+						"perParent": true
+					}
+				],
+				"options": [
+					{
+						"name": "Inexperienced",
+						"addsPrefix": "Inexperienced ",
+						"points": 28,
+						"availableIn": ["Japan"],
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Regular",
+						"addsPrefix": "Regular ",
+						"points": 35,
+						"availableIn": ["Japan"],
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Veteran",
+						"addsPrefix": "Veteran ",
+						"points": 42,
+						"availableIn": ["Japan"],
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Air-to-Air Missile",
+						"points": 25,
+						"availableIn": ["Japan"]
+					}
+				],
+				"keywords": ["Spotter"],
+				"specialText": "Unarmored Helicopter - 6+\n Helicopter",
+				"equipment": []
+			},
+			{
+				"name": "Boeing AH-64 Apache Attack Helicopter ",
+				"factions": [],
+				"order": 1,
+				"availableIn":[
+					{
+						"all": [{ "in": "Air Support" }, { "in": "Japan" }]			
+					}
+				],
+				"points": 0,
+				"models": 1,
+				"sortPriority": 10,
+				"limits": [
+					{
+						"key": "gunship",
+						"limit": 2,
+						"perParent": true
+					}
+				],
+				"options": [
+					{
+						"name": "Inexperienced",
+						"addsPrefix": "Inexperienced ",
+						"points": 92,
+						"availableIn": [
+							"Japan",
+							"United States of America"
+						],
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Regular",
+						"addsPrefix": "Regular ",
+						"points": 115,
+						"availableIn": [
+							"Japan",
+							"United States of America"
+						],
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Veteran",
+						"addsPrefix": "Veteran ",
+						"points": 138,
+						"availableIn": [
+							"Japan",
+							"United States of America"
+						],
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Two Pylon Mounted Unguided Rocket Pods",
+						"points": 90,
+						"availableIn": [
+							"Japan",
+							"United States of America"
+						],
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"]
+					},
+					{
+						"name": "Pylon Mounted ATGM",
+						"points": 100,
+						"availableIn": [
+							"Japan",
+							"United States of America"
+						],
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"]
+					}
+				],
+				"keywords": [],
+				"specialText": "Heavy Helicopter - 8+\n Helicopter",
+				"equipment": ["Chin Mounted Heavy Autocannon"]
+			},
+			{
 				"name": "Kamov Ka-29TB Assault Transport Helicopter",
 				"factions": [],
 				"order": 1,
@@ -19858,12 +21095,15 @@
 				"equipment": ["Pylon Mounted ATGM"]
 			},
 			{
-				"name": "Bell AH-1Z Viper Attack Helicopter",
+				"name": "Bell AH-1 Cobra / AH-1Z Viper Attack Helicopter",
 				"factions": [],
 				"order": 1,
 				"availableIn":[
 					{
-						"all": [{ "in": "Air Support" }, { "in": "United States of America" }]			
+						"all": [{ "in": "Air Support" }, { "in": "Japan" }]
+					},
+					{
+						"all": [{ "in": "Air Support" }, { "in": "United States of America" }]
 					}
 				],
 				"points": 0,
@@ -19881,21 +21121,30 @@
 						"name": "Inexperienced",
 						"addsPrefix": "Inexperienced ",
 						"points": 60,
-						"availableIn": ["United States of America"],
+						"availableIn": [
+							"Japan",
+							"United States of America"
+						],
 						"requireChooseOneKey": "morale"
 					},
 					{
 						"name": "Regular",
 						"addsPrefix": "Regular ",
 						"points": 75,
-						"availableIn": ["United States of America"],
+						"availableIn": [
+							"Japan",
+							"United States of America"
+						],
 						"requireChooseOneKey": "morale"
 					},
 					{
 						"name": "Veteran",
 						"addsPrefix": "Veteran ",
 						"points": 90,
-						"availableIn": ["United States of America"],
+						"availableIn": [
+							"Japan",
+							"United States of America"
+						],
 						"requireChooseOneKey": "morale"
 					},
 					{
@@ -19917,14 +21166,20 @@
 					{
 						"name": "Two Pylon Mounted Unguided Rocket Pods",
 						"points": 90,
-						"availableIn": ["United States of America"],
+						"availableIn": [
+							"Japan",
+							"United States of America"
+						],
 						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
 						"chooseOneKey": "priWeapon"
 					},
 					{
 						"name": "Pylon Mounted ATGM",
 						"points": 100,
-						"availableIn": ["United States of America"],
+						"availableIn": [
+							"Japan",
+							"United States of America"
+						],
 						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
 						"chooseOneKey": "priWeapon"
 					}
@@ -19957,33 +21212,48 @@
 						"name": "Inexperienced",
 						"addsPrefix": "Inexperienced ",
 						"points": 92,
-						"availableIn": ["United States of America"],
+						"availableIn": [
+							"Japan",
+							"United States of America"
+						],
 						"requireChooseOneKey": "morale"
 					},
 					{
 						"name": "Regular",
 						"addsPrefix": "Regular ",
 						"points": 115,
-						"availableIn": ["United States of America"],
+						"availableIn": [
+							"Japan",
+							"United States of America"
+						],
 						"requireChooseOneKey": "morale"
 					},
 					{
 						"name": "Veteran",
 						"addsPrefix": "Veteran ",
 						"points": 138,
-						"availableIn": ["United States of America"],
+						"availableIn": [
+							"Japan",
+							"United States of America"
+						],
 						"requireChooseOneKey": "morale"
 					},
 					{
 						"name": "Two Pylon Mounted Unguided Rocket Pods",
 						"points": 90,
-						"availableIn": ["United States of America"],
+						"availableIn": [
+							"Japan",
+							"United States of America"
+						],
 						"unlockedByLocal": ["Inexperienced","Regular","Veteran"]
 					},
 					{
 						"name": "Pylon Mounted ATGM",
 						"points": 100,
-						"availableIn": ["United States of America"],
+						"availableIn": [
+							"Japan",
+							"United States of America"
+						],
 						"unlockedByLocal": ["Inexperienced","Regular","Veteran"]
 					}
 				],
@@ -20079,6 +21349,9 @@
 				"factions": [],
 				"order": 1,
 				"availableIn":[
+					{
+						"all": [{ "in": "Air Support" }, { "in": "Japan" }]			
+					},
 					{
 						"all": [{ "in": "Air Support" }, { "in": "United States of America" }]			
 					}
@@ -20199,10 +21472,13 @@
 				"equipment": ["Port Side Mounted MMG","STBD Side Mounted MMG"]
 			},
 			{
-				"name": "Bell UH-1Y Venom Gunship Helicopter",
+				"name": "Bell UH-1 Iroquois / UH-1Y Venom Gunship Helicopter",
 				"factions": [],
 				"order": 1,
 				"availableIn":[
+					{
+						"all": [{ "in": "Air Support" }, { "in": "Japan" }]			
+					},
 					{
 						"all": [{ "in": "Air Support" }, { "in": "United States of America" }]			
 					}
@@ -20222,21 +21498,30 @@
 						"name": "Inexperienced",
 						"addsPrefix": "Inexperienced ",
 						"points": 36,
-						"availableIn": ["United States of America"],
+						"availableIn": [
+							"Japan",
+							"United States of America"
+						],
 						"requireChooseOneKey": "morale"
 					},
 					{
 						"name": "Regular",
 						"addsPrefix": "Regular ",
 						"points": 45,
-						"availableIn": ["United States of America"],
+						"availableIn": [
+							"Japan",
+							"United States of America"
+						],
 						"requireChooseOneKey": "morale"
 					},
 					{
 						"name": "Veteran",
 						"addsPrefix": "Veteran ",
 						"points": 54,
-						"availableIn": ["United States of America"],
+						"availableIn": [
+							"Japan",
+							"United States of America"
+						],
 						"requireChooseOneKey": "morale"
 					},
 					{
@@ -20261,10 +21546,13 @@
 				"equipment": ["Port Side Mounted MMG","STBD Side Mounted MMG","Two Pylon Mounted Unguided Rocket Pods"]
 			},
 			{
-				"name": "Sikorsky HH-60 Pave Hawk Cargo Helicopter",
+				"name": "Sikorsky UH-60 / Black Hawk HH-60 Pave Hawk Cargo Helicopter",
 				"factions": [],
 				"order": 1,
 				"availableIn":[
+					{
+						"all": [{ "in": "Air Support" }, { "in": "Japan" }]			
+					},
 					{
 						"all": [{ "in": "Air Support" }, { "in": "Sweden" }]			
 					},
@@ -20288,6 +21576,7 @@
 						"addsPrefix": "Inexperienced ",
 						"points": 64,
 						"availableIn": [
+							"Japan",
 							"Sweden",
 							"United States of America"
 						],
@@ -20298,6 +21587,7 @@
 						"addsPrefix": "Regular ",
 						"points": 79,
 						"availableIn": [
+							"Japan",
 							"Sweden",
 							"United States of America"
 						],
@@ -20308,6 +21598,7 @@
 						"addsPrefix": "Veteran ",
 						"points": 95,
 						"availableIn": [
+							"Japan",
 							"Sweden",
 							"United States of America"
 						],
@@ -20334,6 +21625,7 @@
 						"points": 0,
 						"availableIn": [
 							"Sweden",
+							"Japan",
 							"United States of America"
 						],
 						"chooseOneKey": "priWeapon",
@@ -20410,6 +21702,72 @@
 				"keywords": ["US Army"],
 				"specialText": "Unarmored Helicopter - 6+\n Helicopter",
 				"equipment": ["Twin Pylon Mounted Gatling Guns"]
+			},
+			{
+				"name": "Bell-Boeing MV-22B Osprey Tiltrotor",
+				"factions": [],
+				"order": 1,
+				"availableIn":[
+					{
+						"all": [{ "in": "Air Support" }, { "in": "Japan" }]			
+					},
+					{
+						"all": [{ "in": "Air Support" }, { "in": "United States of America" }]			
+					}
+				],
+				"points": 0,
+				"models": 1,
+				"sortPriority": 12,
+				"limits": [
+					{
+						"key": "transport",
+						"limit": 2,
+						"perParent": true
+					}
+				],
+				"options": [
+					{
+						"name": "Inexperienced",
+						"addsPrefix": "Inexperienced ",
+						"points": 72,
+						"availableIn": [
+							"Japan",
+							"United States of America"
+						],
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Regular",
+						"addsPrefix": "Regular ",
+						"points": 89,
+						"availableIn": [
+							"Japan",
+							"United States of America"
+						],
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Veteran",
+						"addsPrefix": "Veteran ",
+						"points": 107,
+						"availableIn": [
+							"Japan",
+							"United States of America"
+						],
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "USMC",
+						"points": 1,
+						"perModel": true,
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
+						"availableIn": ["United States of America"],
+						"requireChooseOneKey": "branchUS"
+					}
+				],
+				"keywords": ["Transport"],
+				"specialText": "Unarmored Helicopter - 6+\n Helicopter\n Transport: 32",
+				"equipment": []
 			}
 		]
 	}

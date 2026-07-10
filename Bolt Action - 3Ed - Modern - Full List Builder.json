@@ -158,9 +158,9 @@
 		]
 	}
 ],
+"dataTableKeys": ["units"],
 "data": 
 	{
-		"dataTableKeys": ["units"],
 		"factions": [
 			{
 				"name": "Australia",

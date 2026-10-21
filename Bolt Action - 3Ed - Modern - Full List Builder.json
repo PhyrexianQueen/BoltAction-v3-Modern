@@ -265,7 +265,7 @@
 			{
 				"name": "Sweden",
 				"additionalRules": [
-					"Preparedness in Peactime: At the start of the game, Regular or Veteran units that start on the table may be given an Ambush Order. Take an order from the bag and place it next to the unit in Ambush","Artic Operations: Infantry and unmounted Artillery Units may take Skis and Winter Equipment for free. Swedish vehicles ignore the Snow Rules. Swedish units moving across Ice have a +1 to the first roll on the Thin Ice Table.", "Total Defense - Enemy units on the table cannot be given the Run order during the first turn. First Wave are exempt as they enter the table. If using a scenario with Attacker and Defender rules, the Swedish player may choose if they Defend or not, unless both players are Swedish. If the Swedish player is defending, any Enemy Unit that starts the game outside of its deployment zone gains 1 pin at the start of the game.","Mission Command: After each unit is issued an order via a Snap-To, each time you select the next order to resolve after the Company or Platoon Commander, you may change the order originally given via Snap-To. At the end of a round, in addition to attempting to Fire, a unit with an Ambush may test to Run or Advance as well in the same way it would attempt to resolve to Fire."
+					"Preparedness in Peactime: At the start of the game, Regular or Veteran units that start on the table may be given an Ambush Order. Take an order from the bag and place it next to the unit in Ambush","Artic Operations: Infantry and unmounted Artillery Units may take Skis and Winter Equipment for free. Swedish vehicles ignore the Snow Rules. Swedish units moving across Ice have a +1 to the first roll on the Thin Ice Table.", "Total Defense - Enemy units cannot move on to the board prior to the first wave. If an Enemy units starts on the board, they cannot perform a move before the first turn.","Mission Command: After each unit is issued an order via a Snap-To, each time you select the next order to resolve after the Company or Platoon Commander, you may change the order originally given via Snap-To. At the end of a round, in addition to attempting to Fire, a unit with an Ambush may test to Run or Advance as well in the same way it would attempt to resolve to Fire."
 				]
 			},
 			{
@@ -470,11 +470,11 @@
 				]
 			},
 			{
-				"name": "Drone",
+				"name": "Flying Drone",
 				"specialRules": [],
 				"adjustlocalQuantities": [
 					{
-						"property": "Drone",
+						"property": "Flying Drone",
 						"quantity": 1
 					}
 				]
@@ -776,7 +776,6 @@
 			{
 				"name": "Engineer Platoon",
 				"unlimited": true,
-				"soonTM": true,
 				"specialText": "Platoon Commander: 1\n Engineer Squads: 2\n Engineer Squads: 0-2\n Flame Thrower Teams: 0-3\n Transport: Per Unit in the Platoon\n",
 				"decreaseModelCount": 1,
 				"validations":[
@@ -1363,7 +1362,7 @@
 					{
 						"name": "Inexperienced",
 						"addsPrefix": "Inex. ",
-						"points": 42,
+						"points": 48,
 						"availableIn": [
 							"Japan",
 							"Russia",
@@ -1375,7 +1374,7 @@
 					{
 						"name": "Regular",
 						"addsPrefix": "Reg. ",
-						"points": 60,
+						"points": 66,
 						"availableIn": [
 							"Japan",
 							"Russia",
@@ -1387,7 +1386,7 @@
 					{
 						"name": "Veteran",
 						"addsPrefix": "Vet. ",
-						"points": 78,
+						"points": 84,
 						"availableIn": [
 							"France",
 							"Japan",
@@ -1399,7 +1398,7 @@
 					},
 					{
 						"name": "Additional Men",
-						"points": 7,
+						"points": 13,
 						"increment": true,
 						"max": 4,
 						"addsModels": 1,
@@ -1413,7 +1412,7 @@
 					},
 					{
 						"name": "Additional Men",
-						"points": 10,
+						"points": 16,
 						"increment": true,
 						"max": 4,
 						"addsModels": 1,
@@ -1427,7 +1426,7 @@
 					},
 					{
 						"name": "Additional Men",
-						"points": 13,
+						"points": 19,
 						"increment": true,
 						"max": 4,
 						"addsModels": 1,
@@ -1517,7 +1516,7 @@
 					},
 					{
 						"name": "Desert Operations",
-						"points": 1,
+						"points": 25,
 						"chooseOneKey": "operation",
 						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
 						"availableIn": [
@@ -1526,7 +1525,7 @@
 							"Sweden",
 							"United States of America"
 						],
-						"periods": ["vietnamPeriod"]
+						"periods": ["vietnamPeriod","modernPeriod"]
 					},
 					{
 						"name": "Expeditionary Operations",
@@ -1539,7 +1538,7 @@
 							"Sweden",
 							"United States of America"
 						],
-						"periods": ["vietnamPeriod"]
+						"periods": ["vietnamPeriod","modernPeriod"]
 					},
 					{
 						"name": "Jungle Operations",
@@ -1552,7 +1551,7 @@
 							"Sweden",
 							"United States of America"
 						],
-						"periods": ["vietnamPeriod"]
+						"periods": ["vietnamPeriod","modernPeriod"]
 					},
 					{
 						"name": "Urban Operations",
@@ -1565,11 +1564,18 @@
 							"Sweden",
 							"United States of America"
 						],
-						"periods": ["vietnamPeriod"]
+						"periods": ["vietnamPeriod","modernPeriod"]
 					},
 					{
 						"name": "French Foreign Legion",
 						"points": 1,
+						"perModel": true,
+						"unlockedByLocal": "Veteran",
+						"availableIn": ["France"]
+					},
+					{
+						"name": "COS",
+						"points": 2,
 						"perModel": true,
 						"unlockedByLocal": "Veteran",
 						"availableIn": ["France"]
@@ -1606,7 +1612,7 @@
 						"name": "VDV",
 						"points": 2,
 						"perModel": true,
-						"unlockedByLocal": "Veteran",
+						"unlockedByLocal": ["Regular","Veteran"],
 						"availableIn": ["Russia"]
 					},
 					{
@@ -1648,7 +1654,7 @@
 						"all": [{ "in": "Rifle Platoon" }, { "in": "France" }]			
 					},
 					{
-						"all": [{ "in": "Recce Platoon" }, { "in": "France" }]			
+						"all": [{ "in": "Recce Platoon" }, { "in": "France" }]
 					},
 					{
 						"all": [{ "in": "Engineer Platoon" }, { "in": "France" }]			
@@ -1741,7 +1747,7 @@
 					{
 						"name": "Inexperienced",
 						"addsPrefix": "Inex. ",
-						"points": 21,
+						"points": 27,
 						"availableIn": [
 							"Japan",
 							"Russia",
@@ -1753,7 +1759,7 @@
 					{
 						"name": "Regular",
 						"addsPrefix": "Reg. ",
-						"points": 30,
+						"points": 36,
 						"availableIn": [
 							"Japan",
 							"Russia",
@@ -1765,7 +1771,7 @@
 					{
 						"name": "Veteran",
 						"addsPrefix": "Vet. ",
-						"points": 39,
+						"points": 45,
 						"availableIn": [
 							"France",
 							"Japan",
@@ -1776,17 +1782,46 @@
 						"requireChooseOneKey": "morale"
 					},
 					{
-						"name": "Drone",
-						"points": 25,
+						"name": "Additional Men",
+						"points": 13,
 						"increment": true,
-						"max": 1,
+						"max": 4,
 						"addsModels": 1,
-						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
+						"unlockedByLocal": "Inexperienced",
+						"availableIn": [
+							"Japan",
+							"Russia",
+							"Sweden",
+							"United States of America"
+						]
+					},
+					{
+						"name": "Additional Men",
+						"points": 16,
+						"increment": true,
+						"max": 4,
+						"addsModels": 1,
+						"unlockedByLocal": "Regular",
+						"availableIn": [
+							"Japan",
+							"Russia",
+							"Sweden",
+							"United States of America"
+						]
+					},
+					{
+						"name": "Additional Men",
+						"points": 19,
+						"increment": true,
+						"max": 4,
+						"addsModels": 1,
+						"unlockedByLocal": "Veteran",
 						"availableIn": [
 							"France",
 							"Japan",
 							"Russia",
-							"Sweden"
+							"Sweden",
+							"United States of America"
 						]
 					},
 					{
@@ -1828,6 +1863,7 @@
 						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
 						"availableIn": [
 							"France",
+							"Japan",
 							"Russia",
 							"Sweden",
 							"United States of America"
@@ -1836,6 +1872,13 @@
 					{
 						"name": "French Foreign Legion",
 						"points": 1,
+						"perModel": true,
+						"unlockedByLocal": "Veteran",
+						"availableIn": ["France"]
+					},
+					{
+						"name": "COS",
+						"points": 2,
 						"perModel": true,
 						"unlockedByLocal": "Veteran",
 						"availableIn": ["France"]
@@ -1872,7 +1915,7 @@
 						"name": "VDV",
 						"points": 2,
 						"perModel": true,
-						"unlockedByLocal": "Veteran",
+						"unlockedByLocal": ["Regular","Veteran"],
 						"availableIn": ["Russia"]
 					},
 					{
@@ -1977,6 +2020,13 @@
 						"availableIn": ["France"]
 					},
 					{
+						"name": "COS",
+						"points": 2,
+						"perModel": true,
+						"unlockedByLocal": "Veteran",
+						"availableIn": ["France"]
+					},
+					{
 						"name": "ARDB",
 						"points": 2,
 						"perModel": true,
@@ -2001,7 +2051,7 @@
 						"name": "VDV",
 						"points": 2,
 						"perModel": true,
-						"unlockedByLocal": "Veteran",
+						"unlockedByLocal": ["Regular","Veteran"],
 						"availableIn": ["Russia"]
 					},
 					{
@@ -2041,7 +2091,7 @@
 				"equipment": ["Body Armor","MOPP","Pistols"]
 			},
 			{
-				"name": "Medic, Renault VAB San Ambulance ",
+				"name": "Medic, Renault VAB Sanitaire Ambulance ",
 				"factions": [],
 				"order": 1,
 				"availableIn":[
@@ -2471,8 +2521,24 @@
 						]
 					},
 					{
+						"name": "Flying Drone",
+						"points": 25,
+						"increment": true,
+						"max": 1,
+						"addsModels": 1,
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
+						"periods": ["modernPeriod"],
+						"availableIn": [
+							"France",
+							"Japan",
+							"Russia",
+							"Sweden",
+							"United States of America"
+						]
+					},
+					{
 						"name": "NCO SMG",
-						"points": -2,
+						"points": 4,
 						"increment": true,
 						"max": "parentModels",
 						"maxKey": "gun",
@@ -2488,7 +2554,7 @@
 					},
 					{
 						"name": "SMGs",
-						"points": -2,
+						"points": 4,
 						"increment": true,
 						"max": "parentModels",
 						"maxKey": "gun",
@@ -2503,7 +2569,7 @@
 					},
 					{
 						"name": "NCO Pistol",
-						"points": -7,
+						"points": -1,
 						"increment": true,
 						"max": "parentModels",
 						"maxKey": "gun",
@@ -2519,7 +2585,7 @@
 					},
 					{
 						"name": "Pistols",
-						"points": -7,
+						"points": -1,
 						"increment": true,
 						"max": "parentModels",
 						"maxKey": "gun",
@@ -2537,6 +2603,13 @@
 						"points": 1,
 						"perModel": true,
 						"unlockedByLocal": ["Regular","Veteran"],
+						"availableIn": ["France"]
+					},
+					{
+						"name": "COS",
+						"points": 2,
+						"perModel": true,
+						"unlockedByLocal": "Veteran",
 						"availableIn": ["France"]
 					},
 					{
@@ -2564,7 +2637,7 @@
 						"name": "VDV",
 						"points": 2,
 						"perModel": true,
-						"unlockedByLocal": "Veteran",
+						"unlockedByLocal": ["Regular","Veteran"],
 						"availableIn": ["Russia"]
 					},
 					{
@@ -2715,7 +2788,7 @@
 					},
 					{
 						"name": "NCO SMG",
-						"points": -2,
+						"points": 4,
 						"increment": true,
 						"max": "parentModels",
 						"maxKey": "gun",
@@ -2731,7 +2804,7 @@
 					},
 					{
 						"name": "SMGs",
-						"points": -2,
+						"points": 4,
 						"increment": true,
 						"max": "parentModels",
 						"maxKey": "gun",
@@ -2746,7 +2819,7 @@
 					},
 					{
 						"name": "NCO Pistol",
-						"points": -7,
+						"points": -1,
 						"increment": true,
 						"max": "parentModels",
 						"maxKey": "gun",
@@ -2762,7 +2835,7 @@
 					},
 					{
 						"name": "Pistols",
-						"points": -7,
+						"points": -1,
 						"increment": true,
 						"max": "parentModels",
 						"maxKey": "gun",
@@ -2790,6 +2863,13 @@
 						"availableIn": ["Japan"]
 					},
 					{
+						"name": "COS",
+						"points": 2,
+						"perModel": true,
+						"unlockedByLocal": "Veteran",
+						"availableIn": ["France"]
+					},
+					{
 						"name": "Narashino Airborne",
 						"points": 1,
 						"perModel": true,
@@ -2807,7 +2887,7 @@
 						"name": "VDV",
 						"points": 2,
 						"perModel": true,
-						"unlockedByLocal": "Veteran",
+						"unlockedByLocal": ["Regular","Veteran"],
 						"availableIn": ["Russia"]
 					},
 					{
@@ -3007,6 +3087,13 @@
 						"availableIn": ["France"]
 					},
 					{
+						"name": "COS",
+						"points": 2,
+						"perModel": true,
+						"unlockedByLocal": "Veteran",
+						"availableIn": ["France"]
+					},
+					{
 						"name": "ARDB",
 						"points": 2,
 						"perModel": true,
@@ -3031,7 +3118,7 @@
 						"name": "VDV",
 						"points": 2,
 						"perModel": true,
-						"unlockedByLocal": "Veteran",
+						"unlockedByLocal": ["Regular","Veteran"],
 						"availableIn": ["Russia"]
 					},
 					{
@@ -3075,7 +3162,7 @@
 				"keywords": ["Infiltrator","First Aid"],
 				"periods": ["koreaPeriod","vietnamPeriod","modernPeriod"],
 				"specialText": "1 Sniper \n 1 Observer",
-				"equipment": ["Rifles"]
+				"equipment": ["Sniper Rifles","Rifles"]
 			},
 			{
 				"name": "Eryx AT Team",
@@ -3973,7 +4060,7 @@
 						"name": "VDV",
 						"points": 2,
 						"perModel": true,
-						"unlockedByLocal": "Veteran",
+						"unlockedByLocal": ["Regular","Veteran"],
 						"availableIn": ["Russia"]
 					},
 					{
@@ -4051,7 +4138,7 @@
 						"name": "VDV",
 						"points": 2,
 						"perModel": true,
-						"unlockedByLocal": "Veteran",
+						"unlockedByLocal": ["Regular","Veteran"],
 						"availableIn": ["Russia"]
 					},
 					{
@@ -4132,7 +4219,7 @@
 						"name": "VDV",
 						"points": 2,
 						"perModel": true,
-						"unlockedByLocal": "Veteran",
+						"unlockedByLocal": ["Regular","Veteran"],
 						"availableIn": ["Russia"]
 					},
 					{
@@ -4210,7 +4297,7 @@
 						"name": "VDV",
 						"points": 2,
 						"perModel": true,
-						"unlockedByLocal": "Veteran",
+						"unlockedByLocal": ["Regular","Veteran"],
 						"availableIn": ["Russia"]
 					},
 					{
@@ -5395,7 +5482,7 @@
 						"name": "VDV",
 						"points": 2,
 						"perModel": true,
-						"unlockedByLocal": "Veteran",
+						"unlockedByLocal": ["Regular","Veteran"],
 						"availableIn": ["Russia"]
 					},
 					{
@@ -5550,7 +5637,7 @@
 						"name": "VDV",
 						"points": 2,
 						"perModel": true,
-						"unlockedByLocal": "Veteran",
+						"unlockedByLocal": ["Regular","Veteran"],
 						"availableIn": ["Russia"]
 					},
 					{
@@ -6024,7 +6111,7 @@
 						"name": "VDV",
 						"points": 2,
 						"perModel": true,
-						"unlockedByLocal": "Veteran",
+						"unlockedByLocal": ["Regular","Veteran"],
 						"availableIn": ["Russia"]
 					},
 					{
@@ -6349,6 +6436,9 @@
 					},
 					{
 						"all": [{ "in": "Recce Platoon" }, { "in": "France" }]			
+					},
+					{
+						"all": [{ "in": "Engineer Platoon" }, { "in": "France" }]			
 					}
 				],
 				"points": 0,
@@ -6361,6 +6451,17 @@
 					}
 				],
 				"sortPriority": 3,
+				"requiredChildren": [
+					{
+						"elementPropertyName": "options",
+						"name": "Engineers",
+						"in": [
+							[
+								"Engineer Platoon"
+							]
+						]
+					}
+				],
 				"limits": [
 					{
 						"key": "Rifle",
@@ -6466,7 +6567,7 @@
 					},
 					{
 						"name": "Shotgun",
-						"points": 2,
+						"points": -2,
 						"increment": true,
 						"max": "parentModels",
 						"maxKey": "gun",
@@ -6490,6 +6591,23 @@
 						"perModel": true,
 						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
 						"availableIn": ["France"]
+					},
+					{
+						"name": "Engineers",
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
+						"points": 1,
+						"perModel": true,
+						"availableIn":[
+							"Engineer Platoon"
+						]
+					},
+					{
+						"name": "Demolition Charges",
+						"unlockedByLocal": ["Engineers"],
+						"points": 20,
+						"availableIn":[
+							"Engineer Platoon"
+						]
 					}
 				],
 				"keywords": ["First Aid"],
@@ -6508,6 +6626,9 @@
 					},
 					{
 						"all": [{ "in": "Recce Platoon" }, { "in": "France" }]			
+					},
+					{
+						"all": [{ "in": "Engineer Platoon" }, { "in": "France" }]			
 					}
 				],
 				"points": 0,
@@ -6520,6 +6641,17 @@
 					}
 				],
 				"sortPriority": 3,
+				"requiredChildren": [
+					{
+						"elementPropertyName": "options",
+						"name": "Engineers",
+						"in": [
+							[
+								"Engineer Platoon"
+							]
+						]
+					}
+				],
 				"limits": [
 					{
 						"key": "Rifle",
@@ -6656,6 +6788,23 @@
 						"perModel": true,
 						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
 						"availableIn": ["France"]
+					},
+					{
+						"name": "Engineers",
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
+						"points": 1,
+						"perModel": true,
+						"availableIn":[
+							"Engineer Platoon"
+						]
+					},
+					{
+						"name": "Demolition Charges",
+						"unlockedByLocal": ["Engineers"],
+						"points": 20,
+						"availableIn":[
+							"Engineer Platoon"
+						]
 					}
 				],
 				"keywords": ["First Aid"],
@@ -6674,6 +6823,9 @@
 					},
 					{
 						"all": [{ "in": "Recce Platoon" }, { "in": "France" }]			
+					},
+					{
+						"all": [{ "in": "Engineer Platoon" }, { "in": "France" }]			
 					}
 				],
 				"points": 0,
@@ -6686,6 +6838,17 @@
 					}
 				],
 				"sortPriority": 3,
+				"requiredChildren": [
+					{
+						"elementPropertyName": "options",
+						"name": "Engineers",
+						"in": [
+							[
+								"Engineer Platoon"
+							]
+						]
+					}
+				],
 				"limits": [
 					{
 						"key": "Rifle",
@@ -6759,6 +6922,23 @@
 						"localLimit": 2,
 						"unlockedByLocal": "Veteran",
 						"availableIn": ["France"]
+					},
+					{
+						"name": "Engineers",
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
+						"points": 1,
+						"perModel": true,
+						"availableIn":[
+							"Engineer Platoon"
+						]
+					},
+					{
+						"name": "Demolition Charges",
+						"unlockedByLocal": ["Engineers"],
+						"points": 20,
+						"availableIn":[
+							"Engineer Platoon"
+						]
 					}
 				],
 				"keywords": ["First Aid","Elite","Air Assault"],
@@ -7492,11 +7672,12 @@
 						"availableIn": ["Russia"]
 					},
 					{
-						"name": "Drone",
+						"name": "Flying Drone",
 						"points": 25,
 						"increment": true,
 						"max": 1,
 						"addsModels": 1,
+						"periods": ["modernPeriod"],
 						"unlockedByLocal": ["Inexperienced","Regular","Veteran"]
 					},
 					{
@@ -7638,11 +7819,12 @@
 						"availableIn": ["Russia"]
 					},
 					{
-						"name": "Drone",
+						"name": "Flying Drone",
 						"points": 25,
 						"increment": true,
 						"max": 1,
 						"addsModels": 1,
+						"periods": ["modernPeriod"],
 						"unlockedByLocal": ["Inexperienced","Regular","Veteran"]
 					},
 					{
@@ -9221,7 +9403,7 @@
 				"keywords": ["MOPP"],
 				"periods": ["modernPeriod"],
 				"specialText": "8 Crew Members",
-				"equipment": ["Heavy Howitzer"]
+				"equipment": ["Heavy Howitzer Team"]
 			},
 			{
 				"name": "CAESAR SPG",
@@ -11561,9 +11743,9 @@
 						]
 					}
 				],
-				"keywords": ["Transport"],
+				"keywords": ["Transport","Tow"],
 				"periods": ["modernPeriod"],
-				"specialText": "Armored Car/Carrier - 7+\n Transport: 10",
+				"specialText": "Armored Car/Carrier - 7+\n Transport: 10\n Tow: Any\n Wheeled Vehicle",
 				"equipment": []
 			},
 			{
@@ -12831,7 +13013,7 @@
 				"equipment": ["Smoke Dischargers","Turret Mounted Automatic Grenade Launcher","Turret Mounted Coaxial MMG"]
 			},
 			{
-				"name": "Panhard VBL Light Armored Vehicle w/ HMG Turret",
+				"name": "Panhard VBL Light Armored Vehicle",
 				"validationKeys": ["TotalVehicle"],
 				"factions": [],
 				"order": 1,
@@ -12854,74 +13036,40 @@
 					{
 						"name": "Inexperienced",
 						"addsPrefix": "Inex. ",
-						"points": 52,
+						"points": 60,
 						"availableIn": ["France"],
 						"requireChooseOneKey": "morale"
 					},
 					{
 						"name": "Regular",
 						"addsPrefix": "Reg. ",
-						"points": 84,
+						"points": 75,
 						"availableIn": ["France"],
 						"requireChooseOneKey": "morale"
 					},
 					{
 						"name": "Veteran",
 						"addsPrefix": "Vet. ",
-						"points": 117,
-						"availableIn": ["France"],
-						"requireChooseOneKey": "morale"
-					}
-					
-				],
-				"keywords": ["Command Vehicle","Air Mobile (S)"],
-				"periods": ["modernPeriod"],
-				"specialText": "Armored Car/Carrier - 7+\n Wheeled Vehicle",
-				"equipment": ["Pintle Mounted Eryx","Pintle Mounted MMG"]
-			},
-			{
-				"name": "Panhard VBL Light Armored Vehicle w/ ATGM Turret",
-				"validationKeys": ["TotalVehicle"],
-				"factions": [],
-				"order": 1,
-				"availableIn":[
-					{
-						"all": [{ "in": "Armored Platoon" }, { "in": "France" }]			
-					}
-				],
-				"points": 0,
-				"models": 1,
-				"sortPriority": 9,
-				"limits": [
-					{
-						"key": "Vehicles",
-						"limit": 5,
-						"perParent": true
-					}
-				],
-				"options": [
-					{
-						"name": "Inexperienced",
-						"addsPrefix": "Inex. ",
-						"points": 132,
+						"points": 90,
 						"availableIn": ["France"],
 						"requireChooseOneKey": "morale"
 					},
 					{
-						"name": "Regular",
-						"addsPrefix": "Reg. ",
-						"points": 164,
-						"availableIn": ["France"],
-						"requireChooseOneKey": "morale"
-					},
-					{
-						"name": "Veteran",
+						"name": "Turret Mounted Eryx",
 						"addsPrefix": "Vet. ",
-						"points": 197,
+						"points": 100,
 						"availableIn": ["France"],
-						"requireChooseOneKey": "morale"
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
+						"requireChooseOneKey": "priWeapon"
+					},
+					{
+						"name": "Pintle Mounted MMG",
+						"addsPrefix": "Vet. ",
+						"points": 15,
+						"availableIn": ["France"],
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
+						"requireChooseOneKey": "priWeapon"
 					}
-					
 				],
 				"keywords": ["Command Vehicle","Air Mobile (S)"],
 				"periods": ["modernPeriod"],
@@ -12973,7 +13121,7 @@
 					{
 						"name": "Command Vehicle",
 						"points": 10,
-						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
+						"unlockedByLocal": ["Veteran"],
 						"availableIn": ["France"]
 					},
 					{
@@ -13033,7 +13181,7 @@
 					{
 						"name": "Command Vehicle",
 						"points": 10,
-						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
+						"unlockedByLocal": ["Veteran"],
 						"availableIn": ["France"]
 					},
 					{
@@ -13099,7 +13247,7 @@
 					{
 						"name": "Command Vehicle",
 						"points": 10,
-						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
+						"unlockedByLocal": ["Veteran"],
 						"availableIn": ["France"]
 					}
 				],
@@ -13153,7 +13301,7 @@
 					{
 						"name": "Command Vehicle",
 						"points": 10,
-						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
+						"unlockedByLocal": ["Veteran"],
 						"availableIn": ["France"]
 					}
 				],
@@ -13255,7 +13403,7 @@
 					{
 						"name": "Command Vehicle",
 						"points": 10,
-						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
+						"unlockedByLocal": ["Veteran"],
 						"availableIn": ["France"]
 					}
 				],
@@ -13265,7 +13413,7 @@
 				"equipment": ["Turret Mounted Heavy Autocannon","Pintle Mounted MMG","Turret Mounted Coaxial ATGM/TOW","Smoke Dischargers"]
 			},
 			{
-				"name": "AMX-30B2",
+				"name": "AMX-30B2 MBT",
 				"validationKeys": ["TotalVehicle"],
 				"factions": [],
 				"order": 1,
@@ -13288,38 +13436,38 @@
 					{
 						"name": "Inexperienced",
 						"addsPrefix": "Inex. ",
-						"points": 308,
+						"points": 252,
 						"availableIn": ["France"],
 						"requireChooseOneKey": "morale"
 					},
 					{
 						"name": "Regular",
 						"addsPrefix": "Reg. ",
-						"points": 385,
+						"points": 315,
 						"availableIn": ["France"],
 						"requireChooseOneKey": "morale"
 					},
 					{
 						"name": "Veteran",
 						"addsPrefix": "Vet. ",
-						"points": 462,
+						"points": 378,
 						"availableIn": ["France"],
 						"requireChooseOneKey": "morale"
 					},
 					{
 						"name": "Command Vehicle",
 						"points": 10,
-						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
+						"unlockedByLocal": ["Veteran"],
 						"availableIn": ["France"]
 					}
 				],
 				"keywords": ["Advanced Ammunition (Main)", "Advanced Optics (Main)","Fire Control System"],
 				"periods": ["vietnamPeriod","modernPeriod"],
 				"specialText": "Medium Tank - 9+\n Tracked Vehicle",
-				"equipment": ["Turret Mounted Heavy AT Gun","Pintle Mounted MMG","Turret Mounted Coaxial MMG","Smoke Dischargers"]
+				"equipment": ["Turret Mounted Heavy AT Gun","Pintle Mounted MMG","Turret Mounted Coaxial Light Autocannon","Smoke Dischargers"]
 			},
 			{
-				"name": "AMX-30B2 BRENUS",
+				"name": "AMX-30B2 BRENUS MBT",
 				"validationKeys": ["TotalVehicle"],
 				"factions": [],
 				"order": 1,
@@ -13342,38 +13490,38 @@
 					{
 						"name": "Inexperienced",
 						"addsPrefix": "Inex. ",
-						"points": 323,
+						"points": 268,
 						"availableIn": ["France"],
 						"requireChooseOneKey": "morale"
 					},
 					{
 						"name": "Regular",
 						"addsPrefix": "Reg. ",
-						"points": 400,
+						"points": 335,
 						"availableIn": ["France"],
 						"requireChooseOneKey": "morale"
 					},
 					{
 						"name": "Veteran",
 						"addsPrefix": "Vet. ",
-						"points": 477,
+						"points": 402,
 						"availableIn": ["France"],
 						"requireChooseOneKey": "morale"
 					},
 					{
 						"name": "Command Vehicle",
 						"points": 10,
-						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
+						"unlockedByLocal": ["Veteran"],
 						"availableIn": ["France"]
 					}
 				],
 				"keywords": ["Advanced Ammunition (Main)", "Advanced Optics (Main)","Fire Control System"],
 				"periods": ["vietnamPeriod","modernPeriod"],
 				"specialText": "Medium Tank - 9+\n Tracked Vehicle",
-				"equipment": ["Turret Mounted Heavy AT Gun","Pintle Mounted MMG","Turret Mounted Coaxial MMG","Smoke Dischargers","Reactive Armor"]
+				"equipment": ["Turret Mounted Heavy AT Gun","Pintle Mounted MMG","Turret Mounted Coaxial Light Autocannon","Smoke Dischargers","Reactive Armor"]
 			},
 			{
-				"name": "KNDS Leclerc",
+				"name": "KNDS Leclerc MBT",
 				"validationKeys": ["TotalVehicle"],
 				"factions": [],
 				"order": 1,
@@ -13396,35 +13544,35 @@
 					{
 						"name": "Inexperienced",
 						"addsPrefix": "Inex. ",
-						"points": 308,
+						"points": 316,
 						"availableIn": ["France"],
 						"requireChooseOneKey": "morale"
 					},
 					{
 						"name": "Regular",
 						"addsPrefix": "Reg. ",
-						"points": 408,
+						"points": 395,
 						"availableIn": ["France"],
 						"requireChooseOneKey": "morale"
 					},
 					{
 						"name": "Veteran",
 						"addsPrefix": "Vet. ",
-						"points": 510,
+						"points": 474,
 						"availableIn": ["France"],
 						"requireChooseOneKey": "morale"
 					},
 					{
 						"name": "Command Vehicle",
 						"points": 10,
-						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
+						"unlockedByLocal": ["Veteran"],
 						"availableIn": ["France"]
 					}
 				],
 				"keywords": ["Advanced Ammunition (Main)", "Advanced Optics (Main)","Fire Control System"],
 				"periods": ["modernPeriod"],
 				"specialText": "Heavy Tank - 10+\n Tracked Vehicle",
-				"equipment": ["Turret Mounted Super Heavy AT Gun","Pintle Mounted HMG","Turret Mounted Coaxial MMG","Smoke Dischargers"]
+				"equipment": ["Turret Mounted Super Heavy AT Gun","Pintle Mounted MMG","Turret Mounted Coaxial HMG","Smoke Dischargers"]
 			},
 			{
 				"name": "Renault Mephisto HOT Anti-Tank Vehicle",
@@ -13471,7 +13619,7 @@
 					{
 						"name": "Command Vehicle",
 						"points": 10,
-						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
+						"unlockedByLocal": ["Veteran"],
 						"availableIn": ["France"]
 					}
 				],
@@ -13625,7 +13773,7 @@
 				"equipment": ["Smoke Dischargers"]
 			},
 			{
-				"name": "Renault VIB IFV",
+				"name": "Renault VAB VIB IFV",
 				"validationKeys": ["TotalVehicle","CommandVehicle"],
 				"factions": [],
 				"order": 1,
@@ -13761,6 +13909,14 @@
 						"points": 152,
 						"availableIn": ["France"],
 						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Spotter",
+						"points": 10,
+						"addsModels": 1,
+						"availableIn": ["France"],
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
+						"requireChooseOneKey": "morale"
 					}
 				],
 				"keywords": ["Command Vehicle","Stationary Firing Platform"],
@@ -13813,7 +13969,7 @@
 					{
 						"name": "Command Vehicle",
 						"points": 10,
-						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
+						"unlockedByLocal": ["Veteran"],
 						"availableIn": ["France"]
 					}
 				],
@@ -19166,14 +19322,14 @@
 					},
 					{
 						"name": "Two Pylon Mounted Unguided Rocket Pods",
-						"points": 30,
+						"points": 80,
 						"availableIn": ["France"],
 						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
 						"requireChooseOneKey": "priWeapon"
 					},
 					{
 						"name": "Pylon Mounted ATGM",
-						"points": 45,
+						"points": 90,
 						"availableIn": ["France"],
 						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
 						"requireChooseOneKey": "priWeapon"
@@ -19346,8 +19502,8 @@
 				],
 				"keywords": ["Transport","Air Lift"],
 				"periods": ["vietnamPeriod","modernPeriod"],
-				"specialText": "Light Helicopter - 7+\n Helicopter\n Transport: 20",
-				"equipment": ["Port Side Door Mounted MMG","STBD Side Door Mounted MMG\n Air Lift: S"]
+				"specialText": "Light Helicopter - 7+\n Helicopter\n Transport: 20\n Air Lift: S",
+				"equipment": ["Port Side Door Mounted MMG","STBD Side Door Mounted MMG"]
 			},
 			{
 				"name": "Kawasaki OH-1 Observation Helicopter",
